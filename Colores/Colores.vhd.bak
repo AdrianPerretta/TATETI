@@ -1,0 +1,47 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Colores is
+	port(SC1 : in std_logic;
+		  SC2 : in std_logic;
+		  CJ1 : out std_logic_vector(23 downto 0);
+		  CJ2 : out std_logic_vector(23 downto 0)
+		  );
+end Colores;
+
+process (SC1)
+	begin
+		case SC1 is
+			when SC1 = 0 => 
+				CJ1 <= x"7008E7";
+			when SC1 = 0 => 
+				CJ1 <= x"401577";
+			when SC1 = 0 => 
+				CJ1 <= x"8C3BCC";
+			when SC1 = 0 => 
+				CJ1 <= x"5A158E";
+			when SC1 = 0 => 
+				CJ1 <= x"6821CB";
+			when SC1 = 0 => 
+				CJ1 <= x"8A0194";
+		end case;
+end process;
+
+process (SC2)
+	begin
+		case SC2 is
+			when SC2 = 0 => 
+				CJ2 <= x"FFDF20";
+			when SC2 = 0 => 
+				CJ1 <= x"CCB222";
+			when SC2 = 0 => 
+				CJ1 <= x"E3B340";
+			when SC2 = 0 => 
+				CJ1 <= x"FF8904";
+			when SC2 = 0 => 
+				CJ1 <= x"A94619";
+			when SC2 = 0 => 
+				CJ1 <= x"E1712B";
+		end case;
+end process;
+			

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Facultad\FPGA\TATETI\Colores\simulation\qsim
+vColores
+Z1 !s100 [fWeK_TAd5cNYE0RT6B1h3
+Z2 IO]XULT<bQHQdU5BVa9>6Q3
+Z3 V?8S_5UYKNXTXSL_4Vh=RD3
+Z4 dC:\Facultad\FPGA\TATETI\Colores\simulation\qsim
+Z5 w1762621166
+Z6 8Colores.vo
+Z7 FColores.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Colores.vo|
+Z10 o-work work -O0
+Z11 n@colores
+!i10b 1
+!s85 0
+Z12 !s108 1762621167.266000
+Z13 !s107 Colores.vo|
+!s101 -O0
+vColores_vlg_check_tst
+!i10b 1
+Z14 !s100 e]7X@7K1mJCTUZ6AI6m8O2
+Z15 I=3=GlfE^>T<=X=1^<A8]a0
+Z16 V`8:Y6[@LDY8@dla`j5U<E3
+R4
+Z17 w1762621165
+Z18 8Colores.vt
+Z19 FColores.vt
+L0 77
+R8
+r1
+!s85 0
+31
+Z20 !s108 1762621167.469000
+Z21 !s107 Colores.vt|
+Z22 !s90 -work|work|Colores.vt|
+!s101 -O0
+R10
+Z23 n@colores_vlg_check_tst
+vColores_vlg_sample_tst
+!i10b 1
+Z24 !s100 TQV9<lLcmn8hk=2=501eC1
+Z25 IFCb4IW^H8@`ocLGE64Jd51
+Z26 VV75H3^Q?McScbf_RFAdW:3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@colores_vlg_sample_tst
+vColores_vlg_vec_tst
+!i10b 1
+!s100 g_31^>KeZK5EPmgWgPL`l0
+I8zEbagfLEY7>Y<RWH3UQQ2
+Z28 ViW:U22H7ge1l0<gFFO6LZ1
+R4
+R17
+R18
+R19
+Z29 L0 8033
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@colores_vlg_vec_tst

@@ -1,0 +1,289 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Colores is
+	port(SC1 : in std_logic_vector(2 downto 0);
+		  SC2 : in std_logic_vector(2 downto 0);
+		  INICIO : in std_logic;
+		  MV : in std_logic;
+		  MINV : in std_logic;
+		  TURNO : in std_logic;
+		  VF : in std_logic;
+		  CLK : in std_logic;
+		  POSICION : in std_logic_vector(3 downto 0);
+		  colorj1 : out std_logic_vector(23 downto 0);
+		  colorj2 : out std_logic_vector(23 downto 0);
+		  VICTORIA : in std_logic;
+		  EMPATE : in std_logic;
+		  MATRIZ : out std_logic_vector(383 downto 0);
+		  v2  : out integer range 0 to 3;
+		  v1 : out integer range 0 to 3
+		  );
+end Colores;
+
+architecture fnc of Colores is
+
+signal CJ2 ,CJ1 : std_logic_vector(23 downto 0);
+signal victoriacounter1, victoriacounter2, empatecounter1, empatecounter2, empategeneral : integer range 1 to 4 := 1;
+signal bloqueo : std_logic := '0';
+begin
+
+process (SC1)
+	begin
+		if INICIO = '0' then
+			case SC1 is
+				when "000" => 
+					CJ1 <= x"7008E7";
+				when "001" => 
+					CJ1 <= x"401577";
+				when "010" => 
+					CJ1 <= x"8C3BCC";
+				when "011" => 
+					CJ1 <= x"5A158E";
+				when "100" => 
+					CJ1 <= x"6821CB";
+				when "101" => 
+					CJ1 <= x"8A0194";
+				when "110" => 
+					CJ1 <= x"51157D";
+				when "111" => 
+					CJ1 <= x"2F0D68";
+			end case;
+		end if;
+end process;
+		
+process (SC2)
+	begin
+		if INICIO = '0' then
+			case SC2 is
+				when "000" => 
+					CJ2 <= x"FFDF20";
+				when "001" => 
+					CJ2 <= x"CCB222";
+				when "010" => 
+					CJ2 <= x"E3B340";
+				when "011" => 
+					CJ2 <= x"FF8904";
+				when "100" => 
+					CJ2 <= x"A94619";
+				when "101" => 
+					CJ2 <= x"E1712B";
+				when "110" => 
+					CJ2 <= x"B36E2B";
+				when "111" => 
+					CJ2 <= x"FEE685";
+			end case;
+		end if;
+end process;
+
+process (VICTORIA, EMPATE, VF, INICIO, CJ1, CJ2, CLK, MV)
+begin
+if rising_edge(CLK) then
+	if INICIO = '1' then                                             --INICIO TURNO
+		if TURNO = '1' then
+			MATRIZ(23 downto 0) <= CJ1;
+		else 
+			MATRIZ(23 downto 0) <= CJ2;
+		end if;
+		if MINV = '1' then
+			MATRIZ(23 downto 0) <= x"FFFFFF";
+		end if;                                                       -- FIN TURNO
+		
+		if MV = '1' then                                              --INICIO 3x3
+			case Posicion is
+				when "0000" =>
+					if TURNO = '1' then
+						MATRIZ(383 downto 360) <= CJ1;
+					else
+						MATRIZ(383 downto 360) <= CJ2;
+					end if;
+				when "0001" =>
+					if TURNO = '1' then
+						MATRIZ(359 downto 336) <= CJ1;
+					else
+						MATRIZ(359 downto 336) <= CJ2;
+					end if;
+				when "0010" =>
+					if TURNO = '1' then
+						MATRIZ(335 downto 312) <= CJ1;
+					else
+						MATRIZ(335 downto 312) <= CJ2;
+					end if;
+				when "0011" =>
+					if TURNO = '1' then
+						MATRIZ(287 downto 264) <= CJ1;
+					else
+						MATRIZ(287 downto 264) <= CJ2;
+					end if;
+				when "0100" =>
+					if TURNO = '1' then
+						MATRIZ(263 downto 240) <= CJ1;
+					else
+						MATRIZ(263 downto 240) <= CJ2;
+					end if;
+				when "0101" =>
+					if TURNO = '1' then
+						MATRIZ(239 downto 216) <= CJ1;
+					else
+						MATRIZ(239 downto 216) <= CJ2;
+					end if;
+				when "0110" =>
+					if TURNO = '1' then
+						MATRIZ(191 downto 168) <= CJ1;
+					else
+						MATRIZ(191 downto 168) <= CJ2;
+					end if;
+				when "0111" =>
+					if TURNO = '1' then
+						MATRIZ(167 downto 144) <= CJ1;
+					else
+						MATRIZ(167 downto 144) <= CJ2;
+					end if;
+				when "1000" =>
+					if TURNO = '1' then
+						MATRIZ(143 downto 120) <= CJ1;
+					else
+						MATRIZ(143 downto 120) <= CJ2;
+					end if;
+				when others =>
+					null;
+			end case;
+	end if;
+	else
+		MATRIZ(383 downto 360) <= x"000000";
+		MATRIZ(359 downto 336) <= x"000000";
+		MATRIZ(335 downto 312) <= x"000000";
+		MATRIZ(287 downto 264) <= x"000000";
+		MATRIZ(263 downto 240) <= x"000000";
+		MATRIZ(239 downto 216) <= x"000000";
+		MATRIZ(191 downto 168) <= x"000000";
+		MATRIZ(167 downto 144) <= x"000000";
+		MATRIZ(143 downto 120) <= x"000000";
+	end if;                                                                  -- FIN  3x3
+	
+
+	if INICIO = '0' then                                                     --INICIO PUNTUACION JUGADORES
+		MATRIZ(311 downto 288) <= CJ1;
+		MATRIZ(215 downto 192) <= CJ1;
+		MATRIZ(119 downto 96) <= CJ1;
+		MATRIZ(95 downto 72) <= CJ2;
+		MATRIZ(71 downto 48) <= CJ2;
+		MATRIZ(47 downto 24) <= CJ2;
+	else
+		if bloqueo = '0' then
+			MATRIZ(311 downto 288) <= x"000000";
+			MATRIZ(215 downto 192) <= x"000000";
+			MATRIZ(119 downto 96) <= x"000000";
+			MATRIZ(95 downto 72) <= x"000000";
+			MATRIZ(71 downto 48) <= x"000000";
+			MATRIZ(47 downto 24) <= x"000000";
+			bloqueo <= '1';
+		end if;
+	end if;
+	if VICTORIA = '1' then
+		if TURNO = '1' then
+			case victoriacounter1 is
+				when 1 =>
+					MATRIZ(311 downto 288) <= CJ1;
+				when 2 =>
+					MATRIZ(215 downto 192) <= CJ1;
+				when 3 =>
+					MATRIZ(119 downto 96) <= CJ1;
+				when 4 =>
+					null;
+			end case;
+			victoriacounter1 <= victoriacounter1+1;
+			empatecounter1 <= victoriacounter1+1;
+		end if;
+		if TURNO = '0' then
+			case victoriacounter2 is
+				when 1 =>
+					MATRIZ(95 downto 72) <= CJ2;
+				when 2 =>
+					MATRIZ(71 downto 48) <= CJ2;
+				when 3 =>
+					MATRIZ(47 downto 24) <= CJ2;
+				when 4 =>
+					null;
+			end case;
+			victoriacounter2 <= victoriacounter2+1;
+			empatecounter2 <= victoriacounter2+1;
+		end if;
+	end if;
+	
+	if EMPATE = '1' then 
+		case empatecounter1 is
+			when 1 =>
+				MATRIZ(311 downto 288) <= x"FFFFFF";
+			when 2 =>
+				MATRIZ(215 downto 192) <= x"FFFFFF";
+			when 3 =>
+				MATRIZ(119 downto 96) <= x"FFFFFF";
+			when 4 =>
+				null;
+		end case;
+		case empatecounter2 is
+			when 1 =>
+				MATRIZ(95 downto 72) <= x"FFFFFF";
+			when 2 =>
+				MATRIZ(71 downto 48) <= x"FFFFFF";
+			when 3 =>
+				MATRIZ(47 downto 24) <= x"FFFFFF";
+			when 4 =>
+				null;
+		end case;
+		empategeneral <= empategeneral+1;
+		victoriacounter1 <= victoriacounter1+1;
+		victoriacounter2 <= victoriacounter2+1;
+	end if;                                                              --FIN PUNTUACION JUGADORES
+	   
+	if VF = '1' then                                                     --INICIO VICTORIA FINAL
+		if victoriacounter1 = 4 then
+			MATRIZ(95 downto 72) <= x"004E68";
+			MATRIZ(71 downto 48) <= x"FFFFFF";
+			MATRIZ(47 downto 24) <= x"EF4135";
+			MATRIZ(311 downto 288) <= CJ1;
+			MATRIZ(215 downto 192) <= CJ1;
+			MATRIZ(119 downto 96) <= CJ1;
+		end if;
+		if victoriacounter2 = 4 then
+			MATRIZ(311 downto 288) <= x"004E68";
+			MATRIZ(215 downto 192) <= x"FFFFFF";
+			MATRIZ(119 downto 96) <= x"EF4135";
+			MATRIZ(95 downto 72) <= CJ2;
+			MATRIZ(71 downto 48) <= CJ2;
+			MATRIZ(47 downto 24) <= CJ2;
+		end if;
+		if empategeneral = 4 then
+			MATRIZ(95 downto 72) <= x"FFFFFF";
+			MATRIZ(71 downto 48) <= x"FFFFFF";
+			MATRIZ(47 downto 24) <= x"FFFFFF";
+			MATRIZ(311 downto 288) <= x"FFFFFF";
+			MATRIZ(215 downto 192) <= x"FFFFFF";
+			MATRIZ(119 downto 96) <= x"FFFFFF";
+			MATRIZ(383 downto 360) <= x"FFFFFF";
+			MATRIZ(359 downto 336) <= x"FFFFFF";
+			MATRIZ(335 downto 312) <= x"FFFFFF";
+			MATRIZ(287 downto 264) <= x"FFFFFF";
+			MATRIZ(263 downto 240) <= x"FFFFFF";
+			MATRIZ(239 downto 216) <= x"FFFFFF";
+			MATRIZ(191 downto 168) <= x"FFFFFF";
+			MATRIZ(167 downto 144) <= x"FFFFFF";
+			MATRIZ(143 downto 120) <= x"FFFFFF";
+		end if;
+		victoriacounter1 <= 1;
+		victoriacounter2 <= 1;
+		empatecounter1 <= 1;
+		empatecounter2 <= 1;
+		empategeneral <= 1;
+		bloqueo <= '0';
+	end if;                                                                --FIN VICTORIA FINAL
+end if;
+end process;
+		
+	v2 <= victoriacounter2; --SALIDAS DE PRUEBA
+	v1 <= victoriacounter1; --SALIDAS DE PRUEBA
+colorj1 <= CJ1;            --SALIDAS DE PRUEBA
+colorj2 <= CJ2;            --SALIDAS DE PRUEBA
+end;

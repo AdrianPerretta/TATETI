@@ -1,0 +1,973 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:	2.5V
+ --					Bank 9:	2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "Colores"  ASSIGNED TO AN: EP4CGX150DF31C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+colorj1[14]                  : A4        : output : 2.5 V             :         : 8         : N              
+MATRIZ[212]                  : A5        : output : 2.5 V             :         : 8         : N              
+MATRIZ[310]                  : A6        : output : 2.5 V             :         : 8         : N              
+MATRIZ[251]                  : A7        : output : 2.5 V             :         : 8         : N              
+MATRIZ[365]                  : A8        : output : 2.5 V             :         : 8         : N              
+MATRIZ[359]                  : A9        : output : 2.5 V             :         : 8         : N              
+MATRIZ[192]                  : A10       : output : 2.5 V             :         : 8         : N              
+MATRIZ[94]                   : A11       : output : 2.5 V             :         : 8         : N              
+MATRIZ[92]                   : A12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[200]                  : A13       : output : 2.5 V             :         : 8         : N              
+MATRIZ[194]                  : A14       : output : 2.5 V             :         : 8         : N              
+GND+                         : A15       :        :                   :         : 7         :                
+MATRIZ[261]                  : A16       : output : 2.5 V             :         : 7         : N              
+MATRIZ[151]                  : A17       : output : 2.5 V             :         : 7         : N              
+MATRIZ[217]                  : A18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[274]                  : A19       : output : 2.5 V             :         : 7         : N              
+MATRIZ[341]                  : A20       : output : 2.5 V             :         : 7         : N              
+MATRIZ[88]                   : A21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[345]                  : A22       : output : 2.5 V             :         : 7         : N              
+MATRIZ[296]                  : A23       : output : 2.5 V             :         : 7         : N              
+MATRIZ[330]                  : A24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[146]                  : A25       : output : 2.5 V             :         : 7         : N              
+MATRIZ[241]                  : A26       : output : 2.5 V             :         : 7         : N              
+MATRIZ[317]                  : A27       : output : 2.5 V             :         : 7         : N              
+MATRIZ[148]                  : A28       : output : 2.5 V             :         : 7         : N              
+MATRIZ[123]                  : A29       : output : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+MATRIZ[144]                  : AA12      : output : 2.5 V             :         : 3         : N              
+MATRIZ[266]                  : AA13      : output : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+colorj2[1]                   : AA15      : output : 2.5 V             :         : 3         : N              
+MATRIZ[100]                  : AA16      : output : 2.5 V             :         : 3         : N              
+colorj1[16]                  : AA17      : output : 2.5 V             :         : 4         : N              
+colorj2[9]                   : AA18      : output : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+MATRIZ[371]                  : AA20      : output : 2.5 V             :         : 4         : N              
+MATRIZ[99]                   : AA21      : output : 2.5 V             :         : 4         : N              
+MATRIZ[166]                  : AA22      : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+MATRIZ[23]                   : AA25      : output : 2.5 V             :         : 5         : N              
+colorj2[22]                  : AA26      : output : 2.5 V             :         : 5         : N              
+MATRIZ[312]                  : AA27      : output : 2.5 V             :         : 5         : N              
+MATRIZ[270]                  : AA28      : output : 2.5 V             :         : 5         : N              
+MATRIZ[197]                  : AA29      : output : 2.5 V             :         : 5         : N              
+MATRIZ[108]                  : AA30      : output : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+MATRIZ[250]                  : AB11      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+MATRIZ[138]                  : AB13      : output : 2.5 V             :         : 3         : N              
+EMPATE                       : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+MATRIZ[82]                   : AB16      : output : 2.5 V             :         : 3         : N              
+colorj2[21]                  : AB17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+MATRIZ[140]                  : AB21      : output : 2.5 V             :         : 4         : N              
+MATRIZ[355]                  : AB22      : output : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+MATRIZ[376]                  : AB25      : output : 2.5 V             :         : 5         : N              
+MATRIZ[160]                  : AB26      : output : 2.5 V             :         : 5         : N              
+MATRIZ[175]                  : AB27      : output : 2.5 V             :         : 5         : N              
+MATRIZ[184]                  : AB28      : output : 2.5 V             :         : 5         : N              
+MATRIZ[190]                  : AB29      : output : 2.5 V             :         : 5         : N              
+MATRIZ[242]                  : AB30      : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+colorj2[3]                   : AC16      : output : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+MATRIZ[18]                   : AC25      : output : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+MATRIZ[106]                  : AC27      : output : 2.5 V             :         : 5         : N              
+colorj2[14]                  : AC28      : output : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+MATRIZ[363]                  : AC30      : output : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+MATRIZ[87]                   : AD6       : output : 2.5 V             :         : 3         : N              
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+MATRIZ[22]                   : AD9       : output : 2.5 V             :         : 3         : N              
+MATRIZ[154]                  : AD10      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+SC2[2]                       : AD16      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+MATRIZ[332]                  : AD22      : output : 2.5 V             :         : 4         : N              
+MATRIZ[207]                  : AD23      : output : 2.5 V             :         : 4         : N              
+MATRIZ[4]                    : AD24      : output : 2.5 V             :         : 4         : N              
+MATRIZ[105]                  : AD25      : output : 2.5 V             :         : 5         : N              
+MATRIZ[320]                  : AD26      : output : 2.5 V             :         : 5         : N              
+MATRIZ[315]                  : AD27      : output : 2.5 V             :         : 5         : N              
+MATRIZ[271]                  : AD28      : output : 2.5 V             :         : 5         : N              
+MATRIZ[366]                  : AD29      : output : 2.5 V             :         : 5         : N              
+MATRIZ[372]                  : AD30      : output : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+MATRIZ[198]                  : AE3       : output : 2.5 V             :         : 3         : N              
+MATRIZ[69]                   : AE4       : output : 2.5 V             :         : 3         : N              
+MATRIZ[30]                   : AE5       : output : 2.5 V             :         : 3         : N              
+MATRIZ[91]                   : AE6       : output : 2.5 V             :         : 3         : N              
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+MATRIZ[110]                  : AE8       : output : 2.5 V             :         : 3         : N              
+MATRIZ[299]                  : AE9       : output : 2.5 V             :         : 3         : N              
+MATRIZ[303]                  : AE10      : output : 2.5 V             :         : 3         : N              
+MATRIZ[20]                   : AE11      : output : 2.5 V             :         : 3         : N              
+MATRIZ[68]                   : AE12      : output : 2.5 V             :         : 3         : N              
+MATRIZ[104]                  : AE13      : output : 2.5 V             :         : 3         : N              
+colorj1[9]                   : AE14      : output : 2.5 V             :         : 3         : N              
+colorj2[5]                   : AE15      : output : 2.5 V             :         : 3         : N              
+SC2[0]                       : AE16      : input  : 2.5 V             :         : 4         : N              
+colorj2[6]                   : AE17      : output : 2.5 V             :         : 4         : N              
+colorj1[18]                  : AE18      : output : 2.5 V             :         : 4         : N              
+colorj1[19]                  : AE19      : output : 2.5 V             :         : 4         : N              
+MATRIZ[116]                  : AE20      : output : 2.5 V             :         : 4         : N              
+MATRIZ[335]                  : AE21      : output : 2.5 V             :         : 4         : N              
+POSICION[1]                  : AE22      : input  : 2.5 V             :         : 4         : N              
+MATRIZ[329]                  : AE23      : output : 2.5 V             :         : 4         : N              
+MATRIZ[8]                    : AE24      : output : 2.5 V             :         : 4         : N              
+MATRIZ[331]                  : AE25      : output : 2.5 V             :         : 5         : N              
+MATRIZ[111]                  : AE26      : output : 2.5 V             :         : 5         : N              
+MATRIZ[276]                  : AE27      : output : 2.5 V             :         : 5         : N              
+MATRIZ[59]                   : AE28      : output : 2.5 V             :         : 5         : N              
+MATRIZ[209]                  : AE29      : output : 2.5 V             :         : 5         : N              
+MATRIZ[256]                  : AE30      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+MATRIZ[119]                  : AF3       : output : 2.5 V             :         : 3         : N              
+MATRIZ[47]                   : AF4       : output : 2.5 V             :         : 3         : N              
+GND                          : AF5       : gnd    :                   :         :           :                
+MATRIZ[24]                   : AF6       : output : 2.5 V             :         : 3         : N              
+MATRIZ[51]                   : AF7       : output : 2.5 V             :         : 3         : N              
+GND                          : AF8       : gnd    :                   :         :           :                
+MATRIZ[289]                  : AF9       : output : 2.5 V             :         : 3         : N              
+MATRIZ[70]                   : AF10      : output : 2.5 V             :         : 3         : N              
+GND                          : AF11      : gnd    :                   :         :           :                
+MATRIZ[79]                   : AF12      : output : 2.5 V             :         : 3         : N              
+MATRIZ[302]                  : AF13      : output : 2.5 V             :         : 3         : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+colorj2[8]                   : AF15      : output : 2.5 V             :         : 3         : N              
+colorj1[3]                   : AF16      : output : 2.5 V             :         : 4         : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+SC1[1]                       : AF18      : input  : 2.5 V             :         : 4         : N              
+colorj1[1]                   : AF19      : output : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+MATRIZ[370]                  : AF21      : output : 2.5 V             :         : 4         : N              
+MV                           : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+MATRIZ[118]                  : AF24      : output : 2.5 V             :         : 4         : N              
+MATRIZ[178]                  : AF25      : output : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+v1[0]                        : AF27      : output : 2.5 V             :         : 5         : N              
+MATRIZ[162]                  : AF28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+MATRIZ[306]                  : AF30      : output : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+MATRIZ[64]                   : AG3       : output : 2.5 V             :         : 3         : N              
+MATRIZ[49]                   : AG4       : output : 2.5 V             :         : 3         : N              
+MATRIZ[56]                   : AG5       : output : 2.5 V             :         : 3         : N              
+MATRIZ[202]                  : AG6       : output : 2.5 V             :         : 3         : N              
+MATRIZ[295]                  : AG7       : output : 2.5 V             :         : 3         : N              
+MATRIZ[26]                   : AG8       : output : 2.5 V             :         : 3         : N              
+MATRIZ[77]                   : AG9       : output : 2.5 V             :         : 3         : N              
+MATRIZ[53]                   : AG10      : output : 2.5 V             :         : 3         : N              
+POSICION[3]                  : AG11      : input  : 2.5 V             :         : 3         : N              
+MATRIZ[6]                    : AG12      : output : 2.5 V             :         : 3         : N              
+MATRIZ[187]                  : AG13      : output : 2.5 V             :         : 3         : N              
+MATRIZ[230]                  : AG14      : output : 2.5 V             :         : 3         : N              
+colorj2[11]                  : AG15      : output : 2.5 V             :         : 3         : N              
+SC2[1]                       : AG16      : input  : 2.5 V             :         : 4         : N              
+SC1[0]                       : AG17      : input  : 2.5 V             :         : 4         : N              
+colorj1[2]                   : AG18      : output : 2.5 V             :         : 4         : N              
+colorj1[11]                  : AG19      : output : 2.5 V             :         : 4         : N              
+MATRIZ[205]                  : AG20      : output : 2.5 V             :         : 4         : N              
+MATRIZ[102]                  : AG21      : output : 2.5 V             :         : 4         : N              
+MATRIZ[231]                  : AG22      : output : 2.5 V             :         : 4         : N              
+MATRIZ[185]                  : AG23      : output : 2.5 V             :         : 4         : N              
+MATRIZ[350]                  : AG24      : output : 2.5 V             :         : 4         : N              
+MATRIZ[19]                   : AG25      : output : 2.5 V             :         : 4         : N              
+MATRIZ[114]                  : AG26      : output : 2.5 V             :         : 4         : N              
+MATRIZ[346]                  : AG27      : output : 2.5 V             :         : 4         : N              
+MATRIZ[328]                  : AG28      : output : 2.5 V             :         : 4         : N              
+MATRIZ[237]                  : AG29      : output : 2.5 V             :         : 5         : N              
+MATRIZ[210]                  : AG30      : output : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+v2[1]                        : AH2       : output : 2.5 V             :         : 3         : N              
+MATRIZ[308]                  : AH3       : output : 2.5 V             :         : 3         : N              
+MATRIZ[89]                   : AH4       : output : 2.5 V             :         : 3         : N              
+MATRIZ[93]                   : AH5       : output : 2.5 V             :         : 3         : N              
+MATRIZ[36]                   : AH6       : output : 2.5 V             :         : 3         : N              
+MATRIZ[3]                    : AH7       : output : 2.5 V             :         : 3         : N              
+MATRIZ[25]                   : AH8       : output : 2.5 V             :         : 3         : N              
+MATRIZ[214]                  : AH9       : output : 2.5 V             :         : 3         : N              
+MATRIZ[293]                  : AH10      : output : 2.5 V             :         : 3         : N              
+MATRIZ[196]                  : AH11      : output : 2.5 V             :         : 3         : N              
+MATRIZ[38]                   : AH12      : output : 2.5 V             :         : 3         : N              
+MATRIZ[158]                  : AH13      : output : 2.5 V             :         : 3         : N              
+MATRIZ[44]                   : AH14      : output : 2.5 V             :         : 3         : N              
+colorj2[17]                  : AH15      : output : 2.5 V             :         : 3         : N              
+VF                           : AH16      : input  : 2.5 V             :         : 3         : N              
+colorj2[4]                   : AH17      : output : 2.5 V             :         : 4         : N              
+colorj1[20]                  : AH18      : output : 2.5 V             :         : 4         : N              
+MINV                         : AH19      : input  : 2.5 V             :         : 4         : N              
+colorj1[22]                  : AH20      : output : 2.5 V             :         : 4         : N              
+colorj2[10]                  : AH21      : output : 2.5 V             :         : 4         : N              
+MATRIZ[244]                  : AH22      : output : 2.5 V             :         : 4         : N              
+MATRIZ[254]                  : AH23      : output : 2.5 V             :         : 4         : N              
+MATRIZ[96]                   : AH24      : output : 2.5 V             :         : 4         : N              
+MATRIZ[347]                  : AH25      : output : 2.5 V             :         : 4         : N              
+MATRIZ[45]                   : AH26      : output : 2.5 V             :         : 4         : N              
+MATRIZ[109]                  : AH27      : output : 2.5 V             :         : 4         : N              
+MATRIZ[21]                   : AH28      : output : 2.5 V             :         : 4         : N              
+MATRIZ[362]                  : AH29      : output : 2.5 V             :         : 5         : N              
+MATRIZ[61]                   : AH30      : output : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+MATRIZ[10]                   : AJ3       : output : 2.5 V             :         : 3         : N              
+MATRIZ[298]                  : AJ4       : output : 2.5 V             :         : 3         : N              
+GND                          : AJ5       : gnd    :                   :         :           :                
+MATRIZ[34]                   : AJ6       : output : 2.5 V             :         : 3         : N              
+colorj2[16]                  : AJ7       : output : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+colorj1[0]                   : AJ9       : output : 2.5 V             :         : 3         : N              
+MATRIZ[97]                   : AJ10      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ11      : gnd    :                   :         :           :                
+colorj1[7]                   : AJ12      : output : 2.5 V             :         : 3         : N              
+colorj2[0]                   : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+TURNO                        : AJ15      : input  : 2.5 V             :         : 4         : N              
+GND+                         : AJ16      :        :                   :         : 4         :                
+GND                          : AJ17      : gnd    :                   :         :           :                
+colorj2[19]                  : AJ18      : output : 2.5 V             :         : 4         : N              
+colorj1[21]                  : AJ19      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+MATRIZ[203]                  : AJ21      : output : 2.5 V             :         : 4         : N              
+colorj1[23]                  : AJ22      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+MATRIZ[130]                  : AJ24      : output : 2.5 V             :         : 4         : N              
+colorj2[12]                  : AJ25      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+MATRIZ[170]                  : AJ27      : output : 2.5 V             :         : 4         : N              
+MATRIZ[28]                   : AJ28      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+MATRIZ[173]                  : AJ30      : output : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+MATRIZ[65]                   : AK3       : output : 2.5 V             :         : 3         : N              
+MATRIZ[27]                   : AK4       : output : 2.5 V             :         : 3         : N              
+MATRIZ[67]                   : AK5       : output : 2.5 V             :         : 3         : N              
+MATRIZ[41]                   : AK6       : output : 2.5 V             :         : 3         : N              
+v1[1]                        : AK7       : output : 2.5 V             :         : 3         : N              
+VICTORIA                     : AK8       : input  : 2.5 V             :         : 3         : N              
+colorj1[12]                  : AK9       : output : 2.5 V             :         : 3         : N              
+colorj2[20]                  : AK10      : output : 2.5 V             :         : 3         : N              
+colorj2[13]                  : AK11      : output : 2.5 V             :         : 3         : N              
+colorj1[5]                   : AK12      : output : 2.5 V             :         : 3         : N              
+colorj2[7]                   : AK13      : output : 2.5 V             :         : 3         : N              
+colorj2[2]                   : AK14      : output : 2.5 V             :         : 3         : N              
+colorj1[10]                  : AK15      : output : 2.5 V             :         : 4         : N              
+GND+                         : AK16      :        :                   :         : 4         :                
+SC1[2]                       : AK17      : input  : 2.5 V             :         : 4         : N              
+colorj1[8]                   : AK18      : output : 2.5 V             :         : 4         : N              
+colorj1[4]                   : AK19      : output : 2.5 V             :         : 4         : N              
+colorj2[18]                  : AK20      : output : 2.5 V             :         : 4         : N              
+colorj1[6]                   : AK21      : output : 2.5 V             :         : 4         : N              
+colorj1[17]                  : AK22      : output : 2.5 V             :         : 4         : N              
+MATRIZ[356]                  : AK23      : output : 2.5 V             :         : 4         : N              
+MATRIZ[216]                  : AK24      : output : 2.5 V             :         : 4         : N              
+MATRIZ[323]                  : AK25      : output : 2.5 V             :         : 4         : N              
+MATRIZ[361]                  : AK26      : output : 2.5 V             :         : 4         : N              
+MATRIZ[280]                  : AK27      : output : 2.5 V             :         : 4         : N              
+MATRIZ[220]                  : AK28      : output : 2.5 V             :         : 4         : N              
+MATRIZ[186]                  : AK29      : output : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+MATRIZ[127]                  : B6        : output : 2.5 V             :         : 8         : N              
+MATRIZ[281]                  : B7        : output : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+MATRIZ[156]                  : B9        : output : 2.5 V             :         : 8         : N              
+MATRIZ[107]                  : B10       : output : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+MATRIZ[73]                   : B12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[80]                   : B13       : output : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+GND+                         : B15       :        :                   :         : 7         :                
+MATRIZ[131]                  : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+MATRIZ[235]                  : B18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[120]                  : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+MATRIZ[95]                   : B21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[55]                   : B22       : output : 2.5 V             :         : 7         : N              
+GND                          : B23       : gnd    :                   :         :           :                
+MATRIZ[252]                  : B24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[226]                  : B25       : output : 2.5 V             :         : 7         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+MATRIZ[143]                  : B27       : output : 2.5 V             :         : 7         : N              
+MATRIZ[378]                  : B28       : output : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+MATRIZ[369]                  : B30       : output : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+MATRIZ[348]                  : C2        : output : 2.5 V             :         : 8         : N              
+MATRIZ[48]                   : C3        : output : 2.5 V             :         : 8         : N              
+MATRIZ[113]                  : C4        : output : 2.5 V             :         : 8         : N              
+MATRIZ[46]                   : C5        : output : 2.5 V             :         : 8         : N              
+MATRIZ[72]                   : C6        : output : 2.5 V             :         : 8         : N              
+MATRIZ[81]                   : C7        : output : 2.5 V             :         : 8         : N              
+MATRIZ[62]                   : C8        : output : 2.5 V             :         : 8         : N              
+MATRIZ[145]                  : C9        : output : 2.5 V             :         : 8         : N              
+MATRIZ[379]                  : C10       : output : 2.5 V             :         : 8         : N              
+MATRIZ[314]                  : C11       : output : 2.5 V             :         : 8         : N              
+MATRIZ[375]                  : C12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[50]                   : C13       : output : 2.5 V             :         : 8         : N              
+MATRIZ[142]                  : C14       : output : 2.5 V             :         : 8         : N              
+MATRIZ[39]                   : C15       : output : 2.5 V             :         : 8         : N              
+MATRIZ[305]                  : C16       : output : 2.5 V             :         : 8         : N              
+MATRIZ[218]                  : C17       : output : 2.5 V             :         : 7         : N              
+MATRIZ[134]                  : C18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[189]                  : C19       : output : 2.5 V             :         : 7         : N              
+MATRIZ[149]                  : C20       : output : 2.5 V             :         : 7         : N              
+MATRIZ[272]                  : C21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[225]                  : C22       : output : 2.5 V             :         : 7         : N              
+MATRIZ[174]                  : C23       : output : 2.5 V             :         : 7         : N              
+MATRIZ[368]                  : C24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[247]                  : C25       : output : 2.5 V             :         : 7         : N              
+MATRIZ[219]                  : C26       : output : 2.5 V             :         : 7         : N              
+MATRIZ[340]                  : C27       : output : 2.5 V             :         : 7         : N              
+MATRIZ[153]                  : C28       : output : 2.5 V             :         : 7         : N              
+MATRIZ[155]                  : C29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[279]                  : C30       : output : 2.5 V             :         : 6         : N              
+MATRIZ[290]                  : D1        : output : 2.5 V             :         : 8         : N              
+GND                          : D2        : gnd    :                   :         :           :                
+MATRIZ[35]                   : D3        : output : 2.5 V             :         : 8         : N              
+MATRIZ[297]                  : D4        : output : 2.5 V             :         : 8         : N              
+MATRIZ[85]                   : D5        : output : 2.5 V             :         : 8         : N              
+MATRIZ[57]                   : D6        : output : 2.5 V             :         : 8         : N              
+MATRIZ[309]                  : D7        : output : 2.5 V             :         : 8         : N              
+MATRIZ[208]                  : D8        : output : 2.5 V             :         : 8         : N              
+MATRIZ[316]                  : D9        : output : 2.5 V             :         : 8         : N              
+MATRIZ[37]                   : D10       : output : 2.5 V             :         : 8         : N              
+MATRIZ[17]                   : D11       : output : 2.5 V             :         : 8         : N              
+MATRIZ[253]                  : D12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[221]                  : D13       : output : 2.5 V             :         : 8         : N              
+MATRIZ[294]                  : D14       : output : 2.5 V             :         : 8         : N              
+MATRIZ[71]                   : D15       : output : 2.5 V             :         : 8         : N              
+MATRIZ[288]                  : D16       : output : 2.5 V             :         : 8         : N              
+MATRIZ[42]                   : D17       : output : 2.5 V             :         : 7         : N              
+MATRIZ[181]                  : D18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[223]                  : D19       : output : 2.5 V             :         : 7         : N              
+MATRIZ[135]                  : D20       : output : 2.5 V             :         : 7         : N              
+MATRIZ[262]                  : D21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[157]                  : D22       : output : 2.5 V             :         : 7         : N              
+MATRIZ[373]                  : D23       : output : 2.5 V             :         : 7         : N              
+MATRIZ[283]                  : D24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[282]                  : D25       : output : 2.5 V             :         : 7         : N              
+MATRIZ[275]                  : D26       : output : 2.5 V             :         : 7         : N              
+colorj2[23]                  : D27       : output : 2.5 V             :         : 7         : N              
+MATRIZ[86]                   : D28       : output : 2.5 V             :         : 7         : N              
+MATRIZ[222]                  : D29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[269]                  : D30       : output : 2.5 V             :         : 6         : N              
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+MATRIZ[177]                  : E3        : output : 2.5 V             :         : 8         : N              
+MATRIZ[84]                   : E4        : output : 2.5 V             :         : 8         : N              
+GND                          : E5        : gnd    :                   :         :           :                
+MATRIZ[206]                  : E6        : output : 2.5 V             :         : 8         : N              
+MATRIZ[60]                   : E7        : output : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+MATRIZ[125]                  : E9        : output : 2.5 V             :         : 8         : N              
+MATRIZ[78]                   : E10       : output : 2.5 V             :         : 8         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+MATRIZ[300]                  : E12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[336]                  : E13       : output : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+MATRIZ[83]                   : E15       : output : 2.5 V             :         : 8         : N              
+MATRIZ[54]                   : E16       : output : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+MATRIZ[66]                   : E18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[103]                  : E19       : output : 2.5 V             :         : 7         : N              
+GND                          : E20       : gnd    :                   :         :           :                
+MATRIZ[353]                  : E21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[137]                  : E22       : output : 2.5 V             :         : 7         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+MATRIZ[239]                  : E24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[13]                   : E25       : output : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+MATRIZ[383]                  : E27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[342]                  : E28       : output : 2.5 V             :         : 6         : N              
+GND                          : E29       : gnd    :                   :         :           :                
+MATRIZ[360]                  : E30       : output : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+MATRIZ[195]                  : F4        : output : 2.5 V             :         : 8         : N              
+MATRIZ[52]                   : F5        : output : 2.5 V             :         : 8         : N              
+MATRIZ[311]                  : F6        : output : 2.5 V             :         : 8         : N              
+MATRIZ[338]                  : F7        : output : 2.5 V             :         : 8         : N              
+MATRIZ[304]                  : F8        : output : 2.5 V             :         : 8         : N              
+MATRIZ[9]                    : F9        : output : 2.5 V             :         : 8         : N              
+MATRIZ[201]                  : F10       : output : 2.5 V             :         : 8         : N              
+MATRIZ[58]                   : F11       : output : 2.5 V             :         : 8         : N              
+MATRIZ[357]                  : F12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[204]                  : F13       : output : 2.5 V             :         : 8         : N              
+MATRIZ[74]                   : F14       : output : 2.5 V             :         : 8         : N              
+MATRIZ[31]                   : F15       : output : 2.5 V             :         : 8         : N              
+MATRIZ[215]                  : F16       : output : 2.5 V             :         : 8         : N              
+MATRIZ[33]                   : F17       : output : 2.5 V             :         : 7         : N              
+MATRIZ[278]                  : F18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[287]                  : F19       : output : 2.5 V             :         : 7         : N              
+MATRIZ[136]                  : F20       : output : 2.5 V             :         : 7         : N              
+MATRIZ[307]                  : F21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[159]                  : F22       : output : 2.5 V             :         : 7         : N              
+MATRIZ[7]                    : F23       : output : 2.5 V             :         : 7         : N              
+MATRIZ[172]                  : F24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[264]                  : F25       : output : 2.5 V             :         : 7         : N              
+MATRIZ[40]                   : F26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[182]                  : F27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[141]                  : F28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[233]                  : F29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[171]                  : F30       : output : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+MATRIZ[291]                  : G6        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+MATRIZ[90]                   : G8        : output : 2.5 V             :         : 8         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+MATRIZ[76]                   : G10       : output : 2.5 V             :         : 8         : N              
+MATRIZ[301]                  : G11       : output : 2.5 V             :         : 8         : N              
+MATRIZ[265]                  : G12       : output : 2.5 V             :         : 8         : N              
+MATRIZ[63]                   : G13       : output : 2.5 V             :         : 8         : N              
+MATRIZ[98]                   : G14       : output : 2.5 V             :         : 8         : N              
+MATRIZ[292]                  : G15       : output : 2.5 V             :         : 8         : N              
+MATRIZ[245]                  : G16       : output : 2.5 V             :         : 7         : N              
+MATRIZ[101]                  : G17       : output : 2.5 V             :         : 7         : N              
+MATRIZ[224]                  : G18       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+MATRIZ[380]                  : G20       : output : 2.5 V             :         : 7         : N              
+MATRIZ[147]                  : G21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[243]                  : G22       : output : 2.5 V             :         : 7         : N              
+MATRIZ[124]                  : G23       : output : 2.5 V             :         : 7         : N              
+MATRIZ[354]                  : G24       : output : 2.5 V             :         : 7         : N              
+colorj1[15]                  : G25       : output : 2.5 V             :         : 7         : N              
+MATRIZ[183]                  : G26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[318]                  : G27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[152]                  : G28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[260]                  : G29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[1]                    : G30       : output : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+MATRIZ[29]                   : H9        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+MATRIZ[326]                  : H24       : output : 2.5 V             :         : 7         : N              
+MATRIZ[211]                  : H25       : output : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+MATRIZ[139]                  : H27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[339]                  : H28       : output : 2.5 V             :         : 6         : N              
+GND                          : H29       : gnd    :                   :         :           :                
+MATRIZ[322]                  : H30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+MATRIZ[199]                  : J9        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+MATRIZ[122]                  : J25       : output : 2.5 V             :         : 6         : N              
+MATRIZ[0]                    : J26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[286]                  : J27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[234]                  : J28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[344]                  : J29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[358]                  : J30       : output : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+MATRIZ[168]                  : K17       : output : 2.5 V             :         : 7         : N              
+MATRIZ[227]                  : K18       : output : 2.5 V             :         : 7         : N              
+MATRIZ[117]                  : K19       : output : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+MATRIZ[14]                   : K21       : output : 2.5 V             :         : 7         : N              
+MATRIZ[374]                  : K22       : output : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+MATRIZ[32]                   : K24       : output : 2.5 V             :         : 6         : N              
+MATRIZ[259]                  : K25       : output : 2.5 V             :         : 6         : N              
+MATRIZ[321]                  : K26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[325]                  : K27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[268]                  : K28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[161]                  : K29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[167]                  : K30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+MATRIZ[180]                  : L25       : output : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+MATRIZ[382]                  : L27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[238]                  : L28       : output : 2.5 V             :         : 6         : N              
+GND                          : L29       : gnd    :                   :         :           :                
+MATRIZ[165]                  : L30       : output : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+MATRIZ[12]                   : M21       : output : 2.5 V             :         : 6         : N              
+MATRIZ[277]                  : M22       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+MATRIZ[121]                  : M25       : output : 2.5 V             :         : 6         : N              
+MATRIZ[133]                  : M26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[15]                   : M27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[334]                  : M28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[364]                  : M29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[236]                  : M30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+MATRIZ[319]                  : N21       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+MATRIZ[349]                  : N24       : output : 2.5 V             :         : 6         : N              
+MATRIZ[164]                  : N25       : output : 2.5 V             :         : 6         : N              
+MATRIZ[246]                  : N26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[377]                  : N27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[343]                  : N28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[128]                  : N29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[337]                  : N30       : output : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+MATRIZ[327]                  : P21       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+MATRIZ[150]                  : P25       : output : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+MATRIZ[126]                  : P27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[179]                  : P28       : output : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+MATRIZ[313]                  : P30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+MATRIZ[324]                  : R24       : output : 2.5 V             :         : 6         : N              
+MATRIZ[213]                  : R25       : output : 2.5 V             :         : 6         : N              
+MATRIZ[333]                  : R26       : output : 2.5 V             :         : 6         : N              
+MATRIZ[43]                   : R27       : output : 2.5 V             :         : 6         : N              
+MATRIZ[75]                   : R28       : output : 2.5 V             :         : 6         : N              
+MATRIZ[191]                  : R29       : output : 2.5 V             :         : 6         : N              
+MATRIZ[367]                  : R30       : output : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+MATRIZ[132]                  : T21       : output : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+MATRIZ[163]                  : T23       : output : 2.5 V             :         : 5         : N              
+MATRIZ[257]                  : T24       : output : 2.5 V             :         : 5         : N              
+MATRIZ[188]                  : T25       : output : 2.5 V             :         : 5         : N              
+MATRIZ[285]                  : T26       : output : 2.5 V             :         : 5         : N              
+MATRIZ[232]                  : T27       : output : 2.5 V             :         : 5         : N              
+MATRIZ[11]                   : T28       : output : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+GND+                         : T30       :        :                   :         : 6         :                
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+MATRIZ[229]                  : U21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+MATRIZ[249]                  : U25       : output : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+MATRIZ[129]                  : U27       : output : 2.5 V             :         : 5         : N              
+MATRIZ[284]                  : U28       : output : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+MATRIZ[5]                    : U30       : output : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+INICIO                       : V15       : input  : 2.5 V             :         : 3A        : N              
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+MATRIZ[169]                  : V21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+MATRIZ[248]                  : V25       : output : 2.5 V             :         : 5         : N              
+v2[0]                        : V26       : output : 2.5 V             :         : 5         : N              
+MATRIZ[352]                  : V27       : output : 2.5 V             :         : 5         : N              
+MATRIZ[273]                  : V28       : output : 2.5 V             :         : 5         : N              
+POSICION[0]                  : V29       : input  : 2.5 V             :         : 5         : N              
+POSICION[2]                  : V30       : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+CLK                          : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+MATRIZ[2]                    : W25       : output : 2.5 V             :         : 5         : N              
+MATRIZ[240]                  : W26       : output : 2.5 V             :         : 5         : N              
+MATRIZ[258]                  : W27       : output : 2.5 V             :         : 5         : N              
+MATRIZ[112]                  : W28       : output : 2.5 V             :         : 5         : N              
+MATRIZ[267]                  : W29       : output : 2.5 V             :         : 5         : N              
+MATRIZ[176]                  : W30       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+colorj1[13]                  : Y17       : output : 2.5 V             :         : 4         : N              
+colorj2[15]                  : Y18       : output : 2.5 V             :         : 4         : N              
+MATRIZ[193]                  : Y19       : output : 2.5 V             :         : 4         : N              
+MATRIZ[115]                  : Y20       : output : 2.5 V             :         : 4         : N              
+MATRIZ[16]                   : Y21       : output : 2.5 V             :         : 4         : N              
+MATRIZ[351]                  : Y22       : output : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+MATRIZ[263]                  : Y25       : output : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+MATRIZ[228]                  : Y27       : output : 2.5 V             :         : 5         : N              
+MATRIZ[255]                  : Y28       : output : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+MATRIZ[381]                  : Y30       : output : 2.5 V             :         : 5         : N              
