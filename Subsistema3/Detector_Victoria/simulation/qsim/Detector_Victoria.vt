@@ -1,0 +1,328 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/06/2025 15:59:54"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Detector_Victoria
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Detector_Victoria_vlg_sample_tst(
+	estado_tablero,
+	sampler_tx
+);
+input [17:0] estado_tablero;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(estado_tablero)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Detector_Victoria_vlg_check_tst (
+	empate,
+	victoria_j1,
+	victoria_j2,
+	sampler_rx
+);
+input  empate;
+input  victoria_j1;
+input  victoria_j2;
+input sampler_rx;
+
+reg  empate_expected;
+reg  victoria_j1_expected;
+reg  victoria_j2_expected;
+
+reg  empate_prev;
+reg  victoria_j1_prev;
+reg  victoria_j2_prev;
+
+reg  empate_expected_prev;
+reg  victoria_j1_expected_prev;
+reg  victoria_j2_expected_prev;
+
+reg  last_empate_exp;
+reg  last_victoria_j1_exp;
+reg  last_victoria_j2_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	empate_prev = empate;
+	victoria_j1_prev = victoria_j1;
+	victoria_j2_prev = victoria_j2;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	empate_expected_prev = empate_expected;
+	victoria_j1_expected_prev = victoria_j1_expected;
+	victoria_j2_expected_prev = victoria_j2_expected;
+end
+
+
+
+// expected empate
+initial
+begin
+	empate_expected = 1'bX;
+end 
+
+// expected victoria_j1
+initial
+begin
+	victoria_j1_expected = 1'bX;
+end 
+
+// expected victoria_j2
+initial
+begin
+	victoria_j2_expected = 1'bX;
+end 
+// generate trigger
+always @(empate_expected or empate or victoria_j1_expected or victoria_j1 or victoria_j2_expected or victoria_j2)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected empate = %b | expected victoria_j1 = %b | expected victoria_j2 = %b | ",empate_expected_prev,victoria_j1_expected_prev,victoria_j2_expected_prev);
+	$display("| real empate = %b | real victoria_j1 = %b | real victoria_j2 = %b | ",empate_prev,victoria_j1_prev,victoria_j2_prev);
+`endif
+	if (
+		( empate_expected_prev !== 1'bx ) && ( empate_prev !== empate_expected_prev )
+		&& ((empate_expected_prev !== last_empate_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port empate :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", empate_expected_prev);
+		$display ("     Real value = %b", empate_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_empate_exp = empate_expected_prev;
+	end
+	if (
+		( victoria_j1_expected_prev !== 1'bx ) && ( victoria_j1_prev !== victoria_j1_expected_prev )
+		&& ((victoria_j1_expected_prev !== last_victoria_j1_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port victoria_j1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", victoria_j1_expected_prev);
+		$display ("     Real value = %b", victoria_j1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_victoria_j1_exp = victoria_j1_expected_prev;
+	end
+	if (
+		( victoria_j2_expected_prev !== 1'bx ) && ( victoria_j2_prev !== victoria_j2_expected_prev )
+		&& ((victoria_j2_expected_prev !== last_victoria_j2_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port victoria_j2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", victoria_j2_expected_prev);
+		$display ("     Real value = %b", victoria_j2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_victoria_j2_exp = victoria_j2_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Detector_Victoria_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [17:0] estado_tablero;
+// wires                                               
+wire empate;
+wire victoria_j1;
+wire victoria_j2;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Detector_Victoria i1 (
+// port map - connection between master ports and signals/registers   
+	.empate(empate),
+	.estado_tablero(estado_tablero),
+	.victoria_j1(victoria_j1),
+	.victoria_j2(victoria_j2)
+);
+// estado_tablero[ 17 ]
+initial
+begin
+	estado_tablero[17] = 1'b0;
+end 
+// estado_tablero[ 16 ]
+initial
+begin
+	estado_tablero[16] = 1'b1;
+end 
+// estado_tablero[ 15 ]
+initial
+begin
+	estado_tablero[15] = 1'b1;
+end 
+// estado_tablero[ 14 ]
+initial
+begin
+	estado_tablero[14] = 1'b0;
+end 
+// estado_tablero[ 13 ]
+initial
+begin
+	estado_tablero[13] = 1'b0;
+end 
+// estado_tablero[ 12 ]
+initial
+begin
+	estado_tablero[12] = 1'b1;
+end 
+// estado_tablero[ 11 ]
+initial
+begin
+	estado_tablero[11] = 1'b0;
+end 
+// estado_tablero[ 10 ]
+initial
+begin
+	estado_tablero[10] = 1'b1;
+end 
+// estado_tablero[ 9 ]
+initial
+begin
+	estado_tablero[9] = 1'b0;
+end 
+// estado_tablero[ 8 ]
+initial
+begin
+	estado_tablero[8] = 1'b1;
+end 
+// estado_tablero[ 7 ]
+initial
+begin
+	estado_tablero[7] = 1'b1;
+end 
+// estado_tablero[ 6 ]
+initial
+begin
+	estado_tablero[6] = 1'b0;
+end 
+// estado_tablero[ 5 ]
+initial
+begin
+	estado_tablero[5] = 1'b1;
+end 
+// estado_tablero[ 4 ]
+initial
+begin
+	estado_tablero[4] = 1'b0;
+end 
+// estado_tablero[ 3 ]
+initial
+begin
+	estado_tablero[3] = 1'b0;
+end 
+// estado_tablero[ 2 ]
+initial
+begin
+	estado_tablero[2] = 1'b1;
+end 
+// estado_tablero[ 1 ]
+initial
+begin
+	estado_tablero[1] = 1'b1;
+end 
+// estado_tablero[ 0 ]
+initial
+begin
+	estado_tablero[0] = 1'b0;
+end 
+
+Detector_Victoria_vlg_sample_tst tb_sample (
+	.estado_tablero(estado_tablero),
+	.sampler_tx(sampler)
+);
+
+Detector_Victoria_vlg_check_tst tb_out(
+	.empate(empate),
+	.victoria_j1(victoria_j1),
+	.victoria_j2(victoria_j2),
+	.sampler_rx(sampler)
+);
+endmodule
+

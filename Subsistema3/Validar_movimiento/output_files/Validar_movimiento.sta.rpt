@@ -1,0 +1,816 @@
+TimeQuest Timing Analyzer report for Validar_movimiento
+Thu Nov 06 16:06:02 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Slow Corner Signal Integrity Metrics
+ 38. Fast Corner Signal Integrity Metrics
+ 39. Clock Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths
+ 43. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Validar_movimiento                                                ;
+; Device Family      ; Cyclone III                                                       ;
+; Device Name        ; EP3C120F780C7                                                     ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------------------------+
+; Propagation Delay                                                            ;
++--------------------+---------------------+--------+--------+--------+--------+
+; Input Port         ; Output Port         ; RR     ; RF     ; FR     ; FF     ;
++--------------------+---------------------+--------+--------+--------+--------+
+; coordenada[0]      ; movimiento_invalido ; 9.608  ; 9.723  ; 9.962  ; 10.068 ;
+; coordenada[0]      ; movimiento_valido   ; 11.056 ; 11.045 ; 11.401 ; 11.399 ;
+; coordenada[1]      ; movimiento_invalido ; 9.450  ; 9.565  ; 9.816  ; 9.922  ;
+; coordenada[1]      ; movimiento_valido   ; 10.898 ; 10.887 ; 11.255 ; 11.253 ;
+; coordenada[2]      ; movimiento_invalido ; 8.472  ; 9.084  ; 9.439  ; 8.925  ;
+; coordenada[2]      ; movimiento_valido   ; 10.417 ; 9.909  ; 10.258 ; 10.876 ;
+; coordenada[3]      ; movimiento_invalido ; 8.132  ; 8.505  ; 8.793  ; 8.599  ;
+; coordenada[3]      ; movimiento_valido   ; 9.838  ; 9.569  ; 9.932  ; 10.230 ;
+; estado_tablero[0]  ; movimiento_invalido ; 8.498  ;        ;        ; 8.934  ;
+; estado_tablero[0]  ; movimiento_valido   ;        ; 9.935  ; 10.267 ;        ;
+; estado_tablero[1]  ; movimiento_invalido ; 8.117  ;        ;        ; 8.578  ;
+; estado_tablero[1]  ; movimiento_valido   ;        ; 9.554  ; 9.911  ;        ;
+; estado_tablero[2]  ; movimiento_invalido ; 8.668  ;        ;        ; 9.038  ;
+; estado_tablero[2]  ; movimiento_valido   ;        ; 10.105 ; 10.371 ;        ;
+; estado_tablero[3]  ; movimiento_invalido ; 8.819  ;        ;        ; 9.186  ;
+; estado_tablero[3]  ; movimiento_valido   ;        ; 10.256 ; 10.519 ;        ;
+; estado_tablero[4]  ; movimiento_invalido ; 8.000  ;        ;        ; 8.434  ;
+; estado_tablero[4]  ; movimiento_valido   ;        ; 9.437  ; 9.767  ;        ;
+; estado_tablero[5]  ; movimiento_invalido ; 8.235  ;        ;        ; 8.675  ;
+; estado_tablero[5]  ; movimiento_valido   ;        ; 9.672  ; 10.008 ;        ;
+; estado_tablero[6]  ; movimiento_invalido ; 8.773  ;        ;        ; 9.145  ;
+; estado_tablero[6]  ; movimiento_valido   ;        ; 10.210 ; 10.478 ;        ;
+; estado_tablero[7]  ; movimiento_invalido ; 8.734  ;        ;        ; 9.127  ;
+; estado_tablero[7]  ; movimiento_valido   ;        ; 10.171 ; 10.460 ;        ;
+; estado_tablero[8]  ; movimiento_invalido ; 9.436  ;        ;        ; 9.805  ;
+; estado_tablero[8]  ; movimiento_valido   ;        ; 10.873 ; 11.138 ;        ;
+; estado_tablero[9]  ; movimiento_invalido ; 9.097  ;        ;        ; 9.434  ;
+; estado_tablero[9]  ; movimiento_valido   ;        ; 10.534 ; 10.767 ;        ;
+; estado_tablero[10] ; movimiento_invalido ; 8.701  ;        ;        ; 9.078  ;
+; estado_tablero[10] ; movimiento_valido   ;        ; 10.138 ; 10.411 ;        ;
+; estado_tablero[11] ; movimiento_invalido ; 8.660  ;        ;        ; 9.044  ;
+; estado_tablero[11] ; movimiento_valido   ;        ; 10.097 ; 10.377 ;        ;
+; estado_tablero[12] ; movimiento_invalido ; 9.158  ;        ;        ; 9.656  ;
+; estado_tablero[12] ; movimiento_valido   ;        ; 10.595 ; 10.989 ;        ;
+; estado_tablero[13] ; movimiento_invalido ; 9.189  ;        ;        ; 9.668  ;
+; estado_tablero[13] ; movimiento_valido   ;        ; 10.626 ; 11.001 ;        ;
+; estado_tablero[14] ; movimiento_invalido ; 8.969  ;        ;        ; 9.465  ;
+; estado_tablero[14] ; movimiento_valido   ;        ; 10.406 ; 10.798 ;        ;
+; estado_tablero[15] ; movimiento_invalido ; 8.658  ;        ;        ; 9.025  ;
+; estado_tablero[15] ; movimiento_valido   ;        ; 10.095 ; 10.358 ;        ;
+; estado_tablero[16] ; movimiento_invalido ; 9.539  ; 9.654  ; 9.863  ; 9.969  ;
+; estado_tablero[16] ; movimiento_valido   ; 10.987 ; 10.976 ; 11.302 ; 11.300 ;
+; estado_tablero[17] ; movimiento_invalido ; 9.239  ; 9.354  ; 9.588  ; 9.694  ;
+; estado_tablero[17] ; movimiento_valido   ; 10.687 ; 10.676 ; 11.027 ; 11.025 ;
++--------------------+---------------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                    ;
++--------------------+---------------------+--------+--------+--------+--------+
+; Input Port         ; Output Port         ; RR     ; RF     ; FR     ; FF     ;
++--------------------+---------------------+--------+--------+--------+--------+
+; coordenada[0]      ; movimiento_invalido ; 8.111  ; 8.239  ; 8.436  ; 8.516  ;
+; coordenada[0]      ; movimiento_valido   ; 9.572  ; 9.548  ; 9.849  ; 9.873  ;
+; coordenada[1]      ; movimiento_invalido ; 7.851  ; 7.755  ; 8.011  ; 8.286  ;
+; coordenada[1]      ; movimiento_valido   ; 9.088  ; 9.288  ; 9.619  ; 9.448  ;
+; coordenada[2]      ; movimiento_invalido ; 7.842  ; 8.550  ; 8.851  ; 8.288  ;
+; coordenada[2]      ; movimiento_valido   ; 9.883  ; 9.279  ; 9.621  ; 10.288 ;
+; coordenada[3]      ; movimiento_invalido ; 7.725  ; 8.236  ; 8.468  ; 8.145  ;
+; coordenada[3]      ; movimiento_valido   ; 9.569  ; 9.162  ; 9.478  ; 9.905  ;
+; estado_tablero[0]  ; movimiento_invalido ; 8.259  ;        ;        ; 8.690  ;
+; estado_tablero[0]  ; movimiento_valido   ;        ; 9.696  ; 10.023 ;        ;
+; estado_tablero[1]  ; movimiento_invalido ; 7.892  ;        ;        ; 8.348  ;
+; estado_tablero[1]  ; movimiento_valido   ;        ; 9.329  ; 9.681  ;        ;
+; estado_tablero[2]  ; movimiento_invalido ; 8.431  ;        ;        ; 8.793  ;
+; estado_tablero[2]  ; movimiento_valido   ;        ; 9.868  ; 10.126 ;        ;
+; estado_tablero[3]  ; movimiento_invalido ; 8.575  ;        ;        ; 8.935  ;
+; estado_tablero[3]  ; movimiento_valido   ;        ; 10.012 ; 10.268 ;        ;
+; estado_tablero[4]  ; movimiento_invalido ; 7.787  ;        ;        ; 8.211  ;
+; estado_tablero[4]  ; movimiento_valido   ;        ; 9.224  ; 9.544  ;        ;
+; estado_tablero[5]  ; movimiento_invalido ; 8.019  ;        ;        ; 8.442  ;
+; estado_tablero[5]  ; movimiento_valido   ;        ; 9.456  ; 9.775  ;        ;
+; estado_tablero[6]  ; movimiento_invalido ; 8.429  ;        ;        ; 8.832  ;
+; estado_tablero[6]  ; movimiento_valido   ;        ; 9.866  ; 10.165 ;        ;
+; estado_tablero[7]  ; movimiento_invalido ; 8.386  ;        ;        ; 8.814  ;
+; estado_tablero[7]  ; movimiento_valido   ;        ; 9.823  ; 10.147 ;        ;
+; estado_tablero[8]  ; movimiento_invalido ; 9.012  ;        ;        ; 9.420  ;
+; estado_tablero[8]  ; movimiento_valido   ;        ; 10.449 ; 10.753 ;        ;
+; estado_tablero[9]  ; movimiento_invalido ; 8.742  ;        ;        ; 9.114  ;
+; estado_tablero[9]  ; movimiento_valido   ;        ; 10.179 ; 10.447 ;        ;
+; estado_tablero[10] ; movimiento_invalido ; 8.364  ;        ;        ; 8.768  ;
+; estado_tablero[10] ; movimiento_valido   ;        ; 9.801  ; 10.101 ;        ;
+; estado_tablero[11] ; movimiento_invalido ; 8.332  ;        ;        ; 8.737  ;
+; estado_tablero[11] ; movimiento_valido   ;        ; 9.769  ; 10.070 ;        ;
+; estado_tablero[12] ; movimiento_invalido ; 8.779  ;        ;        ; 9.241  ;
+; estado_tablero[12] ; movimiento_valido   ;        ; 10.216 ; 10.574 ;        ;
+; estado_tablero[13] ; movimiento_invalido ; 8.803  ;        ;        ; 9.253  ;
+; estado_tablero[13] ; movimiento_valido   ;        ; 10.240 ; 10.586 ;        ;
+; estado_tablero[14] ; movimiento_invalido ; 8.608  ;        ;        ; 9.092  ;
+; estado_tablero[14] ; movimiento_valido   ;        ; 10.045 ; 10.425 ;        ;
+; estado_tablero[15] ; movimiento_invalido ; 8.365  ;        ;        ; 8.758  ;
+; estado_tablero[15] ; movimiento_valido   ;        ; 9.802  ; 10.091 ;        ;
+; estado_tablero[16] ; movimiento_invalido ; 8.802  ; 9.273  ; 9.472  ; 9.220  ;
+; estado_tablero[16] ; movimiento_valido   ; 10.606 ; 10.239 ; 10.553 ; 10.909 ;
+; estado_tablero[17] ; movimiento_invalido ; 8.514  ; 8.985  ; 9.208  ; 8.956  ;
+; estado_tablero[17] ; movimiento_valido   ; 10.318 ; 9.951  ; 10.289 ; 10.645 ;
++--------------------+---------------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------------------------+
+; Propagation Delay                                                            ;
++--------------------+---------------------+--------+--------+--------+--------+
+; Input Port         ; Output Port         ; RR     ; RF     ; FR     ; FF     ;
++--------------------+---------------------+--------+--------+--------+--------+
+; coordenada[0]      ; movimiento_invalido ; 8.867  ; 9.013  ; 9.142  ; 9.283  ;
+; coordenada[0]      ; movimiento_valido   ; 10.346 ; 10.304 ; 10.616 ; 10.579 ;
+; coordenada[1]      ; movimiento_invalido ; 8.728  ; 8.874  ; 9.009  ; 9.150  ;
+; coordenada[1]      ; movimiento_valido   ; 10.207 ; 10.165 ; 10.483 ; 10.446 ;
+; coordenada[2]      ; movimiento_invalido ; 7.809  ; 8.451  ; 8.634  ; 8.252  ;
+; coordenada[2]      ; movimiento_valido   ; 9.784  ; 9.246  ; 9.585  ; 10.071 ;
+; coordenada[3]      ; movimiento_invalido ; 7.512  ; 7.925  ; 8.052  ; 7.958  ;
+; coordenada[3]      ; movimiento_valido   ; 9.258  ; 8.949  ; 9.291  ; 9.489  ;
+; estado_tablero[0]  ; movimiento_invalido ; 7.847  ;        ;        ; 8.269  ;
+; estado_tablero[0]  ; movimiento_valido   ;        ; 9.284  ; 9.602  ;        ;
+; estado_tablero[1]  ; movimiento_invalido ; 7.484  ;        ;        ; 7.949  ;
+; estado_tablero[1]  ; movimiento_valido   ;        ; 8.921  ; 9.282  ;        ;
+; estado_tablero[2]  ; movimiento_invalido ; 8.020  ;        ;        ; 8.360  ;
+; estado_tablero[2]  ; movimiento_valido   ;        ; 9.457  ; 9.693  ;        ;
+; estado_tablero[3]  ; movimiento_invalido ; 8.161  ;        ;        ; 8.480  ;
+; estado_tablero[3]  ; movimiento_valido   ;        ; 9.598  ; 9.813  ;        ;
+; estado_tablero[4]  ; movimiento_invalido ; 7.395  ;        ;        ; 7.807  ;
+; estado_tablero[4]  ; movimiento_valido   ;        ; 8.832  ; 9.140  ;        ;
+; estado_tablero[5]  ; movimiento_invalido ; 7.613  ;        ;        ; 8.036  ;
+; estado_tablero[5]  ; movimiento_valido   ;        ; 9.050  ; 9.369  ;        ;
+; estado_tablero[6]  ; movimiento_invalido ; 8.073  ;        ;        ; 8.467  ;
+; estado_tablero[6]  ; movimiento_valido   ;        ; 9.510  ; 9.800  ;        ;
+; estado_tablero[7]  ; movimiento_invalido ; 8.036  ;        ;        ; 8.453  ;
+; estado_tablero[7]  ; movimiento_valido   ;        ; 9.473  ; 9.786  ;        ;
+; estado_tablero[8]  ; movimiento_invalido ; 8.692  ;        ;        ; 9.080  ;
+; estado_tablero[8]  ; movimiento_valido   ;        ; 10.129 ; 10.413 ;        ;
+; estado_tablero[9]  ; movimiento_invalido ; 8.386  ;        ;        ; 8.733  ;
+; estado_tablero[9]  ; movimiento_valido   ;        ; 9.823  ; 10.066 ;        ;
+; estado_tablero[10] ; movimiento_invalido ; 8.024  ;        ;        ; 8.395  ;
+; estado_tablero[10] ; movimiento_valido   ;        ; 9.461  ; 9.728  ;        ;
+; estado_tablero[11] ; movimiento_invalido ; 7.986  ;        ;        ; 8.386  ;
+; estado_tablero[11] ; movimiento_valido   ;        ; 9.423  ; 9.719  ;        ;
+; estado_tablero[12] ; movimiento_invalido ; 8.459  ;        ;        ; 8.912  ;
+; estado_tablero[12] ; movimiento_valido   ;        ; 9.896  ; 10.245 ;        ;
+; estado_tablero[13] ; movimiento_invalido ; 8.481  ;        ;        ; 8.910  ;
+; estado_tablero[13] ; movimiento_valido   ;        ; 9.918  ; 10.243 ;        ;
+; estado_tablero[14] ; movimiento_invalido ; 8.277  ;        ;        ; 8.734  ;
+; estado_tablero[14] ; movimiento_valido   ;        ; 9.714  ; 10.067 ;        ;
+; estado_tablero[15] ; movimiento_invalido ; 8.008  ;        ;        ; 8.329  ;
+; estado_tablero[15] ; movimiento_valido   ;        ; 9.445  ; 9.662  ;        ;
+; estado_tablero[16] ; movimiento_invalido ; 8.805  ; 8.951  ; 9.037  ; 9.178  ;
+; estado_tablero[16] ; movimiento_valido   ; 10.284 ; 10.242 ; 10.511 ; 10.474 ;
+; estado_tablero[17] ; movimiento_invalido ; 8.532  ; 8.678  ; 8.791  ; 8.932  ;
+; estado_tablero[17] ; movimiento_valido   ; 10.011 ; 9.969  ; 10.265 ; 10.228 ;
++--------------------+---------------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                  ;
++--------------------+---------------------+-------+-------+--------+--------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR     ; FF     ;
++--------------------+---------------------+-------+-------+--------+--------+
+; coordenada[0]      ; movimiento_invalido ; 7.509 ; 7.697 ; 7.751  ; 7.894  ;
+; coordenada[0]      ; movimiento_valido   ; 9.030 ; 8.946 ; 9.227  ; 9.188  ;
+; coordenada[1]      ; movimiento_invalido ; 7.265 ; 7.244 ; 7.377  ; 7.697  ;
+; coordenada[1]      ; movimiento_valido   ; 8.577 ; 8.702 ; 9.030  ; 8.814  ;
+; coordenada[2]      ; movimiento_invalido ; 7.247 ; 7.958 ; 8.108  ; 7.684  ;
+; coordenada[2]      ; movimiento_valido   ; 9.291 ; 8.684 ; 9.017  ; 9.545  ;
+; coordenada[3]      ; movimiento_invalido ; 7.156 ; 7.686 ; 7.768  ; 7.544  ;
+; coordenada[3]      ; movimiento_valido   ; 9.019 ; 8.593 ; 8.877  ; 9.205  ;
+; estado_tablero[0]  ; movimiento_invalido ; 7.640 ;       ;        ; 8.052  ;
+; estado_tablero[0]  ; movimiento_valido   ;       ; 9.077 ; 9.385  ;        ;
+; estado_tablero[1]  ; movimiento_invalido ; 7.292 ;       ;        ; 7.745  ;
+; estado_tablero[1]  ; movimiento_valido   ;       ; 8.729 ; 9.078  ;        ;
+; estado_tablero[2]  ; movimiento_invalido ; 7.811 ;       ;        ; 8.143  ;
+; estado_tablero[2]  ; movimiento_valido   ;       ; 9.248 ; 9.476  ;        ;
+; estado_tablero[3]  ; movimiento_invalido ; 7.946 ;       ;        ; 8.257  ;
+; estado_tablero[3]  ; movimiento_valido   ;       ; 9.383 ; 9.590  ;        ;
+; estado_tablero[4]  ; movimiento_invalido ; 7.210 ;       ;        ; 7.610  ;
+; estado_tablero[4]  ; movimiento_valido   ;       ; 8.647 ; 8.943  ;        ;
+; estado_tablero[5]  ; movimiento_invalido ; 7.423 ;       ;        ; 7.829  ;
+; estado_tablero[5]  ; movimiento_valido   ;       ; 8.860 ; 9.162  ;        ;
+; estado_tablero[6]  ; movimiento_invalido ; 7.773 ;       ;        ; 8.181  ;
+; estado_tablero[6]  ; movimiento_valido   ;       ; 9.210 ; 9.514  ;        ;
+; estado_tablero[7]  ; movimiento_invalido ; 7.731 ;       ;        ; 8.166  ;
+; estado_tablero[7]  ; movimiento_valido   ;       ; 9.168 ; 9.499  ;        ;
+; estado_tablero[8]  ; movimiento_invalido ; 8.314 ;       ;        ; 8.731  ;
+; estado_tablero[8]  ; movimiento_valido   ;       ; 9.751 ; 10.064 ;        ;
+; estado_tablero[9]  ; movimiento_invalido ; 8.074 ;       ;        ; 8.443  ;
+; estado_tablero[9]  ; movimiento_valido   ;       ; 9.511 ; 9.776  ;        ;
+; estado_tablero[10] ; movimiento_invalido ; 7.726 ;       ;        ; 8.114  ;
+; estado_tablero[10] ; movimiento_valido   ;       ; 9.163 ; 9.447  ;        ;
+; estado_tablero[11] ; movimiento_invalido ; 7.695 ;       ;        ; 8.107  ;
+; estado_tablero[11] ; movimiento_valido   ;       ; 9.132 ; 9.440  ;        ;
+; estado_tablero[12] ; movimiento_invalido ; 8.127 ;       ;        ; 8.537  ;
+; estado_tablero[12] ; movimiento_valido   ;       ; 9.564 ; 9.870  ;        ;
+; estado_tablero[13] ; movimiento_invalido ; 8.143 ;       ;        ; 8.536  ;
+; estado_tablero[13] ; movimiento_valido   ;       ; 9.580 ; 9.869  ;        ;
+; estado_tablero[14] ; movimiento_invalido ; 7.961 ;       ;        ; 8.397  ;
+; estado_tablero[14] ; movimiento_valido   ;       ; 9.398 ; 9.730  ;        ;
+; estado_tablero[15] ; movimiento_invalido ; 7.753 ;       ;        ; 8.089  ;
+; estado_tablero[15] ; movimiento_valido   ;       ; 9.190 ; 9.422  ;        ;
+; estado_tablero[16] ; movimiento_invalido ; 8.135 ; 8.605 ; 8.693  ; 8.505  ;
+; estado_tablero[16] ; movimiento_valido   ; 9.938 ; 9.572 ; 9.838  ; 10.130 ;
+; estado_tablero[17] ; movimiento_invalido ; 7.873 ; 8.343 ; 8.457  ; 8.269  ;
+; estado_tablero[17] ; movimiento_valido   ; 9.676 ; 9.310 ; 9.602  ; 9.894  ;
++--------------------+---------------------+-------+-------+--------+--------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------------------+
+; Propagation Delay                                                        ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; coordenada[0]      ; movimiento_invalido ; 5.025 ; 4.969 ; 5.624 ; 5.561 ;
+; coordenada[0]      ; movimiento_valido   ; 5.870 ; 5.984 ; 6.462 ; 6.583 ;
+; coordenada[1]      ; movimiento_invalido ; 4.958 ; 4.902 ; 5.545 ; 5.482 ;
+; coordenada[1]      ; movimiento_valido   ; 5.803 ; 5.917 ; 6.383 ; 6.504 ;
+; coordenada[2]      ; movimiento_invalido ; 4.532 ; 4.662 ; 5.401 ; 5.006 ;
+; coordenada[2]      ; movimiento_valido   ; 5.563 ; 5.491 ; 5.907 ; 6.360 ;
+; coordenada[3]      ; movimiento_invalido ; 4.364 ; 4.394 ; 5.102 ; 4.853 ;
+; coordenada[3]      ; movimiento_valido   ; 5.295 ; 5.323 ; 5.754 ; 6.061 ;
+; estado_tablero[0]  ; movimiento_invalido ; 4.542 ;       ;       ; 5.012 ;
+; estado_tablero[0]  ; movimiento_valido   ;       ; 5.501 ; 5.913 ;       ;
+; estado_tablero[1]  ; movimiento_invalido ; 4.371 ;       ;       ; 4.833 ;
+; estado_tablero[1]  ; movimiento_valido   ;       ; 5.330 ; 5.734 ;       ;
+; estado_tablero[2]  ; movimiento_invalido ; 4.616 ;       ;       ; 5.086 ;
+; estado_tablero[2]  ; movimiento_valido   ;       ; 5.575 ; 5.987 ;       ;
+; estado_tablero[3]  ; movimiento_invalido ; 4.681 ;       ;       ; 5.161 ;
+; estado_tablero[3]  ; movimiento_valido   ;       ; 5.640 ; 6.062 ;       ;
+; estado_tablero[4]  ; movimiento_invalido ; 4.295 ;       ;       ; 4.782 ;
+; estado_tablero[4]  ; movimiento_valido   ;       ; 5.254 ; 5.683 ;       ;
+; estado_tablero[5]  ; movimiento_invalido ; 4.413 ;       ;       ; 4.882 ;
+; estado_tablero[5]  ; movimiento_valido   ;       ; 5.372 ; 5.783 ;       ;
+; estado_tablero[6]  ; movimiento_invalido ; 4.638 ;       ;       ; 5.028 ;
+; estado_tablero[6]  ; movimiento_valido   ;       ; 5.597 ; 5.929 ;       ;
+; estado_tablero[7]  ; movimiento_invalido ; 4.624 ;       ;       ; 5.022 ;
+; estado_tablero[7]  ; movimiento_valido   ;       ; 5.583 ; 5.923 ;       ;
+; estado_tablero[8]  ; movimiento_invalido ; 4.985 ;       ;       ; 5.416 ;
+; estado_tablero[8]  ; movimiento_valido   ;       ; 5.944 ; 6.317 ;       ;
+; estado_tablero[9]  ; movimiento_invalido ; 4.824 ;       ;       ; 5.236 ;
+; estado_tablero[9]  ; movimiento_valido   ;       ; 5.783 ; 6.137 ;       ;
+; estado_tablero[10] ; movimiento_invalido ; 4.628 ;       ;       ; 5.068 ;
+; estado_tablero[10] ; movimiento_valido   ;       ; 5.587 ; 5.969 ;       ;
+; estado_tablero[11] ; movimiento_invalido ; 4.614 ;       ;       ; 5.030 ;
+; estado_tablero[11] ; movimiento_valido   ;       ; 5.573 ; 5.931 ;       ;
+; estado_tablero[12] ; movimiento_invalido ; 4.828 ;       ;       ; 5.338 ;
+; estado_tablero[12] ; movimiento_valido   ;       ; 5.787 ; 6.239 ;       ;
+; estado_tablero[13] ; movimiento_invalido ; 4.852 ;       ;       ; 5.372 ;
+; estado_tablero[13] ; movimiento_valido   ;       ; 5.811 ; 6.273 ;       ;
+; estado_tablero[14] ; movimiento_invalido ; 4.752 ;       ;       ; 5.269 ;
+; estado_tablero[14] ; movimiento_valido   ;       ; 5.711 ; 6.170 ;       ;
+; estado_tablero[15] ; movimiento_invalido ; 4.601 ;       ;       ; 5.079 ;
+; estado_tablero[15] ; movimiento_valido   ;       ; 5.560 ; 5.980 ;       ;
+; estado_tablero[16] ; movimiento_invalido ; 4.975 ; 4.919 ; 5.547 ; 5.484 ;
+; estado_tablero[16] ; movimiento_valido   ; 5.820 ; 5.934 ; 6.385 ; 6.506 ;
+; estado_tablero[17] ; movimiento_invalido ; 4.830 ; 4.774 ; 5.390 ; 5.327 ;
+; estado_tablero[17] ; movimiento_valido   ; 5.675 ; 5.789 ; 6.228 ; 6.349 ;
++--------------------+---------------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; coordenada[0]      ; movimiento_invalido ; 4.321 ; 4.244 ; 4.916 ; 4.810 ;
+; coordenada[0]      ; movimiento_valido   ; 5.145 ; 5.280 ; 5.711 ; 5.875 ;
+; coordenada[1]      ; movimiento_invalido ; 4.219 ; 4.032 ; 4.686 ; 4.672 ;
+; coordenada[1]      ; movimiento_valido   ; 4.933 ; 5.178 ; 5.573 ; 5.645 ;
+; coordenada[2]      ; movimiento_invalido ; 4.231 ; 4.422 ; 5.117 ; 4.691 ;
+; coordenada[2]      ; movimiento_valido   ; 5.323 ; 5.190 ; 5.592 ; 6.076 ;
+; coordenada[3]      ; movimiento_invalido ; 4.156 ; 4.267 ; 4.938 ; 4.641 ;
+; coordenada[3]      ; movimiento_valido   ; 5.168 ; 5.115 ; 5.542 ; 5.897 ;
+; estado_tablero[0]  ; movimiento_invalido ; 4.421 ;       ;       ; 4.890 ;
+; estado_tablero[0]  ; movimiento_valido   ;       ; 5.380 ; 5.791 ;       ;
+; estado_tablero[1]  ; movimiento_invalido ; 4.259 ;       ;       ; 4.718 ;
+; estado_tablero[1]  ; movimiento_valido   ;       ; 5.218 ; 5.619 ;       ;
+; estado_tablero[2]  ; movimiento_invalido ; 4.497 ;       ;       ; 4.962 ;
+; estado_tablero[2]  ; movimiento_valido   ;       ; 5.456 ; 5.863 ;       ;
+; estado_tablero[3]  ; movimiento_invalido ; 4.560 ;       ;       ; 5.035 ;
+; estado_tablero[3]  ; movimiento_valido   ;       ; 5.519 ; 5.936 ;       ;
+; estado_tablero[4]  ; movimiento_invalido ; 4.187 ;       ;       ; 4.669 ;
+; estado_tablero[4]  ; movimiento_valido   ;       ; 5.146 ; 5.570 ;       ;
+; estado_tablero[5]  ; movimiento_invalido ; 4.296 ;       ;       ; 4.763 ;
+; estado_tablero[5]  ; movimiento_valido   ;       ; 5.255 ; 5.664 ;       ;
+; estado_tablero[6]  ; movimiento_invalido ; 4.466 ;       ;       ; 4.874 ;
+; estado_tablero[6]  ; movimiento_valido   ;       ; 5.425 ; 5.775 ;       ;
+; estado_tablero[7]  ; movimiento_invalido ; 4.451 ;       ;       ; 4.867 ;
+; estado_tablero[7]  ; movimiento_valido   ;       ; 5.410 ; 5.768 ;       ;
+; estado_tablero[8]  ; movimiento_invalido ; 4.769 ;       ;       ; 5.223 ;
+; estado_tablero[8]  ; movimiento_valido   ;       ; 5.728 ; 6.124 ;       ;
+; estado_tablero[9]  ; movimiento_invalido ; 4.646 ;       ;       ; 5.077 ;
+; estado_tablero[9]  ; movimiento_valido   ;       ; 5.605 ; 5.978 ;       ;
+; estado_tablero[10] ; movimiento_invalido ; 4.462 ;       ;       ; 4.915 ;
+; estado_tablero[10] ; movimiento_valido   ;       ; 5.421 ; 5.816 ;       ;
+; estado_tablero[11] ; movimiento_invalido ; 4.446 ;       ;       ; 4.879 ;
+; estado_tablero[11] ; movimiento_valido   ;       ; 5.405 ; 5.780 ;       ;
+; estado_tablero[12] ; movimiento_invalido ; 4.635 ;       ;       ; 5.136 ;
+; estado_tablero[12] ; movimiento_valido   ;       ; 5.594 ; 6.037 ;       ;
+; estado_tablero[13] ; movimiento_invalido ; 4.662 ;       ;       ; 5.170 ;
+; estado_tablero[13] ; movimiento_valido   ;       ; 5.621 ; 6.071 ;       ;
+; estado_tablero[14] ; movimiento_invalido ; 4.572 ;       ;       ; 5.085 ;
+; estado_tablero[14] ; movimiento_valido   ;       ; 5.531 ; 5.986 ;       ;
+; estado_tablero[15] ; movimiento_invalido ; 4.455 ;       ;       ; 4.946 ;
+; estado_tablero[15] ; movimiento_valido   ;       ; 5.414 ; 5.847 ;       ;
+; estado_tablero[16] ; movimiento_invalido ; 4.628 ; 4.732 ; 5.351 ; 5.122 ;
+; estado_tablero[16] ; movimiento_valido   ; 5.633 ; 5.587 ; 6.023 ; 6.310 ;
+; estado_tablero[17] ; movimiento_invalido ; 4.489 ; 4.593 ; 5.200 ; 4.971 ;
+; estado_tablero[17] ; movimiento_valido   ; 5.494 ; 5.448 ; 5.872 ; 6.159 ;
++--------------------+---------------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------+
+; Progagation Delay                                                            ;
++--------------------+---------------------+--------+--------+--------+--------+
+; Input Port         ; Output Port         ; RR     ; RF     ; FR     ; FF     ;
++--------------------+---------------------+--------+--------+--------+--------+
+; coordenada[0]      ; movimiento_invalido ; 9.608  ; 9.723  ; 9.962  ; 10.068 ;
+; coordenada[0]      ; movimiento_valido   ; 11.056 ; 11.045 ; 11.401 ; 11.399 ;
+; coordenada[1]      ; movimiento_invalido ; 9.450  ; 9.565  ; 9.816  ; 9.922  ;
+; coordenada[1]      ; movimiento_valido   ; 10.898 ; 10.887 ; 11.255 ; 11.253 ;
+; coordenada[2]      ; movimiento_invalido ; 8.472  ; 9.084  ; 9.439  ; 8.925  ;
+; coordenada[2]      ; movimiento_valido   ; 10.417 ; 9.909  ; 10.258 ; 10.876 ;
+; coordenada[3]      ; movimiento_invalido ; 8.132  ; 8.505  ; 8.793  ; 8.599  ;
+; coordenada[3]      ; movimiento_valido   ; 9.838  ; 9.569  ; 9.932  ; 10.230 ;
+; estado_tablero[0]  ; movimiento_invalido ; 8.498  ;        ;        ; 8.934  ;
+; estado_tablero[0]  ; movimiento_valido   ;        ; 9.935  ; 10.267 ;        ;
+; estado_tablero[1]  ; movimiento_invalido ; 8.117  ;        ;        ; 8.578  ;
+; estado_tablero[1]  ; movimiento_valido   ;        ; 9.554  ; 9.911  ;        ;
+; estado_tablero[2]  ; movimiento_invalido ; 8.668  ;        ;        ; 9.038  ;
+; estado_tablero[2]  ; movimiento_valido   ;        ; 10.105 ; 10.371 ;        ;
+; estado_tablero[3]  ; movimiento_invalido ; 8.819  ;        ;        ; 9.186  ;
+; estado_tablero[3]  ; movimiento_valido   ;        ; 10.256 ; 10.519 ;        ;
+; estado_tablero[4]  ; movimiento_invalido ; 8.000  ;        ;        ; 8.434  ;
+; estado_tablero[4]  ; movimiento_valido   ;        ; 9.437  ; 9.767  ;        ;
+; estado_tablero[5]  ; movimiento_invalido ; 8.235  ;        ;        ; 8.675  ;
+; estado_tablero[5]  ; movimiento_valido   ;        ; 9.672  ; 10.008 ;        ;
+; estado_tablero[6]  ; movimiento_invalido ; 8.773  ;        ;        ; 9.145  ;
+; estado_tablero[6]  ; movimiento_valido   ;        ; 10.210 ; 10.478 ;        ;
+; estado_tablero[7]  ; movimiento_invalido ; 8.734  ;        ;        ; 9.127  ;
+; estado_tablero[7]  ; movimiento_valido   ;        ; 10.171 ; 10.460 ;        ;
+; estado_tablero[8]  ; movimiento_invalido ; 9.436  ;        ;        ; 9.805  ;
+; estado_tablero[8]  ; movimiento_valido   ;        ; 10.873 ; 11.138 ;        ;
+; estado_tablero[9]  ; movimiento_invalido ; 9.097  ;        ;        ; 9.434  ;
+; estado_tablero[9]  ; movimiento_valido   ;        ; 10.534 ; 10.767 ;        ;
+; estado_tablero[10] ; movimiento_invalido ; 8.701  ;        ;        ; 9.078  ;
+; estado_tablero[10] ; movimiento_valido   ;        ; 10.138 ; 10.411 ;        ;
+; estado_tablero[11] ; movimiento_invalido ; 8.660  ;        ;        ; 9.044  ;
+; estado_tablero[11] ; movimiento_valido   ;        ; 10.097 ; 10.377 ;        ;
+; estado_tablero[12] ; movimiento_invalido ; 9.158  ;        ;        ; 9.656  ;
+; estado_tablero[12] ; movimiento_valido   ;        ; 10.595 ; 10.989 ;        ;
+; estado_tablero[13] ; movimiento_invalido ; 9.189  ;        ;        ; 9.668  ;
+; estado_tablero[13] ; movimiento_valido   ;        ; 10.626 ; 11.001 ;        ;
+; estado_tablero[14] ; movimiento_invalido ; 8.969  ;        ;        ; 9.465  ;
+; estado_tablero[14] ; movimiento_valido   ;        ; 10.406 ; 10.798 ;        ;
+; estado_tablero[15] ; movimiento_invalido ; 8.658  ;        ;        ; 9.025  ;
+; estado_tablero[15] ; movimiento_valido   ;        ; 10.095 ; 10.358 ;        ;
+; estado_tablero[16] ; movimiento_invalido ; 9.539  ; 9.654  ; 9.863  ; 9.969  ;
+; estado_tablero[16] ; movimiento_valido   ; 10.987 ; 10.976 ; 11.302 ; 11.300 ;
+; estado_tablero[17] ; movimiento_invalido ; 9.239  ; 9.354  ; 9.588  ; 9.694  ;
+; estado_tablero[17] ; movimiento_valido   ; 10.687 ; 10.676 ; 11.027 ; 11.025 ;
++--------------------+---------------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Progagation Delay                                                ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; coordenada[0]      ; movimiento_invalido ; 4.321 ; 4.244 ; 4.916 ; 4.810 ;
+; coordenada[0]      ; movimiento_valido   ; 5.145 ; 5.280 ; 5.711 ; 5.875 ;
+; coordenada[1]      ; movimiento_invalido ; 4.219 ; 4.032 ; 4.686 ; 4.672 ;
+; coordenada[1]      ; movimiento_valido   ; 4.933 ; 5.178 ; 5.573 ; 5.645 ;
+; coordenada[2]      ; movimiento_invalido ; 4.231 ; 4.422 ; 5.117 ; 4.691 ;
+; coordenada[2]      ; movimiento_valido   ; 5.323 ; 5.190 ; 5.592 ; 6.076 ;
+; coordenada[3]      ; movimiento_invalido ; 4.156 ; 4.267 ; 4.938 ; 4.641 ;
+; coordenada[3]      ; movimiento_valido   ; 5.168 ; 5.115 ; 5.542 ; 5.897 ;
+; estado_tablero[0]  ; movimiento_invalido ; 4.421 ;       ;       ; 4.890 ;
+; estado_tablero[0]  ; movimiento_valido   ;       ; 5.380 ; 5.791 ;       ;
+; estado_tablero[1]  ; movimiento_invalido ; 4.259 ;       ;       ; 4.718 ;
+; estado_tablero[1]  ; movimiento_valido   ;       ; 5.218 ; 5.619 ;       ;
+; estado_tablero[2]  ; movimiento_invalido ; 4.497 ;       ;       ; 4.962 ;
+; estado_tablero[2]  ; movimiento_valido   ;       ; 5.456 ; 5.863 ;       ;
+; estado_tablero[3]  ; movimiento_invalido ; 4.560 ;       ;       ; 5.035 ;
+; estado_tablero[3]  ; movimiento_valido   ;       ; 5.519 ; 5.936 ;       ;
+; estado_tablero[4]  ; movimiento_invalido ; 4.187 ;       ;       ; 4.669 ;
+; estado_tablero[4]  ; movimiento_valido   ;       ; 5.146 ; 5.570 ;       ;
+; estado_tablero[5]  ; movimiento_invalido ; 4.296 ;       ;       ; 4.763 ;
+; estado_tablero[5]  ; movimiento_valido   ;       ; 5.255 ; 5.664 ;       ;
+; estado_tablero[6]  ; movimiento_invalido ; 4.466 ;       ;       ; 4.874 ;
+; estado_tablero[6]  ; movimiento_valido   ;       ; 5.425 ; 5.775 ;       ;
+; estado_tablero[7]  ; movimiento_invalido ; 4.451 ;       ;       ; 4.867 ;
+; estado_tablero[7]  ; movimiento_valido   ;       ; 5.410 ; 5.768 ;       ;
+; estado_tablero[8]  ; movimiento_invalido ; 4.769 ;       ;       ; 5.223 ;
+; estado_tablero[8]  ; movimiento_valido   ;       ; 5.728 ; 6.124 ;       ;
+; estado_tablero[9]  ; movimiento_invalido ; 4.646 ;       ;       ; 5.077 ;
+; estado_tablero[9]  ; movimiento_valido   ;       ; 5.605 ; 5.978 ;       ;
+; estado_tablero[10] ; movimiento_invalido ; 4.462 ;       ;       ; 4.915 ;
+; estado_tablero[10] ; movimiento_valido   ;       ; 5.421 ; 5.816 ;       ;
+; estado_tablero[11] ; movimiento_invalido ; 4.446 ;       ;       ; 4.879 ;
+; estado_tablero[11] ; movimiento_valido   ;       ; 5.405 ; 5.780 ;       ;
+; estado_tablero[12] ; movimiento_invalido ; 4.635 ;       ;       ; 5.136 ;
+; estado_tablero[12] ; movimiento_valido   ;       ; 5.594 ; 6.037 ;       ;
+; estado_tablero[13] ; movimiento_invalido ; 4.662 ;       ;       ; 5.170 ;
+; estado_tablero[13] ; movimiento_valido   ;       ; 5.621 ; 6.071 ;       ;
+; estado_tablero[14] ; movimiento_invalido ; 4.572 ;       ;       ; 5.085 ;
+; estado_tablero[14] ; movimiento_valido   ;       ; 5.531 ; 5.986 ;       ;
+; estado_tablero[15] ; movimiento_invalido ; 4.455 ;       ;       ; 4.946 ;
+; estado_tablero[15] ; movimiento_valido   ;       ; 5.414 ; 5.847 ;       ;
+; estado_tablero[16] ; movimiento_invalido ; 4.628 ; 4.732 ; 5.351 ; 5.122 ;
+; estado_tablero[16] ; movimiento_valido   ; 5.633 ; 5.587 ; 6.023 ; 6.310 ;
+; estado_tablero[17] ; movimiento_invalido ; 4.489 ; 4.593 ; 5.200 ; 4.971 ;
+; estado_tablero[17] ; movimiento_valido   ; 5.494 ; 5.448 ; 5.872 ; 6.159 ;
++--------------------+---------------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin                 ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; movimiento_valido   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; movimiento_invalido ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; coordenada[3]           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; coordenada[2]           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[15]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; coordenada[1]           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; coordenada[0]           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[16]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[17]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[14]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[12]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[13]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[8]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[9]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[2]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[3]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[6]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[7]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[0]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[1]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[10]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[11]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[4]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; estado_tablero[5]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; movimiento_valido   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.43e-07 V                   ; 2.33 V              ; -0.00259 V          ; 0.108 V                              ; 0.056 V                              ; 3.55e-09 s                  ; 3.31e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.43e-07 V                  ; 2.33 V             ; -0.00259 V         ; 0.108 V                             ; 0.056 V                             ; 3.55e-09 s                 ; 3.31e-09 s                 ; Yes                       ; Yes                       ;
+; movimiento_invalido ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.43e-07 V                   ; 2.35 V              ; -0.00795 V          ; 0.123 V                              ; 0.028 V                              ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.43e-07 V                  ; 2.35 V             ; -0.00795 V         ; 0.123 V                             ; 0.028 V                             ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.92e-07 V                   ; 2.35 V              ; -0.0133 V           ; 0.084 V                              ; 0.028 V                              ; 4.31e-10 s                  ; 3.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.92e-07 V                  ; 2.35 V             ; -0.0133 V          ; 0.084 V                             ; 0.028 V                             ; 4.31e-10 s                 ; 3.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.8e-07 V                    ; 2.35 V              ; -0.00679 V          ; 0.09 V                               ; 0.045 V                              ; 6.2e-10 s                   ; 7.91e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.8e-07 V                   ; 2.35 V             ; -0.00679 V         ; 0.09 V                              ; 0.045 V                             ; 6.2e-10 s                  ; 7.91e-10 s                 ; Yes                       ; Yes                       ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; movimiento_valido   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.02e-08 V                   ; 2.64 V              ; -0.0115 V           ; 0.204 V                              ; 0.12 V                               ; 2.38e-09 s                  ; 2.24e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.02e-08 V                  ; 2.64 V             ; -0.0115 V          ; 0.204 V                             ; 0.12 V                              ; 2.38e-09 s                 ; 2.24e-09 s                 ; No                        ; Yes                       ;
+; movimiento_invalido ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.02e-08 V                   ; 2.71 V              ; -0.0354 V           ; 0.174 V                              ; 0.098 V                              ; 2.73e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.02e-08 V                  ; 2.71 V             ; -0.0354 V          ; 0.174 V                             ; 0.098 V                             ; 2.73e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.2e-08 V                    ; 2.74 V              ; -0.061 V            ; 0.159 V                              ; 0.078 V                              ; 2.7e-10 s                   ; 2.2e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 2.2e-08 V                   ; 2.74 V             ; -0.061 V           ; 0.159 V                             ; 0.078 V                             ; 2.7e-10 s                  ; 2.2e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_nCEO~       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.52e-08 V                   ; 2.7 V               ; -0.0121 V           ; 0.274 V                              ; 0.034 V                              ; 3.18e-10 s                  ; 4.96e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.52e-08 V                  ; 2.7 V              ; -0.0121 V          ; 0.274 V                             ; 0.034 V                             ; 3.18e-10 s                 ; 4.96e-10 s                 ; No                        ; Yes                       ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 22    ; 22   ;
+; Unconstrained Input Port Paths  ; 44    ; 44   ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 44    ; 44   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 06 16:05:59 2025
+Info: Command: quartus_sta Validar_movimiento -c Validar_movimiento
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Validar_movimiento.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 488 megabytes
+    Info: Processing ended: Thu Nov 06 16:06:02 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

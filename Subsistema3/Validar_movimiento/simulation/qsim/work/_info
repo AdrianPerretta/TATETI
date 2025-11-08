@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Yo\Desktop\Tateti\Validar_movimiento\simulation\qsim
+vValidar_movimiento
+Z1 !s100 276H==emaC;oiR_nMXl5i2
+Z2 ITXb68d?8HDX9?ULhnFD[k2
+Z3 VodE`PDJW;kY7WS>bLAVkl0
+Z4 dC:\Users\Yo\Desktop\Tateti\Validar_movimiento\simulation\qsim
+Z5 w1762456482
+Z6 8Validar_movimiento.vo
+Z7 FValidar_movimiento.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Validar_movimiento.vo|
+Z10 o-work work -O0
+Z11 n@validar_movimiento
+!i10b 1
+!s85 0
+Z12 !s108 1762456483.710000
+Z13 !s107 Validar_movimiento.vo|
+!s101 -O0
+vValidar_movimiento_vlg_check_tst
+!i10b 1
+Z14 !s100 6UFOCPJ8zGL^c4G<:Sz1@2
+Z15 I]PJ8c_eMeD3`DEe`O=n?A3
+Z16 V^3BBUo4Qoa_lbnYUH<zb61
+R4
+R5
+Z17 8Validar_movimiento.vt
+Z18 FValidar_movimiento.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1762456483.772000
+Z20 !s107 Validar_movimiento.vt|
+Z21 !s90 -work|work|Validar_movimiento.vt|
+!s101 -O0
+R10
+Z22 n@validar_movimiento_vlg_check_tst
+vValidar_movimiento_vlg_sample_tst
+!i10b 1
+Z23 !s100 5Yl3ZPPi5Pmn62kE6oJm73
+Z24 I4MVX^;_o`O4I<jQE4dj[T0
+Z25 VnjM`HF`z8BEQm0lfo6VW]1
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@validar_movimiento_vlg_sample_tst
+vValidar_movimiento_vlg_vec_tst
+!i10b 1
+!s100 b0@UY`aG>R4o4ZQ<75bZH3
+IAV6aoTc1?X<>EPMC7Zh_N3
+Z27 V09ZOWSMI<on<[459QD7OJ3
+R4
+R5
+R17
+R18
+Z28 L0 181
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@validar_movimiento_vlg_vec_tst

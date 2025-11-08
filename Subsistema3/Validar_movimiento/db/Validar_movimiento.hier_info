@@ -1,0 +1,27 @@
+|Validar_movimiento
+coordenada[0] => Mux0.IN19
+coordenada[1] => Mux0.IN18
+coordenada[2] => Mux0.IN17
+coordenada[3] => Mux0.IN16
+estado_tablero[0] => Equal0.IN1
+estado_tablero[1] => Equal0.IN0
+estado_tablero[2] => Equal1.IN1
+estado_tablero[3] => Equal1.IN0
+estado_tablero[4] => Equal2.IN1
+estado_tablero[5] => Equal2.IN0
+estado_tablero[6] => Equal3.IN1
+estado_tablero[7] => Equal3.IN0
+estado_tablero[8] => Equal4.IN1
+estado_tablero[9] => Equal4.IN0
+estado_tablero[10] => Equal5.IN1
+estado_tablero[11] => Equal5.IN0
+estado_tablero[12] => Equal6.IN1
+estado_tablero[13] => Equal6.IN0
+estado_tablero[14] => Equal7.IN1
+estado_tablero[15] => Equal7.IN0
+estado_tablero[16] => Equal8.IN1
+estado_tablero[17] => Equal8.IN0
+movimiento_valido <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+movimiento_invalido <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

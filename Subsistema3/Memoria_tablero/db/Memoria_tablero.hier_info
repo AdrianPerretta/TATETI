@@ -1,0 +1,29 @@
+|Memoria_tablero
+reloj => ~NO_FANOUT~
+reinicio => ~NO_FANOUT~
+movimiento_valido => ~NO_FANOUT~
+turno_actual => ~NO_FANOUT~
+coordenada_movimiento[0] => ~NO_FANOUT~
+coordenada_movimiento[1] => ~NO_FANOUT~
+coordenada_movimiento[2] => ~NO_FANOUT~
+coordenada_movimiento[3] => ~NO_FANOUT~
+estado_tablero[0] => ~NO_FANOUT~
+estado_tablero[1] => ~NO_FANOUT~
+estado_tablero[2] => ~NO_FANOUT~
+estado_tablero[3] => ~NO_FANOUT~
+estado_tablero[4] => ~NO_FANOUT~
+estado_tablero[5] => ~NO_FANOUT~
+estado_tablero[6] => ~NO_FANOUT~
+estado_tablero[7] => ~NO_FANOUT~
+estado_tablero[8] => ~NO_FANOUT~
+estado_tablero[9] => ~NO_FANOUT~
+estado_tablero[10] => ~NO_FANOUT~
+estado_tablero[11] => ~NO_FANOUT~
+estado_tablero[12] => ~NO_FANOUT~
+estado_tablero[13] => ~NO_FANOUT~
+estado_tablero[14] => ~NO_FANOUT~
+estado_tablero[15] => ~NO_FANOUT~
+estado_tablero[16] => ~NO_FANOUT~
+estado_tablero[17] => ~NO_FANOUT~
+
+
