@@ -1,0 +1,80 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lautaro21\Desktop\Proyecto TATETI\subsistema_4\simulation\modelsim
+Esubsistema_4
+Z1 w1762696198
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Lautaro21\Desktop\Proyecto TATETI\subsistema_4\simulation\modelsim
+Z6 8C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd
+Z7 FC:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd
+l0
+L13
+VTj;zV9<E:3kc3?]UhA6]=3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1762697394.503000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd|
+Z11 !s107 C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 lkTRg_4:4ZY1JX_52Ic4E2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 12 subsistema_4 0 22 Tj;zV9<E:3kc3?]UhA6]=3
+l51
+L37
+V>5c_V4Dbb^X=NaH4]NmlX3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ;:Fb@m1EzU>SfYb2=SAj=3
+!i10b 1
+Esubsistema_4_testbench
+Z15 w1762697361
+R2
+R3
+R4
+R5
+Z16 8C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd
+Z17 FC:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd
+l0
+L12
+Vde@]U]kG;6O`]TzJWHZzM2
+!s100 n3S0N3<:`jQnIRozO7i?;1
+R8
+31
+!i10b 1
+Z18 !s108 1762697394.847000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd|
+Z20 !s107 C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd|
+R12
+R13
+Atb
+R14
+R2
+R3
+R4
+DEx4 work 22 subsistema_4_testbench 0 22 de@]U]kG;6O`]TzJWHZzM2
+l36
+L15
+Vmh0kiiQ62lKc6WfZJ`>Kf3
+!s100 6aIanah8077:f<?oVC>Ug1
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13

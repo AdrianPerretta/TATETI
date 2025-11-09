@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lautaro21\Desktop\Proyecto TATETI\subsistema_4\simulation\qsim
+vSubsistema_4
+Z1 !s100 FHNPVR<`;OGSjL2Ui=H[X0
+Z2 IiIM^SOA1IBC99G6661Cnd2
+Z3 VMDgIeoioV<N0LHkkdeg]K2
+Z4 dC:\Users\Lautaro21\Desktop\Proyecto TATETI\subsistema_4\simulation\qsim
+Z5 w1762650242
+Z6 8subs_4.vo
+Z7 Fsubs_4.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|subs_4.vo|
+Z10 o-work work -O0
+Z11 n@subsistema_4
+!i10b 1
+!s85 0
+Z12 !s108 1762650244.202000
+Z13 !s107 subs_4.vo|
+!s101 -O0
+vSubsistema_4_vlg_check_tst
+!i10b 1
+Z14 !s100 mWN_PA8JX4RX^_`RA=J<51
+Z15 ICd9fZcj03NU3M@zMEY?5e3
+Z16 VWc2RhPMGC_Qo_D]Cj2_Am0
+R4
+Z17 w1762650239
+Z18 8subs_4.vt
+Z19 Fsubs_4.vt
+L0 73
+R8
+r1
+!s85 0
+31
+Z20 !s108 1762650244.452000
+Z21 !s107 subs_4.vt|
+Z22 !s90 -work|work|subs_4.vt|
+!s101 -O0
+R10
+Z23 n@subsistema_4_vlg_check_tst
+vSubsistema_4_vlg_sample_tst
+!i10b 1
+Z24 !s100 3KM45mG:mU=UfEDORcWYf1
+Z25 II@h[nRa4P]Vc45?eVLj;Z3
+Z26 V@X6D5fi`?2nBa3KQ0=G>82
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@subsistema_4_vlg_sample_tst
+vSubsistema_4_vlg_vec_tst
+!i10b 1
+!s100 0KmGSdQZ;0AUShT]4U2n=2
+IMLJk3>h?JLSeeFH?fd3GE3
+Z28 VbkciTeWIF6CnP9GdXZ3Zl1
+R4
+R17
+R18
+R19
+Z29 L0 435
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@subsistema_4_vlg_vec_tst

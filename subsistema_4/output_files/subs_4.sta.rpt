@@ -1,0 +1,1789 @@
+TimeQuest Timing Analyzer report for subs_4
+Sun Nov 09 10:57:47 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'clk'
+ 13. Slow 1200mV 85C Model Hold: 'clk'
+ 14. Slow 1200mV 85C Model Minimum Pulse Width: 'clk'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Slow 1200mV 85C Model Metastability Report
+ 20. Slow 1200mV 0C Model Fmax Summary
+ 21. Slow 1200mV 0C Model Setup Summary
+ 22. Slow 1200mV 0C Model Hold Summary
+ 23. Slow 1200mV 0C Model Recovery Summary
+ 24. Slow 1200mV 0C Model Removal Summary
+ 25. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 26. Slow 1200mV 0C Model Setup: 'clk'
+ 27. Slow 1200mV 0C Model Hold: 'clk'
+ 28. Slow 1200mV 0C Model Minimum Pulse Width: 'clk'
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Slow 1200mV 0C Model Metastability Report
+ 34. Fast 1200mV 0C Model Setup Summary
+ 35. Fast 1200mV 0C Model Hold Summary
+ 36. Fast 1200mV 0C Model Recovery Summary
+ 37. Fast 1200mV 0C Model Removal Summary
+ 38. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 39. Fast 1200mV 0C Model Setup: 'clk'
+ 40. Fast 1200mV 0C Model Hold: 'clk'
+ 41. Fast 1200mV 0C Model Minimum Pulse Width: 'clk'
+ 42. Setup Times
+ 43. Hold Times
+ 44. Clock to Output Times
+ 45. Minimum Clock to Output Times
+ 46. Fast 1200mV 0C Model Metastability Report
+ 47. Multicorner Timing Analysis Summary
+ 48. Setup Times
+ 49. Hold Times
+ 50. Clock to Output Times
+ 51. Minimum Clock to Output Times
+ 52. Board Trace Model Assignments
+ 53. Input Transition Times
+ 54. Slow Corner Signal Integrity Metrics
+ 55. Fast Corner Signal Integrity Metrics
+ 56. Setup Transfers
+ 57. Hold Transfers
+ 58. Report TCCS
+ 59. Report RSKM
+ 60. Unconstrained Paths
+ 61. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; subs_4                                                            ;
+; Device Family      ; Cyclone III                                                       ;
+; Device Name        ; EP3C120F780C7                                                     ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 350.14 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -1.856 ; -21.798            ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.387 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -3.000 ; -27.415                          ;
++-------+--------+----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clk'                                                                                          ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; -1.856 ; fstate.RES_F         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.078     ; 2.776      ;
+; -1.854 ; fstate.RES_F         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.078     ; 2.774      ;
+; -1.687 ; fstate.ESP_J         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.333      ; 3.018      ;
+; -1.687 ; fstate.ESP_J         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.333      ; 3.018      ;
+; -1.687 ; fstate.ESP_J         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.333      ; 3.018      ;
+; -1.642 ; fstate.VER_F         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.974      ;
+; -1.642 ; fstate.VER_F         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.974      ;
+; -1.642 ; fstate.VER_F         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.974      ;
+; -1.593 ; fstate.ESP_J         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.079     ; 2.512      ;
+; -1.591 ; fstate.ESP_J         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.079     ; 2.510      ;
+; -1.548 ; fstate.RES_F         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.880      ;
+; -1.548 ; fstate.RES_F         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.880      ;
+; -1.548 ; fstate.RES_F         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.880      ;
+; -1.501 ; fstate.SEL_MOD       ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.333      ; 2.832      ;
+; -1.501 ; fstate.SEL_MOD       ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.333      ; 2.832      ;
+; -1.501 ; fstate.SEL_MOD       ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.333      ; 2.832      ;
+; -1.475 ; fstate.VER_F         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.078     ; 2.395      ;
+; -1.473 ; fstate.VER_F         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.078     ; 2.393      ;
+; -1.468 ; fstate.FIN_P         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.800      ;
+; -1.468 ; fstate.FIN_P         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.800      ;
+; -1.468 ; fstate.FIN_P         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.800      ;
+; -1.458 ; fstate.reseteo       ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.079     ; 2.377      ;
+; -1.458 ; fstate.reseteo       ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.079     ; 2.377      ;
+; -1.406 ; fstate.VERIF         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.333      ; 2.737      ;
+; -1.406 ; fstate.VERIF         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.333      ; 2.737      ;
+; -1.406 ; fstate.VERIF         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.333      ; 2.737      ;
+; -1.353 ; fstate.VER_F         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.078     ; 2.273      ;
+; -1.352 ; fstate.INICIO        ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.079     ; 2.271      ;
+; -1.350 ; fstate.INICIO        ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.079     ; 2.269      ;
+; -1.331 ; fstate.IN_P          ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.663      ;
+; -1.331 ; fstate.IN_P          ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.663      ;
+; -1.331 ; fstate.IN_P          ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.663      ;
+; -1.301 ; fstate.FIN_P         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.078     ; 2.221      ;
+; -1.299 ; fstate.FIN_P         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.078     ; 2.219      ;
+; -1.293 ; contador_partidas[0] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.625      ;
+; -1.293 ; contador_partidas[0] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.625      ;
+; -1.293 ; contador_partidas[0] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.625      ;
+; -1.292 ; fstate.ESP_J         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.080     ; 2.210      ;
+; -1.246 ; fstate.RES_F         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.582      ;
+; -1.243 ; fstate.RES_F         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.579      ;
+; -1.243 ; fstate.RES_F         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.579      ;
+; -1.241 ; fstate.RES_F         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.577      ;
+; -1.218 ; fstate.VER_F         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 2.137      ;
+; -1.202 ; contador_partidas[1] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.079     ; 2.121      ;
+; -1.196 ; contador_partidas[0] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.079     ; 2.115      ;
+; -1.179 ; fstate.FIN_P         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.078     ; 2.099      ;
+; -1.167 ; fstate.reseteo       ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.079     ; 2.086      ;
+; -1.164 ; fstate.IN_P          ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.078     ; 2.084      ;
+; -1.162 ; fstate.IN_P          ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.078     ; 2.082      ;
+; -1.153 ; fstate.RES_F         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 2.072      ;
+; -1.152 ; fstate.SEL_MOD       ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.079     ; 2.071      ;
+; -1.150 ; fstate.SEL_MOD       ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.079     ; 2.069      ;
+; -1.147 ; contador_partidas[1] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.479      ;
+; -1.147 ; contador_partidas[1] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.479      ;
+; -1.147 ; contador_partidas[1] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.479      ;
+; -1.106 ; fstate.SEL_MOD       ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.080     ; 2.024      ;
+; -1.097 ; fstate.VERIF         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.337      ; 2.432      ;
+; -1.094 ; fstate.VERIF         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.337      ; 2.429      ;
+; -1.094 ; fstate.VERIF         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.337      ; 2.429      ;
+; -1.092 ; fstate.VERIF         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.337      ; 2.427      ;
+; -1.078 ; contador_partidas[0] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.997      ;
+; -1.044 ; fstate.FIN_P         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.963      ;
+; -1.042 ; fstate.IN_P          ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.078     ; 1.962      ;
+; -0.994 ; fstate.ESP_J         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.913      ;
+; -0.988 ; fstate.INICIO        ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.907      ;
+; -0.982 ; fstate.VERIF         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.080     ; 1.900      ;
+; -0.932 ; contador_partidas[1] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.851      ;
+; -0.925 ; fstate.RES_F         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.844      ;
+; -0.907 ; fstate.IN_P          ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.826      ;
+; -0.885 ; fstate.RES_F         ; fstate.FIN_P          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.804      ;
+; -0.811 ; fstate.SEL_MOD       ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.730      ;
+; -0.807 ; contador_partidas[2] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.139      ;
+; -0.807 ; contador_partidas[2] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.334      ; 2.139      ;
+; -0.807 ; contador_partidas[2] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.334      ; 2.139      ;
+; -0.804 ; fstate.VERIF         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.080     ; 1.722      ;
+; -0.751 ; fstate.VERIF         ; fstate.FIN_P          ; clk          ; clk         ; 1.000        ; -0.080     ; 1.669      ;
+; -0.747 ; fstate.FIN_P         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.083      ;
+; -0.744 ; fstate.FIN_P         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.080      ;
+; -0.744 ; fstate.FIN_P         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.080      ;
+; -0.742 ; fstate.FIN_P         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.338      ; 2.078      ;
+; -0.739 ; fstate.VER_F         ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.079     ; 1.658      ;
+; -0.730 ; fstate.RES_F         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.649      ;
+; -0.729 ; fstate.RES_F         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.648      ;
+; -0.705 ; contador_partidas[2] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.079     ; 1.624      ;
+; -0.631 ; puntos2[1]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.100     ; 1.529      ;
+; -0.608 ; puntos2[1]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.100     ; 1.506      ;
+; -0.600 ; fstate.VERIF         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.080     ; 1.518      ;
+; -0.597 ; fstate.VERIF         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.080     ; 1.515      ;
+; -0.592 ; contador_partidas[2] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.511      ;
+; -0.592 ; puntos1[1]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.100     ; 1.490      ;
+; -0.565 ; fstate.FIN_P         ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.079     ; 1.484      ;
+; -0.565 ; puntos1[1]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.100     ; 1.463      ;
+; -0.538 ; fstate.VERIF         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.079     ; 1.457      ;
+; -0.459 ; puntos2[0]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.100     ; 1.357      ;
+; -0.440 ; fstate.RES_F         ; fstate.reseteo        ; clk          ; clk         ; 1.000        ; -0.078     ; 1.360      ;
+; -0.428 ; fstate.IN_P          ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.079     ; 1.347      ;
+; -0.426 ; fstate.FIN_P         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.345      ;
+; -0.419 ; puntos2[0]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.100     ; 1.317      ;
+; -0.401 ; fstate.IN_P          ; fstate.ESP_J          ; clk          ; clk         ; 1.000        ; -0.078     ; 1.321      ;
+; -0.377 ; fstate.FIN_P         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.296      ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clk'                                                                                          ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; 0.387 ; puntos1[0]           ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.096      ; 0.669      ;
+; 0.387 ; puntos1[1]           ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.096      ; 0.669      ;
+; 0.387 ; puntos2[0]           ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.096      ; 0.669      ;
+; 0.387 ; puntos2[1]           ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.096      ; 0.669      ;
+; 0.404 ; fstate.INICIO        ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; fstate.SEL_MOD       ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; contador_partidas[0] ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; contador_partidas[1] ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; contador_partidas[2] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; fstate.ESP_J         ; fstate.ESP_J          ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; fstate.reseteo       ; fstate.reseteo        ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
+; 0.642 ; fstate.FIN_P         ; fstate.VER_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 0.907      ;
+; 0.645 ; puntos1[0]           ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.096      ; 0.927      ;
+; 0.669 ; puntos2[0]           ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.096      ; 0.951      ;
+; 0.697 ; fstate.SEL_MOD       ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.961      ;
+; 0.752 ; fstate.reseteo       ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.079      ; 1.017      ;
+; 0.779 ; fstate.RES_F         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.080      ; 1.045      ;
+; 0.836 ; puntos1[0]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.115      ;
+; 0.842 ; puntos1[0]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.121      ;
+; 0.844 ; contador_partidas[0] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.109      ;
+; 0.849 ; contador_partidas[0] ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.114      ;
+; 0.857 ; contador_partidas[1] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.122      ;
+; 0.861 ; fstate.IN_P          ; fstate.ESP_J          ; clk          ; clk         ; 0.000        ; 0.080      ; 1.127      ;
+; 0.885 ; fstate.RES_F         ; fstate.reseteo        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.151      ;
+; 0.888 ; fstate.FIN_P         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.153      ;
+; 0.889 ; fstate.FIN_P         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.154      ;
+; 0.943 ; fstate.SEL_MOD       ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.078      ; 1.207      ;
+; 0.949 ; fstate.FIN_P         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.214      ;
+; 0.971 ; puntos2[0]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.250      ;
+; 0.979 ; fstate.IN_P          ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.079      ; 1.244      ;
+; 0.985 ; puntos2[0]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.264      ;
+; 1.005 ; contador_partidas[2] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.270      ;
+; 1.016 ; fstate.VERIF         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.281      ;
+; 1.018 ; puntos1[1]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.297      ;
+; 1.029 ; fstate.INICIO        ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.079      ; 1.294      ;
+; 1.044 ; puntos1[1]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.323      ;
+; 1.057 ; puntos2[1]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.336      ;
+; 1.079 ; puntos2[1]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.093      ; 1.358      ;
+; 1.112 ; fstate.VER_F         ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.079      ; 1.377      ;
+; 1.114 ; fstate.FIN_P         ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.079      ; 1.379      ;
+; 1.137 ; contador_partidas[2] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.079      ; 1.402      ;
+; 1.160 ; fstate.VERIF         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.078      ; 1.424      ;
+; 1.160 ; fstate.VERIF         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.078      ; 1.424      ;
+; 1.177 ; fstate.FIN_P         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.513      ; 1.876      ;
+; 1.178 ; fstate.FIN_P         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.513      ; 1.877      ;
+; 1.179 ; fstate.FIN_P         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.513      ; 1.878      ;
+; 1.181 ; fstate.FIN_P         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.513      ; 1.880      ;
+; 1.182 ; fstate.reseteo       ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.079      ; 1.447      ;
+; 1.191 ; fstate.RES_F         ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.510      ; 1.887      ;
+; 1.191 ; fstate.RES_F         ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.510      ; 1.887      ;
+; 1.191 ; fstate.RES_F         ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.510      ; 1.887      ;
+; 1.212 ; fstate.VER_F         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.477      ;
+; 1.221 ; fstate.RES_F         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.486      ;
+; 1.224 ; fstate.RES_F         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.489      ;
+; 1.282 ; fstate.SEL_MOD       ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.547      ;
+; 1.293 ; fstate.SEL_MOD       ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.079      ; 1.558      ;
+; 1.329 ; contador_partidas[1] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.594      ;
+; 1.333 ; fstate.VERIF         ; fstate.FIN_P          ; clk          ; clk         ; 0.000        ; 0.078      ; 1.597      ;
+; 1.348 ; fstate.VERIF         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.078      ; 1.612      ;
+; 1.400 ; fstate.RES_F         ; fstate.FIN_P          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.665      ;
+; 1.414 ; fstate.IN_P          ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.679      ;
+; 1.420 ; fstate.RES_F         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.685      ;
+; 1.429 ; contador_partidas[2] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.125      ;
+; 1.429 ; contador_partidas[2] ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.125      ;
+; 1.429 ; contador_partidas[2] ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.510      ; 2.125      ;
+; 1.455 ; contador_partidas[0] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.720      ;
+; 1.474 ; fstate.VERIF         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.078      ; 1.738      ;
+; 1.475 ; fstate.ESP_J         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.740      ;
+; 1.513 ; fstate.INICIO        ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.778      ;
+; 1.549 ; fstate.FIN_P         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.814      ;
+; 1.559 ; fstate.IN_P          ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.080      ; 1.825      ;
+; 1.595 ; fstate.VERIF         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.512      ; 2.293      ;
+; 1.596 ; fstate.VERIF         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.512      ; 2.294      ;
+; 1.597 ; fstate.VERIF         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.512      ; 2.295      ;
+; 1.599 ; fstate.VERIF         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.512      ; 2.297      ;
+; 1.606 ; fstate.IN_P          ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.080      ; 1.872      ;
+; 1.607 ; fstate.IN_P          ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.873      ;
+; 1.636 ; fstate.VER_F         ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.332      ;
+; 1.636 ; fstate.VER_F         ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.332      ;
+; 1.636 ; fstate.VER_F         ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.510      ; 2.332      ;
+; 1.644 ; fstate.reseteo       ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.909      ;
+; 1.648 ; contador_partidas[0] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.079      ; 1.913      ;
+; 1.648 ; fstate.RES_F         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.513      ; 2.347      ;
+; 1.649 ; fstate.RES_F         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.513      ; 2.348      ;
+; 1.650 ; fstate.RES_F         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.513      ; 2.349      ;
+; 1.652 ; fstate.RES_F         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.513      ; 2.351      ;
+; 1.659 ; contador_partidas[1] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.079      ; 1.924      ;
+; 1.671 ; fstate.ESP_J         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.078      ; 1.935      ;
+; 1.681 ; fstate.RES_F         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.079      ; 1.946      ;
+; 1.694 ; fstate.FIN_P         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.080      ; 1.960      ;
+; 1.741 ; fstate.FIN_P         ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.080      ; 2.007      ;
+; 1.742 ; fstate.FIN_P         ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.080      ; 2.008      ;
+; 1.753 ; contador_partidas[1] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.449      ;
+; 1.753 ; contador_partidas[1] ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.449      ;
+; 1.753 ; contador_partidas[1] ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.510      ; 2.449      ;
+; 1.770 ; fstate.SEL_MOD       ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.509      ; 2.465      ;
+; 1.770 ; fstate.SEL_MOD       ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.509      ; 2.465      ;
+; 1.770 ; fstate.SEL_MOD       ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.509      ; 2.465      ;
+; 1.850 ; fstate.VER_F         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.080      ; 2.116      ;
+; 1.879 ; contador_partidas[0] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.510      ; 2.575      ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'clk'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clk   ; Rise       ; clk                       ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; contador_partidas[0]      ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; contador_partidas[1]      ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; contador_partidas[2]      ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.ESP_J              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.FIN_P              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.INICIO             ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.IN_P               ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.RES_F              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.VERIF              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.VER_F              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.reseteo            ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos1[0]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos1[1]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos2[0]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos2[1]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; resultado_final_int       ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; victoria_final_int[0]     ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.251  ; 0.439        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[0]                ;
+; 0.251  ; 0.439        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[1]                ;
+; 0.251  ; 0.439        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[0]                ;
+; 0.251  ; 0.439        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[1]                ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[0]      ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[1]      ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[2]      ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.ESP_J              ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.FIN_P              ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.INICIO             ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.IN_P               ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.RES_F              ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VERIF              ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VER_F              ;
+; 0.258  ; 0.446        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; fstate.reseteo            ;
+; 0.260  ; 0.448        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; resultado_final_int       ;
+; 0.260  ; 0.448        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[0]     ;
+; 0.260  ; 0.448        ; 0.188          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.331  ; 0.551        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; resultado_final_int       ;
+; 0.331  ; 0.551        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[0]     ;
+; 0.331  ; 0.551        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[0]      ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[1]      ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[2]      ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.ESP_J              ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.FIN_P              ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.INICIO             ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.IN_P               ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.RES_F              ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.VERIF              ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.VER_F              ;
+; 0.333  ; 0.553        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; fstate.reseteo            ;
+; 0.339  ; 0.559        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; puntos1[0]                ;
+; 0.339  ; 0.559        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; puntos1[1]                ;
+; 0.339  ; 0.559        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; puntos2[0]                ;
+; 0.339  ; 0.559        ; 0.220          ; High Pulse Width ; clk   ; Rise       ; puntos2[1]                ;
+; 0.395  ; 0.395        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|o               ;
+; 0.404  ; 0.404        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[0]|clk            ;
+; 0.404  ; 0.404        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[1]|clk            ;
+; 0.404  ; 0.404        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[0]|clk            ;
+; 0.404  ; 0.404        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[1]|clk            ;
+; 0.409  ; 0.409        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|inclk[0] ;
+; 0.409  ; 0.409        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|outclk   ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[0]|clk  ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[1]|clk  ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[2]|clk  ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.ESP_J|clk          ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.FIN_P|clk          ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.INICIO|clk         ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.IN_P|clk           ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.RES_F|clk          ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.SEL_MOD|clk        ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VERIF|clk          ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VER_F|clk          ;
+; 0.411  ; 0.411        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.reseteo|clk        ;
+; 0.413  ; 0.413        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; resultado_final_int|clk   ;
+; 0.413  ; 0.413        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[0]|clk ;
+; 0.413  ; 0.413        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[1]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|i               ;
+; 0.587  ; 0.587        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; resultado_final_int|clk   ;
+; 0.587  ; 0.587        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[0]|clk ;
+; 0.587  ; 0.587        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[1]|clk ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[0]|clk  ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[1]|clk  ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[2]|clk  ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.ESP_J|clk          ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.FIN_P|clk          ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.INICIO|clk         ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.IN_P|clk           ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.RES_F|clk          ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.SEL_MOD|clk        ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.VERIF|clk          ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.VER_F|clk          ;
+; 0.589  ; 0.589        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.reseteo|clk        ;
+; 0.591  ; 0.591        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|inclk[0] ;
+; 0.591  ; 0.591        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|outclk   ;
+; 0.595  ; 0.595        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; puntos1[0]|clk            ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; confirmar_modo ; clk        ; 2.592 ; 2.920 ; Rise       ; clk             ;
+; empate         ; clk        ; 1.306 ; 1.646 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; 2.750 ; 3.109 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; 1.345 ; 1.681 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; 1.134 ; 1.531 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; 3.251 ; 3.654 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; 3.164 ; 3.569 ; Rise       ; clk             ;
+; reset_n        ; clk        ; 3.502 ; 3.394 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; confirmar_modo ; clk        ; -0.999 ; -1.311 ; Rise       ; clk             ;
+; empate         ; clk        ; -0.817 ; -1.138 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; -1.048 ; -1.359 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; -0.802 ; -1.135 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; -0.648 ; -0.995 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; -0.874 ; -1.196 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; -1.193 ; -1.510 ; Rise       ; clk             ;
+; reset_n        ; clk        ; -1.603 ; -1.493 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 6.588 ; 6.598 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 6.527 ; 6.539 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 6.517 ; 6.529 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 7.576 ; 7.592 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 6.770 ; 6.787 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 6.770 ; 6.787 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 6.757 ; 6.775 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 6.787 ; 6.803 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 6.681 ; 6.679 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 6.787 ; 6.803 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 6.999 ; 6.994 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 6.990 ; 7.001 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 6.990 ; 7.001 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 6.986 ; 6.975 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 6.438 ; 6.448 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 6.378 ; 6.389 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 6.368 ; 6.379 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 6.726 ; 6.730 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 6.600 ; 6.617 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 6.613 ; 6.628 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 6.600 ; 6.617 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 6.527 ; 6.525 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 6.527 ; 6.525 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 6.630 ; 6.645 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 6.830 ; 6.825 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 6.820 ; 6.809 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 6.824 ; 6.834 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 6.820 ; 6.809 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 390.02 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -1.564 ; -18.172           ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.340 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -3.000 ; -27.415                         ;
++-------+--------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clk'                                                                                           ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; -1.564 ; fstate.RES_F         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.070     ; 2.493      ;
+; -1.562 ; fstate.RES_F         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.070     ; 2.491      ;
+; -1.460 ; fstate.ESP_J         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.308      ; 2.767      ;
+; -1.460 ; fstate.ESP_J         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.308      ; 2.767      ;
+; -1.460 ; fstate.ESP_J         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.308      ; 2.767      ;
+; -1.405 ; fstate.VER_F         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.713      ;
+; -1.405 ; fstate.VER_F         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.713      ;
+; -1.405 ; fstate.VER_F         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 2.713      ;
+; -1.357 ; fstate.RES_F         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.665      ;
+; -1.357 ; fstate.RES_F         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.665      ;
+; -1.357 ; fstate.RES_F         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 2.665      ;
+; -1.355 ; fstate.ESP_J         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.071     ; 2.283      ;
+; -1.353 ; fstate.ESP_J         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.071     ; 2.281      ;
+; -1.274 ; fstate.SEL_MOD       ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.308      ; 2.581      ;
+; -1.274 ; fstate.SEL_MOD       ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.308      ; 2.581      ;
+; -1.274 ; fstate.SEL_MOD       ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.308      ; 2.581      ;
+; -1.258 ; fstate.FIN_P         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.566      ;
+; -1.258 ; fstate.FIN_P         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.566      ;
+; -1.258 ; fstate.FIN_P         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 2.566      ;
+; -1.253 ; fstate.VER_F         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.070     ; 2.182      ;
+; -1.251 ; fstate.VER_F         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.070     ; 2.180      ;
+; -1.245 ; fstate.reseteo       ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.071     ; 2.173      ;
+; -1.236 ; fstate.reseteo       ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.071     ; 2.164      ;
+; -1.217 ; fstate.VERIF         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.308      ; 2.524      ;
+; -1.217 ; fstate.VERIF         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.308      ; 2.524      ;
+; -1.217 ; fstate.VERIF         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.308      ; 2.524      ;
+; -1.150 ; fstate.VER_F         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.070     ; 2.079      ;
+; -1.129 ; fstate.IN_P          ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.437      ;
+; -1.129 ; fstate.IN_P          ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.437      ;
+; -1.129 ; fstate.IN_P          ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 2.437      ;
+; -1.117 ; fstate.INICIO        ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.071     ; 2.045      ;
+; -1.115 ; fstate.INICIO        ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.071     ; 2.043      ;
+; -1.106 ; fstate.FIN_P         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.070     ; 2.035      ;
+; -1.104 ; fstate.FIN_P         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.070     ; 2.033      ;
+; -1.072 ; fstate.ESP_J         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.071     ; 2.000      ;
+; -1.070 ; fstate.RES_F         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.314      ; 2.383      ;
+; -1.068 ; contador_partidas[0] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.376      ;
+; -1.068 ; contador_partidas[0] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.376      ;
+; -1.068 ; contador_partidas[0] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 2.376      ;
+; -1.066 ; fstate.RES_F         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.314      ; 2.379      ;
+; -1.066 ; fstate.RES_F         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.314      ; 2.379      ;
+; -1.064 ; fstate.RES_F         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.314      ; 2.377      ;
+; -1.017 ; fstate.VER_F         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.946      ;
+; -1.003 ; contador_partidas[1] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.070     ; 1.932      ;
+; -1.003 ; fstate.FIN_P         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.932      ;
+; -0.998 ; contador_partidas[0] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.070     ; 1.927      ;
+; -0.985 ; fstate.reseteo       ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.913      ;
+; -0.977 ; fstate.IN_P          ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.070     ; 1.906      ;
+; -0.975 ; fstate.IN_P          ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.070     ; 1.904      ;
+; -0.969 ; fstate.RES_F         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.898      ;
+; -0.963 ; fstate.SEL_MOD       ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.071     ; 1.891      ;
+; -0.963 ; fstate.VERIF         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.313      ; 2.275      ;
+; -0.959 ; fstate.VERIF         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.313      ; 2.271      ;
+; -0.959 ; fstate.VERIF         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.313      ; 2.271      ;
+; -0.957 ; fstate.VERIF         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.313      ; 2.269      ;
+; -0.954 ; fstate.SEL_MOD       ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.071     ; 1.882      ;
+; -0.940 ; contador_partidas[1] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.248      ;
+; -0.940 ; contador_partidas[1] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 2.248      ;
+; -0.940 ; contador_partidas[1] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 2.248      ;
+; -0.886 ; fstate.SEL_MOD       ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.814      ;
+; -0.874 ; fstate.IN_P          ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.803      ;
+; -0.870 ; fstate.FIN_P         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.799      ;
+; -0.854 ; contador_partidas[0] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.783      ;
+; -0.829 ; fstate.VERIF         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.757      ;
+; -0.791 ; fstate.ESP_J         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.719      ;
+; -0.786 ; fstate.INICIO        ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.714      ;
+; -0.753 ; fstate.RES_F         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.682      ;
+; -0.741 ; fstate.IN_P          ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.670      ;
+; -0.726 ; contador_partidas[1] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.655      ;
+; -0.719 ; fstate.RES_F         ; fstate.FIN_P          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.648      ;
+; -0.646 ; fstate.VERIF         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.071     ; 1.574      ;
+; -0.638 ; contador_partidas[2] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.309      ; 1.946      ;
+; -0.638 ; contador_partidas[2] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.309      ; 1.946      ;
+; -0.638 ; contador_partidas[2] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.309      ; 1.946      ;
+; -0.636 ; fstate.SEL_MOD       ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.564      ;
+; -0.617 ; fstate.FIN_P         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.314      ; 1.930      ;
+; -0.613 ; fstate.FIN_P         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.314      ; 1.926      ;
+; -0.613 ; fstate.FIN_P         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.314      ; 1.926      ;
+; -0.612 ; fstate.VERIF         ; fstate.FIN_P          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.540      ;
+; -0.611 ; fstate.FIN_P         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.314      ; 1.924      ;
+; -0.582 ; fstate.RES_F         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.071     ; 1.510      ;
+; -0.581 ; fstate.RES_F         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.071     ; 1.509      ;
+; -0.575 ; fstate.VER_F         ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.070     ; 1.504      ;
+; -0.564 ; contador_partidas[2] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.070     ; 1.493      ;
+; -0.495 ; puntos2[1]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.091     ; 1.403      ;
+; -0.475 ; fstate.VERIF         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.072     ; 1.402      ;
+; -0.474 ; fstate.VERIF         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.072     ; 1.401      ;
+; -0.460 ; puntos2[1]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.091     ; 1.368      ;
+; -0.452 ; puntos1[1]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.091     ; 1.360      ;
+; -0.428 ; fstate.FIN_P         ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.070     ; 1.357      ;
+; -0.424 ; contador_partidas[2] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.353      ;
+; -0.424 ; puntos1[1]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.091     ; 1.332      ;
+; -0.378 ; fstate.VERIF         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.071     ; 1.306      ;
+; -0.330 ; puntos2[0]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.091     ; 1.238      ;
+; -0.317 ; puntos2[0]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.091     ; 1.225      ;
+; -0.300 ; fstate.FIN_P         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.229      ;
+; -0.299 ; fstate.IN_P          ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.070     ; 1.228      ;
+; -0.287 ; fstate.RES_F         ; fstate.reseteo        ; clk          ; clk         ; 1.000        ; -0.070     ; 1.216      ;
+; -0.253 ; fstate.IN_P          ; fstate.ESP_J          ; clk          ; clk         ; 1.000        ; -0.070     ; 1.182      ;
+; -0.232 ; fstate.FIN_P         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.071     ; 1.160      ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clk'                                                                                           ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; 0.340 ; puntos1[0]           ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.086      ; 0.597      ;
+; 0.340 ; puntos1[1]           ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.086      ; 0.597      ;
+; 0.340 ; puntos2[0]           ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.086      ; 0.597      ;
+; 0.340 ; puntos2[1]           ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.086      ; 0.597      ;
+; 0.355 ; fstate.INICIO        ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; fstate.SEL_MOD       ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; contador_partidas[0] ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; contador_partidas[1] ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; fstate.ESP_J         ; fstate.ESP_J          ; clk          ; clk         ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; fstate.reseteo       ; fstate.reseteo        ; clk          ; clk         ; 0.000        ; 0.071      ; 0.597      ;
+; 0.356 ; contador_partidas[2] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.597      ;
+; 0.586 ; fstate.FIN_P         ; fstate.VER_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 0.827      ;
+; 0.590 ; puntos1[0]           ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.086      ; 0.847      ;
+; 0.612 ; puntos2[0]           ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.086      ; 0.869      ;
+; 0.644 ; fstate.SEL_MOD       ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.070      ; 0.885      ;
+; 0.678 ; fstate.reseteo       ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.071      ; 0.920      ;
+; 0.720 ; fstate.RES_F         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 0.962      ;
+; 0.754 ; puntos1[0]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.007      ;
+; 0.776 ; contador_partidas[0] ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.071      ; 1.018      ;
+; 0.779 ; puntos1[0]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.032      ;
+; 0.784 ; contador_partidas[0] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.071      ; 1.026      ;
+; 0.793 ; fstate.IN_P          ; fstate.ESP_J          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.035      ;
+; 0.796 ; contador_partidas[1] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.071      ; 1.038      ;
+; 0.821 ; fstate.RES_F         ; fstate.reseteo        ; clk          ; clk         ; 0.000        ; 0.071      ; 1.063      ;
+; 0.823 ; fstate.FIN_P         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.064      ;
+; 0.828 ; fstate.FIN_P         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.069      ;
+; 0.856 ; fstate.FIN_P         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.097      ;
+; 0.876 ; fstate.SEL_MOD       ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.117      ;
+; 0.885 ; puntos2[0]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.138      ;
+; 0.886 ; fstate.IN_P          ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.070      ; 1.127      ;
+; 0.906 ; puntos2[0]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.159      ;
+; 0.922 ; fstate.INICIO        ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.071      ; 1.164      ;
+; 0.922 ; contador_partidas[2] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.163      ;
+; 0.932 ; fstate.VERIF         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.174      ;
+; 0.946 ; puntos1[1]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.199      ;
+; 0.948 ; puntos1[1]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.201      ;
+; 0.966 ; puntos2[1]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.219      ;
+; 0.980 ; puntos2[1]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.082      ; 1.233      ;
+; 0.985 ; fstate.VER_F         ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.070      ; 1.226      ;
+; 1.009 ; fstate.FIN_P         ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.070      ; 1.250      ;
+; 1.018 ; contador_partidas[2] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.070      ; 1.259      ;
+; 1.036 ; fstate.VERIF         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.277      ;
+; 1.038 ; fstate.VERIF         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.279      ;
+; 1.043 ; fstate.FIN_P         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.470      ; 1.684      ;
+; 1.045 ; fstate.FIN_P         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.470      ; 1.686      ;
+; 1.045 ; fstate.FIN_P         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.470      ; 1.686      ;
+; 1.048 ; fstate.FIN_P         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.470      ; 1.689      ;
+; 1.062 ; fstate.reseteo       ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.071      ; 1.304      ;
+; 1.096 ; fstate.RES_F         ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.466      ; 1.733      ;
+; 1.096 ; fstate.RES_F         ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.466      ; 1.733      ;
+; 1.096 ; fstate.RES_F         ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.466      ; 1.733      ;
+; 1.103 ; fstate.RES_F         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.344      ;
+; 1.105 ; fstate.RES_F         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.346      ;
+; 1.110 ; fstate.VER_F         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.351      ;
+; 1.153 ; fstate.SEL_MOD       ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.395      ;
+; 1.163 ; fstate.SEL_MOD       ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.071      ; 1.405      ;
+; 1.209 ; fstate.VERIF         ; fstate.FIN_P          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.450      ;
+; 1.219 ; fstate.VERIF         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.460      ;
+; 1.230 ; contador_partidas[1] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.472      ;
+; 1.269 ; fstate.IN_P          ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.510      ;
+; 1.276 ; fstate.RES_F         ; fstate.FIN_P          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.517      ;
+; 1.286 ; fstate.RES_F         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.527      ;
+; 1.313 ; contador_partidas[2] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.466      ; 1.950      ;
+; 1.313 ; contador_partidas[2] ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.466      ; 1.950      ;
+; 1.313 ; contador_partidas[2] ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.466      ; 1.950      ;
+; 1.323 ; fstate.VERIF         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.564      ;
+; 1.341 ; contador_partidas[0] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.583      ;
+; 1.355 ; fstate.ESP_J         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.597      ;
+; 1.384 ; fstate.INICIO        ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.626      ;
+; 1.392 ; fstate.FIN_P         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.633      ;
+; 1.398 ; fstate.IN_P          ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.640      ;
+; 1.406 ; fstate.VERIF         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.047      ;
+; 1.408 ; fstate.VERIF         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.049      ;
+; 1.408 ; fstate.VERIF         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.049      ;
+; 1.411 ; fstate.VERIF         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.052      ;
+; 1.446 ; fstate.IN_P          ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.071      ; 1.688      ;
+; 1.447 ; fstate.IN_P          ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.071      ; 1.689      ;
+; 1.473 ; fstate.RES_F         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.114      ;
+; 1.475 ; fstate.RES_F         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.116      ;
+; 1.475 ; fstate.RES_F         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.116      ;
+; 1.476 ; fstate.reseteo       ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.718      ;
+; 1.478 ; fstate.RES_F         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.470      ; 2.119      ;
+; 1.498 ; contador_partidas[0] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.071      ; 1.740      ;
+; 1.501 ; fstate.VER_F         ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.466      ; 2.138      ;
+; 1.501 ; fstate.VER_F         ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.466      ; 2.138      ;
+; 1.501 ; fstate.VER_F         ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.466      ; 2.138      ;
+; 1.509 ; contador_partidas[1] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.071      ; 1.751      ;
+; 1.509 ; fstate.ESP_J         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.750      ;
+; 1.521 ; fstate.FIN_P         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.763      ;
+; 1.523 ; fstate.RES_F         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.070      ; 1.764      ;
+; 1.569 ; fstate.FIN_P         ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.071      ; 1.811      ;
+; 1.570 ; fstate.FIN_P         ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.071      ; 1.812      ;
+; 1.621 ; contador_partidas[1] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.467      ; 2.259      ;
+; 1.621 ; contador_partidas[1] ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.467      ; 2.259      ;
+; 1.621 ; contador_partidas[1] ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.467      ; 2.259      ;
+; 1.638 ; fstate.SEL_MOD       ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.466      ; 2.275      ;
+; 1.638 ; fstate.SEL_MOD       ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.466      ; 2.275      ;
+; 1.638 ; fstate.SEL_MOD       ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.466      ; 2.275      ;
+; 1.668 ; fstate.VER_F         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.071      ; 1.910      ;
+; 1.711 ; fstate.ESP_J         ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.071      ; 1.953      ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'clk'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clk   ; Rise       ; clk                       ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; contador_partidas[0]      ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; contador_partidas[1]      ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; contador_partidas[2]      ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.ESP_J              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.FIN_P              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.INICIO             ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.IN_P               ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.RES_F              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.VERIF              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.VER_F              ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; fstate.reseteo            ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos1[0]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos1[1]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos2[0]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; puntos2[1]                ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; resultado_final_int       ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; victoria_final_int[0]     ;
+; -1.285 ; 1.000        ; 2.285          ; Min Period       ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[0]      ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[1]      ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.ESP_J              ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.INICIO             ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VERIF              ;
+; 0.257  ; 0.443        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.reseteo            ;
+; 0.258  ; 0.444        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[2]      ;
+; 0.258  ; 0.444        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.FIN_P              ;
+; 0.258  ; 0.444        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.IN_P               ;
+; 0.258  ; 0.444        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.RES_F              ;
+; 0.258  ; 0.444        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VER_F              ;
+; 0.269  ; 0.455        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[0]                ;
+; 0.269  ; 0.455        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[1]                ;
+; 0.269  ; 0.455        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[0]                ;
+; 0.269  ; 0.455        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[1]                ;
+; 0.273  ; 0.459        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; resultado_final_int       ;
+; 0.273  ; 0.459        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[0]     ;
+; 0.273  ; 0.459        ; 0.186          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.319  ; 0.537        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; resultado_final_int       ;
+; 0.319  ; 0.537        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[0]     ;
+; 0.319  ; 0.537        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.325  ; 0.543        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; puntos1[0]                ;
+; 0.325  ; 0.543        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; puntos1[1]                ;
+; 0.325  ; 0.543        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; puntos2[0]                ;
+; 0.325  ; 0.543        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; puntos2[1]                ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[0]      ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[1]      ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.ESP_J              ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.INICIO             ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.VERIF              ;
+; 0.336  ; 0.554        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.reseteo            ;
+; 0.337  ; 0.555        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[2]      ;
+; 0.337  ; 0.555        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.FIN_P              ;
+; 0.337  ; 0.555        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.IN_P               ;
+; 0.337  ; 0.555        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.RES_F              ;
+; 0.337  ; 0.555        ; 0.218          ; High Pulse Width ; clk   ; Rise       ; fstate.VER_F              ;
+; 0.395  ; 0.395        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|o               ;
+; 0.401  ; 0.401        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|inclk[0] ;
+; 0.401  ; 0.401        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|outclk   ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[0]|clk  ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[1]|clk  ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[2]|clk  ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.ESP_J|clk          ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.FIN_P|clk          ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.INICIO|clk         ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.IN_P|clk           ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.RES_F|clk          ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.SEL_MOD|clk        ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VERIF|clk          ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VER_F|clk          ;
+; 0.405  ; 0.405        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.reseteo|clk        ;
+; 0.417  ; 0.417        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[0]|clk            ;
+; 0.417  ; 0.417        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[1]|clk            ;
+; 0.417  ; 0.417        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[0]|clk            ;
+; 0.417  ; 0.417        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[1]|clk            ;
+; 0.421  ; 0.421        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; resultado_final_int|clk   ;
+; 0.421  ; 0.421        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[0]|clk ;
+; 0.421  ; 0.421        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[1]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|i               ;
+; 0.577  ; 0.577        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; resultado_final_int|clk   ;
+; 0.577  ; 0.577        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[0]|clk ;
+; 0.577  ; 0.577        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[1]|clk ;
+; 0.583  ; 0.583        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; puntos1[0]|clk            ;
+; 0.583  ; 0.583        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; puntos1[1]|clk            ;
+; 0.583  ; 0.583        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; puntos2[0]|clk            ;
+; 0.583  ; 0.583        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; puntos2[1]|clk            ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[0]|clk  ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[1]|clk  ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[2]|clk  ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.ESP_J|clk          ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.FIN_P|clk          ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.INICIO|clk         ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.IN_P|clk           ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.RES_F|clk          ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.SEL_MOD|clk        ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.VERIF|clk          ;
+; 0.594  ; 0.594        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.VER_F|clk          ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; confirmar_modo ; clk        ; 2.323 ; 2.511 ; Rise       ; clk             ;
+; empate         ; clk        ; 1.121 ; 1.368 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; 2.412 ; 2.728 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; 1.139 ; 1.407 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; 0.958 ; 1.268 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; 2.886 ; 3.209 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; 2.811 ; 3.147 ; Rise       ; clk             ;
+; reset_n        ; clk        ; 3.233 ; 3.244 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; confirmar_modo ; clk        ; -0.851 ; -1.082 ; Rise       ; clk             ;
+; empate         ; clk        ; -0.678 ; -0.909 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; -0.882 ; -1.135 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; -0.656 ; -0.911 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; -0.511 ; -0.795 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; -0.733 ; -0.967 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; -1.036 ; -1.252 ; Rise       ; clk             ;
+; reset_n        ; clk        ; -1.492 ; -1.540 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 6.239 ; 6.218 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 6.182 ; 6.161 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 6.172 ; 6.151 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 7.160 ; 7.103 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 6.401 ; 6.384 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 6.401 ; 6.384 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 6.387 ; 6.374 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 6.420 ; 6.413 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 6.319 ; 6.290 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 6.420 ; 6.413 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 6.616 ; 6.579 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 6.612 ; 6.590 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 6.612 ; 6.590 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 6.609 ; 6.565 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 6.104 ; 6.083 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 6.047 ; 6.027 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 6.037 ; 6.017 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 6.373 ; 6.336 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 6.246 ; 6.233 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 6.259 ; 6.242 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 6.246 ; 6.233 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 6.181 ; 6.152 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 6.181 ; 6.152 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 6.279 ; 6.272 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 6.464 ; 6.427 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 6.459 ; 6.417 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 6.462 ; 6.441 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 6.459 ; 6.417 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -0.400 ; -2.232            ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.175 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -3.000 ; -23.288                         ;
++-------+--------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clk'                                                                                           ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; -0.400 ; fstate.RES_F         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.347      ;
+; -0.398 ; fstate.RES_F         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.345      ;
+; -0.314 ; fstate.ESP_J         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.455      ;
+; -0.314 ; fstate.ESP_J         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.455      ;
+; -0.314 ; fstate.ESP_J         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.455      ;
+; -0.256 ; fstate.RES_F         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.397      ;
+; -0.256 ; fstate.RES_F         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.397      ;
+; -0.256 ; fstate.RES_F         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.397      ;
+; -0.247 ; fstate.VER_F         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.388      ;
+; -0.247 ; fstate.VER_F         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.388      ;
+; -0.247 ; fstate.VER_F         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.388      ;
+; -0.237 ; fstate.ESP_J         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.184      ;
+; -0.235 ; fstate.ESP_J         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.182      ;
+; -0.231 ; fstate.SEL_MOD       ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.372      ;
+; -0.231 ; fstate.SEL_MOD       ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.372      ;
+; -0.231 ; fstate.SEL_MOD       ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.372      ;
+; -0.188 ; fstate.reseteo       ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.135      ;
+; -0.186 ; fstate.reseteo       ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.133      ;
+; -0.172 ; fstate.VER_F         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.119      ;
+; -0.170 ; fstate.VER_F         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.117      ;
+; -0.170 ; fstate.FIN_P         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.311      ;
+; -0.170 ; fstate.FIN_P         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.311      ;
+; -0.170 ; fstate.FIN_P         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.311      ;
+; -0.158 ; fstate.VERIF         ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.299      ;
+; -0.158 ; fstate.VERIF         ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.299      ;
+; -0.158 ; fstate.VERIF         ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.299      ;
+; -0.148 ; fstate.INICIO        ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.095      ;
+; -0.146 ; fstate.INICIO        ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.093      ;
+; -0.127 ; fstate.ESP_J         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 1.073      ;
+; -0.126 ; fstate.VER_F         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 1.073      ;
+; -0.121 ; contador_partidas[0] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.155      ; 1.263      ;
+; -0.121 ; contador_partidas[0] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.155      ; 1.263      ;
+; -0.121 ; contador_partidas[0] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.155      ; 1.263      ;
+; -0.102 ; fstate.IN_P          ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.243      ;
+; -0.102 ; fstate.IN_P          ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.243      ;
+; -0.102 ; fstate.IN_P          ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.243      ;
+; -0.080 ; fstate.FIN_P         ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.027      ;
+; -0.078 ; fstate.FIN_P         ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.025      ;
+; -0.069 ; fstate.RES_F         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 1.015      ;
+; -0.060 ; fstate.VER_F         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 1.006      ;
+; -0.059 ; contador_partidas[1] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.040     ; 1.006      ;
+; -0.058 ; fstate.SEL_MOD       ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 1.005      ;
+; -0.056 ; fstate.SEL_MOD       ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 1.003      ;
+; -0.053 ; contador_partidas[0] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.040     ; 1.000      ;
+; -0.049 ; fstate.FIN_P         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.996      ;
+; -0.048 ; fstate.RES_F         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.191      ;
+; -0.045 ; fstate.RES_F         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.188      ;
+; -0.045 ; contador_partidas[1] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.155      ; 1.187      ;
+; -0.045 ; contador_partidas[1] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.155      ; 1.187      ;
+; -0.045 ; contador_partidas[1] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.155      ; 1.187      ;
+; -0.044 ; fstate.RES_F         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.187      ;
+; -0.044 ; fstate.SEL_MOD       ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.990      ;
+; -0.043 ; fstate.RES_F         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.186      ;
+; -0.040 ; fstate.VERIF         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.183      ;
+; -0.037 ; fstate.VERIF         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.180      ;
+; -0.036 ; fstate.VERIF         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.179      ;
+; -0.035 ; fstate.VERIF         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.156      ; 1.178      ;
+; -0.027 ; contador_partidas[0] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.974      ;
+; -0.013 ; fstate.IN_P          ; fstate.INICIO         ; clk          ; clk         ; 1.000        ; -0.040     ; 0.960      ;
+; -0.011 ; fstate.IN_P          ; fstate.SEL_MOD        ; clk          ; clk         ; 1.000        ; -0.040     ; 0.958      ;
+; -0.011 ; fstate.reseteo       ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.958      ;
+; 0.008  ; fstate.ESP_J         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.939      ;
+; 0.017  ; fstate.FIN_P         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.929      ;
+; 0.019  ; fstate.IN_P          ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.928      ;
+; 0.029  ; fstate.VERIF         ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.917      ;
+; 0.029  ; fstate.INICIO        ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.918      ;
+; 0.049  ; contador_partidas[1] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.898      ;
+; 0.080  ; fstate.RES_F         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.866      ;
+; 0.085  ; fstate.IN_P          ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.861      ;
+; 0.116  ; fstate.VERIF         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.830      ;
+; 0.117  ; fstate.RES_F         ; fstate.FIN_P          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.829      ;
+; 0.121  ; fstate.SEL_MOD       ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.826      ;
+; 0.128  ; contador_partidas[2] ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.013      ;
+; 0.128  ; contador_partidas[2] ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; 0.154      ; 1.013      ;
+; 0.128  ; contador_partidas[2] ; resultado_final_int   ; clk          ; clk         ; 1.000        ; 0.154      ; 1.013      ;
+; 0.153  ; fstate.VERIF         ; fstate.FIN_P          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.793      ;
+; 0.166  ; fstate.VER_F         ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.041     ; 0.780      ;
+; 0.171  ; fstate.RES_F         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.775      ;
+; 0.173  ; fstate.RES_F         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.773      ;
+; 0.180  ; puntos2[1]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.757      ;
+; 0.184  ; fstate.FIN_P         ; puntos2[1]            ; clk          ; clk         ; 1.000        ; 0.156      ; 0.959      ;
+; 0.185  ; contador_partidas[2] ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.041     ; 0.761      ;
+; 0.187  ; fstate.FIN_P         ; puntos2[0]            ; clk          ; clk         ; 1.000        ; 0.156      ; 0.956      ;
+; 0.188  ; fstate.FIN_P         ; puntos1[1]            ; clk          ; clk         ; 1.000        ; 0.156      ; 0.955      ;
+; 0.189  ; puntos2[1]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.748      ;
+; 0.189  ; fstate.FIN_P         ; puntos1[0]            ; clk          ; clk         ; 1.000        ; 0.156      ; 0.954      ;
+; 0.197  ; puntos1[1]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.740      ;
+; 0.206  ; fstate.VERIF         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.740      ;
+; 0.208  ; fstate.VERIF         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.738      ;
+; 0.219  ; puntos1[1]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.718      ;
+; 0.222  ; contador_partidas[2] ; fstate.RES_F          ; clk          ; clk         ; 1.000        ; -0.041     ; 0.724      ;
+; 0.245  ; fstate.VERIF         ; fstate.VERIF          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.702      ;
+; 0.258  ; fstate.FIN_P         ; fstate.IN_P           ; clk          ; clk         ; 1.000        ; -0.041     ; 0.688      ;
+; 0.265  ; puntos2[0]           ; victoria_final_int[1] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.672      ;
+; 0.285  ; fstate.RES_F         ; fstate.reseteo        ; clk          ; clk         ; 1.000        ; -0.040     ; 0.662      ;
+; 0.296  ; puntos2[0]           ; victoria_final_int[0] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.641      ;
+; 0.304  ; fstate.IN_P          ; fstate.ESP_J          ; clk          ; clk         ; 1.000        ; -0.040     ; 0.643      ;
+; 0.316  ; fstate.FIN_P         ; contador_partidas[2]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.630      ;
+; 0.319  ; fstate.FIN_P         ; contador_partidas[1]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.627      ;
+; 0.319  ; fstate.FIN_P         ; contador_partidas[0]  ; clk          ; clk         ; 1.000        ; -0.041     ; 0.627      ;
++--------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clk'                                                                                           ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; 0.175 ; puntos1[0]           ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.048      ; 0.307      ;
+; 0.175 ; puntos1[1]           ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.048      ; 0.307      ;
+; 0.175 ; puntos2[0]           ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.048      ; 0.307      ;
+; 0.175 ; puntos2[1]           ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.048      ; 0.307      ;
+; 0.182 ; contador_partidas[2] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.307      ;
+; 0.183 ; fstate.INICIO        ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; fstate.SEL_MOD       ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; contador_partidas[0] ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; contador_partidas[1] ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; fstate.ESP_J         ; fstate.ESP_J          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; fstate.reseteo       ; fstate.reseteo        ; clk          ; clk         ; 0.000        ; 0.040      ; 0.307      ;
+; 0.286 ; fstate.FIN_P         ; fstate.VER_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.411      ;
+; 0.295 ; puntos1[0]           ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.048      ; 0.427      ;
+; 0.307 ; fstate.SEL_MOD       ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.040      ; 0.431      ;
+; 0.308 ; puntos2[0]           ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.048      ; 0.440      ;
+; 0.346 ; fstate.RES_F         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.471      ;
+; 0.350 ; fstate.reseteo       ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.040      ; 0.474      ;
+; 0.373 ; puntos1[0]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.503      ;
+; 0.377 ; contador_partidas[0] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.502      ;
+; 0.377 ; contador_partidas[0] ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.501      ;
+; 0.380 ; puntos1[0]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.510      ;
+; 0.380 ; contador_partidas[1] ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.505      ;
+; 0.383 ; fstate.IN_P          ; fstate.ESP_J          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.508      ;
+; 0.394 ; fstate.FIN_P         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.518      ;
+; 0.394 ; fstate.FIN_P         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.518      ;
+; 0.396 ; fstate.RES_F         ; fstate.reseteo        ; clk          ; clk         ; 0.000        ; 0.041      ; 0.521      ;
+; 0.423 ; fstate.SEL_MOD       ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.547      ;
+; 0.437 ; puntos2[0]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.567      ;
+; 0.442 ; puntos2[0]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.572      ;
+; 0.450 ; fstate.FIN_P         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.575      ;
+; 0.452 ; contador_partidas[2] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.577      ;
+; 0.459 ; fstate.IN_P          ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.041      ; 0.584      ;
+; 0.460 ; puntos1[1]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.590      ;
+; 0.462 ; fstate.VERIF         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.586      ;
+; 0.474 ; puntos1[1]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.604      ;
+; 0.474 ; puntos2[1]           ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.604      ;
+; 0.485 ; puntos2[1]           ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.046      ; 0.615      ;
+; 0.490 ; fstate.INICIO        ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.040      ; 0.614      ;
+; 0.502 ; fstate.VER_F         ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.041      ; 0.627      ;
+; 0.512 ; fstate.VERIF         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.039      ; 0.635      ;
+; 0.513 ; fstate.VERIF         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.039      ; 0.636      ;
+; 0.523 ; fstate.FIN_P         ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.041      ; 0.648      ;
+; 0.549 ; contador_partidas[2] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.041      ; 0.674      ;
+; 0.554 ; fstate.RES_F         ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.243      ; 0.881      ;
+; 0.554 ; fstate.RES_F         ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.243      ; 0.881      ;
+; 0.554 ; fstate.RES_F         ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.243      ; 0.881      ;
+; 0.555 ; fstate.VER_F         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.680      ;
+; 0.562 ; fstate.reseteo       ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.040      ; 0.686      ;
+; 0.571 ; fstate.FIN_P         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.245      ; 0.900      ;
+; 0.572 ; fstate.FIN_P         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.245      ; 0.901      ;
+; 0.573 ; fstate.FIN_P         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.245      ; 0.902      ;
+; 0.576 ; fstate.FIN_P         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.245      ; 0.905      ;
+; 0.580 ; fstate.VERIF         ; fstate.FIN_P          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.704      ;
+; 0.585 ; fstate.RES_F         ; contador_partidas[0]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.709      ;
+; 0.587 ; fstate.RES_F         ; contador_partidas[1]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.711      ;
+; 0.589 ; fstate.SEL_MOD       ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.713      ;
+; 0.592 ; contador_partidas[1] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.717      ;
+; 0.599 ; fstate.VERIF         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.723      ;
+; 0.614 ; fstate.SEL_MOD       ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.040      ; 0.738      ;
+; 0.646 ; contador_partidas[2] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.243      ; 0.973      ;
+; 0.646 ; contador_partidas[2] ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.243      ; 0.973      ;
+; 0.646 ; contador_partidas[2] ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.243      ; 0.973      ;
+; 0.649 ; fstate.RES_F         ; fstate.FIN_P          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.774      ;
+; 0.659 ; contador_partidas[0] ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.784      ;
+; 0.659 ; fstate.VERIF         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.783      ;
+; 0.664 ; fstate.ESP_J         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.788      ;
+; 0.670 ; fstate.IN_P          ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.795      ;
+; 0.671 ; fstate.INICIO        ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.795      ;
+; 0.674 ; fstate.RES_F         ; contador_partidas[2]  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.799      ;
+; 0.702 ; fstate.VERIF         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.244      ; 1.030      ;
+; 0.703 ; fstate.VERIF         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.244      ; 1.031      ;
+; 0.704 ; fstate.VERIF         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.244      ; 1.032      ;
+; 0.707 ; fstate.VERIF         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.244      ; 1.035      ;
+; 0.733 ; fstate.IN_P          ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.858      ;
+; 0.734 ; fstate.FIN_P         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.859      ;
+; 0.739 ; fstate.RES_F         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.864      ;
+; 0.749 ; fstate.VER_F         ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.243      ; 1.076      ;
+; 0.749 ; fstate.VER_F         ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.243      ; 1.076      ;
+; 0.749 ; fstate.VER_F         ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.243      ; 1.076      ;
+; 0.766 ; fstate.IN_P          ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.041      ; 0.891      ;
+; 0.771 ; fstate.IN_P          ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.041      ; 0.896      ;
+; 0.777 ; contador_partidas[0] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.041      ; 0.902      ;
+; 0.780 ; contador_partidas[1] ; fstate.IN_P           ; clk          ; clk         ; 0.000        ; 0.041      ; 0.905      ;
+; 0.785 ; fstate.reseteo       ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.909      ;
+; 0.786 ; contador_partidas[1] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.243      ; 1.113      ;
+; 0.786 ; contador_partidas[1] ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.243      ; 1.113      ;
+; 0.786 ; contador_partidas[1] ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.243      ; 1.113      ;
+; 0.792 ; fstate.ESP_J         ; fstate.RES_F          ; clk          ; clk         ; 0.000        ; 0.040      ; 0.916      ;
+; 0.797 ; fstate.RES_F         ; puntos1[1]            ; clk          ; clk         ; 0.000        ; 0.245      ; 1.126      ;
+; 0.797 ; fstate.FIN_P         ; fstate.VERIF          ; clk          ; clk         ; 0.000        ; 0.041      ; 0.922      ;
+; 0.798 ; fstate.RES_F         ; puntos1[0]            ; clk          ; clk         ; 0.000        ; 0.245      ; 1.127      ;
+; 0.799 ; fstate.RES_F         ; puntos2[0]            ; clk          ; clk         ; 0.000        ; 0.245      ; 1.128      ;
+; 0.802 ; fstate.RES_F         ; puntos2[1]            ; clk          ; clk         ; 0.000        ; 0.245      ; 1.131      ;
+; 0.803 ; fstate.SEL_MOD       ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.242      ; 1.129      ;
+; 0.803 ; fstate.SEL_MOD       ; victoria_final_int[1] ; clk          ; clk         ; 0.000        ; 0.242      ; 1.129      ;
+; 0.803 ; fstate.SEL_MOD       ; resultado_final_int   ; clk          ; clk         ; 0.000        ; 0.242      ; 1.129      ;
+; 0.830 ; fstate.FIN_P         ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.041      ; 0.955      ;
+; 0.835 ; fstate.FIN_P         ; fstate.SEL_MOD        ; clk          ; clk         ; 0.000        ; 0.041      ; 0.960      ;
+; 0.852 ; fstate.ESP_J         ; fstate.INICIO         ; clk          ; clk         ; 0.000        ; 0.040      ; 0.976      ;
+; 0.853 ; contador_partidas[0] ; victoria_final_int[0] ; clk          ; clk         ; 0.000        ; 0.243      ; 1.180      ;
++-------+----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'clk'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clk   ; Rise       ; clk                       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; contador_partidas[0]      ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; contador_partidas[1]      ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; contador_partidas[2]      ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.ESP_J              ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.FIN_P              ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.INICIO             ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.IN_P               ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.RES_F              ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.VERIF              ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.VER_F              ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; fstate.reseteo            ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; puntos1[0]                ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; puntos1[1]                ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; puntos2[0]                ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; puntos2[1]                ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; resultado_final_int       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; victoria_final_int[0]     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; victoria_final_int[1]     ;
+; -0.086 ; 0.098        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[0]                ;
+; -0.086 ; 0.098        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[1]                ;
+; -0.086 ; 0.098        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[0]                ;
+; -0.086 ; 0.098        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[1]                ;
+; -0.081 ; 0.103        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; resultado_final_int       ;
+; -0.081 ; 0.103        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[0]     ;
+; -0.081 ; 0.103        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[1]     ;
+; -0.059 ; 0.125        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.ESP_J              ;
+; -0.059 ; 0.125        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.INICIO             ;
+; -0.059 ; 0.125        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; -0.059 ; 0.125        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VERIF              ;
+; -0.059 ; 0.125        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.reseteo            ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[0]      ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[1]      ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[2]      ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.FIN_P              ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.IN_P               ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.RES_F              ;
+; -0.058 ; 0.126        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VER_F              ;
+; 0.094  ; 0.094        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[0]|clk            ;
+; 0.094  ; 0.094        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos1[1]|clk            ;
+; 0.094  ; 0.094        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[0]|clk            ;
+; 0.094  ; 0.094        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; puntos2[1]|clk            ;
+; 0.099  ; 0.099        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; resultado_final_int|clk   ;
+; 0.099  ; 0.099        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[0]|clk ;
+; 0.099  ; 0.099        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; victoria_final_int[1]|clk ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[0]|clk  ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[1]|clk  ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; contador_partidas[2]|clk  ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.ESP_J|clk          ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.FIN_P|clk          ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.INICIO|clk         ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.IN_P|clk           ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.RES_F|clk          ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.SEL_MOD|clk        ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VERIF|clk          ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.VER_F|clk          ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; fstate.reseteo|clk        ;
+; 0.123  ; 0.123        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|o               ;
+; 0.136  ; 0.136        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|inclk[0] ;
+; 0.136  ; 0.136        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|i               ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[0]      ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[1]      ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[2]      ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.ESP_J              ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.FIN_P              ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.INICIO             ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.IN_P               ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.RES_F              ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.SEL_MOD            ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.VERIF              ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.VER_F              ;
+; 0.657  ; 0.873        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; fstate.reseteo            ;
+; 0.678  ; 0.894        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; resultado_final_int       ;
+; 0.678  ; 0.894        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[0]     ;
+; 0.678  ; 0.894        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[1]     ;
+; 0.683  ; 0.899        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; puntos1[0]                ;
+; 0.683  ; 0.899        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; puntos1[1]                ;
+; 0.683  ; 0.899        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; puntos2[0]                ;
+; 0.683  ; 0.899        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; puntos2[1]                ;
+; 0.863  ; 0.863        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|inclk[0] ;
+; 0.863  ; 0.863        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|outclk   ;
+; 0.877  ; 0.877        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|o               ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[0]|clk  ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[1]|clk  ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; contador_partidas[2]|clk  ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.FIN_P|clk          ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.IN_P|clk           ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.RES_F|clk          ;
+; 0.878  ; 0.878        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.VER_F|clk          ;
+; 0.879  ; 0.879        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.ESP_J|clk          ;
+; 0.879  ; 0.879        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.INICIO|clk         ;
+; 0.879  ; 0.879        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.SEL_MOD|clk        ;
+; 0.879  ; 0.879        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.VERIF|clk          ;
+; 0.879  ; 0.879        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; fstate.reseteo|clk        ;
+; 0.900  ; 0.900        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; resultado_final_int|clk   ;
+; 0.900  ; 0.900        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[0]|clk ;
+; 0.900  ; 0.900        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; victoria_final_int[1]|clk ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; confirmar_modo ; clk        ; 1.201 ; 1.821 ; Rise       ; clk             ;
+; empate         ; clk        ; 0.616 ; 1.195 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; 1.305 ; 1.854 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; 0.646 ; 1.212 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; 0.545 ; 1.114 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; 1.508 ; 2.081 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; 1.515 ; 2.063 ; Rise       ; clk             ;
+; reset_n        ; clk        ; 1.832 ; 1.980 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; confirmar_modo ; clk        ; -0.464 ; -1.024 ; Rise       ; clk             ;
+; empate         ; clk        ; -0.365 ; -0.941 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; -0.474 ; -0.994 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; -0.367 ; -0.933 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; -0.290 ; -0.831 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; -0.365 ; -0.937 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; -0.555 ; -1.127 ; Rise       ; clk             ;
+; reset_n        ; clk        ; -0.938 ; -1.028 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 3.536 ; 3.629 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 3.486 ; 3.579 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 3.476 ; 3.569 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 3.966 ; 4.116 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 3.606 ; 3.694 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 3.606 ; 3.694 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 3.600 ; 3.691 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 3.641 ; 3.728 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 3.556 ; 3.628 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 3.641 ; 3.728 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 3.699 ; 3.797 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 3.734 ; 3.827 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 3.734 ; 3.827 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 3.728 ; 3.817 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 3.458 ; 3.549 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 3.408 ; 3.499 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 3.398 ; 3.489 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 3.569 ; 3.671 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 3.518 ; 3.607 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 3.525 ; 3.610 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 3.518 ; 3.607 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 3.477 ; 3.547 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 3.477 ; 3.547 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 3.559 ; 3.644 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 3.613 ; 3.708 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 3.643 ; 3.729 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 3.649 ; 3.739 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 3.643 ; 3.729 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.856  ; 0.175 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -1.856  ; 0.175 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -21.798 ; 0.0   ; 0.0      ; 0.0     ; -27.415             ;
+;  clk             ; -21.798 ; 0.000 ; N/A      ; N/A     ; -27.415             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; confirmar_modo ; clk        ; 2.592 ; 2.920 ; Rise       ; clk             ;
+; empate         ; clk        ; 1.306 ; 1.646 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; 2.750 ; 3.109 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; 1.345 ; 1.681 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; 1.134 ; 1.531 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; 3.251 ; 3.654 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; 3.164 ; 3.569 ; Rise       ; clk             ;
+; reset_n        ; clk        ; 3.502 ; 3.394 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; confirmar_modo ; clk        ; -0.464 ; -1.024 ; Rise       ; clk             ;
+; empate         ; clk        ; -0.365 ; -0.909 ; Rise       ; clk             ;
+; fin_juego      ; clk        ; -0.474 ; -0.994 ; Rise       ; clk             ;
+; gana_j1        ; clk        ; -0.367 ; -0.911 ; Rise       ; clk             ;
+; gana_j2        ; clk        ; -0.290 ; -0.795 ; Rise       ; clk             ;
+; jugada_valida  ; clk        ; -0.365 ; -0.937 ; Rise       ; clk             ;
+; pulso_jugada   ; clk        ; -0.555 ; -1.127 ; Rise       ; clk             ;
+; reset_n        ; clk        ; -0.938 ; -1.028 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 6.588 ; 6.598 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 6.527 ; 6.539 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 6.517 ; 6.529 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 7.576 ; 7.592 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 6.770 ; 6.787 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 6.770 ; 6.787 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 6.757 ; 6.775 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 6.787 ; 6.803 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 6.681 ; 6.679 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 6.787 ; 6.803 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 6.999 ; 6.994 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 6.990 ; 7.001 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 6.990 ; 7.001 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 6.986 ; 6.975 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++--------------------+------------+-------+-------+------------+-----------------+
+; Data Port          ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------------+------------+-------+-------+------------+-----------------+
+; E_maquina          ; clk        ; 3.458 ; 3.549 ; Rise       ; clk             ;
+; E_teclado          ; clk        ; 3.408 ; 3.499 ; Rise       ; clk             ;
+; e_tablero          ; clk        ; 3.398 ; 3.489 ; Rise       ; clk             ;
+; limpiar_tablero    ; clk        ; 3.569 ; 3.671 ; Rise       ; clk             ;
+; puntos_j1[*]       ; clk        ; 3.518 ; 3.607 ; Rise       ; clk             ;
+;  puntos_j1[0]      ; clk        ; 3.525 ; 3.610 ; Rise       ; clk             ;
+;  puntos_j1[1]      ; clk        ; 3.518 ; 3.607 ; Rise       ; clk             ;
+; puntos_j2[*]       ; clk        ; 3.477 ; 3.547 ; Rise       ; clk             ;
+;  puntos_j2[0]      ; clk        ; 3.477 ; 3.547 ; Rise       ; clk             ;
+;  puntos_j2[1]      ; clk        ; 3.559 ; 3.644 ; Rise       ; clk             ;
+; resultado_final    ; clk        ; 3.613 ; 3.708 ; Rise       ; clk             ;
+; victoria_final[*]  ; clk        ; 3.643 ; 3.729 ; Rise       ; clk             ;
+;  victoria_final[0] ; clk        ; 3.649 ; 3.739 ; Rise       ; clk             ;
+;  victoria_final[1] ; clk        ; 3.643 ; 3.729 ; Rise       ; clk             ;
++--------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                        ;
++-------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin               ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++-------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; E_maquina         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; e_tablero         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; E_teclado         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; modo_actual       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; puntos_j1[0]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; puntos_j1[1]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; puntos_j2[0]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; puntos_j2[1]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; victoria_final[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; victoria_final[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; resultado_final   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; limpiar_tablero   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++-------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; pulso_jugada            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; jugada_valida           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; reset_n                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; fin_juego               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; gana_j1                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; empate                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; gana_j2                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; confirmar_modo          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++-------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin               ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; E_maquina         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; e_tablero         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; E_teclado         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; modo_actual       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.43e-07 V                   ; 2.35 V              ; -0.00795 V          ; 0.123 V                              ; 0.028 V                              ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.43e-07 V                  ; 2.35 V             ; -0.00795 V         ; 0.123 V                             ; 0.028 V                             ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; puntos_j1[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; puntos_j1[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; puntos_j2[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; puntos_j2[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; victoria_final[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; victoria_final[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; resultado_final   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; limpiar_tablero   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.66e-07 V                   ; 2.35 V              ; -0.00828 V          ; 0.118 V                              ; 0.032 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.66e-07 V                  ; 2.35 V             ; -0.00828 V         ; 0.118 V                             ; 0.032 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.92e-07 V                   ; 2.35 V              ; -0.0133 V           ; 0.084 V                              ; 0.028 V                              ; 4.31e-10 s                  ; 3.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.92e-07 V                  ; 2.35 V             ; -0.0133 V          ; 0.084 V                             ; 0.028 V                             ; 4.31e-10 s                 ; 3.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.8e-07 V                    ; 2.35 V              ; -0.00679 V          ; 0.09 V                               ; 0.045 V                              ; 6.2e-10 s                   ; 7.91e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.8e-07 V                   ; 2.35 V             ; -0.00679 V         ; 0.09 V                              ; 0.045 V                             ; 6.2e-10 s                  ; 7.91e-10 s                 ; Yes                       ; Yes                       ;
++-------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++-------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin               ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; E_maquina         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; e_tablero         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; E_teclado         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; modo_actual       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.02e-08 V                   ; 2.71 V              ; -0.0354 V           ; 0.174 V                              ; 0.098 V                              ; 2.73e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.02e-08 V                  ; 2.71 V             ; -0.0354 V          ; 0.174 V                             ; 0.098 V                             ; 2.73e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; puntos_j1[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; puntos_j1[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; puntos_j2[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; puntos_j2[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; victoria_final[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; victoria_final[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; resultado_final   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; limpiar_tablero   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-08 V                    ; 2.71 V              ; -0.0354 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.14e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-08 V                   ; 2.71 V             ; -0.0354 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.14e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.2e-08 V                    ; 2.74 V              ; -0.061 V            ; 0.159 V                              ; 0.078 V                              ; 2.7e-10 s                   ; 2.2e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 2.2e-08 V                   ; 2.74 V             ; -0.061 V           ; 0.159 V                             ; 0.078 V                             ; 2.7e-10 s                  ; 2.2e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_nCEO~     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.52e-08 V                   ; 2.7 V               ; -0.0121 V           ; 0.274 V                              ; 0.034 V                              ; 3.18e-10 s                  ; 4.96e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.52e-08 V                  ; 2.7 V              ; -0.0121 V          ; 0.274 V                             ; 0.034 V                             ; 3.18e-10 s                 ; 4.96e-10 s                 ; No                        ; Yes                       ;
++-------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 157      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 157      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 70    ; 70   ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 13    ; 13   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 09 10:57:40 2025
+Info: Command: quartus_sta subs_4 -c subs_4
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'subs_4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.856
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.856       -21.798 clk 
+Info (332146): Worst-case hold slack is 0.387
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.387         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.000       -27.415 clk 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.564
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.564       -18.172 clk 
+Info (332146): Worst-case hold slack is 0.340
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.340         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.000       -27.415 clk 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.400
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.400        -2.232 clk 
+Info (332146): Worst-case hold slack is 0.175
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.175         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.000       -23.288 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4649 megabytes
+    Info: Processing ended: Sun Nov 09 10:57:47 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+
