@@ -391,9 +391,7 @@ parallel_in[382] => paralelo_serie_384b:inst1.parallel_in[382]
 parallel_in[383] => paralelo_serie_384b:inst1.parallel_in[383]
 CERO <= altpll0:inst.c0
 UNO <= altpll0:inst.c1
-pulso_384 <= pulso_384:inst12.pulso
-Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-so <= paralelo_serie_384b:inst1.serial_out
+frecuencialed <= altpll0:inst.c2
 
 
 |Block1|altpll0:inst
@@ -401,6 +399,7 @@ areset => altpll:altpll_component.areset
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
 c1 <= altpll:altpll_component.clk[1]
+c2 <= altpll:altpll_component.clk[2]
 locked <= altpll:altpll_component.locked
 
 

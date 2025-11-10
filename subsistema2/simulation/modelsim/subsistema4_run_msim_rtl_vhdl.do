@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db/altpll0_altpll.v}
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/coloress2.vhd}
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/subsistema2esquematico.vhd}
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/altpll0.vhd}
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/pulso_384.vhd}
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/paralelo_serie_384b.vhd}
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/lpm_counter0.vhd}
+
+vcom -93 -work work {C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/tb_subsistema2.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  tb_subsistema2
+
+add wave *
+view structure
+view signals
+run 1 sec

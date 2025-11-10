@@ -1,0 +1,276 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\iniak\Documents\facu\TYDD2\lab2\TATETI\subsistema2\simulation\modelsim
+Ealtpll0
+Z1 w1762798076
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\iniak\Documents\facu\TYDD2\lab2\TATETI\subsistema2\simulation\modelsim
+Z5 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/altpll0.vhd
+Z6 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/altpll0.vhd
+l0
+L42
+VVi08keHT_JZ1i_XFS=X7e0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1762805373.095000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/altpll0.vhd|
+Z10 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/altpll0.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 Z;8cbVeRc_d>PIMWj7ek62
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 7 altpll0 0 22 Vi08keHT_JZ1i_XFS=X7e0
+l143
+L55
+V;DFKK6PP4fj[f?QMX06eH0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 Oz>N[jmkiiSGUI6=LYHJF1
+!i10b 1
+valtpll0_altpll
+IUHb<0:1JTz<ggKeja<L@;2
+VbmOFXHjhheB>Iagza_8dB0
+R4
+w1762804132
+8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db/altpll0_altpll.v
+FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db/altpll0_altpll.v
+L0 29
+Z13 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 IfGjOF]JK1;Z4]]M03XPJ0
+!s85 0
+!s108 1762805372.291000
+!s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db/altpll0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db/altpll0_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/db -O0
+Ecoloress2
+Z14 w1762805303
+Z15 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z16 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/coloress2.vhd
+Z17 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/coloress2.vhd
+l0
+L5
+V<>AonXYKzl5]6n2Gikk]F0
+R7
+31
+Z18 !s108 1762805372.499000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/coloress2.vhd|
+Z20 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/coloress2.vhd|
+R11
+R12
+!s100 Dj[V[iUX:GdOZMUGBem692
+!i10b 1
+Afnc
+R15
+R2
+R3
+DEx4 work 9 coloress2 0 22 <>AonXYKzl5]6n2Gikk]F0
+l26
+L21
+Vb@[U]QSN[YU[<Q7R01MFP3
+R7
+31
+R18
+R19
+R20
+R11
+R12
+!s100 ^A[?h=iEPh<a=0n`LcH3B0
+!i10b 1
+Elpm_counter0
+Z21 w1762801692
+R2
+R3
+R4
+Z22 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/lpm_counter0.vhd
+Z23 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/lpm_counter0.vhd
+l0
+L42
+VNclQKF2Pg]EXg5Q;oH`D90
+R7
+31
+Z24 !s108 1762805374.383000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/lpm_counter0.vhd|
+Z26 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/lpm_counter0.vhd|
+R11
+R12
+!s100 M2d^411NoPiBm:N@a[DoA2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 12 lpm_counter0 0 22 NclQKF2Pg]EXg5Q;oH`D90
+l74
+L52
+Vd^bI`=iAO3OETO1C4H`@50
+R7
+31
+R24
+R25
+R26
+R11
+R12
+!s100 W@_O=M<=?Ne4leF:c57GS2
+!i10b 1
+Eparalelo_serie_384b
+Z27 w1762719148
+R15
+R2
+R3
+R4
+Z28 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/paralelo_serie_384b.vhd
+Z29 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/paralelo_serie_384b.vhd
+l0
+L5
+Vaz5Hcnc?cgCH<>0E57h=f3
+R7
+31
+Z30 !s108 1762805374.008000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/paralelo_serie_384b.vhd|
+Z32 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/paralelo_serie_384b.vhd|
+R11
+R12
+!s100 PPCVdjJo]4XA6?6W[L[O11
+!i10b 1
+Artl
+R15
+R2
+R3
+DEx4 work 19 paralelo_serie_384b 0 22 az5Hcnc?cgCH<>0E57h=f3
+l18
+L16
+V3g1ZgjQ=IcdIBJV[28Aoj3
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 1=]zo=@Gm8N<oh7iGdJE=3
+!i10b 1
+Epulso_384
+Z33 w1762720063
+R15
+R2
+R3
+R4
+Z34 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/pulso_384.vhd
+Z35 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/pulso_384.vhd
+l0
+L5
+Vd^1f_0S2o;fA]IRC03TkC1
+R7
+31
+Z36 !s108 1762805373.539000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/pulso_384.vhd|
+Z38 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/pulso_384.vhd|
+R11
+R12
+!s100 ^;OK;4P0Yd2o_FURYe_4=1
+!i10b 1
+Artl
+R15
+R2
+R3
+DEx4 work 9 pulso_384 0 22 d^1f_0S2o;fA]IRC03TkC1
+l17
+L14
+V2CnGoD4iojUzmGmTMb]R<0
+R7
+31
+R36
+R37
+R38
+R11
+R12
+!s100 Z85]SSG^ge3DFCY5[lH?z3
+!i10b 1
+Esubsistema2esquematico
+Z39 w1762802325
+R2
+R3
+R4
+Z40 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/subsistema2esquematico.vhd
+Z41 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/subsistema2esquematico.vhd
+l0
+L24
+V5j<=QiGKc<Y0dm?K84^iV0
+R7
+31
+Z42 !s108 1762805372.822000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/subsistema2esquematico.vhd|
+Z44 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/subsistema2esquematico.vhd|
+R11
+R12
+!s100 mANIjC=feeETa4n@6Yl:J2
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 22 subsistema2esquematico 0 22 5j<=QiGKc<Y0dm?K84^iV0
+l89
+L46
+VX]1Uzbl0Gn1P8V?3VJ23Z1
+R7
+31
+R42
+R43
+R44
+R11
+R12
+!s100 ^Y5fJ?D2D4R_<RagVhTzg1
+!i10b 1
+Etb_subsistema2
+Z45 w1762803944
+R2
+R3
+R4
+Z46 8C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/tb_subsistema2.vhd
+Z47 FC:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/tb_subsistema2.vhd
+l0
+L4
+V2J6@dA14iiAfQYBjOoPF:0
+!s100 52c6L7>;X:1@KiaD?@MTf2
+R7
+31
+!i10b 1
+Z48 !s108 1762805374.774000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/tb_subsistema2.vhd|
+Z50 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/subsistema2/tb_subsistema2.vhd|
+R11
+R12
+Asim
+R2
+R3
+DEx4 work 14 tb_subsistema2 0 22 2J6@dA14iiAfQYBjOoPF:0
+l36
+L7
+Vl7WP=WYX[IfDfYg_X1=e:0
+!s100 VAz2mU=SX=ihEJ>7d2`@n2
+R7
+31
+!i10b 1
+R48
+R49
+R50
+R11
+R12

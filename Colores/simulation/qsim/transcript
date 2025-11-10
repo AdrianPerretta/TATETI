@@ -33,10 +33,10 @@
 # 
 #           File in use by: Adrian  Hostname: DESKTOP-7NSOQA6  ProcessID: 12360
 # 
-#           Attempting to use alternate WLF file "./wlftdy8tfh".
+#           Attempting to use alternate WLF file "./wlftzq8hdd".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftdy8tfh
+#           Using alternate file: ./wlftzq8hdd
 # 
 # Simulation passed !
 # ** Note: $finish    : Colores.vt(8029)

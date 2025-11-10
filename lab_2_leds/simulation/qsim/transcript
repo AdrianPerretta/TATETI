@@ -33,6 +33,27 @@
 # Loading altera_ver.PRIM_GDFF_LOW
 #  Note : cycloneiv PLL locked to incoming clock
 # Time: 90000.000 ps  Instance: Block1_vlg_vec_tst.i1.\inst|altpll_component|auto_generated|pll1 
-# Simulation passed !
-# ** Note: $finish    : prubaleds.vt(316)
+# ERROR! Vector Mismatch for output port locked :: @time = 10000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port pulso_384 :: @time = 10000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Q :: @time = 10000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port so :: @time = 10000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port CERO :: @time = 10020000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port UNO :: @time = 10020000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y :: @time = 10020000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           7 mismatched vectors : Simulation failed !
+# ** Note: $finish    : prubaleds.vt(323)
 #    Time: 100 us  Iteration: 0  Instance: /Block1_vlg_vec_tst/tb_out

@@ -3,7 +3,7 @@ $comment
 		vcd file Colores.msim.vcd -direction
 $end
 $date
-	Sat Nov 08 13:59:27 2025
+	Mon Nov 10 14:46:00 2025
 $end
 $version
 	ModelSim Version 10.1d
@@ -1800,45 +1800,45 @@ $var wire 1 |2 MATRIZ[380]~reg0_q $end
 $var wire 1 }2 MATRIZ[381]~reg0_q $end
 $var wire 1 ~2 MATRIZ[382]~reg0_q $end
 $var wire 1 !3 MATRIZ[383]~reg0_q $end
-$var wire 1 "3 CJ2 [23] $end
-$var wire 1 #3 CJ2 [22] $end
-$var wire 1 $3 CJ2 [21] $end
-$var wire 1 %3 CJ2 [20] $end
-$var wire 1 &3 CJ2 [19] $end
-$var wire 1 '3 CJ2 [18] $end
-$var wire 1 (3 CJ2 [17] $end
-$var wire 1 )3 CJ2 [16] $end
-$var wire 1 *3 CJ2 [15] $end
-$var wire 1 +3 CJ2 [14] $end
-$var wire 1 ,3 CJ2 [13] $end
-$var wire 1 -3 CJ2 [12] $end
-$var wire 1 .3 CJ2 [11] $end
-$var wire 1 /3 CJ2 [10] $end
-$var wire 1 03 CJ2 [9] $end
-$var wire 1 13 CJ2 [8] $end
-$var wire 1 23 CJ2 [7] $end
-$var wire 1 33 CJ2 [6] $end
-$var wire 1 43 CJ2 [5] $end
-$var wire 1 53 CJ2 [4] $end
-$var wire 1 63 CJ2 [3] $end
-$var wire 1 73 CJ2 [2] $end
-$var wire 1 83 CJ2 [1] $end
-$var wire 1 93 CJ2 [0] $end
-$var wire 1 :3 empatecounter1 [2] $end
-$var wire 1 ;3 empatecounter1 [1] $end
-$var wire 1 <3 empatecounter1 [0] $end
-$var wire 1 =3 empategeneral [2] $end
-$var wire 1 >3 empategeneral [1] $end
-$var wire 1 ?3 empategeneral [0] $end
-$var wire 1 @3 empatecounter2 [2] $end
-$var wire 1 A3 empatecounter2 [1] $end
-$var wire 1 B3 empatecounter2 [0] $end
-$var wire 1 C3 victoriacounter2 [2] $end
-$var wire 1 D3 victoriacounter2 [1] $end
-$var wire 1 E3 victoriacounter2 [0] $end
-$var wire 1 F3 victoriacounter1 [2] $end
-$var wire 1 G3 victoriacounter1 [1] $end
-$var wire 1 H3 victoriacounter1 [0] $end
+$var wire 1 "3 victoriacounter2 [2] $end
+$var wire 1 #3 victoriacounter2 [1] $end
+$var wire 1 $3 victoriacounter2 [0] $end
+$var wire 1 %3 victoriacounter1 [2] $end
+$var wire 1 &3 victoriacounter1 [1] $end
+$var wire 1 '3 victoriacounter1 [0] $end
+$var wire 1 (3 empategeneral [2] $end
+$var wire 1 )3 empategeneral [1] $end
+$var wire 1 *3 empategeneral [0] $end
+$var wire 1 +3 empatecounter2 [2] $end
+$var wire 1 ,3 empatecounter2 [1] $end
+$var wire 1 -3 empatecounter2 [0] $end
+$var wire 1 .3 empatecounter1 [2] $end
+$var wire 1 /3 empatecounter1 [1] $end
+$var wire 1 03 empatecounter1 [0] $end
+$var wire 1 13 CJ2 [23] $end
+$var wire 1 23 CJ2 [22] $end
+$var wire 1 33 CJ2 [21] $end
+$var wire 1 43 CJ2 [20] $end
+$var wire 1 53 CJ2 [19] $end
+$var wire 1 63 CJ2 [18] $end
+$var wire 1 73 CJ2 [17] $end
+$var wire 1 83 CJ2 [16] $end
+$var wire 1 93 CJ2 [15] $end
+$var wire 1 :3 CJ2 [14] $end
+$var wire 1 ;3 CJ2 [13] $end
+$var wire 1 <3 CJ2 [12] $end
+$var wire 1 =3 CJ2 [11] $end
+$var wire 1 >3 CJ2 [10] $end
+$var wire 1 ?3 CJ2 [9] $end
+$var wire 1 @3 CJ2 [8] $end
+$var wire 1 A3 CJ2 [7] $end
+$var wire 1 B3 CJ2 [6] $end
+$var wire 1 C3 CJ2 [5] $end
+$var wire 1 D3 CJ2 [4] $end
+$var wire 1 E3 CJ2 [3] $end
+$var wire 1 F3 CJ2 [2] $end
+$var wire 1 G3 CJ2 [1] $end
+$var wire 1 H3 CJ2 [0] $end
 $var wire 1 I3 CJ1 [23] $end
 $var wire 1 J3 CJ1 [22] $end
 $var wire 1 K3 CJ1 [21] $end
@@ -3655,45 +3655,45 @@ xk$
 0}2
 0~2
 0!3
-093
-183
-073
-063
-053
-143
-033
-023
-013
-103
-0/3
-0.3
-1-3
-1,3
-0+3
-1*3
+0$3
+0#3
+0"3
+0'3
+0&3
+0%3
+0*3
 0)3
 0(3
-1'3
-1&3
-0%3
-0$3
-1#3
-z"3
-0<3
-0;3
-0:3
-0?3
-0>3
-0=3
+0-3
+0,3
+0+3
+003
+0/3
+0.3
+0H3
+1G3
+0F3
+0E3
+0D3
+1C3
 0B3
 0A3
 0@3
-0E3
-0D3
-0C3
-0H3
-0G3
-0F3
+1?3
+0>3
+0=3
+1<3
+1;3
+0:3
+193
+083
+073
+163
+153
+043
+033
+123
+z13
 1`3
 1_3
 1^3
@@ -3947,15 +3947,15 @@ b10 (
 1X)
 0U)
 1\)
-1$3
-0&3
-0'3
-1(3
-1)3
-113
 133
-043
-083
+053
+063
+173
+183
+1@3
+1B3
+0C3
+0G3
 1I3
 0J3
 1M3
@@ -5836,9 +5836,9 @@ b101 &
 1'*
 1(*
 1h$
-1<3
-1;3
-1H3
+103
+1/3
+1'3
 1`1
 1X1
 1V1
@@ -5851,7 +5851,7 @@ b101 &
 1>1
 181
 161
-1G3
+1&3
 0X*
 0V*
 0T*
@@ -6264,8 +6264,8 @@ b0 &
 1'*
 1(*
 1h$
-0<3
-0H3
+003
+0'3
 1f/
 1^/
 1\/
@@ -6575,9 +6575,9 @@ b0 &
 1'*
 1(*
 1h$
-1A3
-1B3
-1E3
+1,3
+1-3
+1$3
 1j,
 1f,
 1d,
@@ -6589,7 +6589,7 @@ b0 &
 1L,
 1J,
 1F,
-1D3
+1#3
 0i*
 0T+
 0h*
@@ -6764,11 +6764,11 @@ b0 &
 1'*
 1(*
 1h$
-1F3
-1H3
-0E3
-1>3
-1?3
+1%3
+1'3
+0$3
+1)3
+1*3
 1I-
 1G-
 1E-
@@ -6817,7 +6817,7 @@ b0 &
 1_+
 1]+
 1[+
-0G3
+0&3
 0u*
 0q*
 1h*
@@ -7164,14 +7164,14 @@ b0 &
 1'*
 1(*
 1h$
-0;3
+0/3
 04,
-0F3
-0H3
-0A3
-0B3
-0>3
-0?3
+0%3
+0'3
+0,3
+0-3
+0)3
+0*3
 0G-
 0E-
 0C-
@@ -7211,7 +7211,7 @@ b0 &
 1*+
 1&+
 1}*
-0D3
+0#3
 07/
 0g,
 05,
@@ -7782,15 +7782,15 @@ b101 '
 11+
 1~*
 1o$
-1%3
-1&3
-1'3
-1+3
-0,3
-1.3
-1/3
-033
 143
+153
+163
+1:3
+0;3
+1=3
+1>3
+0B3
+1C3
 0N3
 1O3
 0S3

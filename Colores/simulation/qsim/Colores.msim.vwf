@@ -18002,6 +18002,156 @@ SIGNAL("Colores_vlg_vec_tst|i1|MATRIZ[383]~reg0_q")
 	PARENT = "";
 }
 
+SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter2[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter2[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter2[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter1[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter1[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter1[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empategeneral[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empategeneral[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empategeneral[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empatecounter2[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empatecounter2[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empatecounter2[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empatecounter1[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empatecounter1[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Colores_vlg_vec_tst|i1|empatecounter1[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("Colores_vlg_vec_tst|i1|CJ2[23]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -18233,156 +18383,6 @@ SIGNAL("Colores_vlg_vec_tst|i1|CJ2[1]")
 }
 
 SIGNAL("Colores_vlg_vec_tst|i1|CJ2[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empatecounter1[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empatecounter1[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empatecounter1[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empategeneral[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empategeneral[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empategeneral[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empatecounter2[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empatecounter2[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|empatecounter2[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter2[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter2[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter2[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter1[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter1[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Colores_vlg_vec_tst|i1|victoriacounter1[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -39658,6 +39658,165 @@ TRANSITION_LIST("Colores_vlg_vec_tst|i1|MATRIZ[383]~reg0_q")
 	}
 }
 
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter2[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter2[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1023.0;
+		LEVEL 1 FOR 248.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter2[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1023.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 853.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter1[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1147.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter1[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 775.0;
+		LEVEL 1 FOR 372.0;
+		LEVEL 0 FOR 853.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter1[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 775.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 248.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empategeneral[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empategeneral[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1147.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empategeneral[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1147.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter2[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter2[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1023.0;
+		LEVEL 1 FOR 248.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter2[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1023.0;
+		LEVEL 1 FOR 248.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter1[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter1[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 775.0;
+		LEVEL 1 FOR 496.0;
+		LEVEL 0 FOR 729.0;
+	}
+}
+
+TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter1[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 775.0;
+		LEVEL 1 FOR 124.0;
+		LEVEL 0 FOR 1101.0;
+	}
+}
+
 TRANSITION_LIST("Colores_vlg_vec_tst|i1|CJ2[23]")
 {
 	NODE
@@ -39889,165 +40048,6 @@ TRANSITION_LIST("Colores_vlg_vec_tst|i1|CJ2[0]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter1[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter1[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 775.0;
-		LEVEL 1 FOR 496.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter1[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 775.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 1101.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empategeneral[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empategeneral[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1147.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empategeneral[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1147.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter2[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter2[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1023.0;
-		LEVEL 1 FOR 248.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|empatecounter2[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1023.0;
-		LEVEL 1 FOR 248.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter2[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter2[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1023.0;
-		LEVEL 1 FOR 248.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter2[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1023.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 853.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter1[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1147.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 729.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter1[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 775.0;
-		LEVEL 1 FOR 372.0;
-		LEVEL 0 FOR 853.0;
-	}
-}
-
-TRANSITION_LIST("Colores_vlg_vec_tst|i1|victoriacounter1[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 775.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 248.0;
-		LEVEL 1 FOR 124.0;
-		LEVEL 0 FOR 729.0;
 	}
 }
 
@@ -56489,7 +56489,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[23]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter2[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1797;
@@ -56498,7 +56498,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[22]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter2[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1798;
@@ -56507,7 +56507,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[21]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter2[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1799;
@@ -56516,7 +56516,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[20]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter1[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1800;
@@ -56525,7 +56525,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[19]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter1[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1801;
@@ -56534,7 +56534,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[18]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter1[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1802;
@@ -56543,7 +56543,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[17]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empategeneral[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1803;
@@ -56552,7 +56552,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[16]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empategeneral[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1804;
@@ -56561,7 +56561,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[15]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empategeneral[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1805;
@@ -56570,7 +56570,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[14]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter2[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1806;
@@ -56579,7 +56579,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[13]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter2[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1807;
@@ -56588,7 +56588,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[12]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter2[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1808;
@@ -56597,7 +56597,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[11]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter1[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1809;
@@ -56606,7 +56606,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[10]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter1[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1810;
@@ -56615,7 +56615,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[9]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter1[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1811;
@@ -56624,7 +56624,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[8]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1812;
@@ -56633,7 +56633,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[7]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1813;
@@ -56642,7 +56642,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[6]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1814;
@@ -56651,7 +56651,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[5]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1815;
@@ -56660,7 +56660,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[4]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1816;
@@ -56669,7 +56669,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[3]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1817;
@@ -56678,7 +56678,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[2]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1818;
@@ -56687,7 +56687,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[1]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1819;
@@ -56696,7 +56696,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[0]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1820;
@@ -56705,7 +56705,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter1[2]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1821;
@@ -56714,7 +56714,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter1[1]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1822;
@@ -56723,7 +56723,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter1[0]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1823;
@@ -56732,7 +56732,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empategeneral[2]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1824;
@@ -56741,7 +56741,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empategeneral[1]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1825;
@@ -56750,7 +56750,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empategeneral[0]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1826;
@@ -56759,7 +56759,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter2[2]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1827;
@@ -56768,7 +56768,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter2[1]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1828;
@@ -56777,7 +56777,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|empatecounter2[0]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1829;
@@ -56786,7 +56786,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter2[2]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1830;
@@ -56795,7 +56795,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter2[1]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1831;
@@ -56804,7 +56804,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter2[0]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1832;
@@ -56813,7 +56813,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter1[2]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1833;
@@ -56822,7 +56822,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter1[1]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1834;
@@ -56831,7 +56831,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Colores_vlg_vec_tst|i1|victoriacounter1[0]";
+	CHANNEL = "Colores_vlg_vec_tst|i1|CJ2[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1835;

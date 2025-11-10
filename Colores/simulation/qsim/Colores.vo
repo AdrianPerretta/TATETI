@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/08/2025 13:59:26"
+// DATE "11/10/2025 14:45:57"
 
 // 
 // Device: Altera EP4CGX150DF31C8 Package FBGA896
@@ -1863,12 +1863,12 @@ wire \MATRIZ[380]~reg0_q ;
 wire \MATRIZ[381]~reg0_q ;
 wire \MATRIZ[382]~reg0_q ;
 wire \MATRIZ[383]~reg0_q ;
-wire [23:0] CJ2;
-wire [2:0] empatecounter1;
-wire [2:0] empategeneral;
-wire [2:0] empatecounter2;
 wire [2:0] victoriacounter2;
 wire [2:0] victoriacounter1;
+wire [2:0] empategeneral;
+wire [2:0] empatecounter2;
+wire [2:0] empatecounter1;
+wire [23:0] CJ2;
 wire [23:0] CJ1;
 
 
