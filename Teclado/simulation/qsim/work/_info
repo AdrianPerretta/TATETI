@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\crist\Documents\academico\Tecnicas y dispositivos digitales 2\Proyecto final\simulation\qsim
+vteclado
+Z1 IgC]z27=80aX[Wkh=KdPJ31
+Z2 VSzJib8BLO5>5bBOka?c;X1
+Z3 dC:\Users\crist\Documents\academico\Tecnicas y dispositivos digitales 2\Proyecto final\simulation\qsim
+Z4 w1762740806
+Z5 8Proyecto_final.vo
+Z6 FProyecto_final.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Proyecto_final.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 kl05Q>OHF3g4<EzBE4HnK3
+!s85 0
+Z11 !s108 1762740806.697000
+Z12 !s107 Proyecto_final.vo|
+!s101 -O0
+vteclado_vlg_check_tst
+!i10b 1
+Z13 !s100 @=JLec3bk8?1<B_6OAl0g2
+Z14 IcKUm`AS6T:oIM=D@_?FfT0
+Z15 VBDXoA4o3YfY<JV[og4R?d3
+R3
+Z16 w1762740805
+Z17 8Proyecto_final.vt
+Z18 FProyecto_final.vt
+L0 67
+R7
+r1
+!s85 0
+31
+Z19 !s108 1762740806.800000
+Z20 !s107 Proyecto_final.vt|
+Z21 !s90 -work|work|Proyecto_final.vt|
+!s101 -O0
+R9
+vteclado_vlg_sample_tst
+!i10b 1
+Z22 !s100 7^Fo;R:zfLG?ATDoWJ]9n1
+Z23 I<;8kBZHh9iMUI9hi`RL?V3
+Z24 VTZFPbiSS7;FP37kgmX4Ao2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vteclado_vlg_vec_tst
+!i10b 1
+!s100 VLREPBGMRaWoZbmk5_<CR0
+Ij3]NeLmXVD9DQOk<ck]RR3
+Z25 V9Yd=9cLhXzQfm9hia4cGA2
+R3
+R16
+R17
+R18
+Z26 L0 588
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
