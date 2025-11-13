@@ -1,8 +1,8 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd
-source_file = 1, C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.smf
-source_file = 1, C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd
-source_file = 1, C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/db/subs_4.cbx.xml
+source_file = 1, C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.vhd
+source_file = 1, C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.smf
+source_file = 1, C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4_testbench.vhd
+source_file = 1, C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/db/subs_4.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd

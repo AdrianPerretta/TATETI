@@ -1,5 +1,5 @@
 Flow report for subs_4
-Sun Nov 09 10:57:50 2025
+Sun Nov 09 19:49:53 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 09 10:57:50 2025           ;
+; Flow Status                        ; Successful - Sun Nov 09 19:49:53 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; subs_4                                          ;
 ; Top-level Entity Name              ; Subsistema_4                                    ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/09/2025 10:56:27 ;
+; Start date & time ; 11/09/2025 19:48:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; subs_4              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+--------------+------------------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name  ; Section Id             ;
 +--------------------------------------+---------------------------------------+---------------+--------------+------------------------+
-; COMPILER_SIGNATURE_ID                ; 929341649242.176269658714712          ; --            ; --           ; --                     ;
+; COMPILER_SIGNATURE_ID                ; 35775002305684.176272851512180        ; --            ; --           ; --                     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; dut                                   ; --            ; --           ; Subsistema_4_testbench ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                    ; --            ; --           ; eda_simulation         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Subsistema_4_testbench                ; --            ; --           ; eda_simulation         ;
@@ -104,12 +104,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4630 MB             ; 00:00:05                           ;
-; Fitter                    ; 00:00:52     ; 1.0                     ; 5045 MB             ; 00:00:51                           ;
-; Assembler                 ; 00:00:13     ; 1.0                     ; 4559 MB             ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 4649 MB             ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4515 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:19     ; --                      ; --                  ; 00:01:16                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4628 MB             ; 00:00:05                           ;
+; Fitter                    ; 00:00:41     ; 1.0                     ; 5050 MB             ; 00:00:36                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4558 MB             ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 4642 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4513 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:07     ; --                      ; --                  ; 00:00:56                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,11 +118,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; MAURELAUTARO21   ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; MAURELAUTARO21   ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; MAURELAUTARO21   ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; MAURELAUTARO21   ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; MAURELAUTARO21   ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-VT34N4J  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-VT34N4J  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-VT34N4J  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-VT34N4J  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-VT34N4J  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

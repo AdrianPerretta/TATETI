@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do subs_4_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,7 +11,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd}
+# vcom -93 -work work {C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,7 +20,7 @@
 # -- Compiling entity Subsistema_4
 # -- Compiling architecture Behavioral of Subsistema_4
 # 
-# vcom -93 -work work {C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd}
+# vcom -93 -work work {C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4_testbench.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
