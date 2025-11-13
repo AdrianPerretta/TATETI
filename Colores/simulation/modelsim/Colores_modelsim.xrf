@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/Facultad/FPGA/TATETI/Colores/Colores.vhd
-source_file = 1, C:/Facultad/FPGA/TATETI/Colores/EstimuloColores.vwf
-source_file = 1, C:/Facultad/FPGA/TATETI/Colores/db/Colores.cbx.xml
+source_file = 1, C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/Colores/Colores.vhd
+source_file = 1, C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/Colores/EstimuloColores.vwf
+source_file = 1, C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/Colores/db/Colores.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Colores
-Sat Nov 08 13:59:26 2025
+Mon Nov 10 14:45:57 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Nov 08 13:59:26 2025 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 10 14:45:57 2025 ;
 ; Revision Name             ; Colores                               ;
 ; Top-level Entity Name     ; Colores                               ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------------------+
-; Simulation Generated Files                                     ;
-+----------------------------------------------------------------+
-; Generated Files                                                ;
-+----------------------------------------------------------------+
-; C:/Facultad/FPGA/TATETI/Colores/simulation/modelsim/Colores.vo ;
-+----------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                             ;
++----------------------------------------------------------------------------------------+
+; Generated Files                                                                        ;
++----------------------------------------------------------------------------------------+
+; C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/Colores/simulation/modelsim/Colores.vo ;
++----------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 08 13:59:25 2025
+    Info: Processing started: Mon Nov 10 14:45:56 2025
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Colores -c Colores
-Info (204019): Generated file Colores.vo in folder "C:/Facultad/FPGA/TATETI/Colores/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Colores.vo in folder "C:/Users/iniak/Documents/facu/TYDD2/lab2/TATETI/Colores/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4603 megabytes
-    Info: Processing ended: Sat Nov 08 13:59:26 2025
+    Info: Peak virtual memory: 4592 megabytes
+    Info: Processing ended: Mon Nov 10 14:45:57 2025
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

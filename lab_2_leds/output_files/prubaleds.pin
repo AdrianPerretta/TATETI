@@ -78,31 +78,31 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 NC                           : A2        :        :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
-parallel_in[157]             : A5        : input  : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
-parallel_in[210]             : A7        : input  : 2.5 V             :         : 8         : N              
-parallel_in[152]             : A8        : input  : 2.5 V             :         : 8         : N              
-parallel_in[145]             : A9        : input  : 2.5 V             :         : 8         : N              
-parallel_in[125]             : A10       : input  : 2.5 V             :         : 8         : N              
-parallel_in[133]             : A11       : input  : 2.5 V             :         : 8         : N              
-parallel_in[135]             : A12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[130]             : A13       : input  : 2.5 V             :         : 8         : N              
-parallel_in[42]              : A14       : input  : 2.5 V             :         : 8         : N              
-parallel_in[7]               : A15       : input  : 2.5 V             :         : 7         : N              
-parallel_in[41]              : A16       : input  : 2.5 V             :         : 7         : N              
-parallel_in[93]              : A17       : input  : 2.5 V             :         : 7         : N              
-parallel_in[31]              : A18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[96]              : A19       : input  : 2.5 V             :         : 7         : N              
-parallel_in[102]             : A20       : input  : 2.5 V             :         : 7         : N              
-parallel_in[107]             : A21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[59]              : A22       : input  : 2.5 V             :         : 7         : N              
-parallel_in[58]              : A23       : input  : 2.5 V             :         : 7         : N              
-parallel_in[60]              : A24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[81]              : A25       : input  : 2.5 V             :         : 7         : N              
-parallel_in[88]              : A26       : input  : 2.5 V             :         : 7         : N              
-parallel_in[77]              : A27       : input  : 2.5 V             :         : 7         : N              
-parallel_in[86]              : A28       : input  : 2.5 V             :         : 7         : N              
-parallel_in[3]               : A29       : input  : 2.5 V             :         : 7         : N              
+parallel_in[134]             : A5        : input  : 2.5 V             :         : 8         : N              
+parallel_in[138]             : A6        : input  : 2.5 V             :         : 8         : N              
+parallel_in[293]             : A7        : input  : 2.5 V             :         : 8         : N              
+parallel_in[297]             : A8        : input  : 2.5 V             :         : 8         : N              
+parallel_in[300]             : A9        : input  : 2.5 V             :         : 8         : N              
+parallel_in[303]             : A10       : input  : 2.5 V             :         : 8         : N              
+parallel_in[310]             : A11       : input  : 2.5 V             :         : 8         : N              
+parallel_in[307]             : A12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[58]              : A13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[50]              : A14       : input  : 2.5 V             :         : 8         : N              
+parallel_in[5]               : A15       : input  : 2.5 V             :         : 7         : N              
+parallel_in[52]              : A16       : input  : 2.5 V             :         : 7         : N              
+parallel_in[34]              : A17       : input  : 2.5 V             :         : 7         : N              
+parallel_in[39]              : A18       : input  : 2.5 V             :         : 7         : N              
+parallel_in[37]              : A19       : input  : 2.5 V             :         : 7         : N              
+parallel_in[45]              : A20       : input  : 2.5 V             :         : 7         : N              
+parallel_in[20]              : A21       : input  : 2.5 V             :         : 7         : N              
+parallel_in[29]              : A22       : input  : 2.5 V             :         : 7         : N              
+parallel_in[19]              : A23       : input  : 2.5 V             :         : 7         : N              
+parallel_in[22]              : A24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[7]               : A25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[6]               : A26       : input  : 2.5 V             :         : 7         : N              
+parallel_in[11]              : A27       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A28       :        :                   :         : 7         :                
+parallel_in[71]              : A29       : input  : 2.5 V             :         : 7         : N              
 GXB_GND*                     : AA1       :        :                   :         : QL0       :                
 GXB_GND*                     : AA2       :        :                   :         : QL0       :                
 GND                          : AA3       : gnd    :                   :         :           :                
@@ -114,25 +114,25 @@ GND                          : AA8       : gnd    :                   :         
 VCCA                         : AA9       : power  :                   : 2.5V    :           :                
 VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
 GND                          : AA11      : gnd    :                   :         :           :                
-parallel_in[205]             : AA12      : input  : 2.5 V             :         : 3         : N              
-parallel_in[143]             : AA13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[380]             : AA12      : input  : 2.5 V             :         : 3         : N              
+parallel_in[369]             : AA13      : input  : 2.5 V             :         : 3         : N              
 VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
-parallel_in[140]             : AA15      : input  : 2.5 V             :         : 3         : N              
-parallel_in[199]             : AA16      : input  : 2.5 V             :         : 3         : N              
-parallel_in[374]             : AA17      : input  : 2.5 V             :         : 4         : N              
-parallel_in[361]             : AA18      : input  : 2.5 V             :         : 4         : N              
+parallel_in[352]             : AA15      : input  : 2.5 V             :         : 3         : N              
+parallel_in[379]             : AA16      : input  : 2.5 V             :         : 3         : N              
+parallel_in[343]             : AA17      : input  : 2.5 V             :         : 4         : N              
+parallel_in[196]             : AA18      : input  : 2.5 V             :         : 4         : N              
 GND                          : AA19      : gnd    :                   :         :           :                
-parallel_in[291]             : AA20      : input  : 2.5 V             :         : 4         : N              
-parallel_in[352]             : AA21      : input  : 2.5 V             :         : 4         : N              
-parallel_in[230]             : AA22      : input  : 2.5 V             :         : 5         : N              
+parallel_in[325]             : AA20      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
+parallel_in[231]             : AA22      : input  : 2.5 V             :         : 5         : N              
 VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
-parallel_in[333]             : AA25      : input  : 2.5 V             :         : 5         : N              
-parallel_in[304]             : AA26      : input  : 2.5 V             :         : 5         : N              
-parallel_in[313]             : AA27      : input  : 2.5 V             :         : 5         : N              
-parallel_in[229]             : AA28      : input  : 2.5 V             :         : 5         : N              
-parallel_in[223]             : AA29      : input  : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA30      :        :                   :         : 5         :                
+parallel_in[100]             : AA25      : input  : 2.5 V             :         : 5         : N              
+parallel_in[163]             : AA26      : input  : 2.5 V             :         : 5         : N              
+parallel_in[168]             : AA27      : input  : 2.5 V             :         : 5         : N              
+parallel_in[222]             : AA28      : input  : 2.5 V             :         : 5         : N              
+parallel_in[225]             : AA29      : input  : 2.5 V             :         : 5         : N              
+parallel_in[84]              : AA30      : input  : 2.5 V             :         : 5         : N              
 GND                          : AB1       : gnd    :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
 GXB_NC                       : AB3       :        :                   :         : QL0       :                
@@ -143,26 +143,26 @@ GND                          : AB7       : gnd    :                   :         
 VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
 CONF_DONE                    : AB9       :        :                   :         : 3         :                
 GND                          : AB10      : gnd    :                   :         :           :                
-parallel_in[213]             : AB11      : input  : 2.5 V             :         : 3         : N              
+parallel_in[377]             : AB11      : input  : 2.5 V             :         : 3         : N              
 VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
-parallel_in[144]             : AB13      : input  : 2.5 V             :         : 3         : N              
-parallel_in[127]             : AB14      : input  : 2.5 V             :         : 3         : N              
+parallel_in[383]             : AB13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[350]             : AB14      : input  : 2.5 V             :         : 3         : N              
 VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
-parallel_in[195]             : AB16      : input  : 2.5 V             :         : 3         : N              
-parallel_in[378]             : AB17      : input  : 2.5 V             :         : 4         : N              
+parallel_in[370]             : AB16      : input  : 2.5 V             :         : 3         : N              
+parallel_in[338]             : AB17      : input  : 2.5 V             :         : 4         : N              
 VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
-parallel_in[330]             : AB21      : input  : 2.5 V             :         : 4         : N              
-parallel_in[349]             : AB22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[150]             : AB21      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
 VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
 VCCA                         : AB24      : power  :                   : 2.5V    :           :                
-parallel_in[348]             : AB25      : input  : 2.5 V             :         : 5         : N              
-parallel_in[340]             : AB26      : input  : 2.5 V             :         : 5         : N              
-parallel_in[221]             : AB27      : input  : 2.5 V             :         : 5         : N              
-parallel_in[227]             : AB28      : input  : 2.5 V             :         : 5         : N              
-parallel_in[231]             : AB29      : input  : 2.5 V             :         : 5         : N              
-parallel_in[222]             : AB30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[96]              : AB25      : input  : 2.5 V             :         : 5         : N              
+parallel_in[107]             : AB26      : input  : 2.5 V             :         : 5         : N              
+parallel_in[230]             : AB27      : input  : 2.5 V             :         : 5         : N              
+parallel_in[224]             : AB28      : input  : 2.5 V             :         : 5         : N              
+parallel_in[78]              : AB29      : input  : 2.5 V             :         : 5         : N              
+parallel_in[221]             : AB30      : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : AC1       :        :                   :         : QL0       :                
 GXB_GND*                     : AC2       :        :                   :         : QL0       :                
 GND                          : AC3       : gnd    :                   :         :           :                
@@ -178,7 +178,7 @@ VCCIO3                       : AC12      : power  :                   : 2.5V    
 VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
 GND                          : AC14      : gnd    :                   :         :           :                
 VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
-locked                       : AC16      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC16      :        :                   :         : 3         :                
 GND                          : AC17      : gnd    :                   :         :           :                
 VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
@@ -187,12 +187,12 @@ VCCIO4                       : AC21      : power  :                   : 2.5V    
 VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
 GND                          : AC24      : gnd    :                   :         :           :                
-parallel_in[345]             : AC25      : input  : 2.5 V             :         : 5         : N              
+parallel_in[98]              : AC25      : input  : 2.5 V             :         : 5         : N              
 GND                          : AC26      : gnd    :                   :         :           :                
-parallel_in[225]             : AC27      : input  : 2.5 V             :         : 5         : N              
-parallel_in[236]             : AC28      : input  : 2.5 V             :         : 5         : N              
+parallel_in[235]             : AC27      : input  : 2.5 V             :         : 5         : N              
+parallel_in[228]             : AC28      : input  : 2.5 V             :         : 5         : N              
 GND                          : AC29      : gnd    :                   :         :           :                
-parallel_in[235]             : AC30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[236]             : AC30      : input  : 2.5 V             :         : 5         : N              
 GND                          : AD1       : gnd    :                   :         :           :                
 GND                          : AD2       : gnd    :                   :         :           :                
 VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
@@ -208,51 +208,51 @@ VCCIO3                       : AD12      : power  :                   : 2.5V    
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
 VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
 VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
-parallel_in[382]             : AD16      : input  : 2.5 V             :         : 4         : N              
+parallel_in[335]             : AD16      : input  : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
-parallel_in[288]             : AD22      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD23      :        :                   :         : 4         :                
-parallel_in[334]             : AD24      : input  : 2.5 V             :         : 4         : N              
-parallel_in[341]             : AD25      : input  : 2.5 V             :         : 5         : N              
-parallel_in[344]             : AD26      : input  : 2.5 V             :         : 5         : N              
-parallel_in[307]             : AD27      : input  : 2.5 V             :         : 5         : N              
-parallel_in[312]             : AD28      : input  : 2.5 V             :         : 5         : N              
-parallel_in[234]             : AD29      : input  : 2.5 V             :         : 5         : N              
-parallel_in[226]             : AD30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[101]             : AD24      : input  : 2.5 V             :         : 4         : N              
+parallel_in[106]             : AD25      : input  : 2.5 V             :         : 5         : N              
+parallel_in[99]              : AD26      : input  : 2.5 V             :         : 5         : N              
+parallel_in[234]             : AD27      : input  : 2.5 V             :         : 5         : N              
+parallel_in[232]             : AD28      : input  : 2.5 V             :         : 5         : N              
+parallel_in[226]             : AD29      : input  : 2.5 V             :         : 5         : N              
+parallel_in[229]             : AD30      : input  : 2.5 V             :         : 5         : N              
 RREF                         : AE1       :        :                   :         :           :                
 GND                          : AE2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
+locked                       : AE4       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
 CERO                         : AE6       : output : 2.5 V             :         : 3         : N              
 ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
 areset                       : AE8       : input  : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE9       :        :                   :         : 3         :                
-UNO                          : AE10      : output : 2.5 V             :         : 3         : N              
+UNO                          : AE9       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE10      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3         :                
-parallel_in[182]             : AE12      : input  : 2.5 V             :         : 3         : N              
-parallel_in[168]             : AE13      : input  : 2.5 V             :         : 3         : N              
-parallel_in[200]             : AE14      : input  : 2.5 V             :         : 3         : N              
-parallel_in[194]             : AE15      : input  : 2.5 V             :         : 3         : N              
-parallel_in[383]             : AE16      : input  : 2.5 V             :         : 4         : N              
-so                           : AE17      : output : 2.5 V             :         : 4         : N              
-parallel_in[363]             : AE18      : input  : 2.5 V             :         : 4         : N              
-parallel_in[366]             : AE19      : input  : 2.5 V             :         : 4         : N              
-parallel_in[286]             : AE20      : input  : 2.5 V             :         : 4         : N              
-parallel_in[300]             : AE21      : input  : 2.5 V             :         : 4         : N              
-parallel_in[298]             : AE22      : input  : 2.5 V             :         : 4         : N              
-parallel_in[346]             : AE23      : input  : 2.5 V             :         : 4         : N              
-parallel_in[343]             : AE24      : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE25      :        :                   :         : 5         :                
-parallel_in[338]             : AE26      : input  : 2.5 V             :         : 5         : N              
-parallel_in[301]             : AE27      : input  : 2.5 V             :         : 5         : N              
-parallel_in[310]             : AE28      : input  : 2.5 V             :         : 5         : N              
-parallel_in[316]             : AE29      : input  : 2.5 V             :         : 5         : N              
-parallel_in[306]             : AE30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[353]             : AE12      : input  : 2.5 V             :         : 3         : N              
+parallel_in[359]             : AE13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[351]             : AE14      : input  : 2.5 V             :         : 3         : N              
+parallel_in[349]             : AE15      : input  : 2.5 V             :         : 3         : N              
+parallel_in[339]             : AE16      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE17      :        :                   :         : 4         :                
+parallel_in[199]             : AE18      : input  : 2.5 V             :         : 4         : N              
+parallel_in[195]             : AE19      : input  : 2.5 V             :         : 4         : N              
+parallel_in[320]             : AE20      : input  : 2.5 V             :         : 4         : N              
+parallel_in[332]             : AE21      : input  : 2.5 V             :         : 4         : N              
+load                         : AE22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[108]             : AE23      : input  : 2.5 V             :         : 4         : N              
+parallel_in[97]              : AE24      : input  : 2.5 V             :         : 4         : N              
+parallel_in[166]             : AE25      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
+parallel_in[171]             : AE27      : input  : 2.5 V             :         : 5         : N              
+parallel_in[167]             : AE28      : input  : 2.5 V             :         : 5         : N              
+parallel_in[165]             : AE29      : input  : 2.5 V             :         : 5         : N              
+parallel_in[170]             : AE30      : input  : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
 GND                          : AF2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
@@ -262,265 +262,265 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF7       :        :                   :         : 3         :                
 GND                          : AF8       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3         :                
+frecuencialed                : AF10      : output : 2.5 V             :         : 3         : N              
 GND                          : AF11      : gnd    :                   :         :           :                
-parallel_in[176]             : AF12      : input  : 2.5 V             :         : 3         : N              
-parallel_in[218]             : AF13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[364]             : AF12      : input  : 2.5 V             :         : 3         : N              
+parallel_in[361]             : AF13      : input  : 2.5 V             :         : 3         : N              
 GND                          : AF14      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF15      :        :                   :         : 3         :                
-parallel_in[369]             : AF16      : input  : 2.5 V             :         : 4         : N              
+parallel_in[348]             : AF16      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF17      : gnd    :                   :         :           :                
-parallel_in[370]             : AF18      : input  : 2.5 V             :         : 4         : N              
-parallel_in[367]             : AF19      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4         :                
+parallel_in[189]             : AF19      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF20      : gnd    :                   :         :           :                
-parallel_in[295]             : AF21      : input  : 2.5 V             :         : 4         : N              
-parallel_in[294]             : AF22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[329]             : AF21      : input  : 2.5 V             :         : 4         : N              
+parallel_in[326]             : AF22      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF23      : gnd    :                   :         :           :                
-parallel_in[336]             : AF24      : input  : 2.5 V             :         : 4         : N              
-parallel_in[337]             : AF25      : input  : 2.5 V             :         : 4         : N              
+parallel_in[93]              : AF24      : input  : 2.5 V             :         : 4         : N              
+parallel_in[94]              : AF25      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF26      : gnd    :                   :         :           :                
-parallel_in[311]             : AF27      : input  : 2.5 V             :         : 5         : N              
-parallel_in[315]             : AF28      : input  : 2.5 V             :         : 5         : N              
+parallel_in[164]             : AF27      : input  : 2.5 V             :         : 5         : N              
+parallel_in[162]             : AF28      : input  : 2.5 V             :         : 5         : N              
 GND                          : AF29      : gnd    :                   :         :           :                
-parallel_in[302]             : AF30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[172]             : AF30      : input  : 2.5 V             :         : 5         : N              
 NC                           : AG1       :        :                   :         :           :                
 GND                          : AG2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG4       :        :                   :         : 3         :                
-parallel_in[177]             : AG5       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG5       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3         :                
-parallel_in[193]             : AG7       : input  : 2.5 V             :         : 3         : N              
-parallel_in[203]             : AG8       : input  : 2.5 V             :         : 3         : N              
-parallel_in[174]             : AG9       : input  : 2.5 V             :         : 3         : N              
-parallel_in[220]             : AG10      : input  : 2.5 V             :         : 3         : N              
-parallel_in[206]             : AG11      : input  : 2.5 V             :         : 3         : N              
-parallel_in[214]             : AG12      : input  : 2.5 V             :         : 3         : N              
-parallel_in[216]             : AG13      : input  : 2.5 V             :         : 3         : N              
-parallel_in[201]             : AG14      : input  : 2.5 V             :         : 3         : N              
+parallel_in[371]             : AG7       : input  : 2.5 V             :         : 3         : N              
+parallel_in[375]             : AG8       : input  : 2.5 V             :         : 3         : N              
+parallel_in[360]             : AG9       : input  : 2.5 V             :         : 3         : N              
+parallel_in[355]             : AG10      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG11      :        :                   :         : 3         :                
+parallel_in[374]             : AG12      : input  : 2.5 V             :         : 3         : N              
+parallel_in[378]             : AG13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[376]             : AG14      : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG15      :        :                   :         : 3         :                
-parallel_in[379]             : AG16      : input  : 2.5 V             :         : 4         : N              
-parallel_in[359]             : AG17      : input  : 2.5 V             :         : 4         : N              
-parallel_in[353]             : AG18      : input  : 2.5 V             :         : 4         : N              
-parallel_in[368]             : AG19      : input  : 2.5 V             :         : 4         : N              
-parallel_in[354]             : AG20      : input  : 2.5 V             :         : 4         : N              
-parallel_in[289]             : AG21      : input  : 2.5 V             :         : 4         : N              
-parallel_in[293]             : AG22      : input  : 2.5 V             :         : 4         : N              
-parallel_in[328]             : AG23      : input  : 2.5 V             :         : 4         : N              
-parallel_in[323]             : AG24      : input  : 2.5 V             :         : 4         : N              
-parallel_in[339]             : AG25      : input  : 2.5 V             :         : 4         : N              
-parallel_in[350]             : AG26      : input  : 2.5 V             :         : 4         : N              
+parallel_in[346]             : AG16      : input  : 2.5 V             :         : 4         : N              
+parallel_in[192]             : AG17      : input  : 2.5 V             :         : 4         : N              
+parallel_in[198]             : AG18      : input  : 2.5 V             :         : 4         : N              
+parallel_in[203]             : AG19      : input  : 2.5 V             :         : 4         : N              
+parallel_in[328]             : AG20      : input  : 2.5 V             :         : 4         : N              
+parallel_in[324]             : AG21      : input  : 2.5 V             :         : 4         : N              
+parallel_in[319]             : AG22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[152]             : AG23      : input  : 2.5 V             :         : 4         : N              
+parallel_in[147]             : AG24      : input  : 2.5 V             :         : 4         : N              
+parallel_in[104]             : AG25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG27      :        :                   :         : 4         :                
-parallel_in[335]             : AG28      : input  : 2.5 V             :         : 4         : N              
-parallel_in[308]             : AG29      : input  : 2.5 V             :         : 5         : N              
-parallel_in[305]             : AG30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[95]              : AG28      : input  : 2.5 V             :         : 4         : N              
+parallel_in[161]             : AG29      : input  : 2.5 V             :         : 5         : N              
+parallel_in[159]             : AG30      : input  : 2.5 V             :         : 5         : N              
 NC                           : AH1       :        :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH2       :        :                   :         : 3         :                
+parallel_in[113]             : AH2       : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3         :                
-parallel_in[185]             : AH4       : input  : 2.5 V             :         : 3         : N              
-parallel_in[180]             : AH5       : input  : 2.5 V             :         : 3         : N              
-parallel_in[184]             : AH6       : input  : 2.5 V             :         : 3         : N              
-parallel_in[189]             : AH7       : input  : 2.5 V             :         : 3         : N              
-parallel_in[198]             : AH8       : input  : 2.5 V             :         : 3         : N              
-parallel_in[159]             : AH9       : input  : 2.5 V             :         : 3         : N              
-parallel_in[212]             : AH10      : input  : 2.5 V             :         : 3         : N              
-parallel_in[219]             : AH11      : input  : 2.5 V             :         : 3         : N              
-parallel_in[217]             : AH12      : input  : 2.5 V             :         : 3         : N              
-parallel_in[207]             : AH13      : input  : 2.5 V             :         : 3         : N              
-parallel_in[190]             : AH14      : input  : 2.5 V             :         : 3         : N              
-Y                            : AH15      : output : 2.5 V             :         : 3         : N              
-parallel_in[380]             : AH16      : input  : 2.5 V             :         : 3         : N              
-parallel_in[360]             : AH17      : input  : 2.5 V             :         : 4         : N              
-parallel_in[32]              : AH18      : input  : 2.5 V             :         : 4         : N              
-parallel_in[362]             : AH19      : input  : 2.5 V             :         : 4         : N              
-parallel_in[292]             : AH20      : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH21      :        :                   :         : 4         :                
-parallel_in[297]             : AH22      : input  : 2.5 V             :         : 4         : N              
-parallel_in[320]             : AH23      : input  : 2.5 V             :         : 4         : N              
-parallel_in[318]             : AH24      : input  : 2.5 V             :         : 4         : N              
-parallel_in[331]             : AH25      : input  : 2.5 V             :         : 4         : N              
-parallel_in[351]             : AH26      : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH27      :        :                   :         : 4         :                
-parallel_in[347]             : AH28      : input  : 2.5 V             :         : 4         : N              
-parallel_in[314]             : AH29      : input  : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH30      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH5       :        :                   :         : 3         :                
+parallel_in[358]             : AH6       : input  : 2.5 V             :         : 3         : N              
+parallel_in[381]             : AH7       : input  : 2.5 V             :         : 3         : N              
+parallel_in[372]             : AH8       : input  : 2.5 V             :         : 3         : N              
+parallel_in[365]             : AH9       : input  : 2.5 V             :         : 3         : N              
+parallel_in[356]             : AH10      : input  : 2.5 V             :         : 3         : N              
+parallel_in[362]             : AH11      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH12      :        :                   :         : 3         :                
+parallel_in[373]             : AH13      : input  : 2.5 V             :         : 3         : N              
+Y                            : AH14      : output : 2.5 V             :         : 3         : N              
+parallel_in[345]             : AH15      : input  : 2.5 V             :         : 3         : N              
+parallel_in[344]             : AH16      : input  : 2.5 V             :         : 3         : N              
+parallel_in[204]             : AH17      : input  : 2.5 V             :         : 4         : N              
+parallel_in[191]             : AH18      : input  : 2.5 V             :         : 4         : N              
+parallel_in[201]             : AH19      : input  : 2.5 V             :         : 4         : N              
+parallel_in[330]             : AH20      : input  : 2.5 V             :         : 4         : N              
+parallel_in[331]             : AH21      : input  : 2.5 V             :         : 4         : N              
+parallel_in[323]             : AH22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[148]             : AH23      : input  : 2.5 V             :         : 4         : N              
+parallel_in[149]             : AH24      : input  : 2.5 V             :         : 4         : N              
+parallel_in[154]             : AH25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+parallel_in[102]             : AH27      : input  : 2.5 V             :         : 4         : N              
+parallel_in[103]             : AH28      : input  : 2.5 V             :         : 4         : N              
+parallel_in[158]             : AH29      : input  : 2.5 V             :         : 5         : N              
+parallel_in[157]             : AH30      : input  : 2.5 V             :         : 5         : N              
 nSTATUS                      : AJ1       :        :                   :         : 3         :                
 GND                          : AJ2       : gnd    :                   :         :           :                
-parallel_in[188]             : AJ3       : input  : 2.5 V             :         : 3         : N              
-parallel_in[173]             : AJ4       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ4       :        :                   :         : 3         :                
 GND                          : AJ5       : gnd    :                   :         :           :                
-parallel_in[175]             : AJ6       : input  : 2.5 V             :         : 3         : N              
-parallel_in[204]             : AJ7       : input  : 2.5 V             :         : 3         : N              
+parallel_in[354]             : AJ6       : input  : 2.5 V             :         : 3         : N              
+parallel_in[292]             : AJ7       : input  : 2.5 V             :         : 3         : N              
 GND                          : AJ8       : gnd    :                   :         :           :                
-parallel_in[191]             : AJ9       : input  : 2.5 V             :         : 3         : N              
-parallel_in[208]             : AJ10      : input  : 2.5 V             :         : 3         : N              
+parallel_in[308]             : AJ9       : input  : 2.5 V             :         : 3         : N              
+parallel_in[367]             : AJ10      : input  : 2.5 V             :         : 3         : N              
 GND                          : AJ11      : gnd    :                   :         :           :                
-parallel_in[372]             : AJ12      : input  : 2.5 V             :         : 3         : N              
-parallel_in[375]             : AJ13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[48]              : AJ12      : input  : 2.5 V             :         : 3         : N              
+parallel_in[333]             : AJ13      : input  : 2.5 V             :         : 3         : N              
 GND                          : AJ14      : gnd    :                   :         :           :                
-parallel_in[371]             : AJ15      : input  : 2.5 V             :         : 4         : N              
-parallel_in[245]             : AJ16      : input  : 2.5 V             :         : 4         : N              
+parallel_in[341]             : AJ15      : input  : 2.5 V             :         : 4         : N              
+parallel_in[243]             : AJ16      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ17      : gnd    :                   :         :           :                
-parallel_in[377]             : AJ18      : input  : 2.5 V             :         : 4         : N              
-parallel_in[364]             : AJ19      : input  : 2.5 V             :         : 4         : N              
+parallel_in[197]             : AJ18      : input  : 2.5 V             :         : 4         : N              
+parallel_in[190]             : AJ19      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ20      : gnd    :                   :         :           :                
-parallel_in[285]             : AJ21      : input  : 2.5 V             :         : 4         : N              
-parallel_in[365]             : AJ22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[317]             : AJ21      : input  : 2.5 V             :         : 4         : N              
+parallel_in[321]             : AJ22      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ23      : gnd    :                   :         :           :                
-parallel_in[319]             : AJ24      : input  : 2.5 V             :         : 4         : N              
-parallel_in[326]             : AJ25      : input  : 2.5 V             :         : 4         : N              
+parallel_in[142]             : AJ24      : input  : 2.5 V             :         : 4         : N              
+parallel_in[153]             : AJ25      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ26      : gnd    :                   :         :           :                
-parallel_in[322]             : AJ27      : input  : 2.5 V             :         : 4         : N              
-parallel_in[324]             : AJ28      : input  : 2.5 V             :         : 4         : N              
+parallel_in[151]             : AJ27      : input  : 2.5 V             :         : 4         : N              
+parallel_in[145]             : AJ28      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ29      : gnd    :                   :         :           :                
-parallel_in[309]             : AJ30      : input  : 2.5 V             :         : 5         : N              
+parallel_in[169]             : AJ30      : input  : 2.5 V             :         : 5         : N              
 NC                           : AK2       :        :                   :         :           :                
-parallel_in[183]             : AK3       : input  : 2.5 V             :         : 3         : N              
-parallel_in[179]             : AK4       : input  : 2.5 V             :         : 3         : N              
-parallel_in[186]             : AK5       : input  : 2.5 V             :         : 3         : N              
-parallel_in[181]             : AK6       : input  : 2.5 V             :         : 3         : N              
-parallel_in[202]             : AK7       : input  : 2.5 V             :         : 3         : N              
-parallel_in[197]             : AK8       : input  : 2.5 V             :         : 3         : N              
-parallel_in[192]             : AK9       : input  : 2.5 V             :         : 3         : N              
-parallel_in[196]             : AK10      : input  : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AK11      :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AK12      :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AK13      :        :                   :         : 3         :                
-Q                            : AK14      : output : 2.5 V             :         : 3         : N              
-parallel_in[381]             : AK15      : input  : 2.5 V             :         : 4         : N              
-parallel_in[244]             : AK16      : input  : 2.5 V             :         : 4         : N              
-parallel_in[373]             : AK17      : input  : 2.5 V             :         : 4         : N              
-parallel_in[355]             : AK18      : input  : 2.5 V             :         : 4         : N              
-parallel_in[357]             : AK19      : input  : 2.5 V             :         : 4         : N              
-parallel_in[356]             : AK20      : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AK21      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AK22      :        :                   :         : 4         :                
-parallel_in[296]             : AK23      : input  : 2.5 V             :         : 4         : N              
-parallel_in[290]             : AK24      : input  : 2.5 V             :         : 4         : N              
-parallel_in[287]             : AK25      : input  : 2.5 V             :         : 4         : N              
-parallel_in[321]             : AK26      : input  : 2.5 V             :         : 4         : N              
-parallel_in[327]             : AK27      : input  : 2.5 V             :         : 4         : N              
-parallel_in[332]             : AK28      : input  : 2.5 V             :         : 4         : N              
-parallel_in[317]             : AK29      : input  : 2.5 V             :         : 4         : N              
+parallel_in[357]             : AK3       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK4       :        :                   :         : 3         :                
+parallel_in[368]             : AK5       : input  : 2.5 V             :         : 3         : N              
+parallel_in[366]             : AK6       : input  : 2.5 V             :         : 3         : N              
+parallel_in[382]             : AK7       : input  : 2.5 V             :         : 3         : N              
+parallel_in[316]             : AK8       : input  : 2.5 V             :         : 3         : N              
+parallel_in[309]             : AK9       : input  : 2.5 V             :         : 3         : N              
+parallel_in[312]             : AK10      : input  : 2.5 V             :         : 3         : N              
+parallel_in[337]             : AK11      : input  : 2.5 V             :         : 3         : N              
+parallel_in[342]             : AK12      : input  : 2.5 V             :         : 3         : N              
+parallel_in[46]              : AK13      : input  : 2.5 V             :         : 3         : N              
+parallel_in[334]             : AK14      : input  : 2.5 V             :         : 3         : N              
+parallel_in[347]             : AK15      : input  : 2.5 V             :         : 4         : N              
+parallel_in[242]             : AK16      : input  : 2.5 V             :         : 4         : N              
+parallel_in[336]             : AK17      : input  : 2.5 V             :         : 4         : N              
+parallel_in[193]             : AK18      : input  : 2.5 V             :         : 4         : N              
+parallel_in[200]             : AK19      : input  : 2.5 V             :         : 4         : N              
+parallel_in[202]             : AK20      : input  : 2.5 V             :         : 4         : N              
+parallel_in[322]             : AK21      : input  : 2.5 V             :         : 4         : N              
+parallel_in[327]             : AK22      : input  : 2.5 V             :         : 4         : N              
+parallel_in[155]             : AK23      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK24      :        :                   :         : 4         :                
+parallel_in[144]             : AK25      : input  : 2.5 V             :         : 4         : N              
+parallel_in[143]             : AK26      : input  : 2.5 V             :         : 4         : N              
+parallel_in[141]             : AK27      : input  : 2.5 V             :         : 4         : N              
+parallel_in[146]             : AK28      : input  : 2.5 V             :         : 4         : N              
+parallel_in[156]             : AK29      : input  : 2.5 V             :         : 4         : N              
 nCONFIG                      : B1        :        :                   :         : 9         :                
 GND                          : B2        : gnd    :                   :         :           :                
 ~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
 ~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-parallel_in[215]             : B6        : input  : 2.5 V             :         : 8         : N              
-parallel_in[151]             : B7        : input  : 2.5 V             :         : 8         : N              
+parallel_in[132]             : B6        : input  : 2.5 V             :         : 8         : N              
+parallel_in[295]             : B7        : input  : 2.5 V             :         : 8         : N              
 GND                          : B8        : gnd    :                   :         :           :                
-parallel_in[154]             : B9        : input  : 2.5 V             :         : 8         : N              
-parallel_in[148]             : B10       : input  : 2.5 V             :         : 8         : N              
+parallel_in[285]             : B9        : input  : 2.5 V             :         : 8         : N              
+parallel_in[288]             : B10       : input  : 2.5 V             :         : 8         : N              
 GND                          : B11       : gnd    :                   :         :           :                
-parallel_in[137]             : B12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[128]             : B13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[304]             : B12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[57]              : B13       : input  : 2.5 V             :         : 8         : N              
 GND                          : B14       : gnd    :                   :         :           :                
-parallel_in[6]               : B15       : input  : 2.5 V             :         : 7         : N              
-parallel_in[43]              : B16       : input  : 2.5 V             :         : 7         : N              
+parallel_in[4]               : B15       : input  : 2.5 V             :         : 7         : N              
+parallel_in[56]              : B16       : input  : 2.5 V             :         : 7         : N              
 GND                          : B17       : gnd    :                   :         :           :                
-parallel_in[95]              : B18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[104]             : B19       : input  : 2.5 V             :         : 7         : N              
+parallel_in[38]              : B18       : input  : 2.5 V             :         : 7         : N              
+parallel_in[44]              : B19       : input  : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7         :                
-parallel_in[52]              : B22       : input  : 2.5 V             :         : 7         : N              
+parallel_in[15]              : B21       : input  : 2.5 V             :         : 7         : N              
+parallel_in[23]              : B22       : input  : 2.5 V             :         : 7         : N              
 GND                          : B23       : gnd    :                   :         :           :                
-parallel_in[53]              : B24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[56]              : B25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[24]              : B24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[25]              : B25       : input  : 2.5 V             :         : 7         : N              
 GND                          : B26       : gnd    :                   :         :           :                
-parallel_in[90]              : B27       : input  : 2.5 V             :         : 7         : N              
-parallel_in[13]              : B28       : input  : 2.5 V             :         : 7         : N              
+parallel_in[14]              : B27       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B28       :        :                   :         : 7         :                
 GND                          : B29       : gnd    :                   :         :           :                
-parallel_in[0]               : B30       : input  : 2.5 V             :         : 7         : N              
+parallel_in[68]              : B30       : input  : 2.5 V             :         : 7         : N              
 nCE                          : C1        :        :                   :         : 9         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
-parallel_in[163]             : C4        : input  : 2.5 V             :         : 8         : N              
-parallel_in[169]             : C5        : input  : 2.5 V             :         : 8         : N              
-parallel_in[161]             : C6        : input  : 2.5 V             :         : 8         : N              
-parallel_in[165]             : C7        : input  : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
-parallel_in[153]             : C10       : input  : 2.5 V             :         : 8         : N              
-parallel_in[211]             : C11       : input  : 2.5 V             :         : 8         : N              
-parallel_in[150]             : C12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[147]             : C13       : input  : 2.5 V             :         : 8         : N              
-parallel_in[131]             : C14       : input  : 2.5 V             :         : 8         : N              
-parallel_in[126]             : C15       : input  : 2.5 V             :         : 8         : N              
-parallel_in[40]              : C16       : input  : 2.5 V             :         : 8         : N              
-parallel_in[34]              : C17       : input  : 2.5 V             :         : 7         : N              
-parallel_in[100]             : C18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[98]              : C19       : input  : 2.5 V             :         : 7         : N              
-parallel_in[97]              : C20       : input  : 2.5 V             :         : 7         : N              
-parallel_in[57]              : C21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[47]              : C22       : input  : 2.5 V             :         : 7         : N              
-parallel_in[46]              : C23       : input  : 2.5 V             :         : 7         : N              
-parallel_in[48]              : C24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[82]              : C25       : input  : 2.5 V             :         : 7         : N              
-parallel_in[79]              : C26       : input  : 2.5 V             :         : 7         : N              
-parallel_in[75]              : C27       : input  : 2.5 V             :         : 7         : N              
-parallel_in[69]              : C28       : input  : 2.5 V             :         : 7         : N              
-parallel_in[18]              : C29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[16]              : C30       : input  : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 8         :                
+parallel_in[123]             : C2        : input  : 2.5 V             :         : 8         : N              
+parallel_in[116]             : C3        : input  : 2.5 V             :         : 8         : N              
+parallel_in[128]             : C4        : input  : 2.5 V             :         : 8         : N              
+parallel_in[136]             : C5        : input  : 2.5 V             :         : 8         : N              
+parallel_in[129]             : C6        : input  : 2.5 V             :         : 8         : N              
+parallel_in[125]             : C7        : input  : 2.5 V             :         : 8         : N              
+parallel_in[120]             : C8        : input  : 2.5 V             :         : 8         : N              
+parallel_in[118]             : C9        : input  : 2.5 V             :         : 8         : N              
+parallel_in[290]             : C10       : input  : 2.5 V             :         : 8         : N              
+parallel_in[127]             : C11       : input  : 2.5 V             :         : 8         : N              
+parallel_in[289]             : C12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[311]             : C13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[315]             : C14       : input  : 2.5 V             :         : 8         : N              
+parallel_in[313]             : C15       : input  : 2.5 V             :         : 8         : N              
+parallel_in[60]              : C16       : input  : 2.5 V             :         : 8         : N              
+parallel_in[30]              : C17       : input  : 2.5 V             :         : 7         : N              
+parallel_in[35]              : C18       : input  : 2.5 V             :         : 7         : N              
+parallel_in[43]              : C19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 7         :                
+parallel_in[18]              : C21       : input  : 2.5 V             :         : 7         : N              
+parallel_in[21]              : C22       : input  : 2.5 V             :         : 7         : N              
+parallel_in[28]              : C23       : input  : 2.5 V             :         : 7         : N              
+parallel_in[16]              : C24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[13]              : C25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[9]               : C26       : input  : 2.5 V             :         : 7         : N              
+parallel_in[64]              : C27       : input  : 2.5 V             :         : 7         : N              
+parallel_in[62]              : C28       : input  : 2.5 V             :         : 7         : N              
+parallel_in[283]             : C29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[275]             : C30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[124]             : D1        : input  : 2.5 V             :         : 8         : N              
 GND                          : D2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
-parallel_in[172]             : D4        : input  : 2.5 V             :         : 8         : N              
-parallel_in[178]             : D5        : input  : 2.5 V             :         : 8         : N              
-parallel_in[162]             : D6        : input  : 2.5 V             :         : 8         : N              
-parallel_in[160]             : D7        : input  : 2.5 V             :         : 8         : N              
+parallel_in[109]             : D3        : input  : 2.5 V             :         : 8         : N              
+parallel_in[133]             : D4        : input  : 2.5 V             :         : 8         : N              
+parallel_in[131]             : D5        : input  : 2.5 V             :         : 8         : N              
+parallel_in[363]             : D6        : input  : 2.5 V             :         : 8         : N              
+parallel_in[130]             : D7        : input  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
-parallel_in[209]             : D11       : input  : 2.5 V             :         : 8         : N              
-parallel_in[155]             : D12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[142]             : D13       : input  : 2.5 V             :         : 8         : N              
-parallel_in[134]             : D14       : input  : 2.5 V             :         : 8         : N              
-parallel_in[132]             : D15       : input  : 2.5 V             :         : 8         : N              
-parallel_in[45]              : D16       : input  : 2.5 V             :         : 8         : N              
-parallel_in[36]              : D17       : input  : 2.5 V             :         : 7         : N              
-parallel_in[101]             : D18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[103]             : D19       : input  : 2.5 V             :         : 7         : N              
-parallel_in[106]             : D20       : input  : 2.5 V             :         : 7         : N              
-parallel_in[83]              : D21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[89]              : D22       : input  : 2.5 V             :         : 7         : N              
-parallel_in[55]              : D23       : input  : 2.5 V             :         : 7         : N              
-parallel_in[91]              : D24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[92]              : D25       : input  : 2.5 V             :         : 7         : N              
-parallel_in[80]              : D26       : input  : 2.5 V             :         : 7         : N              
-parallel_in[62]              : D27       : input  : 2.5 V             :         : 7         : N              
-parallel_in[63]              : D28       : input  : 2.5 V             :         : 7         : N              
-parallel_in[20]              : D29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[28]              : D30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[117]             : D9        : input  : 2.5 V             :         : 8         : N              
+parallel_in[119]             : D10       : input  : 2.5 V             :         : 8         : N              
+parallel_in[291]             : D11       : input  : 2.5 V             :         : 8         : N              
+parallel_in[286]             : D12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[294]             : D13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[302]             : D14       : input  : 2.5 V             :         : 8         : N              
+parallel_in[301]             : D15       : input  : 2.5 V             :         : 8         : N              
+parallel_in[51]              : D16       : input  : 2.5 V             :         : 8         : N              
+parallel_in[53]              : D17       : input  : 2.5 V             :         : 7         : N              
+parallel_in[31]              : D18       : input  : 2.5 V             :         : 7         : N              
+parallel_in[40]              : D19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
+parallel_in[2]               : D22       : input  : 2.5 V             :         : 7         : N              
+parallel_in[27]              : D23       : input  : 2.5 V             :         : 7         : N              
+parallel_in[12]              : D24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[3]               : D25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[1]               : D26       : input  : 2.5 V             :         : 7         : N              
+parallel_in[67]              : D27       : input  : 2.5 V             :         : 7         : N              
+parallel_in[65]              : D28       : input  : 2.5 V             :         : 7         : N              
+parallel_in[215]             : D29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[217]             : D30       : input  : 2.5 V             :         : 6         : N              
 TMS                          : E1        : input  :                   :         : 9         :                
 TDI                          : E2        : input  :                   :         : 9         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+parallel_in[121]             : E3        : input  : 2.5 V             :         : 8         : N              
+parallel_in[115]             : E4        : input  : 2.5 V             :         : 8         : N              
 GND                          : E5        : gnd    :                   :         :           :                
-parallel_in[187]             : E6        : input  : 2.5 V             :         : 8         : N              
-parallel_in[167]             : E7        : input  : 2.5 V             :         : 8         : N              
+parallel_in[122]             : E6        : input  : 2.5 V             :         : 8         : N              
+parallel_in[135]             : E7        : input  : 2.5 V             :         : 8         : N              
 GND                          : E8        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
+parallel_in[111]             : E9        : input  : 2.5 V             :         : 8         : N              
+parallel_in[112]             : E10       : input  : 2.5 V             :         : 8         : N              
 GND                          : E11       : gnd    :                   :         :           :                
-parallel_in[170]             : E12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[141]             : E13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[140]             : E12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[298]             : E13       : input  : 2.5 V             :         : 8         : N              
 GND                          : E14       : gnd    :                   :         :           :                
-parallel_in[136]             : E15       : input  : 2.5 V             :         : 8         : N              
-parallel_in[139]             : E16       : input  : 2.5 V             :         : 8         : N              
+parallel_in[314]             : E15       : input  : 2.5 V             :         : 8         : N              
+parallel_in[55]              : E16       : input  : 2.5 V             :         : 8         : N              
 GND                          : E17       : gnd    :                   :         :           :                
-parallel_in[94]              : E18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[108]             : E19       : input  : 2.5 V             :         : 7         : N              
+parallel_in[36]              : E18       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 7         :                
 GND                          : E20       : gnd    :                   :         :           :                
-parallel_in[84]              : E21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[85]              : E22       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 7         :                
+parallel_in[8]               : E22       : input  : 2.5 V             :         : 7         : N              
 GND                          : E23       : gnd    :                   :         :           :                
-parallel_in[87]              : E24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[76]              : E25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[10]              : E24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[70]              : E25       : input  : 2.5 V             :         : 7         : N              
 GND                          : E26       : gnd    :                   :         :           :                
-parallel_in[70]              : E27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[65]              : E28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[276]             : E27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[269]             : E28       : input  : 2.5 V             :         : 6         : N              
 GND                          : E29       : gnd    :                   :         :           :                
-parallel_in[122]             : E30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[210]             : E30       : input  : 2.5 V             :         : 6         : N              
 TDO                          : F1        : output :                   :         : 9         :                
 TCK                          : F2        : input  :                   :         : 9         :                
 GND                          : F3        : gnd    :                   :         :           :                
@@ -529,28 +529,28 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
-parallel_in[171]             : F10       : input  : 2.5 V             :         : 8         : N              
-parallel_in[158]             : F11       : input  : 2.5 V             :         : 8         : N              
-parallel_in[156]             : F12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[149]             : F13       : input  : 2.5 V             :         : 8         : N              
-parallel_in[138]             : F14       : input  : 2.5 V             :         : 8         : N              
-parallel_in[129]             : F15       : input  : 2.5 V             :         : 8         : N              
-pulso_384                    : F16       : output : 2.5 V             :         : 8         : N              
-parallel_in[54]              : F17       : input  : 2.5 V             :         : 7         : N              
-parallel_in[30]              : F18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[78]              : F19       : input  : 2.5 V             :         : 7         : N              
-parallel_in[50]              : F20       : input  : 2.5 V             :         : 7         : N              
-parallel_in[49]              : F21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[14]              : F22       : input  : 2.5 V             :         : 7         : N              
-parallel_in[8]               : F23       : input  : 2.5 V             :         : 7         : N              
-parallel_in[72]              : F24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[64]              : F25       : input  : 2.5 V             :         : 7         : N              
-parallel_in[71]              : F26       : input  : 2.5 V             :         : 6         : N              
-parallel_in[67]              : F27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[29]              : F28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[73]              : F29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[115]             : F30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[110]             : F9        : input  : 2.5 V             :         : 8         : N              
+parallel_in[114]             : F10       : input  : 2.5 V             :         : 8         : N              
+parallel_in[139]             : F11       : input  : 2.5 V             :         : 8         : N              
+parallel_in[299]             : F12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[296]             : F13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[305]             : F14       : input  : 2.5 V             :         : 8         : N              
+parallel_in[306]             : F15       : input  : 2.5 V             :         : 8         : N              
+parallel_in[54]              : F16       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 7         :                
+parallel_in[42]              : F18       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7         :                
+parallel_in[26]              : F20       : input  : 2.5 V             :         : 7         : N              
+parallel_in[17]              : F21       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 7         :                
+parallel_in[63]              : F23       : input  : 2.5 V             :         : 7         : N              
+parallel_in[69]              : F24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[270]             : F25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[279]             : F26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[272]             : F27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[278]             : F28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[280]             : F29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[206]             : F30       : input  : 2.5 V             :         : 6         : N              
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
 GND                          : G3        : gnd    :                   :         :           :                
@@ -560,27 +560,27 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
-parallel_in[164]             : G10       : input  : 2.5 V             :         : 8         : N              
-parallel_in[166]             : G11       : input  : 2.5 V             :         : 8         : N              
-parallel_in[146]             : G12       : input  : 2.5 V             :         : 8         : N              
-parallel_in[38]              : G13       : input  : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 8         :                
-parallel_in[35]              : G15       : input  : 2.5 V             :         : 8         : N              
-parallel_in[105]             : G16       : input  : 2.5 V             :         : 7         : N              
-parallel_in[99]              : G17       : input  : 2.5 V             :         : 7         : N              
-parallel_in[33]              : G18       : input  : 2.5 V             :         : 7         : N              
+parallel_in[137]             : G10       : input  : 2.5 V             :         : 8         : N              
+parallel_in[126]             : G11       : input  : 2.5 V             :         : 8         : N              
+parallel_in[287]             : G12       : input  : 2.5 V             :         : 8         : N              
+parallel_in[47]              : G13       : input  : 2.5 V             :         : 8         : N              
+parallel_in[49]              : G14       : input  : 2.5 V             :         : 8         : N              
+parallel_in[59]              : G15       : input  : 2.5 V             :         : 8         : N              
+parallel_in[33]              : G16       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 7         :                
+parallel_in[32]              : G18       : input  : 2.5 V             :         : 7         : N              
 VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
-parallel_in[51]              : G20       : input  : 2.5 V             :         : 7         : N              
-parallel_in[10]              : G21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[5]               : G22       : input  : 2.5 V             :         : 7         : N              
-parallel_in[4]               : G23       : input  : 2.5 V             :         : 7         : N              
-parallel_in[61]              : G24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[68]              : G25       : input  : 2.5 V             :         : 7         : N              
-parallel_in[66]              : G26       : input  : 2.5 V             :         : 6         : N              
-parallel_in[74]              : G27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[117]             : G28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[113]             : G29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[253]             : G30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :         : 7         :                
+parallel_in[72]              : G23       : input  : 2.5 V             :         : 7         : N              
+parallel_in[75]              : G24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[66]              : G25       : input  : 2.5 V             :         : 7         : N              
+parallel_in[281]             : G26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[274]             : G27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[207]             : G28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[220]             : G29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[185]             : G30       : input  : 2.5 V             :         : 6         : N              
 GND                          : H1        : gnd    :                   :         :           :                
 GND                          : H2        : gnd    :                   :         :           :                
 GXB_NC                       : H3        :        :                   :         : QL1       :                
@@ -604,13 +604,13 @@ GND                          : H20       : gnd    :                   :         
 VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
 VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
 GND                          : H23       : gnd    :                   :         :           :                
-parallel_in[12]              : H24       : input  : 2.5 V             :         : 7         : N              
-parallel_in[17]              : H25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[73]              : H24       : input  : 2.5 V             :         : 7         : N              
+parallel_in[284]             : H25       : input  : 2.5 V             :         : 6         : N              
 GND                          : H26       : gnd    :                   :         :           :                
-parallel_in[21]              : H27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[24]              : H28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[273]             : H27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[208]             : H28       : input  : 2.5 V             :         : 6         : N              
 GND                          : H29       : gnd    :                   :         :           :                
-parallel_in[266]             : H30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[175]             : H30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : J1        :        :                   :         : QL1       :                
 GXB_GND*                     : J2        :        :                   :         : QL1       :                
 GND                          : J3        : gnd    :                   :         :           :                
@@ -635,12 +635,12 @@ VCCIO7                       : J21       : power  :                   : 2.5V    
 VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
 VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
 GND                          : J24       : gnd    :                   :         :           :                
-parallel_in[15]              : J25       : input  : 2.5 V             :         : 6         : N              
-parallel_in[25]              : J26       : input  : 2.5 V             :         : 6         : N              
-parallel_in[26]              : J27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[19]              : J28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[114]             : J29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[110]             : J30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[277]             : J25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[216]             : J26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[282]             : J27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[219]             : J28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[177]             : J29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[186]             : J30       : input  : 2.5 V             :         : 6         : N              
 GND                          : K1        : gnd    :                   :         :           :                
 GND                          : K2        : gnd    :                   :         :           :                
 GXB_NC                       : K3        :        :                   :         : QL1       :                
@@ -657,20 +657,20 @@ VCCINT                       : K13       : power  :                   : 1.2V    
 GND                          : K14       : gnd    :                   :         :           :                
 GXB_GND*                     : K15       :        :                   :         : 8A        :                
 VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
-parallel_in[37]              : K17       : input  : 2.5 V             :         : 7         : N              
-parallel_in[39]              : K18       : input  : 2.5 V             :         : 7         : N              
-parallel_in[44]              : K19       : input  : 2.5 V             :         : 7         : N              
+parallel_in[61]              : K17       : input  : 2.5 V             :         : 7         : N              
+parallel_in[41]              : K18       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K19       :        :                   :         : 7         :                
 GND                          : K20       : gnd    :                   :         :           :                
-parallel_in[11]              : K21       : input  : 2.5 V             :         : 7         : N              
-parallel_in[9]               : K22       : input  : 2.5 V             :         : 7         : N              
+parallel_in[76]              : K21       : input  : 2.5 V             :         : 7         : N              
+parallel_in[74]              : K22       : input  : 2.5 V             :         : 7         : N              
 VCCA                         : K23       : power  :                   : 2.5V    :           :                
-parallel_in[22]              : K24       : input  : 2.5 V             :         : 6         : N              
-parallel_in[23]              : K25       : input  : 2.5 V             :         : 6         : N              
-parallel_in[119]             : K26       : input  : 2.5 V             :         : 6         : N              
-parallel_in[27]              : K27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[120]             : K28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[118]             : K29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[254]             : K30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[271]             : K24       : input  : 2.5 V             :         : 6         : N              
+parallel_in[209]             : K25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[214]             : K26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[212]             : K27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[179]             : K28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[176]             : K29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[181]             : K30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : L1        :        :                   :         : QL1       :                
 GXB_GND*                     : L2        :        :                   :         : QL1       :                
 GND                          : L3        : gnd    :                   :         :           :                
@@ -695,12 +695,12 @@ GND                          : L21       : gnd    :                   :         
 VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
 GND                          : L23       : gnd    :                   :         :           :                
 VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
-parallel_in[109]             : L25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[213]             : L25       : input  : 2.5 V             :         : 6         : N              
 GND                          : L26       : gnd    :                   :         :           :                
-parallel_in[121]             : L27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[116]             : L28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[187]             : L27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[218]             : L28       : input  : 2.5 V             :         : 6         : N              
 GND                          : L29       : gnd    :                   :         :           :                
-parallel_in[268]             : L30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[182]             : L30       : input  : 2.5 V             :         : 6         : N              
 GND                          : M1        : gnd    :                   :         :           :                
 GND                          : M2        : gnd    :                   :         :           :                
 GXB_NC                       : M3        :        :                   :         : QL1       :                
@@ -721,16 +721,16 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-parallel_in[112]             : M21       : input  : 2.5 V             :         : 6         : N              
-parallel_in[124]             : M22       : input  : 2.5 V             :         : 6         : N              
+parallel_in[211]             : M21       : input  : 2.5 V             :         : 6         : N              
+parallel_in[205]             : M22       : input  : 2.5 V             :         : 6         : N              
 VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
-parallel_in[256]             : M25       : input  : 2.5 V             :         : 6         : N              
-parallel_in[258]             : M26       : input  : 2.5 V             :         : 6         : N              
-parallel_in[265]             : M27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[264]             : M28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[261]             : M29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[257]             : M30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[188]             : M25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[254]             : M26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[178]             : M27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[173]             : M28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[183]             : M29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[266]             : M30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : N1        :        :                   :         : QL1       :                
 GXB_GND*                     : N2        :        :                   :         : QL1       :                
 GND                          : N3        : gnd    :                   :         :           :                
@@ -751,16 +751,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-parallel_in[123]             : N21       : input  : 2.5 V             :         : 6         : N              
+parallel_in[174]             : N21       : input  : 2.5 V             :         : 6         : N              
 VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
-parallel_in[255]             : N24       : input  : 2.5 V             :         : 6         : N              
+parallel_in[184]             : N24       : input  : 2.5 V             :         : 6         : N              
 parallel_in[259]             : N25       : input  : 2.5 V             :         : 6         : N              
-parallel_in[271]             : N26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[258]             : N26       : input  : 2.5 V             :         : 6         : N              
 parallel_in[267]             : N27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[263]             : N28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[262]             : N29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[272]             : N30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[256]             : N28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[255]             : N29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[257]             : N30       : input  : 2.5 V             :         : 6         : N              
 GND                          : P1        : gnd    :                   :         :           :                
 GND                          : P2        : gnd    :                   :         :           :                
 GXB_NC                       : P3        :        :                   :         : QL1       :                
@@ -781,16 +781,16 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-parallel_in[111]             : P21       : input  : 2.5 V             :         : 6         : N              
+parallel_in[180]             : P21       : input  : 2.5 V             :         : 6         : N              
 VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
 GND                          : P23       : gnd    :                   :         :           :                
 VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
-load                         : P25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[253]             : P25       : input  : 2.5 V             :         : 6         : N              
 GND                          : P26       : gnd    :                   :         :           :                
-parallel_in[280]             : P27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[274]             : P28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[262]             : P27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[268]             : P28       : input  : 2.5 V             :         : 6         : N              
 GND                          : P29       : gnd    :                   :         :           :                
-parallel_in[277]             : P30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[260]             : P30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : R1        :        :                   :         : QL1       :                
 GXB_GND*                     : R2        :        :                   :         : QL1       :                
 GND                          : R3        : gnd    :                   :         :           :                
@@ -814,13 +814,13 @@ VCCINT                       : R20       : power  :                   : 1.2V    
 GND                          : R21       : gnd    :                   :         :           :                
 VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
-parallel_in[260]             : R24       : input  : 2.5 V             :         : 6         : N              
-parallel_in[284]             : R25       : input  : 2.5 V             :         : 6         : N              
-parallel_in[276]             : R26       : input  : 2.5 V             :         : 6         : N              
-parallel_in[282]             : R27       : input  : 2.5 V             :         : 6         : N              
-parallel_in[270]             : R28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[273]             : R29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[279]             : R30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[264]             : R24       : input  : 2.5 V             :         : 6         : N              
+parallel_in[241]             : R25       : input  : 2.5 V             :         : 6         : N              
+parallel_in[251]             : R26       : input  : 2.5 V             :         : 6         : N              
+parallel_in[263]             : R27       : input  : 2.5 V             :         : 6         : N              
+parallel_in[265]             : R28       : input  : 2.5 V             :         : 6         : N              
+parallel_in[238]             : R29       : input  : 2.5 V             :         : 6         : N              
+parallel_in[261]             : R30       : input  : 2.5 V             :         : 6         : N              
 GND                          : T1        : gnd    :                   :         :           :                
 GND                          : T2        : gnd    :                   :         :           :                
 GXB_NC                       : T3        :        :                   :         : QL0       :                
@@ -841,16 +841,16 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-parallel_in[233]             : T21       : input  : 2.5 V             :         : 5         : N              
+parallel_in[79]              : T21       : input  : 2.5 V             :         : 5         : N              
 GND                          : T22       : gnd    :                   :         :           :                
-parallel_in[283]             : T23       : input  : 2.5 V             :         : 5         : N              
-parallel_in[278]             : T24       : input  : 2.5 V             :         : 5         : N              
-parallel_in[240]             : T25       : input  : 2.5 V             :         : 5         : N              
-parallel_in[281]             : T26       : input  : 2.5 V             :         : 5         : N              
-parallel_in[275]             : T27       : input  : 2.5 V             :         : 5         : N              
-parallel_in[269]             : T28       : input  : 2.5 V             :         : 6         : N              
-parallel_in[1]               : T29       : input  : 2.5 V             :         : 6         : N              
-parallel_in[2]               : T30       : input  : 2.5 V             :         : 6         : N              
+parallel_in[252]             : T23       : input  : 2.5 V             :         : 5         : N              
+parallel_in[250]             : T24       : input  : 2.5 V             :         : 5         : N              
+parallel_in[83]              : T25       : input  : 2.5 V             :         : 5         : N              
+parallel_in[246]             : T26       : input  : 2.5 V             :         : 5         : N              
+parallel_in[237]             : T27       : input  : 2.5 V             :         : 5         : N              
+parallel_in[239]             : T28       : input  : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+parallel_in[0]               : T30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : U1        :        :                   :         : QL0       :                
 GXB_GND*                     : U2        :        :                   :         : QL0       :                
 GND                          : U3        : gnd    :                   :         :           :                
@@ -871,16 +871,16 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U21       :        :                   :         : 5         :                
+parallel_in[77]              : U21       : input  : 2.5 V             :         : 5         : N              
 VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
 GND                          : U23       : gnd    :                   :         :           :                
 VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
-parallel_in[242]             : U25       : input  : 2.5 V             :         : 5         : N              
+parallel_in[90]              : U25       : input  : 2.5 V             :         : 5         : N              
 GND                          : U26       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U27       :        :                   :         : 5         :                
-parallel_in[241]             : U28       : input  : 2.5 V             :         : 5         : N              
+parallel_in[244]             : U27       : input  : 2.5 V             :         : 5         : N              
+parallel_in[240]             : U28       : input  : 2.5 V             :         : 5         : N              
 GND                          : U29       : gnd    :                   :         :           :                
-parallel_in[237]             : U30       : input  : 2.5 V             :         : 5         : N              
+parallel_in[245]             : U30       : input  : 2.5 V             :         : 5         : N              
 GND                          : V1        : gnd    :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 GXB_NC                       : V3        :        :                   :         : QL0       :                
@@ -901,16 +901,16 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-parallel_in[232]             : V21       : input  : 2.5 V             :         : 5         : N              
+parallel_in[233]             : V21       : input  : 2.5 V             :         : 5         : N              
 VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
 GND                          : V24       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V25       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V26       :        :                   :         : 5         :                
-parallel_in[251]             : V27       : input  : 2.5 V             :         : 5         : N              
-parallel_in[247]             : V28       : input  : 2.5 V             :         : 5         : N              
-parallel_in[249]             : V29       : input  : 2.5 V             :         : 5         : N              
-parallel_in[250]             : V30       : input  : 2.5 V             :         : 5         : N              
+parallel_in[86]              : V25       : input  : 2.5 V             :         : 5         : N              
+parallel_in[89]              : V26       : input  : 2.5 V             :         : 5         : N              
+parallel_in[249]             : V27       : input  : 2.5 V             :         : 5         : N              
+parallel_in[85]              : V28       : input  : 2.5 V             :         : 5         : N              
+parallel_in[247]             : V29       : input  : 2.5 V             :         : 5         : N              
+parallel_in[248]             : V30       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : W1        :        :                   :         : QL0       :                
 GXB_GND*                     : W2        :        :                   :         : QL0       :                
 GND                          : W3        : gnd    :                   :         :           :                
@@ -935,12 +935,12 @@ GND                          : W21       : gnd    :                   :         
 VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-parallel_in[238]             : W25       : input  : 2.5 V             :         : 5         : N              
-parallel_in[252]             : W26       : input  : 2.5 V             :         : 5         : N              
-parallel_in[239]             : W27       : input  : 2.5 V             :         : 5         : N              
-parallel_in[248]             : W28       : input  : 2.5 V             :         : 5         : N              
-parallel_in[243]             : W29       : input  : 2.5 V             :         : 5         : N              
-parallel_in[246]             : W30       : input  : 2.5 V             :         : 5         : N              
+parallel_in[92]              : W25       : input  : 2.5 V             :         : 5         : N              
+parallel_in[80]              : W26       : input  : 2.5 V             :         : 5         : N              
+parallel_in[87]              : W27       : input  : 2.5 V             :         : 5         : N              
+parallel_in[82]              : W28       : input  : 2.5 V             :         : 5         : N              
+parallel_in[88]              : W29       : input  : 2.5 V             :         : 5         : N              
+parallel_in[91]              : W30       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y1        : gnd    :                   :         :           :                
 GND                          : Y2        : gnd    :                   :         :           :                
 GXB_NC                       : Y3        :        :                   :         : QL0       :                
@@ -957,17 +957,17 @@ VCCINT                       : Y13       : power  :                   : 1.2V    
 GND                          : Y14       : gnd    :                   :         :           :                
 VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
 GND                          : Y16       : gnd    :                   :         :           :                
-parallel_in[376]             : Y17       : input  : 2.5 V             :         : 4         : N              
-parallel_in[358]             : Y18       : input  : 2.5 V             :         : 4         : N              
-parallel_in[299]             : Y19       : input  : 2.5 V             :         : 4         : N              
-parallel_in[329]             : Y20       : input  : 2.5 V             :         : 4         : N              
-parallel_in[325]             : Y21       : input  : 2.5 V             :         : 4         : N              
-parallel_in[228]             : Y22       : input  : 2.5 V             :         : 5         : N              
+parallel_in[340]             : Y17       : input  : 2.5 V             :         : 4         : N              
+parallel_in[194]             : Y18       : input  : 2.5 V             :         : 4         : N              
+parallel_in[318]             : Y19       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y20       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y21       :        :                   :         : 4         :                
+parallel_in[223]             : Y22       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y23       : gnd    :                   :         :           :                
 VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
-parallel_in[342]             : Y25       : input  : 2.5 V             :         : 5         : N              
+parallel_in[105]             : Y25       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y26       : gnd    :                   :         :           :                
-parallel_in[303]             : Y27       : input  : 2.5 V             :         : 5         : N              
-parallel_in[224]             : Y28       : input  : 2.5 V             :         : 5         : N              
+parallel_in[160]             : Y27       : input  : 2.5 V             :         : 5         : N              
+parallel_in[227]             : Y28       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y29       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y30       :        :                   :         : 5         :                
+parallel_in[81]              : Y30       : input  : 2.5 V             :         : 5         : N              

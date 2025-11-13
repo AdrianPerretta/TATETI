@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="subsistema4">
+		<CBX_INST_ENTRY INSTANCE_NAME="|subsistema2esquematico|Block1:b2v_inst|altpll0:inst|altpll:altpll_component" CBX_FILE_NAME="altpll0_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|subsistema2esquematico|lpm_counter0:b2v_inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_4mj.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -2,23 +2,23 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Lautaro21\Desktop\Proyecto TATETI\subsistema_4\simulation\modelsim
+Z0 dC:\Users\nicol\Documents\GitHub\TATETI\subsistema_4\simulation\modelsim
 Esubsistema_4
-Z1 w1762696198
+Z1 w1762714902
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dC:\Users\Lautaro21\Desktop\Proyecto TATETI\subsistema_4\simulation\modelsim
-Z6 8C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd
-Z7 FC:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd
+Z5 dC:\Users\nicol\Documents\GitHub\TATETI\subsistema_4\simulation\modelsim
+Z6 8C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.vhd
+Z7 FC:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.vhd
 l0
 L13
 VTj;zV9<E:3kc3?]UhA6]=3
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1762697394.503000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd|
-Z11 !s107 C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4.vhd|
+Z9 !s108 1762728665.095000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.vhd|
+Z11 !s107 C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
 !s100 lkTRg_4:4ZY1JX_52Ic4E2
@@ -41,13 +41,13 @@ R13
 !s100 ;:Fb@m1EzU>SfYb2=SAj=3
 !i10b 1
 Esubsistema_4_testbench
-Z15 w1762697361
+R1
 R2
 R3
 R4
 R5
-Z16 8C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd
-Z17 FC:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd
+Z15 8C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4_testbench.vhd
+Z16 FC:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4_testbench.vhd
 l0
 L12
 Vde@]U]kG;6O`]TzJWHZzM2
@@ -55,9 +55,9 @@ Vde@]U]kG;6O`]TzJWHZzM2
 R8
 31
 !i10b 1
-Z18 !s108 1762697394.847000
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd|
-Z20 !s107 C:/Users/Lautaro21/Desktop/Proyecto TATETI/subsistema_4/Subsistema_4_testbench.vhd|
+Z17 !s108 1762728665.706000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4_testbench.vhd|
+Z19 !s107 C:/Users/nicol/Documents/GitHub/TATETI/subsistema_4/Subsistema_4_testbench.vhd|
 R12
 R13
 Atb
@@ -73,8 +73,8 @@ Vmh0kiiQ62lKc6WfZJ`>Kf3
 R8
 31
 !i10b 1
+R17
 R18
 R19
-R20
 R12
 R13

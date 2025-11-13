@@ -45,38 +45,38 @@ architecture comportamiento of Memoria_tablero is
 					 end if;
 					
 				 -- Fila 2 --
-				   when "0100" =>
+				   when "0011" =>
 					 if turno_actual = '0' then
 					    s_estado_tablero (7 downto 6) <= jugador1;
 					 else 
 					    s_estado_tablero (7 downto 6) <= jugador2;
 					 end if;
-				   when "0101" =>
+				   when "0100" =>
 					 if turno_actual = '0' then
 					    s_estado_tablero (9 downto 8) <= jugador1;
 					 else 
 					    s_estado_tablero (9 downto 8) <= jugador2;
 					 end if;
-				   when "0110" =>
+				   when "0101" =>
 					 if turno_actual = '0' then
 					    s_estado_tablero (11 downto 10) <= jugador1;
 					 else 
 					    s_estado_tablero (11 downto 10) <= jugador2;
 					 end if;
 				  -- Fila 3 --
-				   when "1000" =>
+				   when "0110" =>
 					 if turno_actual = '0' then
 					    s_estado_tablero (13 downto 12) <= jugador1;
 					 else 
 					    s_estado_tablero (13 downto 12) <= jugador2;
 					 end if;
-				   when "1001" =>
+				   when "0111" =>
 					 if turno_actual = '0' then
 					    s_estado_tablero (15 downto 14) <= jugador1;
 					 else 
 					    s_estado_tablero (15 downto 14) <= jugador2;
 					 end if;
-				   when "1010" =>
+				   when "1000" =>
 					 if turno_actual = '0' then
 					    s_estado_tablero (17 downto 16) <= jugador1;
 					 else 
