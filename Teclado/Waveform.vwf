@@ -42,16 +42,6 @@ SIGNAL("clk")
 	PARENT = "";
 }
 
-SIGNAL("reset")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("R1")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -132,7 +122,7 @@ SIGNAL("C4")
 	PARENT = "";
 }
 
-SIGNAL("MS_1")
+SIGNAL("tablero_juego")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -142,47 +132,137 @@ SIGNAL("MS_1")
 	PARENT = "";
 }
 
-SIGNAL("MS_1[3]")
+SIGNAL("tablero_juego[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_1";
+	PARENT = "tablero_juego";
 }
 
-SIGNAL("MS_1[2]")
+SIGNAL("tablero_juego[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_1";
+	PARENT = "tablero_juego";
 }
 
-SIGNAL("MS_1[1]")
+SIGNAL("tablero_juego[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_1";
+	PARENT = "tablero_juego";
 }
 
-SIGNAL("MS_1[0]")
+SIGNAL("tablero_juego[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_1";
+	PARENT = "tablero_juego";
 }
 
-SIGNAL("MS_2")
+SIGNAL("tecla_color_j1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("tecla_color_j1[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "tecla_color_j1";
+}
+
+SIGNAL("tecla_color_j1[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "tecla_color_j1";
+}
+
+SIGNAL("tecla_color_j2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("tecla_color_j2[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "tecla_color_j2";
+}
+
+SIGNAL("tecla_color_j2[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "tecla_color_j2";
+}
+
+SIGNAL("tecla_j1_vs_j2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("tecla_j_vs_mq")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("tecla_reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("fila_1_teclado")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -192,47 +272,47 @@ SIGNAL("MS_2")
 	PARENT = "";
 }
 
-SIGNAL("MS_2[3]")
+SIGNAL("fila_1_teclado[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_2";
+	PARENT = "fila_1_teclado";
 }
 
-SIGNAL("MS_2[2]")
+SIGNAL("fila_1_teclado[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_2";
+	PARENT = "fila_1_teclado";
 }
 
-SIGNAL("MS_2[1]")
+SIGNAL("fila_1_teclado[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_2";
+	PARENT = "fila_1_teclado";
 }
 
-SIGNAL("MS_2[0]")
+SIGNAL("fila_1_teclado[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_2";
+	PARENT = "fila_1_teclado";
 }
 
-SIGNAL("MS_3")
+SIGNAL("fila_2_teclado")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -242,47 +322,47 @@ SIGNAL("MS_3")
 	PARENT = "";
 }
 
-SIGNAL("MS_3[3]")
+SIGNAL("fila_2_teclado[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_3";
+	PARENT = "fila_2_teclado";
 }
 
-SIGNAL("MS_3[2]")
+SIGNAL("fila_2_teclado[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_3";
+	PARENT = "fila_2_teclado";
 }
 
-SIGNAL("MS_3[1]")
+SIGNAL("fila_2_teclado[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_3";
+	PARENT = "fila_2_teclado";
 }
 
-SIGNAL("MS_3[0]")
+SIGNAL("fila_2_teclado[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_3";
+	PARENT = "fila_2_teclado";
 }
 
-SIGNAL("MS_4")
+SIGNAL("fila_3_teclado")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -292,44 +372,94 @@ SIGNAL("MS_4")
 	PARENT = "";
 }
 
-SIGNAL("MS_4[3]")
+SIGNAL("fila_3_teclado[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_4";
+	PARENT = "fila_3_teclado";
 }
 
-SIGNAL("MS_4[2]")
+SIGNAL("fila_3_teclado[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_4";
+	PARENT = "fila_3_teclado";
 }
 
-SIGNAL("MS_4[1]")
+SIGNAL("fila_3_teclado[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_4";
+	PARENT = "fila_3_teclado";
 }
 
-SIGNAL("MS_4[0]")
+SIGNAL("fila_3_teclado[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "MS_4";
+	PARENT = "fila_3_teclado";
+}
+
+SIGNAL("fila_4_teclado")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("fila_4_teclado[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "fila_4_teclado";
+}
+
+SIGNAL("fila_4_teclado[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "fila_4_teclado";
+}
+
+SIGNAL("fila_4_teclado[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "fila_4_teclado";
+}
+
+SIGNAL("fila_4_teclado[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "fila_4_teclado";
 }
 
 TRANSITION_LIST("clk")
@@ -339,21 +469,10 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 97;
+			REPEAT = 100;
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
-		LEVEL 0 FOR 30.0;
-	}
-}
-
-TRANSITION_LIST("reset")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 920.0;
 	}
 }
 
@@ -362,17 +481,13 @@ TRANSITION_LIST("R1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 130.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 140.0;
 		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 180.0;
 	}
 }
 
@@ -399,7 +514,9 @@ TRANSITION_LIST("R4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 460.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 380.0;
 	}
 }
 
@@ -439,7 +556,7 @@ TRANSITION_LIST("C4")
 	}
 }
 
-TRANSITION_LIST("MS_1[3]")
+TRANSITION_LIST("tablero_juego[3]")
 {
 	NODE
 	{
@@ -448,7 +565,7 @@ TRANSITION_LIST("MS_1[3]")
 	}
 }
 
-TRANSITION_LIST("MS_1[2]")
+TRANSITION_LIST("tablero_juego[2]")
 {
 	NODE
 	{
@@ -457,7 +574,7 @@ TRANSITION_LIST("MS_1[2]")
 	}
 }
 
-TRANSITION_LIST("MS_1[1]")
+TRANSITION_LIST("tablero_juego[1]")
 {
 	NODE
 	{
@@ -466,7 +583,7 @@ TRANSITION_LIST("MS_1[1]")
 	}
 }
 
-TRANSITION_LIST("MS_1[0]")
+TRANSITION_LIST("tablero_juego[0]")
 {
 	NODE
 	{
@@ -475,7 +592,7 @@ TRANSITION_LIST("MS_1[0]")
 	}
 }
 
-TRANSITION_LIST("MS_2[3]")
+TRANSITION_LIST("tecla_color_j1[1]")
 {
 	NODE
 	{
@@ -484,7 +601,7 @@ TRANSITION_LIST("MS_2[3]")
 	}
 }
 
-TRANSITION_LIST("MS_2[2]")
+TRANSITION_LIST("tecla_color_j1[0]")
 {
 	NODE
 	{
@@ -493,7 +610,7 @@ TRANSITION_LIST("MS_2[2]")
 	}
 }
 
-TRANSITION_LIST("MS_2[1]")
+TRANSITION_LIST("tecla_color_j2[1]")
 {
 	NODE
 	{
@@ -502,7 +619,7 @@ TRANSITION_LIST("MS_2[1]")
 	}
 }
 
-TRANSITION_LIST("MS_2[0]")
+TRANSITION_LIST("tecla_color_j2[0]")
 {
 	NODE
 	{
@@ -511,7 +628,7 @@ TRANSITION_LIST("MS_2[0]")
 	}
 }
 
-TRANSITION_LIST("MS_3[3]")
+TRANSITION_LIST("tecla_j1_vs_j2")
 {
 	NODE
 	{
@@ -520,7 +637,7 @@ TRANSITION_LIST("MS_3[3]")
 	}
 }
 
-TRANSITION_LIST("MS_3[2]")
+TRANSITION_LIST("tecla_j_vs_mq")
 {
 	NODE
 	{
@@ -529,7 +646,7 @@ TRANSITION_LIST("MS_3[2]")
 	}
 }
 
-TRANSITION_LIST("MS_3[1]")
+TRANSITION_LIST("tecla_reset")
 {
 	NODE
 	{
@@ -538,7 +655,7 @@ TRANSITION_LIST("MS_3[1]")
 	}
 }
 
-TRANSITION_LIST("MS_3[0]")
+TRANSITION_LIST("fila_1_teclado[3]")
 {
 	NODE
 	{
@@ -547,7 +664,7 @@ TRANSITION_LIST("MS_3[0]")
 	}
 }
 
-TRANSITION_LIST("MS_4[3]")
+TRANSITION_LIST("fila_1_teclado[2]")
 {
 	NODE
 	{
@@ -556,7 +673,7 @@ TRANSITION_LIST("MS_4[3]")
 	}
 }
 
-TRANSITION_LIST("MS_4[2]")
+TRANSITION_LIST("fila_1_teclado[1]")
 {
 	NODE
 	{
@@ -565,7 +682,7 @@ TRANSITION_LIST("MS_4[2]")
 	}
 }
 
-TRANSITION_LIST("MS_4[1]")
+TRANSITION_LIST("fila_1_teclado[0]")
 {
 	NODE
 	{
@@ -574,7 +691,106 @@ TRANSITION_LIST("MS_4[1]")
 	}
 }
 
-TRANSITION_LIST("MS_4[0]")
+TRANSITION_LIST("fila_2_teclado[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_2_teclado[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_2_teclado[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_2_teclado[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_3_teclado[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_3_teclado[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_3_teclado[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_3_teclado[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_4_teclado[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_4_teclado[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_4_teclado[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("fila_4_teclado[0]")
 {
 	NODE
 	{
@@ -594,7 +810,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reset";
+	CHANNEL = "R1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -603,7 +819,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "R1";
+	CHANNEL = "R2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -612,7 +828,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "R2";
+	CHANNEL = "R3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -621,7 +837,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "R3";
+	CHANNEL = "R4";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -630,7 +846,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "R4";
+	CHANNEL = "C1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -639,7 +855,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "C1";
+	CHANNEL = "C2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -648,7 +864,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "C2";
+	CHANNEL = "C3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -657,7 +873,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "C3";
+	CHANNEL = "C4";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -666,211 +882,339 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "C4";
+	CHANNEL = "tablero_juego";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 0;
+	CHILDREN = 10, 11, 12, 13;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_1";
+	CHANNEL = "tablero_juego[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
-	TREE_LEVEL = 0;
-	CHILDREN = 11, 12, 13, 14;
+	TREE_LEVEL = 1;
+	PARENT = 9;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_1[0]";
+	CHANNEL = "tablero_juego[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 10;
+	PARENT = 9;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_1[1]";
+	CHANNEL = "tablero_juego[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
-	PARENT = 10;
+	PARENT = 9;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_1[2]";
+	CHANNEL = "tablero_juego[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
-	PARENT = 10;
+	PARENT = 9;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_1[3]";
+	CHANNEL = "tecla_color_j1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
-	TREE_LEVEL = 1;
-	PARENT = 10;
+	TREE_LEVEL = 0;
+	CHILDREN = 15, 16;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_2";
+	CHANNEL = "tecla_color_j1[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
-	TREE_LEVEL = 0;
-	CHILDREN = 16, 17, 18, 19;
+	TREE_LEVEL = 1;
+	PARENT = 14;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_2[0]";
+	CHANNEL = "tecla_color_j1[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
-	PARENT = 15;
+	PARENT = 14;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_2[1]";
+	CHANNEL = "tecla_color_j2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
-	TREE_LEVEL = 1;
-	PARENT = 15;
+	TREE_LEVEL = 0;
+	CHILDREN = 18, 19;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_2[2]";
+	CHANNEL = "tecla_color_j2[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
-	PARENT = 15;
+	PARENT = 17;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_2[3]";
+	CHANNEL = "tecla_color_j2[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
-	PARENT = 15;
+	PARENT = 17;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_3";
+	CHANNEL = "tecla_j1_vs_j2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 0;
-	CHILDREN = 21, 22, 23, 24;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_3[0]";
+	CHANNEL = "tecla_j_vs_mq";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
-	TREE_LEVEL = 1;
-	PARENT = 20;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_3[1]";
+	CHANNEL = "tecla_reset";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
-	TREE_LEVEL = 1;
-	PARENT = 20;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_3[2]";
+	CHANNEL = "fila_1_teclado";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
-	TREE_LEVEL = 1;
-	PARENT = 20;
+	TREE_LEVEL = 0;
+	CHILDREN = 24, 25, 26, 27;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_3[3]";
+	CHANNEL = "fila_1_teclado[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 23;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_4";
+	CHANNEL = "fila_1_teclado[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
-	TREE_LEVEL = 0;
-	CHILDREN = 26, 27, 28, 29;
+	TREE_LEVEL = 1;
+	PARENT = 23;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_4[0]";
+	CHANNEL = "fila_1_teclado[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 23;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_4[1]";
+	CHANNEL = "fila_1_teclado[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 23;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_4[2]";
+	CHANNEL = "fila_2_teclado";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
-	TREE_LEVEL = 1;
-	PARENT = 25;
+	TREE_LEVEL = 0;
+	CHILDREN = 29, 30, 31, 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MS_4[3]";
+	CHANNEL = "fila_2_teclado[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_2_teclado[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_2_teclado[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_2_teclado[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_3_teclado";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+	CHILDREN = 34, 35, 36, 37;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_3_teclado[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_3_teclado[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_3_teclado[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_3_teclado[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_4_teclado";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 0;
+	CHILDREN = 39, 40, 41, 42;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_4_teclado[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 1;
+	PARENT = 38;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_4_teclado[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 1;
+	PARENT = 38;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_4_teclado[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 1;
+	PARENT = 38;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "fila_4_teclado[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 1;
+	PARENT = 38;
 }
 
 TIME_BAR

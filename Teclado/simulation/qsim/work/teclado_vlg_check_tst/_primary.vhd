@@ -6,15 +6,16 @@ entity teclado_vlg_check_tst is
         C2              : in     vl_logic;
         C3              : in     vl_logic;
         C4              : in     vl_logic;
-        Cout            : in     vl_logic_vector(3 downto 0);
-        D1              : in     vl_logic_vector(3 downto 0);
-        D2              : in     vl_logic_vector(3 downto 0);
-        D3              : in     vl_logic_vector(3 downto 0);
-        D4              : in     vl_logic_vector(3 downto 0);
-        MS_1            : in     vl_logic_vector(0 to 3);
-        MS_2            : in     vl_logic_vector(0 to 3);
-        MS_3            : in     vl_logic_vector(0 to 3);
-        MS_4            : in     vl_logic_vector(0 to 3);
+        fila_1_teclado  : in     vl_logic_vector(0 to 3);
+        fila_2_teclado  : in     vl_logic_vector(0 to 3);
+        fila_3_teclado  : in     vl_logic_vector(0 to 3);
+        fila_4_teclado  : in     vl_logic_vector(0 to 3);
+        tablero_juego   : in     vl_logic_vector(0 to 3);
+        tecla_color_j1  : in     vl_logic_vector(0 to 1);
+        tecla_color_j2  : in     vl_logic_vector(0 to 1);
+        tecla_j1_vs_j2  : in     vl_logic;
+        tecla_j_vs_mq   : in     vl_logic;
+        tecla_reset     : in     vl_logic;
         sampler_rx      : in     vl_logic
     );
 end teclado_vlg_check_tst;

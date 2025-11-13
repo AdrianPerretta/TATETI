@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/09/2025 23:13:25"
+// Generated on "11/13/2025 09:47:09"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    teclado
 // 
@@ -32,7 +32,6 @@ module teclado_vlg_sample_tst(
 	R2,
 	R3,
 	R4,
-	reset,
 	sampler_tx
 );
 input  clk;
@@ -40,12 +39,11 @@ input  R1;
 input  R2;
 input  R3;
 input  R4;
-input  reset;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clk or R1 or R2 or R3 or R4 or reset)
+always @(clk or R1 or R2 or R3 or R4)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -69,84 +67,92 @@ module teclado_vlg_check_tst (
 	C2,
 	C3,
 	C4,
-	Cout,
-	D1,
-	D2,
-	D3,
-	D4,
-	MS_1,
-	MS_2,
-	MS_3,
-	MS_4,
+	fila_1_teclado,
+	fila_2_teclado,
+	fila_3_teclado,
+	fila_4_teclado,
+	tablero_juego,
+	tecla_color_j1,
+	tecla_color_j2,
+	tecla_j1_vs_j2,
+	tecla_j_vs_mq,
+	tecla_reset,
 	sampler_rx
 );
 input  C1;
 input  C2;
 input  C3;
 input  C4;
-input [3:0] Cout;
-input [3:0] D1;
-input [3:0] D2;
-input [3:0] D3;
-input [3:0] D4;
-input [0:3] MS_1;
-input [0:3] MS_2;
-input [0:3] MS_3;
-input [0:3] MS_4;
+input [0:3] fila_1_teclado;
+input [0:3] fila_2_teclado;
+input [0:3] fila_3_teclado;
+input [0:3] fila_4_teclado;
+input [0:3] tablero_juego;
+input [0:1] tecla_color_j1;
+input [0:1] tecla_color_j2;
+input  tecla_j1_vs_j2;
+input  tecla_j_vs_mq;
+input  tecla_reset;
 input sampler_rx;
 
 reg  C1_expected;
 reg  C2_expected;
 reg  C3_expected;
 reg  C4_expected;
-reg [3:0] Cout_expected;
-reg [3:0] D1_expected;
-reg [3:0] D2_expected;
-reg [3:0] D3_expected;
-reg [3:0] D4_expected;
-reg [0:3] MS_1_expected;
-reg [0:3] MS_2_expected;
-reg [0:3] MS_3_expected;
-reg [0:3] MS_4_expected;
+reg [0:3] fila_1_teclado_expected;
+reg [0:3] fila_2_teclado_expected;
+reg [0:3] fila_3_teclado_expected;
+reg [0:3] fila_4_teclado_expected;
+reg [0:3] tablero_juego_expected;
+reg [0:1] tecla_color_j1_expected;
+reg [0:1] tecla_color_j2_expected;
+reg  tecla_j1_vs_j2_expected;
+reg  tecla_j_vs_mq_expected;
+reg  tecla_reset_expected;
 
 reg  C1_prev;
 reg  C2_prev;
 reg  C3_prev;
 reg  C4_prev;
-reg [3:0] Cout_prev;
-reg [3:0] D1_prev;
-reg [3:0] D2_prev;
-reg [3:0] D3_prev;
-reg [3:0] D4_prev;
-reg [0:3] MS_1_prev;
-reg [0:3] MS_2_prev;
-reg [0:3] MS_3_prev;
-reg [0:3] MS_4_prev;
+reg [0:3] fila_1_teclado_prev;
+reg [0:3] fila_2_teclado_prev;
+reg [0:3] fila_3_teclado_prev;
+reg [0:3] fila_4_teclado_prev;
+reg [0:3] tablero_juego_prev;
+reg [0:1] tecla_color_j1_prev;
+reg [0:1] tecla_color_j2_prev;
+reg  tecla_j1_vs_j2_prev;
+reg  tecla_j_vs_mq_prev;
+reg  tecla_reset_prev;
 
 reg  C1_expected_prev;
 reg  C2_expected_prev;
 reg  C3_expected_prev;
 reg  C4_expected_prev;
-reg [0:3] MS_1_expected_prev;
-reg [0:3] MS_2_expected_prev;
-reg [0:3] MS_3_expected_prev;
-reg [0:3] MS_4_expected_prev;
+reg [0:3] tablero_juego_expected_prev;
+reg [0:1] tecla_color_j1_expected_prev;
+reg [0:1] tecla_color_j2_expected_prev;
+reg  tecla_j1_vs_j2_expected_prev;
+reg  tecla_j_vs_mq_expected_prev;
+reg  tecla_reset_expected_prev;
 
 reg  last_C1_exp;
 reg  last_C2_exp;
 reg  last_C3_exp;
 reg  last_C4_exp;
-reg [0:3] last_MS_1_exp;
-reg [0:3] last_MS_2_exp;
-reg [0:3] last_MS_3_exp;
-reg [0:3] last_MS_4_exp;
+reg [0:3] last_tablero_juego_exp;
+reg [0:1] last_tecla_color_j1_exp;
+reg [0:1] last_tecla_color_j2_exp;
+reg  last_tecla_j1_vs_j2_exp;
+reg  last_tecla_j_vs_mq_exp;
+reg  last_tecla_reset_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:13] on_first_change ;
+reg [1:14] on_first_change ;
 
 
 initial
@@ -154,7 +160,7 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 13'b1;
+on_first_change = 14'b1;
 end
 
 // update real /o prevs
@@ -165,15 +171,16 @@ begin
 	C2_prev = C2;
 	C3_prev = C3;
 	C4_prev = C4;
-	Cout_prev = Cout;
-	D1_prev = D1;
-	D2_prev = D2;
-	D3_prev = D3;
-	D4_prev = D4;
-	MS_1_prev = MS_1;
-	MS_2_prev = MS_2;
-	MS_3_prev = MS_3;
-	MS_4_prev = MS_4;
+	fila_1_teclado_prev = fila_1_teclado;
+	fila_2_teclado_prev = fila_2_teclado;
+	fila_3_teclado_prev = fila_3_teclado;
+	fila_4_teclado_prev = fila_4_teclado;
+	tablero_juego_prev = tablero_juego;
+	tecla_color_j1_prev = tecla_color_j1;
+	tecla_color_j2_prev = tecla_color_j2;
+	tecla_j1_vs_j2_prev = tecla_j1_vs_j2;
+	tecla_j_vs_mq_prev = tecla_j_vs_mq;
+	tecla_reset_prev = tecla_reset;
 end
 
 // update expected /o prevs
@@ -184,10 +191,12 @@ begin
 	C2_expected_prev = C2_expected;
 	C3_expected_prev = C3_expected;
 	C4_expected_prev = C4_expected;
-	MS_1_expected_prev = MS_1_expected;
-	MS_2_expected_prev = MS_2_expected;
-	MS_3_expected_prev = MS_3_expected;
-	MS_4_expected_prev = MS_4_expected;
+	tablero_juego_expected_prev = tablero_juego_expected;
+	tecla_color_j1_expected_prev = tecla_color_j1_expected;
+	tecla_color_j2_expected_prev = tecla_color_j2_expected;
+	tecla_j1_vs_j2_expected_prev = tecla_j1_vs_j2_expected;
+	tecla_j_vs_mq_expected_prev = tecla_j_vs_mq_expected;
+	tecla_reset_expected_prev = tecla_reset_expected;
 end
 
 
@@ -215,88 +224,66 @@ initial
 begin
 	C4_expected = 1'bX;
 end 
-// expected MS_1[ 3 ]
+// expected tablero_juego[ 3 ]
 initial
 begin
-	MS_1_expected[3] = 1'bX;
+	tablero_juego_expected[3] = 1'bX;
 end 
-// expected MS_1[ 2 ]
+// expected tablero_juego[ 2 ]
 initial
 begin
-	MS_1_expected[2] = 1'bX;
+	tablero_juego_expected[2] = 1'bX;
 end 
-// expected MS_1[ 1 ]
+// expected tablero_juego[ 1 ]
 initial
 begin
-	MS_1_expected[1] = 1'bX;
+	tablero_juego_expected[1] = 1'bX;
 end 
-// expected MS_1[ 0 ]
+// expected tablero_juego[ 0 ]
 initial
 begin
-	MS_1_expected[0] = 1'bX;
+	tablero_juego_expected[0] = 1'bX;
 end 
-// expected MS_2[ 3 ]
+// expected tecla_color_j1[ 1 ]
 initial
 begin
-	MS_2_expected[3] = 1'bX;
+	tecla_color_j1_expected[1] = 1'bX;
 end 
-// expected MS_2[ 2 ]
+// expected tecla_color_j1[ 0 ]
 initial
 begin
-	MS_2_expected[2] = 1'bX;
+	tecla_color_j1_expected[0] = 1'bX;
 end 
-// expected MS_2[ 1 ]
+// expected tecla_color_j2[ 1 ]
 initial
 begin
-	MS_2_expected[1] = 1'bX;
+	tecla_color_j2_expected[1] = 1'bX;
 end 
-// expected MS_2[ 0 ]
+// expected tecla_color_j2[ 0 ]
 initial
 begin
-	MS_2_expected[0] = 1'bX;
+	tecla_color_j2_expected[0] = 1'bX;
 end 
-// expected MS_3[ 3 ]
+
+// expected tecla_j1_vs_j2
 initial
 begin
-	MS_3_expected[3] = 1'bX;
+	tecla_j1_vs_j2_expected = 1'bX;
 end 
-// expected MS_3[ 2 ]
+
+// expected tecla_j_vs_mq
 initial
 begin
-	MS_3_expected[2] = 1'bX;
+	tecla_j_vs_mq_expected = 1'bX;
 end 
-// expected MS_3[ 1 ]
+
+// expected tecla_reset
 initial
 begin
-	MS_3_expected[1] = 1'bX;
-end 
-// expected MS_3[ 0 ]
-initial
-begin
-	MS_3_expected[0] = 1'bX;
-end 
-// expected MS_4[ 3 ]
-initial
-begin
-	MS_4_expected[3] = 1'bX;
-end 
-// expected MS_4[ 2 ]
-initial
-begin
-	MS_4_expected[2] = 1'bX;
-end 
-// expected MS_4[ 1 ]
-initial
-begin
-	MS_4_expected[1] = 1'bX;
-end 
-// expected MS_4[ 0 ]
-initial
-begin
-	MS_4_expected[0] = 1'bX;
+	tecla_reset_expected = 1'bX;
 end 
 // generate trigger
-always @(C1_expected or C1 or C2_expected or C2 or C3_expected or C3 or C4_expected or C4 or Cout_expected or Cout or D1_expected or D1 or D2_expected or D2 or D3_expected or D3 or D4_expected or D4 or MS_1_expected or MS_1 or MS_2_expected or MS_2 or MS_3_expected or MS_3 or MS_4_expected or MS_4)
+always @(C1_expected or C1 or C2_expected or C2 or C3_expected or C3 or C4_expected or C4 or fila_1_teclado_expected or fila_1_teclado or fila_2_teclado_expected or fila_2_teclado or fila_3_teclado_expected or fila_3_teclado or fila_4_teclado_expected or fila_4_teclado or tablero_juego_expected or tablero_juego or tecla_color_j1_expected or tecla_color_j1 or tecla_color_j2_expected or tecla_color_j2 or tecla_j1_vs_j2_expected or tecla_j1_vs_j2 or tecla_j_vs_mq_expected or tecla_j_vs_mq or tecla_reset_expected or tecla_reset)
 begin
 	trigger <= ~trigger;
 end
@@ -306,8 +293,8 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected C1 = %b | expected C2 = %b | expected C3 = %b | expected C4 = %b | expected Cout = %b | expected D1 = %b | expected D2 = %b | expected D3 = %b | expected D4 = %b | expected MS_1 = %b | expected MS_2 = %b | expected MS_3 = %b | expected MS_4 = %b | ",C1_expected_prev,C2_expected_prev,C3_expected_prev,C4_expected_prev,Cout_expected_prev,D1_expected_prev,D2_expected_prev,D3_expected_prev,D4_expected_prev,MS_1_expected_prev,MS_2_expected_prev,MS_3_expected_prev,MS_4_expected_prev);
-	$display("| real C1 = %b | real C2 = %b | real C3 = %b | real C4 = %b | real Cout = %b | real D1 = %b | real D2 = %b | real D3 = %b | real D4 = %b | real MS_1 = %b | real MS_2 = %b | real MS_3 = %b | real MS_4 = %b | ",C1_prev,C2_prev,C3_prev,C4_prev,Cout_prev,D1_prev,D2_prev,D3_prev,D4_prev,MS_1_prev,MS_2_prev,MS_3_prev,MS_4_prev);
+	$display("| expected C1 = %b | expected C2 = %b | expected C3 = %b | expected C4 = %b | expected fila_1_teclado = %b | expected fila_2_teclado = %b | expected fila_3_teclado = %b | expected fila_4_teclado = %b | expected tablero_juego = %b | expected tecla_color_j1 = %b | expected tecla_color_j2 = %b | expected tecla_j1_vs_j2 = %b | expected tecla_j_vs_mq = %b | expected tecla_reset = %b | ",C1_expected_prev,C2_expected_prev,C3_expected_prev,C4_expected_prev,fila_1_teclado_expected_prev,fila_2_teclado_expected_prev,fila_3_teclado_expected_prev,fila_4_teclado_expected_prev,tablero_juego_expected_prev,tecla_color_j1_expected_prev,tecla_color_j2_expected_prev,tecla_j1_vs_j2_expected_prev,tecla_j_vs_mq_expected_prev,tecla_reset_expected_prev);
+	$display("| real C1 = %b | real C2 = %b | real C3 = %b | real C4 = %b | real fila_1_teclado = %b | real fila_2_teclado = %b | real fila_3_teclado = %b | real fila_4_teclado = %b | real tablero_juego = %b | real tecla_color_j1 = %b | real tecla_color_j2 = %b | real tecla_j1_vs_j2 = %b | real tecla_j_vs_mq = %b | real tecla_reset = %b | ",C1_prev,C2_prev,C3_prev,C4_prev,fila_1_teclado_prev,fila_2_teclado_prev,fila_3_teclado_prev,fila_4_teclado_prev,tablero_juego_prev,tecla_color_j1_prev,tecla_color_j2_prev,tecla_j1_vs_j2_prev,tecla_j_vs_mq_prev,tecla_reset_prev);
 `endif
 	if (
 		( C1_expected_prev !== 1'bx ) && ( C1_prev !== C1_expected_prev )
@@ -362,212 +349,147 @@ begin
 		last_C4_exp = C4_expected_prev;
 	end
 	if (
-		( MS_1_expected_prev[0] !== 1'bx ) && ( MS_1_prev[0] !== MS_1_expected_prev[0] )
-		&& ((MS_1_expected_prev[0] !== last_MS_1_exp[0]) ||
+		( tablero_juego_expected_prev[0] !== 1'bx ) && ( tablero_juego_prev[0] !== tablero_juego_expected_prev[0] )
+		&& ((tablero_juego_expected_prev[0] !== last_tablero_juego_exp[0]) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port tablero_juego[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tablero_juego_expected_prev);
+		$display ("     Real value = %b", tablero_juego_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_tablero_juego_exp[0] = tablero_juego_expected_prev[0];
+	end
+	if (
+		( tablero_juego_expected_prev[1] !== 1'bx ) && ( tablero_juego_prev[1] !== tablero_juego_expected_prev[1] )
+		&& ((tablero_juego_expected_prev[1] !== last_tablero_juego_exp[1]) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port tablero_juego[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tablero_juego_expected_prev);
+		$display ("     Real value = %b", tablero_juego_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_tablero_juego_exp[1] = tablero_juego_expected_prev[1];
+	end
+	if (
+		( tablero_juego_expected_prev[2] !== 1'bx ) && ( tablero_juego_prev[2] !== tablero_juego_expected_prev[2] )
+		&& ((tablero_juego_expected_prev[2] !== last_tablero_juego_exp[2]) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port tablero_juego[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tablero_juego_expected_prev);
+		$display ("     Real value = %b", tablero_juego_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_tablero_juego_exp[2] = tablero_juego_expected_prev[2];
+	end
+	if (
+		( tablero_juego_expected_prev[3] !== 1'bx ) && ( tablero_juego_prev[3] !== tablero_juego_expected_prev[3] )
+		&& ((tablero_juego_expected_prev[3] !== last_tablero_juego_exp[3]) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port tablero_juego[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tablero_juego_expected_prev);
+		$display ("     Real value = %b", tablero_juego_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_tablero_juego_exp[3] = tablero_juego_expected_prev[3];
+	end
+	if (
+		( tecla_color_j1_expected_prev[0] !== 1'bx ) && ( tecla_color_j1_prev[0] !== tecla_color_j1_expected_prev[0] )
+		&& ((tecla_color_j1_expected_prev[0] !== last_tecla_color_j1_exp[0]) ||
 			on_first_change[10])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_1[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_1_expected_prev);
-		$display ("     Real value = %b", MS_1_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_color_j1[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_color_j1_expected_prev);
+		$display ("     Real value = %b", tecla_color_j1_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[10] = 1'b0;
-		last_MS_1_exp[0] = MS_1_expected_prev[0];
+		last_tecla_color_j1_exp[0] = tecla_color_j1_expected_prev[0];
 	end
 	if (
-		( MS_1_expected_prev[1] !== 1'bx ) && ( MS_1_prev[1] !== MS_1_expected_prev[1] )
-		&& ((MS_1_expected_prev[1] !== last_MS_1_exp[1]) ||
+		( tecla_color_j1_expected_prev[1] !== 1'bx ) && ( tecla_color_j1_prev[1] !== tecla_color_j1_expected_prev[1] )
+		&& ((tecla_color_j1_expected_prev[1] !== last_tecla_color_j1_exp[1]) ||
 			on_first_change[10])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_1[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_1_expected_prev);
-		$display ("     Real value = %b", MS_1_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_color_j1[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_color_j1_expected_prev);
+		$display ("     Real value = %b", tecla_color_j1_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[10] = 1'b0;
-		last_MS_1_exp[1] = MS_1_expected_prev[1];
+		last_tecla_color_j1_exp[1] = tecla_color_j1_expected_prev[1];
 	end
 	if (
-		( MS_1_expected_prev[2] !== 1'bx ) && ( MS_1_prev[2] !== MS_1_expected_prev[2] )
-		&& ((MS_1_expected_prev[2] !== last_MS_1_exp[2]) ||
-			on_first_change[10])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_1[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_1_expected_prev);
-		$display ("     Real value = %b", MS_1_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[10] = 1'b0;
-		last_MS_1_exp[2] = MS_1_expected_prev[2];
-	end
-	if (
-		( MS_1_expected_prev[3] !== 1'bx ) && ( MS_1_prev[3] !== MS_1_expected_prev[3] )
-		&& ((MS_1_expected_prev[3] !== last_MS_1_exp[3]) ||
-			on_first_change[10])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_1[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_1_expected_prev);
-		$display ("     Real value = %b", MS_1_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[10] = 1'b0;
-		last_MS_1_exp[3] = MS_1_expected_prev[3];
-	end
-	if (
-		( MS_2_expected_prev[0] !== 1'bx ) && ( MS_2_prev[0] !== MS_2_expected_prev[0] )
-		&& ((MS_2_expected_prev[0] !== last_MS_2_exp[0]) ||
+		( tecla_color_j2_expected_prev[0] !== 1'bx ) && ( tecla_color_j2_prev[0] !== tecla_color_j2_expected_prev[0] )
+		&& ((tecla_color_j2_expected_prev[0] !== last_tecla_color_j2_exp[0]) ||
 			on_first_change[11])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_2[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_2_expected_prev);
-		$display ("     Real value = %b", MS_2_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_color_j2[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_color_j2_expected_prev);
+		$display ("     Real value = %b", tecla_color_j2_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[11] = 1'b0;
-		last_MS_2_exp[0] = MS_2_expected_prev[0];
+		last_tecla_color_j2_exp[0] = tecla_color_j2_expected_prev[0];
 	end
 	if (
-		( MS_2_expected_prev[1] !== 1'bx ) && ( MS_2_prev[1] !== MS_2_expected_prev[1] )
-		&& ((MS_2_expected_prev[1] !== last_MS_2_exp[1]) ||
+		( tecla_color_j2_expected_prev[1] !== 1'bx ) && ( tecla_color_j2_prev[1] !== tecla_color_j2_expected_prev[1] )
+		&& ((tecla_color_j2_expected_prev[1] !== last_tecla_color_j2_exp[1]) ||
 			on_first_change[11])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_2[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_2_expected_prev);
-		$display ("     Real value = %b", MS_2_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_color_j2[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_color_j2_expected_prev);
+		$display ("     Real value = %b", tecla_color_j2_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[11] = 1'b0;
-		last_MS_2_exp[1] = MS_2_expected_prev[1];
+		last_tecla_color_j2_exp[1] = tecla_color_j2_expected_prev[1];
 	end
 	if (
-		( MS_2_expected_prev[2] !== 1'bx ) && ( MS_2_prev[2] !== MS_2_expected_prev[2] )
-		&& ((MS_2_expected_prev[2] !== last_MS_2_exp[2]) ||
-			on_first_change[11])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_2[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_2_expected_prev);
-		$display ("     Real value = %b", MS_2_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[11] = 1'b0;
-		last_MS_2_exp[2] = MS_2_expected_prev[2];
-	end
-	if (
-		( MS_2_expected_prev[3] !== 1'bx ) && ( MS_2_prev[3] !== MS_2_expected_prev[3] )
-		&& ((MS_2_expected_prev[3] !== last_MS_2_exp[3]) ||
-			on_first_change[11])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_2[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_2_expected_prev);
-		$display ("     Real value = %b", MS_2_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[11] = 1'b0;
-		last_MS_2_exp[3] = MS_2_expected_prev[3];
-	end
-	if (
-		( MS_3_expected_prev[0] !== 1'bx ) && ( MS_3_prev[0] !== MS_3_expected_prev[0] )
-		&& ((MS_3_expected_prev[0] !== last_MS_3_exp[0]) ||
+		( tecla_j1_vs_j2_expected_prev !== 1'bx ) && ( tecla_j1_vs_j2_prev !== tecla_j1_vs_j2_expected_prev )
+		&& ((tecla_j1_vs_j2_expected_prev !== last_tecla_j1_vs_j2_exp) ||
 			on_first_change[12])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_3[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_3_expected_prev);
-		$display ("     Real value = %b", MS_3_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_j1_vs_j2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_j1_vs_j2_expected_prev);
+		$display ("     Real value = %b", tecla_j1_vs_j2_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[12] = 1'b0;
-		last_MS_3_exp[0] = MS_3_expected_prev[0];
+		last_tecla_j1_vs_j2_exp = tecla_j1_vs_j2_expected_prev;
 	end
 	if (
-		( MS_3_expected_prev[1] !== 1'bx ) && ( MS_3_prev[1] !== MS_3_expected_prev[1] )
-		&& ((MS_3_expected_prev[1] !== last_MS_3_exp[1]) ||
-			on_first_change[12])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_3[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_3_expected_prev);
-		$display ("     Real value = %b", MS_3_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[12] = 1'b0;
-		last_MS_3_exp[1] = MS_3_expected_prev[1];
-	end
-	if (
-		( MS_3_expected_prev[2] !== 1'bx ) && ( MS_3_prev[2] !== MS_3_expected_prev[2] )
-		&& ((MS_3_expected_prev[2] !== last_MS_3_exp[2]) ||
-			on_first_change[12])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_3[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_3_expected_prev);
-		$display ("     Real value = %b", MS_3_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[12] = 1'b0;
-		last_MS_3_exp[2] = MS_3_expected_prev[2];
-	end
-	if (
-		( MS_3_expected_prev[3] !== 1'bx ) && ( MS_3_prev[3] !== MS_3_expected_prev[3] )
-		&& ((MS_3_expected_prev[3] !== last_MS_3_exp[3]) ||
-			on_first_change[12])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_3[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_3_expected_prev);
-		$display ("     Real value = %b", MS_3_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[12] = 1'b0;
-		last_MS_3_exp[3] = MS_3_expected_prev[3];
-	end
-	if (
-		( MS_4_expected_prev[0] !== 1'bx ) && ( MS_4_prev[0] !== MS_4_expected_prev[0] )
-		&& ((MS_4_expected_prev[0] !== last_MS_4_exp[0]) ||
+		( tecla_j_vs_mq_expected_prev !== 1'bx ) && ( tecla_j_vs_mq_prev !== tecla_j_vs_mq_expected_prev )
+		&& ((tecla_j_vs_mq_expected_prev !== last_tecla_j_vs_mq_exp) ||
 			on_first_change[13])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_4[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_4_expected_prev);
-		$display ("     Real value = %b", MS_4_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_j_vs_mq :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_j_vs_mq_expected_prev);
+		$display ("     Real value = %b", tecla_j_vs_mq_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[13] = 1'b0;
-		last_MS_4_exp[0] = MS_4_expected_prev[0];
+		last_tecla_j_vs_mq_exp = tecla_j_vs_mq_expected_prev;
 	end
 	if (
-		( MS_4_expected_prev[1] !== 1'bx ) && ( MS_4_prev[1] !== MS_4_expected_prev[1] )
-		&& ((MS_4_expected_prev[1] !== last_MS_4_exp[1]) ||
-			on_first_change[13])
+		( tecla_reset_expected_prev !== 1'bx ) && ( tecla_reset_prev !== tecla_reset_expected_prev )
+		&& ((tecla_reset_expected_prev !== last_tecla_reset_exp) ||
+			on_first_change[14])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port MS_4[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_4_expected_prev);
-		$display ("     Real value = %b", MS_4_prev);
+		$display ("ERROR! Vector Mismatch for output port tecla_reset :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", tecla_reset_expected_prev);
+		$display ("     Real value = %b", tecla_reset_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[13] = 1'b0;
-		last_MS_4_exp[1] = MS_4_expected_prev[1];
-	end
-	if (
-		( MS_4_expected_prev[2] !== 1'bx ) && ( MS_4_prev[2] !== MS_4_expected_prev[2] )
-		&& ((MS_4_expected_prev[2] !== last_MS_4_exp[2]) ||
-			on_first_change[13])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_4[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_4_expected_prev);
-		$display ("     Real value = %b", MS_4_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[13] = 1'b0;
-		last_MS_4_exp[2] = MS_4_expected_prev[2];
-	end
-	if (
-		( MS_4_expected_prev[3] !== 1'bx ) && ( MS_4_prev[3] !== MS_4_expected_prev[3] )
-		&& ((MS_4_expected_prev[3] !== last_MS_4_exp[3]) ||
-			on_first_change[13])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port MS_4[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", MS_4_expected_prev);
-		$display ("     Real value = %b", MS_4_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[13] = 1'b0;
-		last_MS_4_exp[3] = MS_4_expected_prev[3];
+		on_first_change[14] = 1'b0;
+		last_tecla_reset_exp = tecla_reset_expected_prev;
 	end
 
 	trigger <= ~trigger;
@@ -593,21 +515,21 @@ reg R1;
 reg R2;
 reg R3;
 reg R4;
-reg reset;
 // wires                                               
 wire C1;
 wire C2;
 wire C3;
 wire C4;
-wire [3:0] Cout;
-wire [3:0] D1;
-wire [3:0] D2;
-wire [3:0] D3;
-wire [3:0] D4;
-wire [0:3] MS_1;
-wire [0:3] MS_2;
-wire [0:3] MS_3;
-wire [0:3] MS_4;
+wire [0:3] fila_1_teclado;
+wire [0:3] fila_2_teclado;
+wire [0:3] fila_3_teclado;
+wire [0:3] fila_4_teclado;
+wire [0:3] tablero_juego;
+wire [0:1] tecla_color_j1;
+wire [0:1] tecla_color_j2;
+wire tecla_j1_vs_j2;
+wire tecla_j_vs_mq;
+wire tecla_reset;
 
 wire sampler;                             
 
@@ -619,20 +541,20 @@ teclado i1 (
 	.C3(C3),
 	.C4(C4),
 	.clk(clk),
-	.Cout(Cout),
-	.D1(D1),
-	.D2(D2),
-	.D3(D3),
-	.D4(D4),
-	.MS_1(MS_1),
-	.MS_2(MS_2),
-	.MS_3(MS_3),
-	.MS_4(MS_4),
+	.fila_1_teclado(fila_1_teclado),
+	.fila_2_teclado(fila_2_teclado),
+	.fila_3_teclado(fila_3_teclado),
+	.fila_4_teclado(fila_4_teclado),
 	.R1(R1),
 	.R2(R2),
 	.R3(R3),
 	.R4(R4),
-	.reset(reset)
+	.tablero_juego(tablero_juego),
+	.tecla_color_j1(tecla_color_j1),
+	.tecla_color_j2(tecla_color_j2),
+	.tecla_j1_vs_j2(tecla_j1_vs_j2),
+	.tecla_j_vs_mq(tecla_j_vs_mq),
+	.tecla_reset(tecla_reset)
 );
 
 // clk
@@ -647,34 +569,32 @@ end
 initial
 begin
 	R1 = 1'b0;
+	R1 = #90000 1'b1;
+	R1 = #130000 1'b0;
 end 
 
 // R2
 initial
 begin
 	R2 = 1'b0;
-	R2 = #120000 1'b1;
-	R2 = #100000 1'b0;
-	R2 = #70000 1'b1;
-	R2 = #100000 1'b0;
-	R2 = #80000 1'b1;
-	R2 = #100000 1'b0;
-	R2 = #90000 1'b1;
-	R2 = #90000 1'b0;
-	R2 = #160000 1'b1;
-	R2 = #40000 1'b0;
+	R2 = #270000 1'b1;
+	R2 = #120000 1'b0;
 end 
 
 // R3
 initial
 begin
 	R3 = 1'b0;
+	R3 = #440000 1'b1;
+	R3 = #110000 1'b0;
 end 
 
 // R4
 initial
 begin
 	R4 = 1'b0;
+	R4 = #600000 1'b1;
+	R4 = #120000 1'b0;
 end 
 
 teclado_vlg_sample_tst tb_sample (
@@ -683,7 +603,6 @@ teclado_vlg_sample_tst tb_sample (
 	.R2(R2),
 	.R3(R3),
 	.R4(R4),
-	.reset(reset),
 	.sampler_tx(sampler)
 );
 
@@ -692,15 +611,16 @@ teclado_vlg_check_tst tb_out(
 	.C2(C2),
 	.C3(C3),
 	.C4(C4),
-	.Cout(Cout),
-	.D1(D1),
-	.D2(D2),
-	.D3(D3),
-	.D4(D4),
-	.MS_1(MS_1),
-	.MS_2(MS_2),
-	.MS_3(MS_3),
-	.MS_4(MS_4),
+	.fila_1_teclado(fila_1_teclado),
+	.fila_2_teclado(fila_2_teclado),
+	.fila_3_teclado(fila_3_teclado),
+	.fila_4_teclado(fila_4_teclado),
+	.tablero_juego(tablero_juego),
+	.tecla_color_j1(tecla_color_j1),
+	.tecla_color_j2(tecla_color_j2),
+	.tecla_j1_vs_j2(tecla_j1_vs_j2),
+	.tecla_j_vs_mq(tecla_j_vs_mq),
+	.tecla_reset(tecla_reset),
 	.sampler_rx(sampler)
 );
 endmodule
