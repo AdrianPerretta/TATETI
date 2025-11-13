@@ -1,0 +1,80 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lautaro21\Desktop\subsistema_4-V2\simulation\modelsim
+Esubsistema_4
+Z1 w1763042949
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Lautaro21\Desktop\subsistema_4-V2\simulation\modelsim
+Z6 8C:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4.vhd
+Z7 FC:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4.vhd
+l0
+L14
+V`6QO29Q266YB999Z7zZob3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1763043136.226000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4.vhd|
+Z11 !s107 C:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 17Vd@KT8:jCai_j<3>SOj3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 12 subsistema_4 0 22 `6QO29Q266YB999Z7zZob3
+l61
+L41
+VRA=z7VZ`3V1DU1nhHJO2V1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 FAjRgLV4Pb@;_HH;Rg:7i1
+!i10b 1
+Esubsistema_4_testbench
+Z15 w1763042881
+R2
+R3
+R4
+R5
+Z16 8C:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4_testbench.vhd
+Z17 FC:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4_testbench.vhd
+l0
+L13
+Vde@]U]kG;6O`]TzJWHZzM2
+!s100 fXMPKA7KcSQSmoAg`5P`f2
+R8
+31
+!i10b 1
+Z18 !s108 1763043136.499000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4_testbench.vhd|
+Z20 !s107 C:/Users/Lautaro21/Desktop/subsistema_4-V2/Subsistema_4_testbench.vhd|
+R12
+R13
+Atb
+R14
+R2
+R3
+R4
+DEx4 work 22 subsistema_4_testbench 0 22 de@]U]kG;6O`]TzJWHZzM2
+l40
+L16
+VXgIcnUMbAK2YG[E7V<^mC2
+!s100 DN0CjZIK[`RR>]:7KQPN02
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13
