@@ -1,0 +1,16 @@
+Fitter Status : Failed - Thu Nov 20 15:49:36 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : proyecto_final
+Top-level Entity Name : Block1
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 405 / 22,320 ( 2 % )
+    Total combinational functions : 403 / 22,320 ( 2 % )
+    Dedicated logic registers : 397 / 22,320 ( 2 % )
+Total registers : 397
+Total pins : 390 / 154 ( 253 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,5 +1,5 @@
 Flow report for prubaleds
-Mon Nov 10 15:19:26 2025
+Thu Nov 20 20:28:53 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,26 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 10 15:19:26 2025           ;
+; Flow Status                        ; Successful - Thu Nov 20 20:28:53 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; prubaleds                                       ;
 ; Top-level Entity Name              ; Block1                                          ;
-; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 400 / 109,424 ( < 1 % )                         ;
-;     Total combinational functions  ; 400 / 109,424 ( < 1 % )                         ;
-;     Dedicated logic registers      ; 395 / 109,424 ( < 1 % )                         ;
-; Total registers                    ; 395                                             ;
-; Total pins                         ; 392 / 508 ( 77 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 5,621,760 ( 0 % )                           ;
-; Embedded Multiplier 9-bit elements ; 0 / 560 ( 0 % )                                 ;
-; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                                   ;
-; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                                   ;
-; Total PLLs                         ; 1 / 8 ( 13 % )                                  ;
-; Device                             ; EP4CGX110DF31C7                                 ;
+; Family                             ; Cyclone IV E                                    ;
+; Device                             ; EP4CE22F17C6                                    ;
 ; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 399 / 22,320 ( 2 % )                            ;
+;     Total combinational functions  ; 399 / 22,320 ( 2 % )                            ;
+;     Dedicated logic registers      ; 395 / 22,320 ( 2 % )                            ;
+; Total registers                    ; 395                                             ;
+; Total pins                         ; 4 / 154 ( 3 % )                                 ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                 ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -68,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/10/2025 15:18:19 ;
+; Start date & time ; 11/20/2025 20:28:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; prubaleds           ;
 +-------------------+---------------------+
@@ -79,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53642730898432.176279869906632 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 53642730898432.176368130708220 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
@@ -87,9 +83,13 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_SHIFTREG                   ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_SHIFTREG                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
 ; MISC_FILE                           ; altpll0.bsf                    ; --            ; --          ; --             ;
 ; MISC_FILE                           ; altpll0.cmp                    ; --            ; --          ; --             ;
 ; MISC_FILE                           ; altpll0.ppf                    ; --            ; --          ; --             ;
@@ -97,6 +97,9 @@ applicable agreement for further details.
 ; MISC_FILE                           ; lpm_shiftreg0.cmp              ; --            ; --          ; --             ;
 ; MISC_FILE                           ; lpm_shiftreg1.bsf              ; --            ; --          ; --             ;
 ; MISC_FILE                           ; lpm_shiftreg1.cmp              ; --            ; --          ; --             ;
+; MISC_FILE                           ; altpll1.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; altpll1.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; altpll1.ppf                    ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; Block1      ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; Block1      ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; Block1      ; Top            ;
@@ -110,12 +113,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4685 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:43     ; 1.0                     ; 5167 MB             ; 00:00:40                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 4627 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 4738 MB             ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4569 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:02     ; --                      ; --                  ; 00:00:57                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4625 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 4886 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4536 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4619 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4498 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:19                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
