@@ -1,0 +1,12 @@
+
+State Machine - |Subsistema_4|fstate
+Name fstate.reseteo fstate.RES_F fstate.VER_F fstate.FIN_P fstate.VERIF fstate.ESP_J fstate.IN_P fstate.SEL_MOD fstate.INICIO 
+fstate.INICIO 0 0 0 0 0 0 0 0 0 
+fstate.SEL_MOD 0 0 0 0 0 0 0 1 1 
+fstate.IN_P 0 0 0 0 0 0 1 0 1 
+fstate.ESP_J 0 0 0 0 0 1 0 0 1 
+fstate.VERIF 0 0 0 0 1 0 0 0 1 
+fstate.FIN_P 0 0 0 1 0 0 0 0 1 
+fstate.VER_F 0 0 1 0 0 0 0 0 1 
+fstate.RES_F 0 1 0 0 0 0 0 0 1 
+fstate.reseteo 1 0 0 0 0 0 0 0 1 

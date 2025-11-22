@@ -1,0 +1,1646 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do subs_4_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Lautaro21/Desktop/subsistema_4-V3/Subsistema_4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Subsistema_4
+# -- Compiling architecture Behavioral of Subsistema_4
+# 
+# vcom -93 -work work {C:/Users/Lautaro21/Desktop/subsistema_4-V3/Subsistema_4_testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Subsistema_4_testbench
+# -- Compiling architecture tb of Subsistema_4_testbench
+# -- Loading entity Subsistema_4
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  Subsistema_4_testbench
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Subsistema_4_testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.subsistema_4_testbench(tb)
+# Loading work.subsistema_4(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: t=5000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=15000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 15 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=25000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 25 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=35000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 35 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=45000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 45 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=55000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 55 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=65000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 65 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=75000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 75 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=85000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 85 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=95000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 95 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=115000 ps | inicio_partida='1' | turno='1' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=125000 ps | inicio_partida='1' | turno='1' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=205000 ps | inicio_partida='1' | turno='1' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=215000 ps | inicio_partida='1' | turno='1' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=295000 ps | inicio_partida='1' | turno='1' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=305000 ps | inicio_partida='1' | turno='1' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='1' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=585000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=595000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=605000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=615000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=625000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=635000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=645000 ps | inicio_partida='0' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=1995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 1995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=2995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 2995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=3995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 3995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=4995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 4995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=5995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 5995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=6995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 6995 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7005000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7005 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7015000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7015 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7025000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7025 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7035000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7035 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7045000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7045 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7055000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7055 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7065000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7065 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7075000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7075 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7085000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7085 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7095000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7095 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7105000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7105 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7115000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7115 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7125000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7125 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7135000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7135 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7145000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7145 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7155000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7155 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7165000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7165 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7175000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7175 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7185000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7185 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7195000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7195 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7205000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7205 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7215000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7215 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7225000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7225 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7235000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7235 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7245000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7245 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7255000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7255 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7265000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7265 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7275000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7275 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7285000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7285 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7295000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7295 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7305000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7305 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7315000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7315 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7325000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7325 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7335000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7335 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7345000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7345 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7355000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7355 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7365000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7365 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7375000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7375 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7385000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7385 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7395000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7395 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7405000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7405 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7415000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7415 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7425000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7425 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7435000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7435 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7445000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7445 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7455000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7455 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7465000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7465 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7475000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7475 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7485000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7485 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7495000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7495 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7505000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7505 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7515000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7515 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7525000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7525 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7535000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7535 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7545000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7545 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7555000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7555 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7565000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7565 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7575000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7575 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7585000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7585 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7595000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7595 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7605000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7605 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7615000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7615 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7625000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7625 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7635000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7635 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7645000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7645 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7655000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7655 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7665000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7665 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7675000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7675 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7685000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7685 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7695000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7695 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7705000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7705 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7715000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7715 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7725000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7725 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7735000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7735 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7745000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7745 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7755000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7755 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7765000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7765 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7775000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7775 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7785000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7785 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7795000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7795 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7805000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7805 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7815000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7815 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7825000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7825 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7835000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7835 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7845000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7845 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7855000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7855 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7865000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7865 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7875000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7875 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7885000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7885 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7895000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7895 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7905000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7905 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7915000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7915 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7925000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7925 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7935000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7935 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7945000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7945 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7955000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7955 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7965000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7965 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7975000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7975 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7985000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7985 ns  Iteration: 1  Instance: /subsistema_4_testbench
+# ** Note: t=7995000 ps | inicio_partida='1' | turno='0' | hubo_ganador='0' | resultado_final='0' | victoria_final(dec)=0
+#    Time: 7995 ns  Iteration: 1  Instance: /subsistema_4_testbench

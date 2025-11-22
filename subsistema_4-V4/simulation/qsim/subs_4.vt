@@ -1,0 +1,594 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/08/2025 22:03:59"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Subsistema_4
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Subsistema_4_vlg_sample_tst(
+	clk,
+	confirmar_modo,
+	empate,
+	fin_juego,
+	gana_j1,
+	gana_j2,
+	jugada_valida,
+	pulso_jugada,
+	reset_n,
+	sampler_tx
+);
+input  clk;
+input  confirmar_modo;
+input  empate;
+input  fin_juego;
+input  gana_j1;
+input  gana_j2;
+input  jugada_valida;
+input  pulso_jugada;
+input  reset_n;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or confirmar_modo or empate or fin_juego or gana_j1 or gana_j2 or jugada_valida or pulso_jugada or reset_n)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Subsistema_4_vlg_check_tst (
+	E_maquina,
+	e_tablero,
+	E_teclado,
+	limpiar_tablero,
+	modo_actual,
+	puntos_j1,
+	puntos_j2,
+	resultado_final,
+	victoria_final,
+	sampler_rx
+);
+input  E_maquina;
+input  e_tablero;
+input  E_teclado;
+input  limpiar_tablero;
+input  modo_actual;
+input [1:0] puntos_j1;
+input [1:0] puntos_j2;
+input  resultado_final;
+input [1:0] victoria_final;
+input sampler_rx;
+
+reg  E_maquina_expected;
+reg  e_tablero_expected;
+reg  E_teclado_expected;
+reg  limpiar_tablero_expected;
+reg  modo_actual_expected;
+reg [1:0] puntos_j1_expected;
+reg [1:0] puntos_j2_expected;
+reg  resultado_final_expected;
+reg [1:0] victoria_final_expected;
+
+reg  E_maquina_prev;
+reg  e_tablero_prev;
+reg  E_teclado_prev;
+reg  limpiar_tablero_prev;
+reg  modo_actual_prev;
+reg [1:0] puntos_j1_prev;
+reg [1:0] puntos_j2_prev;
+reg  resultado_final_prev;
+reg [1:0] victoria_final_prev;
+
+reg  E_maquina_expected_prev;
+reg  e_tablero_expected_prev;
+reg  E_teclado_expected_prev;
+reg  limpiar_tablero_expected_prev;
+reg  modo_actual_expected_prev;
+reg [1:0] puntos_j1_expected_prev;
+reg [1:0] puntos_j2_expected_prev;
+reg  resultado_final_expected_prev;
+reg [1:0] victoria_final_expected_prev;
+
+reg  last_E_maquina_exp;
+reg  last_e_tablero_exp;
+reg  last_E_teclado_exp;
+reg  last_limpiar_tablero_exp;
+reg  last_modo_actual_exp;
+reg [1:0] last_puntos_j1_exp;
+reg [1:0] last_puntos_j2_exp;
+reg  last_resultado_final_exp;
+reg [1:0] last_victoria_final_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:9] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 9'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	E_maquina_prev = E_maquina;
+	e_tablero_prev = e_tablero;
+	E_teclado_prev = E_teclado;
+	limpiar_tablero_prev = limpiar_tablero;
+	modo_actual_prev = modo_actual;
+	puntos_j1_prev = puntos_j1;
+	puntos_j2_prev = puntos_j2;
+	resultado_final_prev = resultado_final;
+	victoria_final_prev = victoria_final;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	E_maquina_expected_prev = E_maquina_expected;
+	e_tablero_expected_prev = e_tablero_expected;
+	E_teclado_expected_prev = E_teclado_expected;
+	limpiar_tablero_expected_prev = limpiar_tablero_expected;
+	modo_actual_expected_prev = modo_actual_expected;
+	puntos_j1_expected_prev = puntos_j1_expected;
+	puntos_j2_expected_prev = puntos_j2_expected;
+	resultado_final_expected_prev = resultado_final_expected;
+	victoria_final_expected_prev = victoria_final_expected;
+end
+
+
+
+// expected E_teclado
+initial
+begin
+	E_teclado_expected = 1'bX;
+end 
+
+// expected e_tablero
+initial
+begin
+	e_tablero_expected = 1'bX;
+end 
+
+// expected E_maquina
+initial
+begin
+	E_maquina_expected = 1'bX;
+end 
+
+// expected modo_actual
+initial
+begin
+	modo_actual_expected = 1'bX;
+end 
+
+// expected limpiar_tablero
+initial
+begin
+	limpiar_tablero_expected = 1'bX;
+end 
+// expected puntos_j1[ 1 ]
+initial
+begin
+	puntos_j1_expected[1] = 1'bX;
+end 
+// expected puntos_j1[ 0 ]
+initial
+begin
+	puntos_j1_expected[0] = 1'bX;
+end 
+// expected puntos_j2[ 1 ]
+initial
+begin
+	puntos_j2_expected[1] = 1'bX;
+end 
+// expected puntos_j2[ 0 ]
+initial
+begin
+	puntos_j2_expected[0] = 1'bX;
+end 
+
+// expected resultado_final
+initial
+begin
+	resultado_final_expected = 1'bX;
+end 
+// expected victoria_final[ 1 ]
+initial
+begin
+	victoria_final_expected[1] = 1'bX;
+end 
+// expected victoria_final[ 0 ]
+initial
+begin
+	victoria_final_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(E_maquina_expected or E_maquina or e_tablero_expected or e_tablero or E_teclado_expected or E_teclado or limpiar_tablero_expected or limpiar_tablero or modo_actual_expected or modo_actual or puntos_j1_expected or puntos_j1 or puntos_j2_expected or puntos_j2 or resultado_final_expected or resultado_final or victoria_final_expected or victoria_final)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected E_maquina = %b | expected e_tablero = %b | expected E_teclado = %b | expected limpiar_tablero = %b | expected modo_actual = %b | expected puntos_j1 = %b | expected puntos_j2 = %b | expected resultado_final = %b | expected victoria_final = %b | ",E_maquina_expected_prev,e_tablero_expected_prev,E_teclado_expected_prev,limpiar_tablero_expected_prev,modo_actual_expected_prev,puntos_j1_expected_prev,puntos_j2_expected_prev,resultado_final_expected_prev,victoria_final_expected_prev);
+	$display("| real E_maquina = %b | real e_tablero = %b | real E_teclado = %b | real limpiar_tablero = %b | real modo_actual = %b | real puntos_j1 = %b | real puntos_j2 = %b | real resultado_final = %b | real victoria_final = %b | ",E_maquina_prev,e_tablero_prev,E_teclado_prev,limpiar_tablero_prev,modo_actual_prev,puntos_j1_prev,puntos_j2_prev,resultado_final_prev,victoria_final_prev);
+`endif
+	if (
+		( E_maquina_expected_prev !== 1'bx ) && ( E_maquina_prev !== E_maquina_expected_prev )
+		&& ((E_maquina_expected_prev !== last_E_maquina_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port E_maquina :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", E_maquina_expected_prev);
+		$display ("     Real value = %b", E_maquina_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_E_maquina_exp = E_maquina_expected_prev;
+	end
+	if (
+		( e_tablero_expected_prev !== 1'bx ) && ( e_tablero_prev !== e_tablero_expected_prev )
+		&& ((e_tablero_expected_prev !== last_e_tablero_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port e_tablero :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", e_tablero_expected_prev);
+		$display ("     Real value = %b", e_tablero_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_e_tablero_exp = e_tablero_expected_prev;
+	end
+	if (
+		( E_teclado_expected_prev !== 1'bx ) && ( E_teclado_prev !== E_teclado_expected_prev )
+		&& ((E_teclado_expected_prev !== last_E_teclado_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port E_teclado :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", E_teclado_expected_prev);
+		$display ("     Real value = %b", E_teclado_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_E_teclado_exp = E_teclado_expected_prev;
+	end
+	if (
+		( limpiar_tablero_expected_prev !== 1'bx ) && ( limpiar_tablero_prev !== limpiar_tablero_expected_prev )
+		&& ((limpiar_tablero_expected_prev !== last_limpiar_tablero_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port limpiar_tablero :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", limpiar_tablero_expected_prev);
+		$display ("     Real value = %b", limpiar_tablero_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_limpiar_tablero_exp = limpiar_tablero_expected_prev;
+	end
+	if (
+		( modo_actual_expected_prev !== 1'bx ) && ( modo_actual_prev !== modo_actual_expected_prev )
+		&& ((modo_actual_expected_prev !== last_modo_actual_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port modo_actual :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", modo_actual_expected_prev);
+		$display ("     Real value = %b", modo_actual_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_modo_actual_exp = modo_actual_expected_prev;
+	end
+	if (
+		( puntos_j1_expected_prev[0] !== 1'bx ) && ( puntos_j1_prev[0] !== puntos_j1_expected_prev[0] )
+		&& ((puntos_j1_expected_prev[0] !== last_puntos_j1_exp[0]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port puntos_j1[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", puntos_j1_expected_prev);
+		$display ("     Real value = %b", puntos_j1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_puntos_j1_exp[0] = puntos_j1_expected_prev[0];
+	end
+	if (
+		( puntos_j1_expected_prev[1] !== 1'bx ) && ( puntos_j1_prev[1] !== puntos_j1_expected_prev[1] )
+		&& ((puntos_j1_expected_prev[1] !== last_puntos_j1_exp[1]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port puntos_j1[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", puntos_j1_expected_prev);
+		$display ("     Real value = %b", puntos_j1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_puntos_j1_exp[1] = puntos_j1_expected_prev[1];
+	end
+	if (
+		( puntos_j2_expected_prev[0] !== 1'bx ) && ( puntos_j2_prev[0] !== puntos_j2_expected_prev[0] )
+		&& ((puntos_j2_expected_prev[0] !== last_puntos_j2_exp[0]) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port puntos_j2[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", puntos_j2_expected_prev);
+		$display ("     Real value = %b", puntos_j2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_puntos_j2_exp[0] = puntos_j2_expected_prev[0];
+	end
+	if (
+		( puntos_j2_expected_prev[1] !== 1'bx ) && ( puntos_j2_prev[1] !== puntos_j2_expected_prev[1] )
+		&& ((puntos_j2_expected_prev[1] !== last_puntos_j2_exp[1]) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port puntos_j2[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", puntos_j2_expected_prev);
+		$display ("     Real value = %b", puntos_j2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_puntos_j2_exp[1] = puntos_j2_expected_prev[1];
+	end
+	if (
+		( resultado_final_expected_prev !== 1'bx ) && ( resultado_final_prev !== resultado_final_expected_prev )
+		&& ((resultado_final_expected_prev !== last_resultado_final_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port resultado_final :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", resultado_final_expected_prev);
+		$display ("     Real value = %b", resultado_final_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_resultado_final_exp = resultado_final_expected_prev;
+	end
+	if (
+		( victoria_final_expected_prev[0] !== 1'bx ) && ( victoria_final_prev[0] !== victoria_final_expected_prev[0] )
+		&& ((victoria_final_expected_prev[0] !== last_victoria_final_exp[0]) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port victoria_final[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", victoria_final_expected_prev);
+		$display ("     Real value = %b", victoria_final_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_victoria_final_exp[0] = victoria_final_expected_prev[0];
+	end
+	if (
+		( victoria_final_expected_prev[1] !== 1'bx ) && ( victoria_final_prev[1] !== victoria_final_expected_prev[1] )
+		&& ((victoria_final_expected_prev[1] !== last_victoria_final_exp[1]) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port victoria_final[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", victoria_final_expected_prev);
+		$display ("     Real value = %b", victoria_final_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_victoria_final_exp[1] = victoria_final_expected_prev[1];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#100000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Subsistema_4_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg confirmar_modo;
+reg empate;
+reg fin_juego;
+reg gana_j1;
+reg gana_j2;
+reg jugada_valida;
+reg pulso_jugada;
+reg reset_n;
+// wires                                               
+wire E_maquina;
+wire e_tablero;
+wire E_teclado;
+wire limpiar_tablero;
+wire modo_actual;
+wire [1:0] puntos_j1;
+wire [1:0] puntos_j2;
+wire resultado_final;
+wire [1:0] victoria_final;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Subsistema_4 i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.confirmar_modo(confirmar_modo),
+	.E_maquina(E_maquina),
+	.e_tablero(e_tablero),
+	.E_teclado(E_teclado),
+	.empate(empate),
+	.fin_juego(fin_juego),
+	.gana_j1(gana_j1),
+	.gana_j2(gana_j2),
+	.jugada_valida(jugada_valida),
+	.limpiar_tablero(limpiar_tablero),
+	.modo_actual(modo_actual),
+	.pulso_jugada(pulso_jugada),
+	.puntos_j1(puntos_j1),
+	.puntos_j2(puntos_j2),
+	.reset_n(reset_n),
+	.resultado_final(resultado_final),
+	.victoria_final(victoria_final)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
+end 
+
+// reset_n
+initial
+begin
+	reset_n = 1'b0;
+	reset_n = #10000 1'b1;
+	reset_n = #79600 1'b0;
+	reset_n = #7680 1'b1;
+end 
+
+// confirmar_modo
+initial
+begin
+	confirmar_modo = 1'b0;
+	confirmar_modo = #20000 1'b1;
+	confirmar_modo = #10000 1'b0;
+end 
+
+// pulso_jugada
+initial
+begin
+	pulso_jugada = 1'b0;
+	pulso_jugada = #30000 1'b1;
+	pulso_jugada = #11000 1'b0;
+	pulso_jugada = #9000 1'b1;
+	pulso_jugada = #11000 1'b0;
+	pulso_jugada = #9000 1'b1;
+	pulso_jugada = #11000 1'b0;
+end 
+
+// jugada_valida
+initial
+begin
+	jugada_valida = 1'b0;
+	jugada_valida = #34000 1'b1;
+	jugada_valida = #10000 1'b0;
+	jugada_valida = #10000 1'b1;
+	jugada_valida = #10000 1'b0;
+	jugada_valida = #10000 1'b1;
+	jugada_valida = #10000 1'b0;
+end 
+
+// gana_j1
+initial
+begin
+	gana_j1 = 1'b0;
+	gana_j1 = #37000 1'b1;
+	gana_j1 = #10000 1'b0;
+end 
+
+// gana_j2
+initial
+begin
+	gana_j2 = 1'b0;
+	gana_j2 = #58000 1'b1;
+	gana_j2 = #10000 1'b0;
+end 
+
+// empate
+initial
+begin
+	empate = 1'b0;
+	empate = #78000 1'b1;
+	empate = #10000 1'b0;
+end 
+
+// fin_juego
+initial
+begin
+	fin_juego = 1'b0;
+	fin_juego = #39000 1'b1;
+	fin_juego = #10000 1'b0;
+	fin_juego = #10000 1'b1;
+	fin_juego = #10000 1'b0;
+	fin_juego = #10000 1'b1;
+	fin_juego = #10000 1'b0;
+end 
+
+Subsistema_4_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.confirmar_modo(confirmar_modo),
+	.empate(empate),
+	.fin_juego(fin_juego),
+	.gana_j1(gana_j1),
+	.gana_j2(gana_j2),
+	.jugada_valida(jugada_valida),
+	.pulso_jugada(pulso_jugada),
+	.reset_n(reset_n),
+	.sampler_tx(sampler)
+);
+
+Subsistema_4_vlg_check_tst tb_out(
+	.E_maquina(E_maquina),
+	.e_tablero(e_tablero),
+	.E_teclado(E_teclado),
+	.limpiar_tablero(limpiar_tablero),
+	.modo_actual(modo_actual),
+	.puntos_j1(puntos_j1),
+	.puntos_j2(puntos_j2),
+	.resultado_final(resultado_final),
+	.victoria_final(victoria_final),
+	.sampler_rx(sampler)
+);
+endmodule
+
