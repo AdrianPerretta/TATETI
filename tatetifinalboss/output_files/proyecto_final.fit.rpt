@@ -1,5 +1,5 @@
 Fitter report for proyecto_final
-Thu Nov 20 15:49:36 2025
+Mon Nov 24 22:37:02 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Failed - Thu Nov 20 15:49:36 2025               ;
+; Fitter Status                      ; Failed - Mon Nov 24 22:37:02 2025               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; proyecto_final                                  ;
 ; Top-level Entity Name              ; Block1                                          ;
@@ -141,7 +141,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -4121,9 +4121,9 @@ Error (169281): There are 387 IO input pads in the design, but only 154 IO input
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Error (171000): Can't fit design in device
 Error: Quartus II 64-Bit Fitter was unsuccessful. 2 errors, 4 warnings
-    Error: Peak virtual memory: 4723 megabytes
-    Error: Processing ended: Thu Nov 20 15:49:36 2025
-    Error: Elapsed time: 00:00:04
-    Error: Total CPU time (on all processors): 00:00:04
+    Error: Peak virtual memory: 4759 megabytes
+    Error: Processing ended: Mon Nov 24 22:37:02 2025
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:02
 
 
