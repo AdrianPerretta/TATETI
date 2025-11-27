@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\crist\OneDrive\Escritorio\credenciales\Teclador_prueba\simulation\qsim
+vteclado_test_2
+Z1 !s100 fA[SOok2?MH_Y2^IRVdD@2
+Z2 I<i0K_Z`><Xng?_zUI`7NG0
+Z3 VC:W2f`8S70oF6E9_[@0eC2
+Z4 dC:\Users\crist\OneDrive\Escritorio\credenciales\Teclador_prueba\simulation\qsim
+Z5 w1764254188
+Z6 8prueba.vo
+Z7 Fprueba.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|prueba.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1764254189.774000
+Z12 !s107 prueba.vo|
+!s101 -O0
+vteclado_test_2_vlg_check_tst
+!i10b 1
+Z13 !s100 eaj`lXeFYf2iZeWL9P^d[0
+Z14 Iel`3S;E6@B9cCl<5S9GlK0
+Z15 VgnmQNG:1:egj7@TM3N8[P1
+R4
+Z16 w1764254187
+Z17 8prueba.vt
+Z18 Fprueba.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z19 !s108 1764254189.935000
+Z20 !s107 prueba.vt|
+Z21 !s90 -work|work|prueba.vt|
+!s101 -O0
+R10
+vteclado_test_2_vlg_sample_tst
+!i10b 1
+Z22 !s100 c8k>bl?bgi1aA9943U7^L1
+Z23 II?n_0RFO=@?5DRJ;PFo:K3
+Z24 VXbBGa5g]iR7F4k?me6L6I0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vteclado_test_2_vlg_vec_tst
+!i10b 1
+!s100 2ccHWf>fVOOSY;Mk<74RP1
+IaED4P]9mEl>8G3dDe7Mb>1
+Z25 VB5^LkFSOnN4e2_QSR<?RP2
+R4
+R16
+R17
+R18
+Z26 L0 673
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
