@@ -1,0 +1,31 @@
+|Validar_movimiento
+coordenada[0] => Mux0.IN10
+coordenada[0] => Mux1.IN10
+coordenada[1] => Mux0.IN9
+coordenada[1] => Mux1.IN9
+coordenada[2] => Mux0.IN8
+coordenada[2] => Mux1.IN8
+coordenada[3] => Mux0.IN7
+coordenada[3] => Mux1.IN7
+estado_tablero[0] => Mux1.IN19
+estado_tablero[1] => Mux0.IN19
+estado_tablero[2] => Mux1.IN18
+estado_tablero[3] => Mux0.IN18
+estado_tablero[4] => Mux1.IN17
+estado_tablero[5] => Mux0.IN17
+estado_tablero[6] => Mux1.IN16
+estado_tablero[7] => Mux0.IN16
+estado_tablero[8] => Mux1.IN15
+estado_tablero[9] => Mux0.IN15
+estado_tablero[10] => Mux1.IN14
+estado_tablero[11] => Mux0.IN14
+estado_tablero[12] => Mux1.IN13
+estado_tablero[13] => Mux0.IN13
+estado_tablero[14] => Mux1.IN12
+estado_tablero[15] => Mux0.IN12
+estado_tablero[16] => Mux1.IN11
+estado_tablero[17] => Mux0.IN11
+movimiento_valido <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+movimiento_invalido <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

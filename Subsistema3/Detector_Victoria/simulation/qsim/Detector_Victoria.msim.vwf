@@ -876,7 +876,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[16]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -885,7 +885,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -894,7 +894,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -903,7 +903,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -912,7 +912,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -930,7 +930,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -939,7 +939,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -948,7 +948,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -957,7 +957,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1002,7 +1002,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1011,7 +1011,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1020,7 +1020,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|estado_tablero[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1029,7 +1029,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|empate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1047,7 +1047,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|victoria_j2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1155,7 +1155,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|s_victoria_j2~7_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1164,7 +1164,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|empate~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1182,7 +1182,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[14]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1191,7 +1191,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[8]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1209,7 +1209,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|victoria_j2~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1218,7 +1218,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|empate~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1227,7 +1227,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[2]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1245,7 +1245,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[15]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1272,7 +1272,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[16]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1281,7 +1281,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[0]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1299,7 +1299,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[7]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1308,7 +1308,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[10]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1344,7 +1344,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[1]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1353,7 +1353,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[12]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1362,7 +1362,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[13]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1389,7 +1389,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|estado_tablero[9]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1398,7 +1398,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|s_victoria_j1~11_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1515,7 +1515,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|s_victoria_j2~10_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1524,7 +1524,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|s_victoria_j2~11_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1533,7 +1533,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|s_victoria_j2~12_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1560,7 +1560,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|empate~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1569,7 +1569,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|empate~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1578,7 +1578,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|empate~4_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1587,7 +1587,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|Equal26~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1596,7 +1596,7 @@ TRANSITION_LIST("Detector_Victoria_vlg_vec_tst|i1|empate~5_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
