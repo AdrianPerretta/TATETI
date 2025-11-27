@@ -1,0 +1,579 @@
+$comment
+	File created using the following command:
+		vcd file subs_4.msim.vcd -direction
+$end
+$date
+	Sat Nov 08 22:04:05 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Subsistema_4_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " confirmar_modo $end
+$var reg 1 # empate $end
+$var reg 1 $ fin_juego $end
+$var reg 1 % gana_j1 $end
+$var reg 1 & gana_j2 $end
+$var reg 1 ' jugada_valida $end
+$var reg 1 ( pulso_jugada $end
+$var reg 1 ) reset_n $end
+$var wire 1 * E_maquina $end
+$var wire 1 + e_tablero $end
+$var wire 1 , E_teclado $end
+$var wire 1 - limpiar_tablero $end
+$var wire 1 . modo_actual $end
+$var wire 1 / puntos_j1 [1] $end
+$var wire 1 0 puntos_j1 [0] $end
+$var wire 1 1 puntos_j2 [1] $end
+$var wire 1 2 puntos_j2 [0] $end
+$var wire 1 3 resultado_final $end
+$var wire 1 4 victoria_final [1] $end
+$var wire 1 5 victoria_final [0] $end
+$var wire 1 6 sampler $end
+$scope module i1 $end
+$var wire 1 7 gnd $end
+$var wire 1 8 vcc $end
+$var wire 1 9 unknown $end
+$var tri1 1 : devclrn $end
+$var tri1 1 ; devpor $end
+$var tri1 1 < devoe $end
+$var wire 1 = puntos1[0]~0_combout $end
+$var wire 1 > fstate.INICIO~0_combout $end
+$var wire 1 ? Selector1~0_combout $end
+$var wire 1 @ empate~input_o $end
+$var wire 1 A confirmar_modo~input_o $end
+$var wire 1 B E_maquina~output_o $end
+$var wire 1 C e_tablero~output_o $end
+$var wire 1 D E_teclado~output_o $end
+$var wire 1 E modo_actual~output_o $end
+$var wire 1 F puntos_j1[0]~output_o $end
+$var wire 1 G puntos_j1[1]~output_o $end
+$var wire 1 H puntos_j2[0]~output_o $end
+$var wire 1 I puntos_j2[1]~output_o $end
+$var wire 1 J victoria_final[0]~output_o $end
+$var wire 1 K victoria_final[1]~output_o $end
+$var wire 1 L resultado_final~output_o $end
+$var wire 1 M limpiar_tablero~output_o $end
+$var wire 1 N clk~input_o $end
+$var wire 1 O clk~inputclkctrl_outclk $end
+$var wire 1 P jugada_valida~input_o $end
+$var wire 1 Q fin_juego~input_o $end
+$var wire 1 R reset_n~input_o $end
+$var wire 1 S Selector8~0_combout $end
+$var wire 1 T reset_n~inputclkctrl_outclk $end
+$var wire 1 U fstate.reseteo~q $end
+$var wire 1 V Selector0~0_combout $end
+$var wire 1 W pulso_jugada~input_o $end
+$var wire 1 X Selector4~1_combout $end
+$var wire 1 Y Selector0~2_combout $end
+$var wire 1 Z Selector0~3_combout $end
+$var wire 1 [ fstate.INICIO~1_combout $end
+$var wire 1 \ fstate.INICIO~q $end
+$var wire 1 ] Selector2~0_combout $end
+$var wire 1 ^ Selector0~4_combout $end
+$var wire 1 _ Selector1~1_combout $end
+$var wire 1 ` fstate.SEL_MOD~q $end
+$var wire 1 a Selector2~1_combout $end
+$var wire 1 b contador_partidas[0]~1_combout $end
+$var wire 1 c contador_partidas[1]~0_combout $end
+$var wire 1 d Selector7~2_combout $end
+$var wire 1 e Selector0~1_combout $end
+$var wire 1 f Selector4~2_combout $end
+$var wire 1 g Selector4~3_combout $end
+$var wire 1 h Selector4~4_combout $end
+$var wire 1 i fstate.VERIF~q $end
+$var wire 1 j Selector7~3_combout $end
+$var wire 1 k Selector7~6_combout $end
+$var wire 1 l Selector7~4_combout $end
+$var wire 1 m Selector7~5_combout $end
+$var wire 1 n fstate.RES_F~q $end
+$var wire 1 o Selector5~0_combout $end
+$var wire 1 p fstate.FIN_P~q $end
+$var wire 1 q fstate.VER_F~q $end
+$var wire 1 r Selector2~2_combout $end
+$var wire 1 s fstate.IN_P~q $end
+$var wire 1 t Selector3~0_combout $end
+$var wire 1 u fstate.ESP_J~q $end
+$var wire 1 v gana_j1~input_o $end
+$var wire 1 w puntos1[0]~1_combout $end
+$var wire 1 x puntos1[0]~2_combout $end
+$var wire 1 y puntos1[1]~3_combout $end
+$var wire 1 z gana_j2~input_o $end
+$var wire 1 { process_0~0_combout $end
+$var wire 1 | puntos2[0]~0_combout $end
+$var wire 1 } puntos2[0]~1_combout $end
+$var wire 1 ~ puntos2[1]~2_combout $end
+$var wire 1 !! victoria_final~0_combout $end
+$var wire 1 "! victoria_final~1_combout $end
+$var wire 1 #! victoria_final~2_combout $end
+$var wire 1 $! victoria_final~3_combout $end
+$var wire 1 %! WideOr0~combout $end
+$var wire 1 &! puntos2 [1] $end
+$var wire 1 '! puntos2 [0] $end
+$var wire 1 (! puntos1 [1] $end
+$var wire 1 )! puntos1 [0] $end
+$var wire 1 *! contador_partidas [1] $end
+$var wire 1 +! contador_partidas [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+1-
+1.
+00
+0/
+02
+01
+03
+05
+04
+x6
+07
+18
+x9
+1:
+1;
+1<
+0=
+1>
+0?
+0@
+0A
+0B
+0C
+0D
+1E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+1M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+1]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+1f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+1!!
+0"!
+0#!
+1$!
+1%!
+0'!
+0&!
+0)!
+0(!
+0+!
+0*!
+$end
+#5000
+1!
+1N
+1O
+06
+#10000
+1)
+0!
+1R
+0N
+1T
+0O
+16
+1j
+0f
+1^
+1?
+1k
+1_
+1[
+#15000
+1!
+1N
+1O
+06
+1`
+1\
+1f
+0^
+0?
+0%!
+0M
+0-
+#20000
+1"
+0!
+1A
+0N
+0O
+16
+0f
+1a
+1V
+1r
+1Z
+0_
+#25000
+1!
+1N
+1O
+06
+1s
+0`
+1t
+0]
+1e
+0a
+0V
+1%!
+0r
+1^
+1f
+0Z
+1M
+1-
+#30000
+1(
+0"
+0!
+1W
+0A
+0N
+0O
+16
+#34000
+1'
+1P
+06
+#35000
+1!
+1N
+1O
+16
+0s
+1u
+0t
+1]
+0k
+1X
+1D
+1C
+1B
+1,
+1+
+1*
+0%!
+0^
+1h
+1Z
+0M
+0-
+#37000
+1%
+1v
+06
+#39000
+1$
+1Q
+16
+#40000
+0!
+0N
+0O
+06
+#41000
+0(
+0W
+16
+#44000
+0'
+0P
+06
+1t
+1k
+0X
+0h
+0Z
+#45000
+1!
+1N
+1O
+16
+#47000
+0%
+0v
+06
+#49000
+0$
+0Q
+16
+#50000
+1(
+0!
+1W
+0N
+0O
+06
+0t
+0k
+1X
+1h
+1Z
+#54000
+1'
+1P
+16
+#55000
+1!
+1N
+1O
+06
+1i
+0u
+1g
+1k
+0X
+0D
+0C
+0B
+0,
+0+
+0*
+0Z
+#58000
+1&
+1z
+16
+#59000
+1$
+1Q
+06
+1o
+0j
+0g
+1Y
+1{
+1b
+0k
+0h
+1Z
+1|
+1}
+#60000
+0!
+0N
+0O
+16
+#61000
+0(
+0W
+06
+#64000
+0'
+0P
+16
+#65000
+1!
+1N
+1O
+06
+1p
+0i
+1+!
+1'!
+0{
+0]
+0o
+1j
+0!!
+1~
+0}
+1H
+12
+0|
+1^
+1k
+0~
+1}
+#68000
+0&
+0z
+16
+#69000
+0$
+0Q
+06
+0Y
+0Z
+#70000
+1(
+0!
+1W
+0N
+0O
+16
+#74000
+1'
+1P
+06
+#75000
+1!
+1N
+1O
+16
+1q
+0p
+1r
+#78000
+1#
+1@
+06
+1=
+#79000
+1$
+1Q
+16
+1Y
+1Z
+#80000
+0!
+0N
+0O
+06
+#81000
+0(
+0W
+16
+#84000
+0'
+0P
+06
+#85000
+1!
+1N
+1O
+16
+1s
+0q
+1t
+0r
+1%!
+1M
+1-
+#88000
+0#
+0@
+06
+0=
+#89000
+0$
+0Q
+16
+0Y
+0Z
+#89600
+0)
+0R
+0T
+06
+0j
+0k
+0s
+0+!
+0\
+0'!
+0t
+1]
+0b
+0e
+1!!
+0}
+0H
+02
+0^
+0[
+#90000
+0!
+0N
+0O
+16
+#95000
+1!
+1N
+1O
+06
+#97280
+1)
+1R
+1T
+16
+1j
+0f
+1^
+1?
+1k
+1_
+1[
+#100000

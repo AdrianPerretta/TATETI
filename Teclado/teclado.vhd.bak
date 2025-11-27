@@ -1,0 +1,41 @@
+--Programa de reconocimiento de teclado
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity teclado is
+
+	port(
+		clk		 : in	std_logic;
+		entrada	 : in	std_logic;
+		reset	 : in	std_logic;
+		output	 : out	std_logic_vector(1 downto 0)
+	);
+
+end entity;
+
+architecture registro of teclado is
+
+	-- Register to hold the current state
+	signal entrada_M   : std_logic;
+
+begin
+	process (clk, reset, entrada)
+	begin
+		if reset = '1' then
+			entrada_M<='0';
+		elsif (rising_edge(clk)) then
+			if entrada='1' then
+				entrada_M<='1';
+				else entrada_M<='0';
+				end if;
+		end if;
+	end process;
+
+	-- Output depends solely on the current state
+	process (entrada_M)
+	salida<=entrada_M;
+	end process;
+
+end registro;
