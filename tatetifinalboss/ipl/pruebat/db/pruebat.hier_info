@@ -1,0 +1,30 @@
+|pruebat
+clk => cambio_entrada[0].CLK
+clk => cambio_entrada[1].CLK
+clk => cambio_entrada[2].CLK
+clk => contador_2s[0].CLK
+clk => contador_2s[1].CLK
+clk => contador_2s[2].CLK
+clk => contador_2s[3].CLK
+clk => contador_2s[4].CLK
+clk => contador_2s[5].CLK
+clk => contador_2s[6].CLK
+clk => contador_2s[7].CLK
+clk => contador_2s[8].CLK
+clk => contador_2s[9].CLK
+clk => contador_2s[10].CLK
+tablero_juego[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+tablero_juego[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+tablero_juego[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+tablero_juego[3] <= <GND>
+reset <= <GND>
+sc1[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sc1[1] <= <GND>
+sc1[2] <= <GND>
+sc2[0] <= <VCC>
+sc2[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sc2[2] <= <VCC>
+J1vJ2 <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+J1vM <= <GND>
+
+

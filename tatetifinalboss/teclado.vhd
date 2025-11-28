@@ -29,7 +29,7 @@ architecture registro of teclado is
 	signal sal	 :  std_logic_vector(0 to 3);
 	signal D     : vector_tipo;
 	--Señales para el sub sistema 2:
-	signal t_juego : std_logic_vector(0 to 3);
+	signal t_juego : std_logic_vector(3 downto 0);
 	signal t_reset, t_j1_vs_j2, t_j_vs_mq : std_logic; 
 	signal COUNT_1, COUNT_2	 :   integer range 0 to 7;
 
@@ -83,7 +83,7 @@ begin
 				 
 			        if (R1='1') or (D(1)>0) then  --Comprueba si esta en R1  (4)
 			        D(1)<=D(1)+1;--Contador  para vover a medir la salida del teclado (Antirrebote de tecla)
-					       if D(1)<8 then --(5)
+					       if D(1)<9 then --(5)
 					       C<=1;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R1='1' then --Vuelve a medir si esta en R1. 
 							 t_juego<="0000";
@@ -96,7 +96,7 @@ begin
 							 
 			         elsif (R2='1') or (D(2)>0) then  --Comprueba si esta en R2  
 						D(2)<=D(2)+1;
-					       if D(2)<8 then --(6)
+					       if D(2)<9 then --(6)
 							 C<=1;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R2='1' then --Vuelve a medir si esta en R2. 
 							 t_juego<="0001";
@@ -109,7 +109,7 @@ begin
 							 
 					   elsif (R3='1') or (D(3)>0) then  --Comprueba si esta en R3  
 						D(3)<=D(3)+1;
-					       if D(3)<8 then --(7)
+					       if D(3)<9 then --(7)
 							 C<=1;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R3='1' then --Vuelve a medir si esta en R3. 
 							 t_juego<="0010";
@@ -122,7 +122,7 @@ begin
 							 
 						elsif (R4='1') or (D(4)>0) then  --Comprueba si esta en R4 
 						D(4)<=D(4)+1;
-					       if D(4)<8 then --(8)
+					       if D(4)<9 then --(8)
 							 C<=1;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R4='1' then --Vuelve a medir si esta en R4. 
 							 COUNT_2<=COUNT_2+1;
@@ -142,7 +142,7 @@ begin
 				 
 			        if (R1='1') or (D(5)>0) then  --Comprueba si esta en R1  (9)
 			        D(5)<=D(5)+1;
-					       if D(5)<8 then --(10)
+					       if D(5)<9 then --(10)
 					       C<=2;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R1='1' then --Vuelve a medir si esta en R1. 
 							 t_juego<="0011";
@@ -155,7 +155,7 @@ begin
 							 
 			         elsif (R2='1') or (D(6)>0) then  --Comprueba si esta en R2  
 						D(6)<=D(6)+1;
-					       if D(6)<8 then --(11)
+					       if D(6)<9 then --(11)
 							 C<=2;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R2='1' then --Vuelve a medir si esta en R2. 
 							 t_juego<="0100";
@@ -168,7 +168,7 @@ begin
 							 
 					   elsif (R3='1') or (D(7)>0) then  --Comprueba si esta en R3  
 						D(7)<=D(7)+1;
-					       if D(7)<8 then --(12)
+					       if D(7)<9 then --(12)
 							 C<=2;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R3='1' then --Vuelve a medir si esta en R3. 
 							 t_juego<="0101";
@@ -181,7 +181,7 @@ begin
 							 
 						elsif (R4='1') or (D(8)>0) then  --Comprueba si esta en R4 
 						D(8)<=D(8)+1;
-					       if D(8)<8 then --(13)
+					       if D(8)<9 then --(13)
 							 C<=2;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R4='1' then --Vuelve a medir si esta en R4. 
 							 COUNT_2<=COUNT_2-1;
@@ -199,7 +199,7 @@ begin
 				 
 			        if (R1='1') or (D(9)>0) then  --Comprueba si esta en R1  (14)
 			        D(9)<=D(9)+1;
-					       if D(9)<8 then --(15)
+					       if D(9)<9 then --(15)
 					       C<=3;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R1='1' then --Vuelve a medir si esta en R1. 
 							 t_juego<="0110";
@@ -212,7 +212,7 @@ begin
 							 
 			         elsif (R2='1') or (D(10)>0) then  --Comprueba si esta en R2  
 						D(10)<=D(10)+1;
-					       if D(10)<8 then --(16)
+					       if D(10)<9 then --(16)
 							 C<=3;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R2='1' then --Vuelve a medir si esta en R2. 
 							 t_juego<="0111";
@@ -225,7 +225,7 @@ begin
 							 
 					   elsif (R3='1') or (D(11)>0) then  --Comprueba si esta en R3  
 						D(11)<=D(11)+1;
-					       if D(11)<8 then --(17)
+					       if D(11)<9 then --(17)
 							 C<=3;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R3='1' then --Vuelve a medir si esta en R3. 
 							 t_juego<="1000";
@@ -238,7 +238,7 @@ begin
 							 
 						elsif (R4='1') or (D(12)>0) then  --Comprueba si esta en R4 
 						D(12)<=D(12)+1;
-					       if D(12)<8 then --(18)
+					       if D(12)<9 then --(18)
 							 C<=3;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R4='1' then --Vuelve a medir si esta en R4. 
 							 t_j_vs_mq<='1';
@@ -255,7 +255,7 @@ begin
 				 C<=1;
 			        if (R1='1') or (D(13)>0) then  --Comprueba si esta en R1  (19)
 			        D(13)<=D(13)+1;
-					       if D(13)<8 then --(20)
+					       if D(13)<9 then --(20)
 					       C<=4;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R1='1' then --Vuelve a medir si esta en R1. 
 							 COUNT_1<=COUNT_1-1;
@@ -268,7 +268,7 @@ begin
 							 
 			         elsif (R2='1') or (D(14)>0) then  --Comprueba si esta en R2  
 						D(14)<=D(14)+1;
-					       if D(14)<8 then --(21)
+					       if D(14)<9 then --(21)
 							 C<=4;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R2='1' then --Vuelve a medir si esta en R2. 
 							 COUNT_1<=COUNT_1+1;
@@ -281,7 +281,7 @@ begin
 							 
 					   elsif (R3='1') or (D(15)>0) then  --Comprueba si esta en R3  
 						D(15)<=D(15)+1;
-					       if D(15)<8 then --(22)
+					       if D(15)<9 then --(22)
 							 C<=4;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R3='1' then --Vuelve a medir si esta en R3. 
 							 t_j1_vs_j2<='1';
@@ -294,7 +294,7 @@ begin
 							 
 						elsif (R4='1') or (D(16)>0) then  --Comprueba si esta en R4 
 						D(16)<=D(16)+1;
-					       if D(16)<8 then --(23)
+					       if D(16)<9 then --(23)
 							 C<=4;  --Se mantiene en esta condicion durante 8 pulsos de clock.
 					       elsif R4='1' then --Vuelve a medir si esta en R4. 
 							 t_reset<='1';

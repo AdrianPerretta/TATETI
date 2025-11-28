@@ -1,10 +1,8 @@
 ----------------------------------------------------------------------------------
 -- Proyecto   : TATETÍ Digital - Subsistema 4 (Control General y Estado del Sistema)
--- Descripción: Controla los modos de juego, partidas, puntajes, resultado final
---              y alternancia de turnos entre jugadores.
+-- Descripción: Controla los modos, partidas, puntajes, estados finales y turnos.
 -- Autor      : Lautaro Tomás Maure
--- Fecha      : 12/11/2025
--- Materia    : Técnicas y Dispositivos Digitales II
+-- Fecha      : 22/11/2025
 ----------------------------------------------------------------------------------
 
 library ieee;
@@ -13,97 +11,139 @@ use ieee.numeric_std.all;
 
 entity Subsistema_4 is
     port (
-        clk              : in  std_logic;
-        reset_n          : in  std_logic;
-        confirmar_modo   : in  std_logic := '0';
-        pulso_jugada     : in  std_logic := '0';
-        jugada_valida    : in  std_logic := '0';
-        fin_juego        : in  std_logic := '0';
-        gana_j1, gana_j2,
-        empate           : in  std_logic := '0';
 
-        E_maquina        : out std_logic;
-        e_tablero        : out std_logic;
-        E_teclado        : out std_logic;
-        modo_actual      : out std_logic;
-        puntos_j1        : out std_logic_vector(1 downto 0);
-        puntos_j2        : out std_logic_vector(1 downto 0);
-        victoria_final   : out std_logic_vector(1 downto 0);
-        resultado_final  : out std_logic;
-        limpiar_tablero  : out std_logic;
-        turno_jugador    : out std_logic;
-        inicio_partida   : out std_logic
+		  -------------------------------------------------------------------------
+        -- ENTRADAS
+        -------------------------------------------------------------------------
+        clk              : in  std_logic;   			-- Reloj principal
+        reset_n          : in  std_logic;  		   -- Reset activo en 0
+
+        modo_1           : in std_logic := '0';    -- Modo: J1 vs J2
+        modo_2           : in std_logic := '0';    -- Modo: J1 vs Máquina
+
+        jugada_valida    : in  std_logic := '0';   -- Se marcó una casilla válida
+
+        gana_j1          : in std_logic := '0';    -- J1 ganó la partida
+        gana_j2          : in std_logic := '0';    -- J2 ganó la partida
+        empate           : in std_logic := '0';    -- Empate en la partida
+
+        -------------------------------------------------------------------------
+        -- SALIDAS 
+        -------------------------------------------------------------------------
+        E_maquina        : out std_logic;   -- Habilita IA (modo 2)
+        e_tablero        : out std_logic;   -- Habilita lectura del tablero
+        E_teclado        : out std_logic;   -- Habilita teclado del jugador
+        modo_actual      : out std_logic;   -- 0 = J1 vs J2 | 1 = J1 vs Máquina
+
+        victoria_final   : out std_logic_vector(1 downto 0);  -- Ganador del final:
+                                                              -- "01" = J1 ganó
+                                                              -- "10" = J2 ganó
+                                                              -- "11" = Empate global
+
+        resultado_final  : out std_logic;   -- 1 = Se jugaron las 3 partidas (fin total)
+
+        hubo_ganador     : out std_logic;   -- 1 = J1 o J2 ganó la PARTIDA actual
+                                            -- 0 = la PARTIDA actual resulto en empate
+
+        limpiar_tablero  : out std_logic;   -- Limpieza entre partidas
+        turno_jugador    : out std_logic;   --  '0' para J1 y '1' para J2 o Maquina
+        inicio_partida   : out std_logic    -- Se pone en '1' al comenzar a jugar
     );
 end Subsistema_4;
 
 
 architecture Behavioral of Subsistema_4 is
 
-    type state_type is (INICIO, SEL_MOD, IN_P, ESP_J, VERIF, FIN_P, VER_F, RES_F, reseteo);
+    type state_type is (
+        INICIO, SEL_MOD, IN_P, ESP_J, VERIF,
+        FIN_P, VER_F, RES_F, reseteo
+    );
+
     signal fstate, reg_fstate : state_type := INICIO;
 
-    signal modo_sel          : std_logic := '0';
-    signal contador_partidas : unsigned(2 downto 0) := (others=>'0');
-    signal puntos1, puntos2  : unsigned(1 downto 0) := (others=>'0');
-    signal mas_partidas      : std_logic := '1';
+    -- Señales internas
+    signal modo_sel            : std_logic := '0';
+    signal contador_partidas   : unsigned(2 downto 0) := (others=>'0');
+    signal puntos1, puntos2    : unsigned(1 downto 0) := (others=>'0');
     signal resultado_final_int : std_logic := '0';
     signal victoria_final_int  : std_logic_vector(1 downto 0) := "00";
     signal turno_jugador_int   : std_logic := '0';
     signal inicio_partida_int  : std_logic := '0';
+    signal pulso_jugada_int    : std_logic;
+    signal fin_juego_int       : std_logic;
+    signal hubo_ganador_int    : std_logic := '0';
 
 begin
+    ----------------------------------------------------------------------
+    -- SEÑAL DE HABILITACION
+    ----------------------------------------------------------------------
+    pulso_jugada_int <= modo_1 or modo_2;
 
-    ------------------------------------------------------------------------------
+    ----------------------------------------------------------------------
+    -- FIN DE PARTIDA 
+    ----------------------------------------------------------------------
+    fin_juego_int <= gana_j1 or gana_j2 or empate;
+
+    ----------------------------------------------------------------------
     -- PROCESO SECUENCIAL
-    ------------------------------------------------------------------------------
+    ----------------------------------------------------------------------
     process(clk, reset_n)
     begin
         if reset_n = '0' then
             fstate <= INICIO;
-            contador_partidas <= (others => '0');
-            puntos1 <= (others => '0');
-            puntos2 <= (others => '0');
+            contador_partidas   <= (others=>'0');
+            puntos1             <= (others=>'0');
+            puntos2             <= (others=>'0');
             resultado_final_int <= '0';
             victoria_final_int  <= "00";
             turno_jugador_int   <= '0';
-            inicio_partida_int  <= '0';   -- 🔹 Reset explícito
+            inicio_partida_int  <= '0';
+            hubo_ganador_int    <= '0';
 
         elsif rising_edge(clk) then
+
             fstate <= reg_fstate;
 
-            ----------------------------------------------------------------------
-            -- Activar inicio_partida SOLO al entrar a la PRIMER partida
-            ----------------------------------------------------------------------
+            ------------------------------------------------------------------
+            -- Activar inicio_partida SOLO al comenzar la PRIMER partida
+            ------------------------------------------------------------------
             if (fstate = IN_P) and (reg_fstate /= IN_P) and (contador_partidas = 0) then
                 inicio_partida_int <= '1';
             end if;
 
-            ----------------------------------------------------------------------
-            -- Alternancia de turno: solo cuando jugada_valida = 1
-            ----------------------------------------------------------------------
+            ------------------------------------------------------------------
+            -- Alternancia de turnos
+            ------------------------------------------------------------------
             if jugada_valida = '1' then
                 turno_jugador_int <= not turno_jugador_int;
             end if;
 
-            ----------------------------------------------------------------------
-            -- Actualización de puntajes al entrar en FIN_P
-            ----------------------------------------------------------------------
+            ------------------------------------------------------------------
+            -- Actualización de puntajes + hubo_ganador
+            ------------------------------------------------------------------
             if (fstate = FIN_P) and (reg_fstate /= FIN_P) then
+
                 contador_partidas <= contador_partidas + 1;
 
                 if gana_j1 = '1' then
                     puntos1 <= puntos1 + 1;
+                    hubo_ganador_int <= '1';
+
                 elsif gana_j2 = '1' then
                     puntos2 <= puntos2 + 1;
+                    hubo_ganador_int <= '1';
+
                 elsif empate = '1' then
+                    -- Suma doble por empate
                     puntos1 <= puntos1 + 1;
                     puntos2 <= puntos2 + 1;
+                    hubo_ganador_int <= '0';  -- No hubo ganador
                 end if;
             end if;
 
-            ----------------------------------------------------------------------
-            -- Resultado final al entrar en RES_F
-            ----------------------------------------------------------------------
+            ------------------------------------------------------------------
+            -- Resultado FINAL (al terminar las 3 partidas)
+            ------------------------------------------------------------------
             if (fstate = RES_F) and (reg_fstate /= RES_F) then
                 resultado_final_int <= '1';
 
@@ -115,27 +155,20 @@ begin
                     victoria_final_int <= "11";
                 end if;
 
-                -- Apagamos inicio_partida al terminar la serie
                 inicio_partida_int <= '0';
-					 end if;
-
-            ----------------------------------------------------------------------
-            -- Reset global de señales internas al entrar a reseteo
-            ----------------------------------------------------------------------
-           -- if (fstate /= reseteo) and (reg_fstate = reseteo) then
-             --   resultado_final_int <= '0';
-              --  victoria_final_int  <= "00";
-              --  turno_jugador_int   <= '0';
-           -- end if;
+            end if;
         end if;
     end process;
 
 
-    ------------------------------------------------------------------------------
-    -- PROCESO COMBINACIONAL (NO maneja señales internas)
-    ------------------------------------------------------------------------------
-    process(fstate, confirmar_modo, pulso_jugada, jugada_valida,
-            fin_juego, reset_n, gana_j1, gana_j2, empate, contador_partidas)
+    ----------------------------------------------------------------------
+    -- PROCESO COMBINACIONAL (FSM)
+    ----------------------------------------------------------------------
+    process(
+        fstate, modo_1, modo_2, jugada_valida,
+        fin_juego_int, reset_n,
+        contador_partidas, pulso_jugada_int
+    )
     begin
         reg_fstate      <= fstate;
         E_maquina       <= '0';
@@ -143,30 +176,32 @@ begin
         E_teclado       <= '0';
         limpiar_tablero <= '0';
 
-        if contador_partidas < "011" then
-            mas_partidas <= '1';
-        else
-            mas_partidas <= '0';
-        end if;
-
         case fstate is
 
+            ------------------------------------------------------------------
             when INICIO =>
                 limpiar_tablero <= '1';
                 if reset_n = '1' then
                     reg_fstate <= SEL_MOD;
                 end if;
 
+            ------------------------------------------------------------------
             when SEL_MOD =>
-                if confirmar_modo = '1' then
-                    modo_sel   <= '1';
+                if modo_1 = '1' then
+                    modo_sel <= '0';
+                    reg_fstate <= IN_P;
+
+                elsif modo_2 = '1' then
+                    modo_sel <= '1';
                     reg_fstate <= IN_P;
                 end if;
 
+            ------------------------------------------------------------------
             when IN_P =>
                 limpiar_tablero <= '1';
                 reg_fstate <= ESP_J;
 
+            ------------------------------------------------------------------
             when ESP_J =>
                 e_tablero <= '1';
                 E_teclado <= '1';
@@ -175,18 +210,21 @@ begin
                     E_maquina <= '1';
                 end if;
 
-                if (pulso_jugada = '1') or (jugada_valida = '1') then
+                if (pulso_jugada_int = '1') or (jugada_valida = '1') then
                     reg_fstate <= VERIF;
                 end if;
 
+            ------------------------------------------------------------------
             when VERIF =>
-                if fin_juego = '1' then
+                if fin_juego_int = '1' then
                     reg_fstate <= FIN_P;
                 end if;
 
+            ------------------------------------------------------------------
             when FIN_P =>
                 reg_fstate <= VER_F;
 
+            ------------------------------------------------------------------
             when VER_F =>
                 if contador_partidas < "011" then
                     reg_fstate <= IN_P;
@@ -194,17 +232,20 @@ begin
                     reg_fstate <= RES_F;
                 end if;
 
+            ------------------------------------------------------------------
             when RES_F =>
                 if reset_n = '0' then
                     reg_fstate <= reseteo;
                 end if;
 
+            ------------------------------------------------------------------
             when reseteo =>
                 limpiar_tablero <= '1';
                 if reset_n = '1' then
                     reg_fstate <= INICIO;
                 end if;
 
+            ------------------------------------------------------------------
             when others =>
                 reg_fstate <= INICIO;
 
@@ -212,15 +253,15 @@ begin
     end process;
 
 
-    ------------------------------------------------------------------------------
-    -- Asignaciones finales
-    ------------------------------------------------------------------------------
-    modo_actual     <= modo_sel;
-    puntos_j1       <= std_logic_vector(puntos1);
-    puntos_j2       <= std_logic_vector(puntos2);
-    resultado_final <= resultado_final_int;
-    victoria_final  <= victoria_final_int;
-    turno_jugador   <= turno_jugador_int;
-    inicio_partida  <= inicio_partida_int;
+    ----------------------------------------------------------------------
+    -- SALIDAS FINALES
+    ----------------------------------------------------------------------
+    modo_actual      <= modo_sel;
+    resultado_final  <= resultado_final_int;
+    victoria_final   <= victoria_final_int;
+    turno_jugador    <= turno_jugador_int;
+    inicio_partida   <= inicio_partida_int;
+    hubo_ganador     <= hubo_ganador_int;
 
 end Behavioral;
+

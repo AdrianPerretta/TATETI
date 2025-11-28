@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity shift_register_parallel_to_serial is
+  generic (
+    WIDTH : natural := 384  -- ancho del registro (por defecto 384)
+  );
+  port (
+    clk         : in  std_logic;
+    rst         : in  std_logic;                                  -- reset síncrono activo en '1'
+    load        : in  std_logic;                                  -- carga paralela (sincrónica) (prioridad sobre shift)
+    shift       : in  std_logic;                                  -- habilita desplazamiento en cada flanco de reloj
+    parallel_in : in  std_logic_vector(WIDTH-1 downto 0);         -- entrada paralela
+    serial_out  : out std_logic                                   -- salida serie (MSB first)
+  );
+end entity;
+
+architecture rtl of shift_register_parallel_to_serial is
+  signal reg : std_logic_vector(WIDTH-1 downto 0) := (others => '0');
+begin
+  -- salida serie muestra el MSB actual
+  serial_out <= reg(WIDTH-1);
+
+  process(clk)
+  begin
+    if rising_edge(clk) then
+      if rst = '1' then
+        reg <= (others => '0');
+      elsif load = '1' then
+        reg <= parallel_in;                -- carga paralela (prioridad)
+      elsif shift = '1' then
+        -- desplaza hacia la izquierda: el MSB sale por serial_out
+        reg <= reg(WIDTH-2 downto 0) & '0';
+      end if;
+    end if;
+  end process;
+end architecture;

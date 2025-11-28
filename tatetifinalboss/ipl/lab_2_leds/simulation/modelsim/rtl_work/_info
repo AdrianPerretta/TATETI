@@ -1,0 +1,60 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\iniak\Documents\facu\TYDD2\lab_2\simulation\modelsim
+Ealtpll0
+Z1 w1762455218
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\iniak\Documents\facu\TYDD2\lab_2\simulation\modelsim
+Z5 8C:/Users/iniak/Documents/facu/TYDD2/lab_2/altpll0.vhd
+Z6 FC:/Users/iniak/Documents/facu/TYDD2/lab_2/altpll0.vhd
+l0
+L42
+Va<N@b?^=XUDghdDG2=D1>0
+!s100 deVYN=A:R7gPYO`H0i7hd3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1762455291.030000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/iniak/Documents/facu/TYDD2/lab_2/altpll0.vhd|
+Z10 !s107 C:/Users/iniak/Documents/facu/TYDD2/lab_2/altpll0.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Asyn
+R2
+R3
+DEx4 work 7 altpll0 0 22 a<N@b?^=XUDghdDG2=D1>0
+l137
+L54
+VYlf:94[UE6?=;8oV2FJD20
+!s100 cCC:NTFHzgV2ZEF4XcX3M2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+valtpll0_altpll
+I7AAf?jO2FYMYR99XcUSXg0
+VbmOFXHjhheB>Iagza_8dB0
+R4
+w1762454645
+8C:/Users/iniak/Documents/facu/TYDD2/lab_2/db/altpll0_altpll.v
+FC:/Users/iniak/Documents/facu/TYDD2/lab_2/db/altpll0_altpll.v
+L0 29
+Z13 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 8HgDC?5WMbG][3;RAYflZ2
+!s85 0
+!s108 1762455288.430000
+!s107 C:/Users/iniak/Documents/facu/TYDD2/lab_2/db/altpll0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/iniak/Documents/facu/TYDD2/lab_2/db|C:/Users/iniak/Documents/facu/TYDD2/lab_2/db/altpll0_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/iniak/Documents/facu/TYDD2/lab_2/db -O0

@@ -21,7 +21,7 @@ end coloress2;
 architecture fnc of coloress2 is
 
 signal CJ2, CJ1, D16, D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1 : std_logic_vector(23 downto 0);
-signal victoriacounter1, victoriacounter2, empatecounter1, empatecounter2, empategeneral : integer range 1 to 4 := 1;
+signal puntos1, puntos2  : integer range 0 to 3 := 0;
 signal bloqueo : std_logic := '0';
 begin
 
@@ -30,21 +30,21 @@ process (SC1)
 		if INICIO = '0' then
 			case SC1 is
 				when "000" => 
-					CJ1 <= x"7008E7";
+					CJ1 <= x"111737";
 				when "001" => 
-					CJ1 <= x"401577";
+					CJ1 <= x"040F4A";
 				when "010" => 
-					CJ1 <= x"8C3BCC";
-				when "01" => 
-					CJ1 <= x"5A158E";
+					CJ1 <= x"06145C";
+				when "011" => 
+					CJ1 <= x"010109";
 				when "100" => 
-					CJ1 <= x"6821CB";
+					CJ1 <= x"2727A8";
 				when "101" => 
-					CJ1 <= x"8A0194";
+					CJ1 <= x"120B61";
 				when "110" => 
-					CJ1 <= x"51157D";
+					CJ1 <= x"4549B0";
 				when "111" => 
-					CJ1 <= x"2F0D68";
+					CJ1 <= x"00999E";
 				when others =>
 					null;
 			end case;
@@ -56,21 +56,21 @@ process (SC2)
 		if INICIO = '0' then
 			case SC2 is
 				when "000" => 
-					CJ2 <= x"FFDF20";
+					CJ2 <= x"19FC12";
 				when "001" => 
-					CJ2 <= x"CCB222";
+					CJ2 <= x"16E800";
 				when "010" => 
-					CJ2 <= x"E3B340";
+					CJ2 <= x"0B9602";
 				when "011" => 
-					CJ2 <= x"FF8904";
+					CJ2 <= x"0C4509";
 				when "100" => 
-					CJ2 <= x"A94619";
+					CJ2 <= x"30B00C";
 				when "101" => 
-					CJ2 <= x"E1712B";
+					CJ2 <= x"1D7F00";
 				when "110" => 
-					CJ2 <= x"B36E2B";
+					CJ2 <= x"030401";
 				when "111" => 
-					CJ2 <= x"FEE685";
+					CJ2 <= x"094A09";
 				when others =>
 					null;
 			end case;
@@ -78,6 +78,7 @@ process (SC2)
 end process;
 
 process (VICTORIA, EMPATE, VF, INICIO, CJ1, CJ2, CLK, MV)
+variable puntosvariables2, puntosvariables1 : integer range 0 to 3 :=0;
 begin
 if rising_edge(CLK) then
 	if INICIO = '1' then                                             --INICIO TURNO
@@ -87,7 +88,7 @@ if rising_edge(CLK) then
 			D1 <= CJ2;
 		end if;
 		if MINV = '1' then
-			D1 <= x"FFFFFF";
+			D13 <= x"010101";
 		end if;                                                       -- FIN TURNO
 		
 		if MV = '1' then                                              --INICIO 3x3
@@ -183,111 +184,107 @@ if rising_edge(CLK) then
 	end if;
 	if VICTORIA = '1' then
 		if TURNO = '1' then
-			case victoriacounter1 is
+			puntosvariables1 := puntos1;
+			puntosvariables1 := puntosvariables1+1;
+			puntos1 <= puntosvariables1;
+			case puntosvariables1 is
 				when 1 =>
 					D4 <= CJ1;
 				when 2 =>
 					D3 <= CJ1;
 				when 3 =>
 					D2 <= CJ1;
-				when 4 =>
+				when 0 =>
 					null;
 			end case;
-			victoriacounter1 <= victoriacounter1+1;
-			empatecounter1 <= victoriacounter1+1;
 		end if;
 		if TURNO = '0' then
-			case victoriacounter2 is
+			puntosvariables2 := puntos2;
+			puntosvariables2 := puntosvariables2+1;
+			puntos2 <= puntosvariables2;
+			case puntosvariables2 is
 				when 1 =>
 					D13 <= CJ2;
 				when 2 =>
 					D9 <= CJ2;
 				when 3 =>
 					D5 <= CJ2;
-				when 4 =>
+				when 0 =>
 					null;
 			end case;
-			victoriacounter2 <= victoriacounter2+1;
-			empatecounter2 <= victoriacounter2+1;
 		end if;
 	end if;
 	
 	if EMPATE = '1' then 
-		case empatecounter1 is
+		puntosvariables1 := puntos1;
+		puntosvariables1 := puntosvariables1+1;
+		puntos1 <= puntosvariables1;
+		puntosvariables2 := puntos2;
+		puntosvariables2 := puntosvariables2+1;
+		puntos2 <= puntosvariables2;
+		case puntosvariables1 is
 			when 1 =>
-				D4 <= x"FFFFFF";
+				D4 <= x"010101";
 			when 2 =>
-				D3 <= x"FFFFFF";
+				D3 <= x"010101";
 			when 3 =>
-				D2 <= x"FFFFFF";
-			when 4 =>
+				D2 <= x"010101";
+			when 0 =>
 				null;
 		end case;
-		case empatecounter2 is
+		case puntosvariables2 is
 			when 1 =>
-				D13 <= x"FFFFFF";
+				D13 <= x"010101";
 			when 2 =>
-				D9 <= x"FFFFFF";
+				D9 <= x"010101";
 			when 3 =>
-				D5 <= x"FFFFFF";
-			when 4 =>
+				D5 <= x"010101";
+			when 0 =>
 				null;
 		end case;
-		empategeneral <= empategeneral+1;
-		victoriacounter1 <= victoriacounter1+1;
-		victoriacounter2 <= victoriacounter2+1;
 	end if;                                                              --FIN PUNTUACION JUGADORES
 	   
                                                 --INICIO VICTORIA FINAL
 	if VF = "01" then
-		D13 <= x"004E68";
-		D9 <= x"FFFFFF";
-		D5 <= x"EF4135";
+		D13 <= x"000011";
+		D9 <= x"090909";
+		D5 <= x"001000";
 		D4 <= CJ1;
 		D3 <= CJ1;
 		D2 <= CJ1;
-		victoriacounter1 <= 1;
-		victoriacounter2 <= 1;
-		empatecounter1 <= 1;
-		empatecounter2 <= 1;
-		empategeneral <= 1;
+		puntos1 <= 0;
+		puntos2 <= 0;
 		bloqueo <= '0';
 	end if;
 	if VF = "10" then
-		D4 <= x"004E68";
-		D3 <= x"FFFFFF";
-		D2 <= x"EF4135";
+		D4 <= x"000011";
+		D3 <= x"090909";
+		D2 <= x"001000";
 		D13 <= CJ2;
 		D9 <= CJ2;
 		D5 <= CJ2;
-		victoriacounter1 <= 1;
-		victoriacounter2 <= 1;
-		empatecounter1 <= 1;
-		empatecounter2 <= 1;
-		empategeneral <= 1;
+		puntos1 <= 0;
+		puntos2 <= 0;
 		bloqueo <= '0';
 	end if;
 	if VF = "11" then
-		D13 <= x"FFFFFF";
-		D9 <= x"FFFFFF";
-		D5 <= x"FFFFFF";
-		D4 <= x"FFFFFF";
-		D3 <= x"FFFFFF";
-		D2 <= x"FFFFFF";
-		D16 <= x"FFFFFF";
-		D12 <= x"FFFFFF";
-		D8 <= x"FFFFFF";
-		D15 <= x"FFFFFF";
-		D11 <= x"FFFFFF";
-		D7 <= x"FFFFFF";
-		D14 <= x"FFFFFF";
-		D10 <= x"FFFFFF";
-		D6 <= x"FFFFFF";
-		victoriacounter1 <= 1;
-		victoriacounter2 <= 1;
-		empatecounter1 <= 1;
-		empatecounter2 <= 1;
-		empategeneral <= 1;
+		D13 <= x"010101";
+		D9 <= x"010101";
+		D5 <= x"010101";
+		D4 <= x"010101";
+		D3 <= x"010101";
+		D2 <= x"010101";
+		D16 <= x"010101";
+		D12 <= x"010101";
+		D8 <= x"010101";
+		D15 <= x"010101";
+		D11 <= x"010101";
+		D7 <= x"010101";
+		D14 <= x"010101";
+		D10 <= x"010101";
+		D6 <= x"010101";
+		puntos1 <= 0;
+		puntos2 <= 0;
 		bloqueo <= '0';
 	end if;                                                             --FIN VICTORIA FINAL
 end if;

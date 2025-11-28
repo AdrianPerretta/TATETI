@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\iniak\Documents\facu\TYDD2\lab_2\simulation\qsim
+vBlock1
+Z1 !s100 H1?i7;G0EWhCZA`DALiT:3
+Z2 IbU[U`BSD6h_Njn9zEVzk93
+Z3 VzIdnO9M?PnOY^2LRXi=Ta0
+Z4 dC:\Users\iniak\Desktop\ipl\lab_2_leds\simulation\qsim
+Z5 w1764182094
+Z6 8prubaleds.vo
+Z7 Fprubaleds.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|prubaleds.vo|
+Z10 o-work work -O0
+Z11 n@block1
+!i10b 1
+!s85 0
+Z12 !s108 1764182095.608000
+Z13 !s107 prubaleds.vo|
+!s101 -O0
+vBlock1_vlg_check_tst
+!i10b 1
+Z14 !s100 iAZXT]HlSIf6dLH;Q]XAi1
+Z15 IE>K>o9j3Ld^BEPO7FY@kA3
+Z16 VIHB[_32Z=Wce:9;dOW@XH2
+R4
+Z17 w1764182093
+Z18 8prubaleds.vt
+Z19 Fprubaleds.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1764182095.945000
+Z21 !s107 prubaleds.vt|
+Z22 !s90 -work|work|prubaleds.vt|
+!s101 -O0
+R10
+Z23 n@block1_vlg_check_tst
+vBlock1_vlg_sample_tst
+!i10b 1
+Z24 !s100 YhI52W1[]8z6]a^IC<zmm1
+Z25 Id3b54<JBYl]`_4d>:IGz61
+Z26 VfZCGZZ2GBk:T[J8XPkR^D3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@block1_vlg_sample_tst
+vBlock1_vlg_vec_tst
+!i10b 1
+!s100 N9<I0X=?3YV5R5?[1<a_51
+IGj`E=k1QBojmR2`^7=]GP2
+Z28 V8EbEX^g@9e0ZUXjTWSm=l2
+R4
+R17
+R18
+R19
+Z29 L0 186
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@block1_vlg_vec_tst
+vparalelo_serie_384b
+Z31 ICa7Y8;7FJeU=hk15RC2fj1
+Z32 VAg[k0co09ZUhF3^[fE7NW2
+Z33 dC:\Users\iniak\Documents\facu\TYDD2\lab2\TATETI\lab_2_leds\simulation\qsim
+Z34 w1762719558
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z35 !s100 R;@WOO<X35h2P5[I04cG02
+Z36 !s108 1762719559.928000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vparalelo_serie_384b_vlg_check_tst
+Z37 !s100 2OkikBOD>e_zBEG<1bl501
+Z38 IG2JQh3U4dl0oG998`:eco2
+Z39 VYajOR2Z;Y14kXkOJHKkgF3
+R33
+Z40 w1762719557
+R18
+R19
+L0 65
+R8
+r1
+31
+Z41 !s108 1762719560.374000
+Z42 !s107 prubaleds.vt|
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vparalelo_serie_384b_vlg_sample_tst
+Z43 !s100 =c5UG`3LEkdlz3bQm0<N:3
+Z44 IOAgb`_4_nB^[a8OiV8=o50
+Z45 VgnS0_iUm5HA<kV]GflU0j3
+R33
+R40
+R18
+R19
+L0 29
+R8
+r1
+31
+R41
+R42
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vparalelo_serie_384b_vlg_vec_tst
+Z46 IOaKWF`jSRXil1XemNJSTo3
+Z47 V:65CooXKB;Ef5mZi2U`Z31
+R33
+R40
+R18
+R19
+Z48 L0 160
+R8
+r1
+31
+R41
+R42
+R22
+R10
+Z49 !s100 8REVWDZ3VhX0T>`9NOMna1
+!i10b 1
+!s85 0
+!s101 -O0
