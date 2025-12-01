@@ -1,0 +1,9 @@
+
+State Machine - |Maquina|fstate
+Name fstate.INICIO fstate.T_J1 fstate.T_M fstate.LIMPIAR fstate.FIN_J fstate.T_J2 
+fstate.T_J2 0 0 0 0 0 0 
+fstate.FIN_J 0 0 0 0 1 1 
+fstate.LIMPIAR 0 0 0 1 0 1 
+fstate.T_M 0 0 1 0 0 1 
+fstate.T_J1 0 1 0 0 0 1 
+fstate.INICIO 1 0 0 0 0 1 
