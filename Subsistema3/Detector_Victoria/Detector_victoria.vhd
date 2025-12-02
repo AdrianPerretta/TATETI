@@ -18,6 +18,7 @@ architecture comportamiento of Detector_Victoria is
     signal P0, P1, P2, P3, P4, P5, P6, P7, P8 : STD_LOGIC_VECTOR(1 DOWNTO 0); -- Cada posiciones
     signal s_victoria_j1, s_victoria_j2 : STD_LOGIC;
     signal s_tablero_lleno : STD_LOGIC;
+	 signal s_hay_ganador : STD_LOGIC;
 
 Begin 
     P0 <= estado_tablero(1 downto 0); -- Cada posicion tiene 2 bits
@@ -61,21 +62,16 @@ Begin
         ) else '0';
     
                            -- EMPATE --
-    process (P0, P1, P2, P3, P4, P5, P6, P7, P8, s_victoria_j1, s_victoria_j2)
-    begin
-        s_tablero_lleno <= '1'; -- Asumimo que está lleno, si alguna casilla está vacia es falsa
-        
-        if (P0 = vacio OR P1 = vacio OR P2 = vacio OR 
-            P3 = vacio OR P4 = vacio OR P5 = vacio OR 
-            P6 = vacio OR P7 = vacio OR P8 = vacio) then
-            s_tablero_lleno <= '0';
-        end if;
+s_tablero_lleno <= '1' when (
+	P0 /= vacio AND P1 /= vacio AND P2 /= vacio AND        
+	P3 /= vacio AND P4 /= vacio AND P5 /= vacio AND
+	P6 /= vacio AND P7 /= vacio AND P8 /= vacio
+	) else '0';
+s_hay_ganador <= s_victoria_j1 OR s_victoria_j2;   -- Hay ganador
 
-        empate <= s_tablero_lleno AND (NOT s_victoria_j1) AND (NOT s_victoria_j2); -- Condicion de empate
-        
-    end process;
+	empate <= s_tablero_lleno AND (NOT s_hay_ganador);  --Si no hay ganador es empate
 
-    victoria_j1 <= s_victoria_j1;   --Conecto las salidas, con las señales internas
-    victoria_j2 <= s_victoria_j2;
+		victoria_j1 <= s_victoria_j1;
+		victoria_j2 <= s_victoria_j2;
 
 end architecture;

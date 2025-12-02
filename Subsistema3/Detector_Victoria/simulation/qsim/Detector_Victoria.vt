@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/27/2025 18:40:20"
+// Generated on "12/02/2025 17:42:19"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Detector_Victoria
 // 
@@ -230,32 +230,32 @@ end
 // estado_tablero[ 16 ]
 initial
 begin
-	estado_tablero[16] = 1'b0;
+	estado_tablero[16] = 1'b1;
 end 
 // estado_tablero[ 15 ]
 initial
 begin
-	estado_tablero[15] = 1'b0;
+	estado_tablero[15] = 1'b1;
 end 
 // estado_tablero[ 14 ]
 initial
 begin
-	estado_tablero[14] = 1'b1;
+	estado_tablero[14] = 1'b0;
 end 
 // estado_tablero[ 13 ]
 initial
 begin
-	estado_tablero[13] = 1'b1;
+	estado_tablero[13] = 1'b0;
 end 
 // estado_tablero[ 12 ]
 initial
 begin
-	estado_tablero[12] = 1'b0;
+	estado_tablero[12] = 1'b1;
 end 
 // estado_tablero[ 11 ]
 initial
 begin
-	estado_tablero[11] = 1'b0;
+	estado_tablero[11] = 1'b1;
 end 
 // estado_tablero[ 10 ]
 initial
@@ -265,17 +265,17 @@ end
 // estado_tablero[ 9 ]
 initial
 begin
-	estado_tablero[9] = 1'b1;
+	estado_tablero[9] = 1'b0;
 end 
 // estado_tablero[ 8 ]
 initial
 begin
-	estado_tablero[8] = 1'b0;
+	estado_tablero[8] = 1'b1;
 end 
 // estado_tablero[ 7 ]
 initial
 begin
-	estado_tablero[7] = 1'b0;
+	estado_tablero[7] = 1'b1;
 end 
 // estado_tablero[ 6 ]
 initial
@@ -300,17 +300,17 @@ end
 // estado_tablero[ 2 ]
 initial
 begin
-	estado_tablero[2] = 1'b0;
+	estado_tablero[2] = 1'b1;
 end 
 // estado_tablero[ 1 ]
 initial
 begin
-	estado_tablero[1] = 1'b0;
+	estado_tablero[1] = 1'b1;
 end 
 // estado_tablero[ 0 ]
 initial
 begin
-	estado_tablero[0] = 1'b1;
+	estado_tablero[0] = 1'b0;
 end 
 
 Detector_Victoria_vlg_sample_tst tb_sample (
