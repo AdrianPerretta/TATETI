@@ -1,0 +1,5 @@
+PLL_Name	subsistema2esquematico:inst|Block1:inst|altpll0:inst|altpll:altpll_component|altpll0_altpll1:auto_generated|pll1
+PLLJITTER	50
+PLLSPEmax	84
+PLLSPEmin	-53
+

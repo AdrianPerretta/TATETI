@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\iniak\Documents\facu\TYDD2\lab2\TATETI\tatetifinalboss\simulation\qsim
+vDetector_Victoria
+Z1 !s100 1ee]7E0[PPojQNQhTecG93
+Z2 IPJ[=l@KJKiXUm<Ol>]B:l0
+Z3 Vkoj0OiASSo:U0<4<7T2a53
+Z4 dC:\Users\iniak\Documents\facu\TYDD2\lab2\TATETI\tatetifinalboss\simulation\qsim
+Z5 w1764273502
+Z6 8proyecto_final.vo
+Z7 Fproyecto_final.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|proyecto_final.vo|
+Z10 o-work work -O0
+Z11 n@detector_@victoria
+!i10b 1
+!s85 0
+Z12 !s108 1764273504.010000
+Z13 !s107 proyecto_final.vo|
+!s101 -O0
+vDetector_Victoria_vlg_check_tst
+!i10b 1
+Z14 !s100 Sn27A:LoAKKS[e3=ES7JX1
+Z15 I0;G[d<U^DX[0[;GPnGUoH3
+Z16 VD>KmA[7Jhe3313Ee1aFZ?2
+R4
+Z17 w1764273501
+Z18 8proyecto_final.vt
+Z19 Fproyecto_final.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z20 !s108 1764273504.255000
+Z21 !s107 proyecto_final.vt|
+Z22 !s90 -work|work|proyecto_final.vt|
+!s101 -O0
+R10
+Z23 n@detector_@victoria_vlg_check_tst
+vDetector_Victoria_vlg_sample_tst
+!i10b 1
+Z24 !s100 Z:bQJ<B[9dmPXY4PS>@?h1
+Z25 IKcH?7VYlS[LEPHl=0@nRV2
+Z26 V<kb1an2[DG]V2oQk^Mke90
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@detector_@victoria_vlg_sample_tst
+vDetector_Victoria_vlg_vec_tst
+!i10b 1
+!s100 34@=5]k@IHda_EZ1e7>n52
+IA2]iz`@o_KbU[_2EQU<SA3
+Z28 VmC@X=3f8^P9FBI=5<i8AW0
+R4
+R17
+R18
+R19
+Z29 L0 206
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@detector_@victoria_vlg_vec_tst

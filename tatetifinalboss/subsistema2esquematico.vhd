@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Mon Nov 10 16:18:45 2025"
+-- CREATED		"Thu Nov 27 15:01:27 2025"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -25,21 +25,18 @@ ENTITY subsistema2esquematico IS
 	PORT
 	(
 		inclk0 :  IN  STD_LOGIC;
-		areset :  IN  STD_LOGIC;
 		INICIO :  IN  STD_LOGIC;
 		MV :  IN  STD_LOGIC;
 		MINV :  IN  STD_LOGIC;
 		TURNO :  IN  STD_LOGIC;
-		VF :  IN  STD_LOGIC;
 		VICTORIA :  IN  STD_LOGIC;
 		EMPATE :  IN  STD_LOGIC;
 		POSICION :  IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		SC1 :  IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
 		SC2 :  IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
-		CERO :  OUT  STD_LOGIC;
-		UNO :  OUT  STD_LOGIC;
-		locked :  OUT  STD_LOGIC;
-		Y :  OUT  STD_LOGIC
+		VF :  IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+		Y :  OUT  STD_LOGIC;
+		freck1k :  OUT  STD_LOGIC
 	);
 END subsistema2esquematico;
 
@@ -47,13 +44,9 @@ ARCHITECTURE bdf_type OF subsistema2esquematico IS
 
 COMPONENT block1
 	PORT(inclk0 : IN STD_LOGIC;
-		 areset : IN STD_LOGIC;
-		 load : IN STD_LOGIC;
-		 parallel_in : IN STD_LOGIC_VECTOR(383 DOWNTO 0);
-		 CERO : OUT STD_LOGIC;
-		 UNO : OUT STD_LOGIC;
-		 frecuencialed : OUT STD_LOGIC;
-		 locked : OUT STD_LOGIC;
+		 Matriz : IN STD_LOGIC_VECTOR(383 DOWNTO 0);
+		 frec1 : OUT STD_LOGIC;
+		 frec2 : OUT STD_LOGIC;
 		 Y : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -63,27 +56,19 @@ COMPONENT coloress2
 		 MV : IN STD_LOGIC;
 		 MINV : IN STD_LOGIC;
 		 TURNO : IN STD_LOGIC;
-		 VF : IN STD_LOGIC;
 		 CLK : IN STD_LOGIC;
 		 VICTORIA : IN STD_LOGIC;
 		 EMPATE : IN STD_LOGIC;
 		 POSICION : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		 SC1 : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 		 SC2 : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		 VF : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 		 MATRIZ : OUT STD_LOGIC_VECTOR(383 DOWNTO 0)
 	);
 END COMPONENT;
 
-COMPONENT lpm_counter0
-	PORT(clock : IN STD_LOGIC;
-		 cout : OUT STD_LOGIC;
-		 q : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
-	);
-END COMPONENT;
-
-SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC_VECTOR(383 DOWNTO 0);
-SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC_VECTOR(383 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
 
 
 BEGIN 
@@ -92,13 +77,9 @@ BEGIN
 
 b2v_inst : block1
 PORT MAP(inclk0 => inclk0,
-		 areset => areset,
-		 load => SYNTHESIZED_WIRE_0,
-		 parallel_in => SYNTHESIZED_WIRE_1,
-		 CERO => CERO,
-		 UNO => UNO,
-		 frecuencialed => SYNTHESIZED_WIRE_4,
-		 locked => locked,
+		 Matriz => SYNTHESIZED_WIRE_0,
+		 frec1 => freck1k,
+		 frec2 => SYNTHESIZED_WIRE_1,
 		 Y => Y);
 
 
@@ -107,19 +88,14 @@ PORT MAP(INICIO => INICIO,
 		 MV => MV,
 		 MINV => MINV,
 		 TURNO => TURNO,
-		 VF => VF,
-		 CLK => SYNTHESIZED_WIRE_4,
+		 CLK => SYNTHESIZED_WIRE_1,
 		 VICTORIA => VICTORIA,
 		 EMPATE => EMPATE,
 		 POSICION => POSICION,
 		 SC1 => SC1,
 		 SC2 => SC2,
-		 MATRIZ => SYNTHESIZED_WIRE_1);
-
-
-b2v_inst2 : lpm_counter0
-PORT MAP(clock => SYNTHESIZED_WIRE_4,
-		 cout => SYNTHESIZED_WIRE_0);
+		 VF => VF,
+		 MATRIZ => SYNTHESIZED_WIRE_0);
 
 
 END bdf_type;
