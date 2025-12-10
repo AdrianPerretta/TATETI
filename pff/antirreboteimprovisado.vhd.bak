@@ -1,0 +1,156 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity antirreboteimprovisado is
+    port(
+        f1,f2,f3,f4,c1,c2,c3,c4 : in std_logic;
+		  hab,led1,led2,led3,led4 : out std_logic 
+    );
+end antirreboteimprovisado;
+
+architecture behaviour of antirreboteimprovisado is
+    signal vc : std_logic_vector (3 downto 0);
+begin
+
+    process(f1,f2,f3,f4,c1,c2,c3,c4)
+			begin
+			vc<=c4 & c3 & c2 & c1;
+			if f1 = '1' then
+					case vc is
+							when "0001" =>
+									hab<='1';
+									led1<='0';
+									led2<='0';
+									led3<='0';
+									led4<='0';
+							when "0010" => 
+									hab<='1';
+									led1<='0';
+									led2<='0';
+									led3<='0';
+									led4<='1';
+							when "0100" => 
+									hab<='1';
+									led1<='0';
+									led2<='0';
+									led3<='1';
+									led4<='0';
+							when "1000" => 
+									hab<='1';
+									led1<='0';
+									led2<='0';
+									led3<='1';
+									led4<='1';
+							when others => 
+									hab<='0';
+									led1<='0';
+									led2<='0';
+									led3<='0';
+									led4<='0';
+						end case;
+						end if;
+			if f2 = '1' then
+					case vc is
+							when "0001" =>
+									hab<='1';
+									led1<='0';
+									led2<='1';
+									led3<='0';
+									led4<='0';
+							when "0010" => 
+									hab<='1';
+									led1<='0';
+									led2<='1';
+									led3<='0';
+									led4<='1';
+							when "0100" => 
+									hab<='1';
+									led1<='0';
+									led2<='1';
+									led3<='1';
+									led4<='0';
+							when "1000" => 
+									hab<='1';
+									led1<='0';
+									led2<='1';
+									led3<='1';
+									led4<='1';
+							when others =>
+									hab<='0';
+									led1<='0';
+									led2<='0';
+									led3<='0';
+									led4<='0';
+						end case;
+						end if;
+				if f3 = '1' then
+					case vc is
+							when "0001" =>
+									hab<='1';
+									led1<='1';
+									led2<='0';
+									led3<='0';
+									led4<='0';
+							when "0010" =>
+									hab<='1';
+									led1<='1';
+									led2<='0';
+									led3<='0';
+									led4<='1';
+							when "0100" =>
+									hab<='1';
+									led1<='1';
+									led2<='0';
+									led3<='1';
+									led4<='0';
+							when "1000" =>
+									hab<='1';
+									led1<='1';
+									led2<='0';
+									led3<='1';
+									led4<='1';
+							when others =>
+									hab<='0';
+									led1<='0';
+									led2<='0';
+									led3<='0';
+									led4<='0';
+						end case;
+						end if;
+				if f4 = '1' then
+					case vc is
+							when "0001" =>
+									hab<='1';
+									led1<='1';
+									led2<='1';
+									led3<='0';
+									led4<='0';
+							when "0010" =>
+									hab<='1';
+									led1<='1';
+									led2<='1';
+									led3<='0';
+									led4<='1';
+							when "0100" => 
+									hab<='1';
+									led1<='1';
+									led2<='1';
+									led3<='1';
+									led4<='0';
+							when "1000" => 
+									hab<='1';
+									led1<='1';
+									led2<='1';
+									led3<='1';
+									led4<='1';
+							when others =>
+									hab<='0';
+									led1<='0';
+									led2<='0';
+									led3<='0';
+									led4<='0';
+						end case;
+						end if;
+    end process;
+
+end behaviour;

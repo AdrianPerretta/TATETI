@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="proyecto_final_ahora_si">
+		<CBX_INST_ENTRY INSTANCE_NAME="|proyecto_final|MaquinaFinal1:inst1|lpm_counter5:inst10|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proyecto_final|MaquinaFinal1:inst1|lpm_counter4:inst9|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proyecto_final|MaquinaFinal1:inst1|lpm_counter6:inst3|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proyecto_final|subsistema2esquematico:inst|Block1:inst|altpll0:inst|altpll:altpll_component" CBX_FILE_NAME="altpll0_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proyecto_final|tecladover2:inst7|lpm_counter1:inst13|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_p1k.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

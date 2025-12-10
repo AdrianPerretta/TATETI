@@ -1,0 +1,51 @@
+
+State Machine - |proyecto_final|tecladover2:inst7|SM1:inst8|fstate
+Name fstate.B fstate.C fstate.D fstate.A 
+fstate.A 0 0 0 0 
+fstate.D 0 0 1 1 
+fstate.C 0 1 0 1 
+fstate.B 1 0 0 1 
+
+State Machine - |proyecto_final|tecladover2:inst7|SM1:inst10|fstate
+Name fstate.B fstate.C fstate.D fstate.A 
+fstate.A 0 0 0 0 
+fstate.D 0 0 1 1 
+fstate.C 0 1 0 1 
+fstate.B 1 0 0 1 
+
+State Machine - |proyecto_final|tecladover2:inst7|SM1:inst9|fstate
+Name fstate.B fstate.C fstate.D fstate.A 
+fstate.A 0 0 0 0 
+fstate.D 0 0 1 1 
+fstate.C 0 1 0 1 
+fstate.B 1 0 0 1 
+
+State Machine - |proyecto_final|tecladover2:inst7|SM1:inst6|fstate
+Name fstate.B fstate.C fstate.D fstate.A 
+fstate.A 0 0 0 0 
+fstate.D 0 0 1 1 
+fstate.C 0 1 0 1 
+fstate.B 1 0 0 1 
+
+State Machine - |proyecto_final|tecladover2:inst7|maq_barrido:inst|fstate
+Name fstate.b4 fstate.b2 fstate.b3 fstate.fl1 fstate.fl4 fstate.fl3 fstate.fl2 fstate.b1 
+fstate.b1 0 0 0 0 0 0 0 0 
+fstate.fl2 0 0 0 0 0 0 1 1 
+fstate.fl3 0 0 0 0 0 1 0 1 
+fstate.fl4 0 0 0 0 1 0 0 1 
+fstate.fl1 0 0 0 1 0 0 0 1 
+fstate.b3 0 0 1 0 0 0 0 1 
+fstate.b2 0 1 0 0 0 0 0 1 
+fstate.b4 1 0 0 0 0 0 0 1 
+
+State Machine - |proyecto_final|MaquinaFinal1:inst1|maquina2:inst1|fstate
+Name fstate.CJ2 fstate.CJ1 fstate.CE fstate.VJ2 fstate.VE fstate.VJ1 fstate.TurnoJ2 fstate.TurnoJ1 fstate.SeC 
+fstate.SeC 0 0 0 0 0 0 0 0 0 
+fstate.TurnoJ1 0 0 0 0 0 0 0 1 1 
+fstate.TurnoJ2 0 0 0 0 0 0 1 0 1 
+fstate.VJ1 0 0 0 0 0 1 0 0 1 
+fstate.VE 0 0 0 0 1 0 0 0 1 
+fstate.VJ2 0 0 0 1 0 0 0 0 1 
+fstate.CE 0 0 1 0 0 0 0 0 1 
+fstate.CJ1 0 1 0 0 0 0 0 0 1 
+fstate.CJ2 1 0 0 0 0 0 0 0 1 
